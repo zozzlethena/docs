@@ -1,4 +1,4 @@
-# Assets Listing
+# Assets Listing and Rewards
 
 TODO: Explain how can one add a new asset to the exchange.
 
