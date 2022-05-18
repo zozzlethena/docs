@@ -1,7 +1,9 @@
-# Tokenomics
+# `$VELO` Tokenomics
 
 TODO: Explain $VELO
 
-## Emissions
+## Benefits
 
-## `vlVELO` and `veNFT`
+# `$WHEEL` Tokenomics
+
+## Benefits
