@@ -5,7 +5,7 @@ Velodrome Finance is an automated market maker (AMM) on
 
 Velodrome Finance inherits standard features popularized by Uniswap V2, but
 was designed to:
- * have a small trading fee, only 0.022%
+ * have a small trading fee, only 0.02%
  * use the generated fees in order to incentivize the liquidity providers
  * offer near zero slippage on uncorrelated or tightly correlated digital
    assets
