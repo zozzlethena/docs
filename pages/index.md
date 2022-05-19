@@ -48,5 +48,10 @@ the protocols like [Solidly](https://github.com/solidlyexchange),
 [Votium](https://votium.app) and [Llama
 Airforce Union](https://llama.airforce/#/union/member).
 
+This includes `ve(3,3)` mechanics and NFT governance
+locking, protocol fees and external voting rewards (popularized as _bribes_)
+for liquidity provider incentives, and finally, a passive staking service
+(popularized as _Convex_ layer) for a more liquid way to maximize holder returns.
+
 Where possible, we did use available open-sourced work, for which we are
 grateful and lucky to be _standing on the shoulders of such giants_.
