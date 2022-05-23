@@ -1,3 +1,11 @@
+import Bleed from 'nextra-theme-docs/bleed'
+
+<Bleed>
+  ![Velodrome Finance](/velodrome_hero.jpg)
+</Bleed>
+
+&nbsp;
+
 # About
 
 Velodrome Finance is an automated market maker (AMM) on
