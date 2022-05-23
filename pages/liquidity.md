@@ -16,7 +16,7 @@ Based on these two types, we provide two different liquidity pool types. These
 pools use different mathematical formulas and are used by our router for
 price quotations and execution of the actual trades.
 
-The _deeper_ is the liquidity of the pools (the larger the amount of
+The _deeper_ the liquidity of the pools (the larger the amount of
 assets is in the liquidity pools), the smaller will be the slippage.
 
 The router was also designed to route through both, stable and volatile pools
@@ -26,11 +26,11 @@ resistant to flash-loan attacks.
 
 ## Stable Pools
 
-Stable pools are designed to be used for assets which have little to none
+Stable pools are designed to be used for assets which have little to no
 volatility. This means that the formula used for pricing the assets allows
 low slippage even on large traded volumes.
 
-> x3y+y3x >= k
+> x3y + y3x ≥ k
 
 
 ## Variable Pools
@@ -38,7 +38,7 @@ low slippage even on large traded volumes.
 Variable pools are designed to be used for assets with high price volatility.
 These pools use a generic AMM formula.
 
-> x*y >= k
+> x × y ≥ k
 
 ## A visual representation of the formulas
 
