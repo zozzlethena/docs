@@ -1,0 +1,24 @@
+@font-face {
+  font-family: "Universal Sans";
+  src: url("UniversalSansRegular.ttf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  ascent-override: 110%;
+}
+
+@font-face {
+  font-family: "Epika Serif";
+  src: url("EpikaSerifCondensedPremium-SemiBold.otf");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+html * {
+ font-family: "Universal Sans", sans-serif;
+}
+
+h1, h2 *, h3 *, h4 *, h5 *, h6 * {
+ font-family: "Epika Serif", serif;
+}
