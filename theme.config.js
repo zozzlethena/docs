@@ -36,6 +36,8 @@ export default {
 
       <meta property="og:title" content="Velodrome Finance: The liquidity base-layer of the Optimism ecosystem." />
       <meta property="og:description" content="Velodrome Finance is an automated market maker (AMM or simply, decentralized exchange) on Optimism L2 blockchain." />
+      <meta property="og:image" content="https://velodrome-docs.pages.dev/velodrome_banner.jpg" />
+
       <meta name="apple-mobile-web-app-title" content="Velodrome Finance" />
       <link rel="stylesheet" href="/fonts.css" />
     </>
