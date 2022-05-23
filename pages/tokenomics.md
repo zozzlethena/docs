@@ -39,7 +39,7 @@ Below we will be going through all the components of the mechanism in order to
 explain how it helps the incentives flow to the most valuable for the ecosystem
 liquidity pools.
 
-### Emissions
+## Emissions
 
 The initial supply of `$VELO` is 400M.
 
@@ -85,7 +85,7 @@ and the ratio of `$veVELO` to `$VELO` supply. This reduces the dilution for the
 The weekly rebase amount is calculated with the following formula:
 > (veVELO.totalSupply ÷ VELO.totalsupply)³ × 0.5
 
-### Gauge Voting
+## Gauge Voting
 
 Every week a certain amount of tokens is emitted for incentives. This amount of
 new `$VELO` tokens is distributed to the liquidity pool providers.
@@ -100,7 +100,7 @@ its liquidity pool providers.
 In return, voters receive the trading fees collected by the liquidity pool they
 vote for.
 
-### Bribes
+## Bribes
 
 In addition to the fees, liquidity pools allow external rewards from anyone
 (known also as _bribes_). These bribes are distributed only to the voters on the
