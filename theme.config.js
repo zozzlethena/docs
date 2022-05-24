@@ -4,7 +4,7 @@ export default {
   titleSuffix: ' – Velodrome Finance',
   nextLinks: true,
   prevLinks: true,
-  search: false,
+  search: true,
   unstable_stork: false,
   darkMode: true,
   font: false,
@@ -22,8 +22,6 @@ export default {
   ),
   head: (
     <>
-      <meta charset="utf-8" />
-
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="Velodrome Finance: The liquidity base-layer of the Optimism ecosystem." />
       <meta name="theme-color" content="#ffffff" />
