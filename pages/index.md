@@ -1,4 +1,5 @@
 import Bleed from 'nextra-theme-docs/bleed'
+import Callout from 'nextra-theme-docs/callout'
 
 <Bleed>
   ![Velodrome Finance](/velodrome_hero.jpg)
@@ -20,8 +21,6 @@ was designed to:
  * route trades through stable and volatile asset pairs
  * provide no-upkeep, flashloan-proof, 30 minute time-weighted average price
    (TWAP) with direct quoting support
-
-import Callout from 'nextra-theme-docs/callout'
 
 <Callout emoji="⚠️">
   Before using Velodrome Finance, you are required to read and agree to our

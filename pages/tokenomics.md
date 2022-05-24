@@ -26,6 +26,9 @@ to 4 years, following the linear relationship shown below:
  * 100 `$VELO` locked for 4 years will become 100 `$veVELO`
  * 100 `$VELO` locked for 1 year will become 25 `$veVELO`
 
+The longer the lock-up time, the more voting power (voting weight) and more
+rewards the `$veVELO` receives.
+
 ## ve(3,3) Mechanics
 
 Velodrome Finance mechanics represent a combination of two DeFi concepts:
@@ -41,17 +44,17 @@ liquidity pools.
 
 ## Emissions
 
-The initial supply of `$VELO` is 400M.
+The initial supply of `$VELO` is 600M.
 
-Weekly emissions start at 15M `$VELO` (3.75% of the initial supply) and decay
-by 1% per week.
+Weekly emissions start at 15M `$VELO` (2.5% of the initial supply) and get
+reduced by 1% every next week.
 
 <Bleed>
   <Chart
     chartType="LineChart"
     data={[
       ["Weeks", "LP Emissions", "veRebase", "Supply"],
-      ["1", 15000000, 0, 400000000],
+      ["1", 15000000, 0, 600000000],
       ["50", 12000000, 2000000, 1000000000],
       ["100", 10000000, 1500000, 1500000000],
       ["150", 5000000, 1000000, 1700000000],
@@ -95,9 +98,9 @@ new `$VELO` tokens is distributed to the liquidity pool providers.
 The concept used to control emissions in relationship to a liquidity pool
 is called _gauge_.
 
-`$veVELO` holders can vote to which gauge these emissions go. The more votes a
-gauge gets, the higher the amount of `$VELO` tokens will be distributed to the
-its liquidity pool providers.
+`$veVELO` holders can vote to which gauge these emissions go. The more votes with
+higher voting power a gauge gets, the higher the amount of `$VELO` tokens will
+be distributed to the its liquidity pool providers.
 
 In return, voters receive the trading fees collected by the liquidity pool they
 vote for.
@@ -108,9 +111,9 @@ In addition to the fees, liquidity pools allow external rewards from anyone
 (known also as _bribes_). These bribes are distributed only to the voters on the
 incentivized pool proportionally to the votes they cast.
 
-The bribes can be added weekly, before any voting is done. 24–48 hours after all
-the votes were registered (vote snapshot is taken), these can be collected by
-the voters.
+The bribes can be added weekly in _whitelisted_ tokens, before any voting is
+done. 24–48 hours after all the votes were registered (vote snapshot is taken),
+these can be collected by the voters.
 
 Any rewards which were not collected, will accrue.
 
