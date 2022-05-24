@@ -28,6 +28,13 @@ import Callout from 'nextra-theme-docs/callout'
   [legal disclaimer](/legal).
 </Callout>
 
+## Resources
+
+* Website: https://www.velodrome.finance
+* Twitter: https://twitter.com/VelodromeFi
+* Medium: https://medium.com/@VelodromeFi
+* Discord: https://discord.gg/bqzYruhX
+
 ## Who is behind this project?
 
 The team behind Velodrome Finance previously launched
