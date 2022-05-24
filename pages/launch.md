@@ -125,11 +125,8 @@ successfully bootstrap and retain a team for its own success.
     ]}
     options={{
       title: "Distribution Summary",
-      pieHole: 0.4,
-    }
-    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-     }
+      pieHole: 0.4
+    }}
     width={"100%"}
     height={"600px"}
   />
