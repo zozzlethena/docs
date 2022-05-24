@@ -119,13 +119,17 @@ successfully bootstrap and retain a team for its own success.
       [ "Community: Optimism Token Holders", 72000000 ],
       [ "Protocols: Optimism Protocols/DAOs", 60000000 ],
       [ "Protocols: Grants", 24000000 ],
-      [ "Velodrome Team", 60000000 ],
-      [ "Optimism Team", 30000000 ],
-      [ "Genesis Liquidity Pool", 6000000 ]
+      [ "Velodrome Team", 40000000 ],
+      [ "Optimism Team", 20000000 ],
+      [ "Genesis Liquidity Pool", 4000000 ]
     ]}
     options={{
-      title: "Distribution Summary"
-    }}
+      title: "Distribution Summary",
+      pieHole: 0.4,
+    }
+    var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
+        chart.draw(data, options);
+     }
     width={"100%"}
     height={"600px"}
   />
