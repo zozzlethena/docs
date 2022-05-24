@@ -1,9 +1,7 @@
 # Security
 
-## Community DAO
-
-## Emergency DAO
-
-TODO: Explain when and how we'd step in to protect our investors.
+TODO: List and describe contracts and deployed addresses.
 
 ## Audits
+
+TODO: Explain previous Solidly audits and current Velodrome ones.
