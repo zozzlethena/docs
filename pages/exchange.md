@@ -1,3 +1,0 @@
-# Using the Exchange
-
-TODO: Explain how to use the exchange/swapping...
