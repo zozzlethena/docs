@@ -1,3 +1,11 @@
+import Bleed from 'nextra-theme-docs/bleed'
+
+<Bleed>
+  ![Velodrome Finance Launch](/velodrome_biker_hero.png)
+</Bleed>
+
+&nbsp;
+
 # Liquidity Pools
 
 The core functionality of Velodrome Finance is to allow users to trade
