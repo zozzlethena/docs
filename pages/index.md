@@ -9,23 +9,30 @@ import Callout from 'nextra-theme-docs/callout'
 
 # About
 
-Velodrome Finance is an automated market maker (AMM or simply, decentralized
-exchange) on [Optimism](https://www.optimism.io/) L2 blockchain.
+Velodrome Finance is the trading and liquidity marketplace on [Optimism](https://www.optimism.io/). As an AMM adapted from Solidly, Velodrome is designed to provide deep liquidity, low swapping fees, and very low slippage to token pairs critical for Optimism’s development.
 
-Velodrome Finance inherits standard features popularized by Uniswap V2, but
-was designed to:
- * have a small trading fee, only 0.02%
- * use the generated fees in order to incentivize the liquidity providers
- * offer near zero slippage on uncorrelated or tightly correlated digital
+Velodrome Finance features include:
+ * a trading fee of only 0.02%
+ * near zero slippage on uncorrelated or tightly correlated digital
    assets
  * route trades through stable and volatile asset pairs
- * provide no-upkeep, flashloan-proof, 30 minute time-weighted average price
+ * no-upkeep, flashloan-proof, 30 minute time-weighted average price
    (TWAP) with direct quoting support
-
+ 
 <Callout emoji="⚠️">
   Before using Velodrome Finance, you are required to read and agree to our
   [legal disclaimer](/legal).
 </Callout>
+
+## ve(3,3) Tokenomics
+
+Velodrome's native token is `$VELO`. Liquidity providers receive `$VELO` emissions distributed weekly. Holders of `$VELO` can vote-escrow their tokens in exchange for `$veVELO`. `$veVELO` represents voting power to direct emissions to the holder's preferred liquidity pools. In return for their participation, `$veVELO` voters receive the fees and bribes collected through the pools they vote for, as well as a `$veVELO` rebase reducing dilution.  
+
+See additional details in Tokenomics.
+
+## Bribes!
+
+Velodrome has a built-in bribe function that allows anyone to incentivize voting for their preferred token pair by directing incentive payments to any available pool, which then becomes a voting reward. Bribes are released on a weekly basis for votes cast during that week. They are distributed proportionally to voters.
 
 ## Resources
 
@@ -42,7 +49,7 @@ DAO](https://informationtoken.io), with the mission to support the Solidly
 ecosystem, a protocol launched on Fantom by Andre Cronje and his team, while
 driving long-term value to the VeDAO community.
 
-Since then, the VeDAO team has developed deep subject matter expertise on both
+The VeDAO team has since developed deep subject matter expertise on both
 Solidly and `ve(3,3)` mechanisms, becoming the go-to resource for protocols and
 chains seeking support around these topics.
 
@@ -67,5 +74,5 @@ locking, protocol fees and external voting rewards (popularized as _bribes_)
 for liquidity provider incentives, and finally, a passive staking service
 (popularized as _Convex_ layer) for a more liquid way to maximize holder returns.
 
-Where possible, we did use available open-sourced work, for which we are
+Where possible, the team used available open-sourced work, for which we are
 grateful and lucky to be _standing on the shoulders of such giants_.
