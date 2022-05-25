@@ -1,8 +1,8 @@
 # Velodrome Finance 🚲💨📃
 
-Velodrome finance product documentation.
+Velodrome Finance product documentation.
 
-This is where we work on our product documentation which is built and deployed
+This is where we work on product documentation which is built and deployed
 into the main app.
 
 To run the [Nextra](https://nextra.vercel.app) server, use:
