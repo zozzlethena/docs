@@ -15,10 +15,10 @@ Velodrome Finance uses two tokens to manage its utility and governance:
  * `$veVELO` &mdash; ERC-721 governance token in the form of an NFT
    (non-fungible token)
 
-`$VELO` is used for rewarding liquidity providers.
+`$VELO` is used for rewarding liquidity providers through emissions.
 
-`$veVELO` is used for governance. Any `$VELO` holder can lock their tokens and
-receive a `$veVELO` NFT in exchange.  Additional tokens can be added to the
+`$veVELO` is used for governance. Any `$VELO` holder can vote-escrow their tokens and
+receive a `$veVELO` veNFT in exchange.  Additional tokens can be added to the
 `$veVELO` NFT at any time.
 
 The lock period (also known as vote-escrowed, hence the _ve_ prefix) can be up
@@ -26,46 +26,149 @@ to 4 years, following the linear relationship shown below:
  * 100 `$VELO` locked for 4 years will become 100 `$veVELO`
  * 100 `$VELO` locked for 1 year will become 25 `$veVELO`
 
-The longer the lock-up time, the more voting power (voting weight) and more
+The longer the vesting time, the higher the voting power (voting weight) and 
 rewards the `$veVELO` receives.
 
 ## ve(3,3) Mechanics
 
 Velodrome Finance mechanics represent a combination of two DeFi concepts:
- * Vote-Escrow &mdash; designed by Curve to solve the long-term incentives
- * Staking/Bonding/Selling or (3,3) game theory &mdash; designed by Olympus DAO
+ * Vote-Escrow &mdash; first introduced by Curve to strengthen incentives for long-term token holders
+ * Staking/Rebasing/Bonding or (3,3) game theory &mdash; designed by Olympus DAO
 
-Combined, the _ve(3,3)_ mechanism encourages users to lock-in their tokens
-and thus participating in an _everyone wins_ value model!
+Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velodrome's success, such as 
+liquidity provision and long-term token holding. Liquidity providers receive `$VELO` emissions, 
+and `$veVELO` holders receive protocol fees, bribes, rebases, and governance power.
 
 Below we will be going through all the components of the mechanism in order to
 explain how it helps the incentives flow to the most valuable for the ecosystem
 liquidity pools.
 
+
+## Initial Distribution
+
+Upon launch we will kick off with an airdrop of `$VELO` and `$veVELO` for
+users and protocols we believe are most likely to contribute our
+mission to become the liquidity base layer of the Optimism ecosystem.
+
+Check to see if you qualify for the airdrop [HERE](https://www.velodrome.finance)
+
+The distribution will be meaningful but will also leave enough room for new
+players to join and capture a voting share through emissions and/or
+token acquisition.
+
+This should also ensure that Velodrome Finance as a protocol is able to
+successfully bootstrap and retain a team for its own success.
+
+### Distribution (VELO, millions)
+
+<Bleed>
+  <Chart
+    chartType="PieChart"
+    data={[
+      [ "Receivers", "Amount" ],
+      [ "WEVE Holders", 108 ],
+      [ "Cross-Chain DeFi Users", 60 ],
+      [ "Optimism Active Users", 72 ],
+      [ "Optimism Protocols/DAOs", 60 ],
+      [ "Protocol Grants", 24 ],
+      [ "Velodrome Team", 40 ],
+      [ "Optimism Team", 20 ],
+      [ "Genesis Liquidity Pool", 4 ]
+    ]}
+    options={{
+      backgroundColor: '#111111',
+      colors: ['#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF', '#FBBF42', '#EDE7DB'],
+      legend: {textStyle: {color: 'white'}},
+      pieHole: 0.4
+    }}
+    width={"80%"}
+    height={"600px"}
+  />
+</Bleed>
+
+### Community
+
+An airdrop of `$VELO` tokens for the people who have played the biggest role in
+incubating Velodrome and those most likely to contribute to its long term
+success, including:
+ * `$WEVE` holders (see above)
+ * `$OP` network users 
+ * Cross-chain DeFi users:
+   * 3500 `$VELO`/wallet &mdash; Curve Protocol wallets with 1450+ days (maximum) lock time
+   * 3000 `$VELO`/wallet &mdash; Convex Protocol all `$vlCVX` lockers since new lock contract deployment
+   * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1 and 3 month periods
+   * 2000 `$VELO`/wallet &mdash; Platypus Protocol `$vePTP` stakers
+   * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in launch dutch auction who held their `$BTRFLY`
+   * 500 `$VELO`/wallet &mdash; Eminence Finance affected wallets
+
+### Protocols
+
+We will consider a variety of metrics in assessing the available protocols,
+including TVL, transaction volume, unique wallets, and just Optimism team input.
+
+The airdrop is aimed at attracting and engaging 10-15 protocols most
+likely to contribute to Velodrome and Optimism's long term success.
+
+The airdropped amount as `$veVELO` will give just enough power to familiarize
+the protocols with the ecosystem and get a head start, but it will leave space
+for value to accrue from acquiring `$VELO` for long term liquidity provision.
+
+### Grants
+
+We reserved a certain amount of `$veVELO` to distribute to partner protocols
+after the launch. This will be used to engage partners in the ecosystem through
+grants.
+
+### Team
+
+The team will receive an initial allocation that it will use to vote
+to drive emissions to key protocol pairs such as `$VELO-$USDC` and to support
+ongoing protocol development.
+
+The team will vest 25% of its initial allocation in the form of a
+`$veVELO` and use it to vote for `$VELO` pairs in perpetuity.
+
+While a fully autonomous and immutable protocol is an admirable objective, it
+comes at a cost. Velodrome Finance will ensure its long-term sustainability by
+employing a dedicated team focused on supporting the product, documentation,
+community, and ecosystem. As the protocol evolves, the Velodrome team will
+consider introducing more immutability or DAO components where appropriate.
+
 ## Emissions
 
-The initial supply of `$VELO` is 600M.
+The initial supply of `$VELO` is 400M.
 
-Weekly emissions start at 15M `$VELO` (2.5% of the initial supply) and get
-reduced by 1% every next week.
+Weekly emissions start at 15M `$VELO` (3.75% of the initial supply) 
+and decay at 1% per week (epoch).
 
+`$veVELO` holders receive a rebase proportional to an epoch LP emissions
+and the ratio of `$veVELO` to `$VELO` supply, thus reducing vote power 
+dilution for `$veVELO`!
+
+The weekly rebase amount is calculated with the following formula:
+> (veVELO.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
+
+`$veVELO` supply does not affect weekly LP emissions.
+
+### Emission Schedule (VELO, millions)
 <Bleed>
   <Chart
     chartType="LineChart"
     data={[
       ["Weeks", "LP Emissions", "veRebase", "Supply"],
-      ["1", 15000000, 0, 600000000],
-      ["50", 12000000, 2000000, 1000000000],
-      ["100", 10000000, 1500000, 1500000000],
-      ["150", 5000000, 1000000, 1700000000],
-      ["200", 2000000, 500000, 2000000000]
+      ["1", 15, 0, 400],
+      ["50", 12, 2, 1000],
+      ["100", 10, 1.5, 1500],
+      ["150", 5, 1, 1700],
+      ["200", 2, 0.5, 2000]
     ]}
     options={{
-        title: "Emissions (est.)",
         curveType: 'function',
+        backgroundColor: '#111111',
+        colors: ['#79F8DB', '#2180DF', '#EA1000', '#59BFD8', '#0281FF'],
         aggregationTarget: 'series',
         selectionMode: 'multiple',
-        legend: { position: "top" },
+        legend: { position: "top", textStyle: {color: 'white'}},
         series: {
           0: { targetAxisIndex: 0 },
           1: { targetAxisIndex: 0 },
@@ -73,51 +176,34 @@ reduced by 1% every next week.
         },
         vAxes: {
           1: { title: "Total Supply" },
-          0: { title: "$VELO Emitted" },
+          0: { title: "$VELO Distributed" },
         },
     }}
-    width={"100%"}
+    width={"80%"}
     height={"600px"}
   />
 </Bleed>
 
-`$veVELO` holders receives a rebase which is proportional to weekly emissions
-and the ratio of `$veVELO` to `$VELO` supply. This reduces the dilution for the
-`$veVELO` holders!
-
-`$veVELO` supply does not affect the weekly emission amount of `$VELO`.
-
-The weekly rebase amount is calculated with the following formula:
-> (veVELO.totalSupply ÷ VELO.totalsupply)³ × 0.5
-
 ## Gauge Voting
 
-Every week a certain amount of tokens is emitted for incentives. This amount of
-new `$VELO` tokens is distributed to the liquidity pool providers.
+`$veVELO` holders decide which liquidity pools receive the emissions in a given epoch by
+voting on their preferred liquidity pool _gauges_. `$VELO` tokens will be distributed 
+proportionally to the total votes a liquidity pool receives.
 
-The concept used to control emissions in relationship to a liquidity pool
-is called _gauge_.
-
-`$veVELO` holders can vote to which gauge these emissions go. The more votes with
-higher voting power a gauge gets, the higher the amount of `$VELO` tokens will
-be distributed to the its liquidity pool providers.
-
-In return, voters receive the trading fees collected by the liquidity pool they
+In return, voters receive the trading fees and bribes collected through the liquidity pool they
 vote for.
 
 ## Bribes
 
 In addition to the fees, liquidity pools allow external rewards from anyone
-(known also as _bribes_). These bribes are distributed only to the voters on the
+(known as _bribes_). These bribes are distributed only to the voters on the
 incentivized pool proportionally to the votes they cast.
 
-The bribes can be added weekly in _whitelisted_ tokens, before any voting is
-done. 24–48 hours after all the votes were registered (vote snapshot is taken),
-these can be collected by the voters.
+The bribes can be added in each epoch to _whitelisted_ tokens, before any voting is
+done. Bribes can be collected 24–48 hours after votes are cast (snapshot is taken).
 
-Any rewards which were not collected, will accrue.
-
-Below is an example of bribes, voting and rewards claim timeline.
+Rewards not collected will accrue to future epochs. Below is an example of bribes, 
+voting and rewards claim timeline.
 
 <Bleed>
   <Chart
@@ -142,33 +228,32 @@ Below is an example of bribes, voting and rewards claim timeline.
     options={{
         title: "Bribing, Voting and Rewards Timeline",
     }}
-    width={"100%"}
+    width={"80%"}
   />
 </Bleed>
 
 ## Whitelisting
 
-While it is free and permissionless for everyone to create a liquidity pool,
-these pools do not have a gauge. The process of getting a gauge is called
-_whitelisting_.
+While Velodrome supports permissionless liquidity pool and gauge creation, these can 
+only include _whitelisted_ tokens. The protocol will launch with an extensive list of
+pre-whitelisted tokens including those from partner protocols.
 
-This is necessary in order to avoid situations where a holder of 100% supply of
+Any `$veVELO` holder with >0.1% of `$veVELO` supply can request additional tokens by 
+creating a _whitelist_ gauge, for which `$veVELO` voters will vote to approve or reject 
+the proposed request.
+
+This process necessary to avoid situations where a holder of 100% supply of
 a token receives 100% emissions for the same liquidity pool.
-
-`$veVELO` holders with a 0.1% of `$veVELO` supply can request a new gauge for a
-specific token, and by extend, its liquidity pool. `$veVELO` voters can next
-vote to approve or reject the proposed request.
 
 By default, a request is approved if the quorum is not met.
 
-## The Commissaire
+## Commissaire
 
-Requirements for whitelisting are critical to ensuring that the protocol cannot
-be exploited by actors attempting to game emissions. The Commissaire was
-created exactly for this mission!
+Requirements for _whitelisting_ are critical to ensuring that the protocol cannot
+be exploited by actors attempting to game emissions. 
 
-The Commissaire (a Curve-esque _Emergency DAO_) will have the right to disable
-hostile gauges or vote down whitelisting requests.
+To support the health of the protocol and ecosystem, the Commissaire (a Curve-esque _Emergency DAO_) 
+will have the right to disable hostile gauges or vote down whitelisting requests. 
 
-The Commissaire will be initially formed by seven members from the Velodrome
-team and prominent figures within the Optimism community.
+The Commissaire initially formed by seven members from the Velodrome team and 
+prominent figures within the Optimism community.
