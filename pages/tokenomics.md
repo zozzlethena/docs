@@ -136,6 +136,15 @@ employing a dedicated team focused on supporting the product, documentation,
 community, and ecosystem. As the protocol evolves, the Velodrome team will
 consider introducing more immutability or DAO components where appropriate.
 
+The team vesting compensation breakdown:
+ * 15,520,816 `$VELO` vesting for 12 months, 6 month lock in a `$veVELO` followed
+   by a linear 6 month unlock period. 0.5% of total emissions, taken from
+   emissions to treasury, will be added to this bucket for dilution control.
+ * 7,200,000 `$VELO` vesting for 24 months, 12 month lock in a `$veVELO` followed
+   by a linear 12 month unlock period.
+ * All ongoing payments made to the team members in `$VELO` will vest for 6
+   months, 3 months locked in a `$veVELO` with a linear 3 month unlock period.
+
 ## Emissions
 
 The initial supply of `$VELO` is 400M.
