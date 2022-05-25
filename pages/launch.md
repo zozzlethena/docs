@@ -120,19 +120,22 @@ successfully bootstrap and retain a team for its own success.
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "Community: WeVe Holders", 108 ],
-      [ "Community: Cross-Chain DeFi Users", 60 ],
-      [ "Community: Optimism Token Holders", 72 ],
-      [ "Protocols: Optimism Protocols/DAOs", 60 ],
-      [ "Protocols: Grants", 24 ],
+      [ "WEVE Holders", 108 ],
+      [ "Cross-Chain DeFi Users", 60 ],
+      [ "Optimism Active Users", 72 ],
+      [ "Optimism Protocols/DAOs", 60 ],
+      [ "Protocol Grants", 24 ],
       [ "Velodrome Team", 40 ],
       [ "Optimism Team", 20 ],
       [ "Genesis Liquidity Pool", 4 ]
     ]}
     options={{
+      backgroundColor: '#111111',
+      colors: ['#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF', '#FBBF42', '#EDE7DB'],
+      legend: {position: 'bottom', textStyle: {color: 'white'}},
       pieHole: 0.4
     }}
-    width={"100%"}
+    width={"80%"}
     height={"600px"}
   />
 </Bleed>
