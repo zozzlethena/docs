@@ -66,11 +66,8 @@ successfully bootstrap and retain a team for its own success.
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "$WEVE Holders", 108 ],
-      [ "Cross-Chain DeFi Users", 60 ],
-      [ "Optimism Active Users", 72 ],
-      [ "Optimism Protocols/DAOs", 60 ],
-      [ "Protocol Grants", 24 ],
+      [ "Community", 240 ],
+      [ "Partner Protocol/DAOs", 96 ],
       [ "Velodrome Team", 40 ],
       [ "Optimism Team", 20 ],
       [ "Genesis Liquidity Pool", 4 ]
@@ -78,7 +75,7 @@ successfully bootstrap and retain a team for its own success.
     options={{
       title: "$VELO Distribution (M)",
       backgroundColor: '#111111',
-      colors: ['#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF', '#FBBF42', '#EDE7DB'],
+      colors: ['#79F8DB', '#027FFF', '#F1EBE2', '#FF1301', '#871000', '#FBBF42', '#EDE7DB'],
       legend: {textStyle: {color: 'white'}},
       pieHole: 0.4,
       titleTextStyle: { color: 'white' },
@@ -88,14 +85,14 @@ successfully bootstrap and retain a team for its own success.
   />
 </Bleed>
 
-### Community
+### Community (60%), 240M VELO
 
 An airdrop of `$VELO` tokens for the people who have played the biggest role in
 incubating Velodrome and those most likely to contribute to its long term
 success, including:
- * `$WEVE` holders (see above)
- * `$OP` network users 
- * Cross-chain DeFi users:
+ * `$WEVE` holders (27%, 108M `$VELO`)
+ * `$OP` network users (18%, 72M `$VELO`)
+ * Cross-chain DeFi users (15%, 60M `$VELO`):
    * 3500 `$VELO`/wallet &mdash; Curve Protocol wallets with 1450+ days (maximum) lock time
    * 3000 `$VELO`/wallet &mdash; Convex Protocol all `$vlCVX` lockers since new lock contract deployment
    * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1 and 3 month periods
@@ -103,7 +100,7 @@ success, including:
    * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in launch dutch auction who held their `$BTRFLY`
    * 500 `$VELO`/wallet &mdash; Eminence Finance affected wallets
 
-### Protocols
+### Protocols (18%), 72M veVELO
 
 We will consider a variety of metrics in assessing the available protocols,
 including TVL, transaction volume, unique wallets, and just Optimism team input.
@@ -115,13 +112,13 @@ The airdropped amount as `$veVELO` will give just enough power to familiarize
 the protocols with the ecosystem and get a head start, but it will leave space
 for value to accrue from acquiring `$VELO` for long term liquidity provision.
 
-### Grants
+### Grants (6%), 24M veVELO
 
 We reserved a certain amount of `$veVELO` to distribute to partner protocols
 after the launch. This will be used to engage partners in the ecosystem through
 grants.
 
-### Team
+### Team (10%), 40M VELO & veVELO
 
 The team will receive an initial allocation that it will use to vote
 to drive emissions to key protocol pairs such as `$VELO-$USDC` and to support
@@ -145,6 +142,19 @@ The team vesting compensation breakdown:
  * All ongoing payments made to the team members in `$VELO` will vest for 6
    months, 3 months locked in a `$veVELO` with a linear 3 month unlock period.
 
+### Optimism Team (5%), 20M veVELO
+
+The Optimism Team has a vested interest in ensuring that Velodrome achieves its 
+mission of serving as an ecosystem public good. The team will receive 5% of the initial 
+distribution, airdropped as a locked veNFT, to support that interest.
+
+### Genesis Liquidity Pools (1%), 4M VELO
+Genesis Pools will distribute `$VELO` to liquidity providers of foundational token pairs to 
+provide a better liquidity and user experience from launch day. Genesis emissions will begin 
+a few days before the first epoch votes are counted and LP emissions start. 
+
+Genesis pairs will include `$VELO`, `$OP`, `$USDC`, and `$ETH`.
+
 ## Emissions
 
 The initial supply of `$VELO` is 400M.
@@ -167,7 +177,7 @@ The weekly rebase amount is calculated with the following formula:
   <Chart
     chartType="LineChart"
     data={[
-      ["Weeks", "LP Emissions", "veRebase", "Supply"],
+      ["Weeks", "LP Emissions", "veRebase (@50% locking rate)", "Total Supply"],
       ["1", 15, 0, 400],
       ["50", 12, 2, 1000],
       ["100", 10, 1.5, 1500],
@@ -175,7 +185,7 @@ The weekly rebase amount is calculated with the following formula:
       ["200", 2, 0.5, 2000]
     ]}
     options={{
-      title: "Emissions est. (M)",
+      title: "$VELO Emissions (M)",
       curveType: 'function',
       aggregationTarget: 'series',
       selectionMode: 'multiple',
@@ -187,9 +197,11 @@ The weekly rebase amount is calculated with the following formula:
       },
       vAxes: {
         1: { title: "Total Supply", titleTextStyle: { color: 'white' }},
-        0: { title: "$VELO Distributed", titleTextStyle: { color: 'white' }},
+        0: { title: "Epoch Distribution", titleTextStyle: { color: 'white' }},
+      hAxis: {title: "Week", titleTextStyle: { color: 'white' }},
       },
       backgroundColor: '#111111',
+      lineWidth: 5,
       colors: ['#79F8DB', '#2180DF', '#EA1000', '#59BFD8', '#0281FF'],
       legend: {textStyle: {color: 'white'}},
       titleTextStyle: { color: 'white' },
@@ -251,6 +263,7 @@ voting and rewards claim timeline.
     ]}
     options={{
       title: "Bribing, Voting and Rewards Timeline",
+      legend: { position: 'top'},
       colors: [
         '#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF',
         '#FBBF42', '#EDE7DB'
@@ -266,7 +279,7 @@ While Velodrome supports permissionless liquidity pool and gauge creation, these
 only include _whitelisted_ tokens. The protocol will launch with an extensive list of
 pre-whitelisted tokens including those from partner protocols.
 
-Any `$veVELO` holder with >0.1% of `$veVELO` supply can request additional tokens by 
+Any `$veVELO` holder with 0.1% or more `$veVELO` supply can request additional tokens by 
 creating a _whitelist_ gauge, for which `$veVELO` voters will vote to approve or reject 
 the proposed request.
 
