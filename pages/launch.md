@@ -132,7 +132,7 @@ successfully bootstrap and retain a team for its own success.
     options={{
       backgroundColor: '#111111',
       colors: ['#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF', '#FBBF42', '#EDE7DB'],
-      legend: {position: 'bottom', textStyle: {color: 'white'}},
+      legend: {textStyle: {color: 'white'}},
       pieHole: 0.4
     }}
     width={"80%"}
