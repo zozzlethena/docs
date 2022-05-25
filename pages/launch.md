@@ -14,11 +14,10 @@ Velodrome is launching on Monday, May 30th!
 
 <Callout emoji="⚠️">
   As with any launch, we'd like to warn our users about potential limitations
-  with the first releases. At launch, the Velodrome dApp will render best in **desktop environments**. 
+  with the first release. At launch, the Velodrome dApp will render best in **desktop environments**. 
   We anticipate having a mobile-optimized version of the dApp in future updates.
   Other functionality might not be fully
-  optimized (e.g., error messages which are not easy
-  to understand).
+  optimized (e.g., error messages).
 
   If at any point you require assistance, please join our
   [Discord](https://discord.gg/bqzYruhX), where someone from the community will
