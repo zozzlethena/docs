@@ -9,30 +9,79 @@ import Callout from 'nextra-theme-docs/callout'
 
 # About
 
-Velodrome Finance is the trading and liquidity marketplace on [Optimism](https://www.optimism.io/). As an AMM adapted from Solidly, Velodrome is designed to provide deep liquidity, low swapping fees, and very low slippage to token pairs critical for Optimism’s development.
+Velodrome Finance is the trading and liquidity marketplace on
+[Optimism](https://www.optimism.io/).
 
-Velodrome Finance features include:
+<Callout emoji="⚠️">
+  Before using Velodrome Finance, you are required to read and agree to our
+  [legal disclaimer](/legal).
+</Callout>
+
+As an AMM (automated market maker) adapted from Solidly, Velodrome Finance
+comes with standard features popularized by Uniswap, and some novel ones,
+critical to Optimism's ecosystem development:
  * a trading fee of only 0.02%
  * near zero slippage on uncorrelated or tightly correlated digital
    assets
  * route trades through stable and volatile asset pairs
  * no-upkeep, flashloan-proof, 30 minute time-weighted average price
    (TWAP) with direct quoting support
- 
-<Callout emoji="⚠️">
-  Before using Velodrome Finance, you are required to read and agree to our
-  [legal disclaimer](/legal).
-</Callout>
 
-## ve(3,3) Tokenomics
+## How is this different from other protocols?
 
-Velodrome's native token is `$VELO`. Liquidity providers receive `$VELO` emissions distributed weekly. Holders of `$VELO` can vote-escrow their tokens in exchange for `$veVELO`. `$veVELO` represents voting power to direct emissions to the holder's preferred liquidity pools. In return for their participation, `$veVELO` voters receive the fees and bribes collected through the pools they vote for, as well as a `$veVELO` rebase reducing dilution.  
+Velodrome Finance as a product, is inspired and built upon the good parts of
+the protocols like [Solidly](https://github.com/solidlyexchange),
+[Curve](https://curve.fi/rootfaq), [Votium](https://votium.app).
 
-See additional details in Tokenomics.
+Where possible, the team used available open-sourced work, for which we are
+grateful and lucky to be _standing on the shoulders of such giants_.
 
-## Bribes!
+You can learn in depth about all the protocol aspects in the
+[Tokenomics](/tokenomics) section, here are some noteworthy ones.
 
-Velodrome has a built-in bribe function that allows anyone to incentivize voting for their preferred token pair by directing incentive payments to any available pool, which then becomes a voting reward. Bribes are released on a weekly basis for votes cast during that week. They are distributed proportionally to voters.
+### ve(3,3) Tokenomics
+
+The protocol has a native token (`$VELO`) with weekly emissions distributed to
+liquidity providers. The native token can be locked in exchange for a
+vote-escrow NFT token (`$veVELO`). The voting power obtained from locking can
+further be used to vote where the weekly emissions are distributed, in exchange
+for trading fees and external rewards (also known as
+bribes) from voted liquidity pools, and an amount of _rebase_ in more locked
+tokens (to avoid dilution).
+
+### NFT Governance
+
+By using an NFT (non fungible token) to store the locked tokens, the
+protocol allows the voting power to be traded on the open market or to be used
+as collateral. This opens up new benefits for our long-term lockers.
+
+### Bribes!
+
+The protocol allows anyone to incentivize voting for a preferred liquidity pool
+by offering rewards. These rewards are deposited on a weekly basis and are
+distributed to the liquidity pool voters proportionally to the voting
+power they cast after the voting round finished.
+
+## Who is behind this project?
+
+The team behind Velodrome Finance previously launched
+[VeDAO](https://twitter.com/_vedao_), an initiative incubated by [IT
+DAO](https://informationtoken.io). veDAO founding mandate was to engage with
+the Solidly ecosystem, a protocol launched on the Fantom network by Andre
+Cronje and his team, while driving long-term value to the VeDAO community.
+
+The VeDAO team has since developed deep subject matter expertise on both
+Solidly and `ve(3,3)` mechanisms, becoming the go-to resource for protocols and
+chains seeking support around these topics.
+
+By the numbers, VeDAO, managed to attract $2.6B in TVL in the early days,
+securing ~10% of the Solidly voting power and ~$1.1M USDC in its treasury
+assets.
+
+## What is our mission?
+
+Our mission is to make Velodrome Finance a public good and the liquidity base
+layer of the Optimism ecosystem.
 
 ## Resources
 
@@ -40,39 +89,3 @@ Velodrome has a built-in bribe function that allows anyone to incentivize voting
 * Twitter: https://twitter.com/VelodromeFi
 * Medium: https://medium.com/@VelodromeFi
 * Discord: https://discord.gg/bqzYruhX
-
-## Who is behind this project?
-
-The team behind Velodrome Finance previously launched
-[VeDAO](https://twitter.com/_vedao_), an initiative from [IT
-DAO](https://informationtoken.io), with the mission to support the Solidly
-ecosystem, a protocol launched on Fantom by Andre Cronje and his team, while
-driving long-term value to the VeDAO community.
-
-The VeDAO team has since developed deep subject matter expertise on both
-Solidly and `ve(3,3)` mechanisms, becoming the go-to resource for protocols and
-chains seeking support around these topics.
-
-By the numbers, VeDAO, managed to attract $2.6B in TVL in the early days, securing
-~10% of the Solidly voting power and ~$1.1M USDC in its treasury.
-
-## What is our mission?
-
-Our mission is to make Velodrome Finance a public good and the liquidity base
-layer of the Optimism ecosystem.
-
-## How is this different from other protocols?
-
-Velodrome Finance as a product, is inspired and built upon the good parts of
-the protocols like [Solidly](https://github.com/solidlyexchange),
-[Curve](https://curve.fi/rootfaq), [Convex](https://www.convexfinance.com),
-[Votium](https://votium.app) and [Llama
-Airforce Union](https://llama.airforce/#/union/member).
-
-This includes `ve(3,3)` mechanics, NFT governance
-locking, protocol fees and external voting rewards (popularized as _bribes_)
-for liquidity provider incentives, and finally, a passive staking service
-(popularized as _Convex_ layer) for a more liquid way to maximize holder returns.
-
-Where possible, the team used available open-sourced work, for which we are
-grateful and lucky to be _standing on the shoulders of such giants_.

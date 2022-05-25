@@ -18,8 +18,8 @@ Velodrome Finance uses two tokens to manage its utility and governance:
 `$VELO` is used for rewarding liquidity providers through emissions.
 
 `$veVELO` is used for governance. Any `$VELO` holder can vote-escrow their tokens and
-receive a `$veVELO` veNFT in exchange.  Additional tokens can be added to the
-`$veVELO` NFT at any time.
+receive a `$veVELO` (also known as veNFT) in exchange. Additional tokens can be
+added to the `$veVELO` NFT at any time.
 
 The lock period (also known as vote-escrowed, hence the _ve_ prefix) can be up
 to 4 years, following the linear relationship shown below:
@@ -43,14 +43,14 @@ Below we will be going through all the components of the mechanism in order to
 explain how it helps the incentives flow to the most valuable for the ecosystem
 liquidity pools.
 
-
 ## Initial Distribution
 
 Upon launch we will kick off with an airdrop of `$VELO` and `$veVELO` for
 users and protocols we believe are most likely to contribute our
 mission to become the liquidity base layer of the Optimism ecosystem.
 
-Check to see if you qualify for the airdrop [HERE](https://www.velodrome.finance)
+To see if you qualify for the airdrop will be possible on
+https://velodrome.finance
 
 The distribution will be meaningful but will also leave enough room for new
 players to join and capture a voting share through emissions and/or
@@ -59,14 +59,14 @@ token acquisition.
 This should also ensure that Velodrome Finance as a protocol is able to
 successfully bootstrap and retain a team for its own success.
 
-### Distribution (VELO, millions)
+### Distribution
 
 <Bleed>
   <Chart
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "WEVE Holders", 108 ],
+      [ "$WEVE Holders", 108 ],
       [ "Cross-Chain DeFi Users", 60 ],
       [ "Optimism Active Users", 72 ],
       [ "Optimism Protocols/DAOs", 60 ],
@@ -76,12 +76,14 @@ successfully bootstrap and retain a team for its own success.
       [ "Genesis Liquidity Pool", 4 ]
     ]}
     options={{
+      title: "$VELO Distribution (M)",
       backgroundColor: '#111111',
       colors: ['#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF', '#FBBF42', '#EDE7DB'],
       legend: {textStyle: {color: 'white'}},
-      pieHole: 0.4
+      pieHole: 0.4,
+      titleTextStyle: { color: 'white' },
     }}
-    width={"80%"}
+    width={"100%"}
     height={"600px"}
   />
 </Bleed>
@@ -150,7 +152,8 @@ The weekly rebase amount is calculated with the following formula:
 
 `$veVELO` supply does not affect weekly LP emissions.
 
-### Emission Schedule (VELO, millions)
+### Emission Schedule
+
 <Bleed>
   <Chart
     chartType="LineChart"
@@ -163,23 +166,26 @@ The weekly rebase amount is calculated with the following formula:
       ["200", 2, 0.5, 2000]
     ]}
     options={{
-        curveType: 'function',
-        backgroundColor: '#111111',
-        colors: ['#79F8DB', '#2180DF', '#EA1000', '#59BFD8', '#0281FF'],
-        aggregationTarget: 'series',
-        selectionMode: 'multiple',
-        legend: { position: "top", textStyle: {color: 'white'}},
-        series: {
-          0: { targetAxisIndex: 0 },
-          1: { targetAxisIndex: 0 },
-          2: { targetAxisIndex: 1 },
-        },
-        vAxes: {
-          1: { title: "Total Supply" },
-          0: { title: "$VELO Distributed" },
-        },
+      title: "Emissions est. (M)",
+      curveType: 'function',
+      aggregationTarget: 'series',
+      selectionMode: 'multiple',
+      legend: { position: "top", textStyle: {color: 'white'}},
+      series: {
+        0: { targetAxisIndex: 0 },
+        1: { targetAxisIndex: 0 },
+        2: { targetAxisIndex: 1 },
+      },
+      vAxes: {
+        1: { title: "Total Supply", titleTextStyle: { color: 'white' }},
+        0: { title: "$VELO Distributed", titleTextStyle: { color: 'white' }},
+      },
+      backgroundColor: '#111111',
+      colors: ['#79F8DB', '#2180DF', '#EA1000', '#59BFD8', '#0281FF'],
+      legend: {textStyle: {color: 'white'}},
+      titleTextStyle: { color: 'white' },
     }}
-    width={"80%"}
+    width={"100%"}
     height={"600px"}
   />
 </Bleed>
@@ -204,6 +210,10 @@ done. Bribes can be collected 24–48 hours after votes are cast (snapshot is ta
 
 Rewards not collected will accrue to future epochs. Below is an example of bribes, 
 voting and rewards claim timeline.
+ * Bribes are deposited from Saturday &mdash; Thursday
+ * Votes are collected on Friday
+ * A Snapshot is taken at the end of Friday (11:59 UTC)
+ * Rewards claim is available
 
 <Bleed>
   <Chart
@@ -215,20 +225,29 @@ voting and rewards claim timeline.
         { type: "date", id: "Start" },
         { type: "date", id: "End" },
       ],
-      ["Round #1", "Bribes", new Date(2022, 6, 1), new Date(2022, 6, 2)],
-      ["Round #1", "Votes", new Date(2022, 6, 2), new Date(2022, 6, 7)],
-      ["Round #1", "Rewards Claim", new Date(2022, 6, 7), new Date(2022, 6, 9)],
-      ["Round #2", "Bribes", new Date(2022, 6, 8), new Date(2022, 6, 9)],
-      ["Round #2", "Votes", new Date(2022, 6, 9), new Date(2022, 6, 14)],
-      ["Round #2", "Rewards Claim", new Date(2022, 6, 14), new Date(2022, 6, 16)],
-      ["Round #3", "Bribes", new Date(2022, 6, 15), new Date(2022, 6, 16)],
-      ["Round #3", "Votes", new Date(2022, 6, 16), new Date(2022, 6, 21)],
-      ["Round #3", "Rewards Claim", new Date(2022, 6, 21), new Date(2022, 6, 23)],
+      ["Round #1", "Bribes", new Date(2022, 5, 4), new Date(2022, 5, 9, 11, 59)],
+      ["Round #1", "Votes", new Date(2022, 5, 9, 12, 0), new Date(2022, 5, 10, 11, 59)],
+      ["Round #1", "Snapshot", new Date(2022, 5, 10, 11, 59), new Date(2022, 5, 11)],
+      ["Round #1", "Rewards Distributed", new Date(2022, 5, 11), new Date(2022, 5, 12)],
+
+      ["Round #2", "Bribes", new Date(2022, 5, 11), new Date(2022, 5, 16, 11, 59)],
+      ["Round #2", "Votes", new Date(2022, 5, 16, 12, 0), new Date(2022, 5, 17, 11, 59)],
+      ["Round #2", "Snapshot", new Date(2022, 5, 17, 11, 59), new Date(2022, 5, 18)],
+      ["Round #2", "Rewards Distributed", new Date(2022, 5, 18), new Date(2022, 5, 19)],
+
+      ["Round #3", "Bribes", new Date(2022, 5, 17), new Date(2022, 5, 23, 11, 59)],
+      ["Round #3", "Votes", new Date(2022, 5, 23, 12, 0), new Date(2022, 5, 24, 11, 59)],
+      ["Round #3", "Snapshot", new Date(2022, 5, 24, 11, 59), new Date(2022, 5, 25)],
+      ["Round #3", "Rewards Distributed", new Date(2022, 5, 25), new Date(2022, 5, 26)],
     ]}
     options={{
-        title: "Bribing, Voting and Rewards Timeline",
+      title: "Bribing, Voting and Rewards Timeline",
+      colors: [
+        '#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF',
+        '#FBBF42', '#EDE7DB'
+      ],
     }}
-    width={"80%"}
+    width={"100%"}
   />
 </Bleed>
 
