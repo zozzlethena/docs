@@ -14,9 +14,11 @@ Velodrome is launching on Monday, May 30th!
 
 <Callout emoji="⚠️">
   As with any launch, we'd like to warn our users about potential limitations
-  with the first releases. Some functionality might not be fully
-  optimized or polished (e.g., mobile support, error messages which are not easy
-  to understand, etc.).
+  with the first releases. At launch, the Velodrome dApp will render best in **desktop environments**. 
+  We anticipate having a mobile-optimized version of the dApp in future updates.
+  Other functionality might not be fully
+  optimized (e.g., error messages which are not easy
+  to understand).
 
   If at any point you require assistance, please join our
   [Discord](https://discord.gg/bqzYruhX), where someone from the community will
@@ -38,37 +40,36 @@ _Optimism_. You can use the _Connect Wallet_ button to automatically configure
 your default wallet to use Optimism. Use the _arrow down_ to expand for more
 configuration options.
 
+<Callout emoji="⚠️">
+  Alpha Alert: Be sure to learn about the [Optimism Collective](https://app.optimism.io/governance) and see if you qualify for an OP token airdrop!
+</Callout>
+
 ## Bridging
 
-To use Velodrome Finance (or any other service) on Optimism network,
-you will need some `$ETH` (used also to pay transaction/gas fees) at least. The
-process of moving or depositing assets from one network to another is called
-_bridging_.
+New Optimism users who want to participate in Velodrome should make sure they have `$ETH` on Optimism for gas fees. Bridging to Optimism is possible here: https://app.optimism.io/bridge
 
-<Callout emoji="⚠️">
+If you're bridging from a network other than Mainnet, we recommend the following services:
+* https://stargate.finance/transfer &mdash; a multi-network bridge for stable
+   coins
+* https://www.bungee.exchange &mdash; an aggregator that shows the best
+   available bridging options. Use their _Refuel_ service to deposit smaller
+   amounts in case you run out of `$ETH` to pay fees.
+ * https://www.optimism.io/apps/bridges &mdash; for a full list of Optimism
+   network bridging services.
+
+Here's a walkthrough on how to use the Optimism Bridge on mobile:
+
+<Bleed>
+  <iframe width="80%" height="800"
+  src="https://www.youtube.com/embed/pR31stuRejg?rel=0"
+  frameborder="0" allowfullscreen></iframe>
+</Bleed>
+ 
+ <Callout emoji="⚠️">
   Some bridging services can take up to 20-30 minutes to complete a transfer of
   the assets.
 </Callout>
 
-Optimism team has prepared a dedicated page where you can use their own service
-and alternative services to achieve that at https://app.optimism.io/bridge
-
-Here's a walkthrough on how to use the Optimism Bribe on mobile:
-
-<Bleed>
-  <iframe width="100%" height="800"
-  src="https://www.youtube.com/embed/pR31stuRejg?rel=0"
-  frameborder="0" allowfullscreen></iframe>
-</Bleed>
-
-Fantom network users will have to look at one of the following services though:
- * https://www.bungee.exchange &mdash; an aggregator that shows the best
-   available bridging options. Use their _Refuel_ service to deposit smaller
-   amounts in case you run out of `$ETH` to pay fees.
- * https://stargate.finance/transfer &mdash; a multi-network bridge for stable
-   coins
- * https://www.optimism.io/apps/bridges &mdash; for a full list of Optimism
-   network bridging services.
 
 ## A message to the veDAO community
 
@@ -96,11 +97,14 @@ experience.
 
 The `$WEVE` bridging service is available at https://weve.velodrome.finance
 
-## Initial Distribution
 
-Upon launch we will kick off with a distribution of `$VELO` and `$veVELO` for
+## How to get VELO
+
+Upon launch we will kick off with an airdrop of `$VELO` and `$veVELO` for
 users and protocols we believe are most likely to contribute our
 mission to become the liquidity base layer of the Optimism ecosystem.
+
+Check to see if you qualify for the airdrop [HERE](https://www.velodrome.finance)
 
 The distribution will be meaningful but will also leave enough room for new
 players to join and capture a voting share through emissions and/or
@@ -109,22 +113,23 @@ token acquisition.
 This should also ensure that Velodrome Finance as a protocol is able to
 successfully bootstrap and retain a team for its own success.
 
+### Initial Distribution (M VELO)
+
 <Bleed>
   <Chart
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "Community: WeVe Holders", 108000000 ],
-      [ "Community: Cross-Chain DeFi Users", 60000000 ],
-      [ "Community: Optimism Token Holders", 72000000 ],
-      [ "Protocols: Optimism Protocols/DAOs", 60000000 ],
-      [ "Protocols: Grants", 24000000 ],
-      [ "Velodrome Team", 40000000 ],
-      [ "Optimism Team", 20000000 ],
-      [ "Genesis Liquidity Pool", 4000000 ]
+      [ "Community: WeVe Holders", 108 ],
+      [ "Community: Cross-Chain DeFi Users", 60 ],
+      [ "Community: Optimism Token Holders", 72 ],
+      [ "Protocols: Optimism Protocols/DAOs", 60 ],
+      [ "Protocols: Grants", 24 ],
+      [ "Velodrome Team", 40 ],
+      [ "Optimism Team", 20 ],
+      [ "Genesis Liquidity Pool", 4 ]
     ]}
     options={{
-      title: "Distribution Summary",
       pieHole: 0.4
     }}
     width={"100%"}
@@ -137,14 +142,14 @@ successfully bootstrap and retain a team for its own success.
 An airdrop of `$VELO` tokens for the people who have played the biggest role in
 incubating Velodrome and those most likely to contribute to its long term
 success, including:
- * `$WEVE` holders can burn their tokens (see the separate section on this)
- * `$OP` token holders can claim their airdrop on our website
- * Cross-chain DeFi users with can claim their airdrop on our website:
+ * `$WEVE` holders (see above)
+ * `$OP` network users 
+ * Cross-chain DeFi users:
    * 3500 `$VELO`/wallet &mdash; Curve Protocol wallets with 1450+ days (maximum) lock time
-   * 3000 `$VELO`/wallet &mdash; Convex Protocol `$CVX` lockers since the new contract deployment
-   * 3000 `$VELO`/wallet &mdash; Treasure DAO genesis `$MAGIC` stakers for 1 and 3 month periods
+   * 3000 `$VELO`/wallet &mdash; Convex Protocol all `$vlCVX` lockers since new lock contract deployment
+   * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1 and 3 month periods
    * 2000 `$VELO`/wallet &mdash; Platypus Protocol `$vePTP` stakers
-   * 500 `$VELO`/wallet &mdash; Redacted Cartel genesis bonders
+   * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in launch dutch auction who held their `$BTRFLY`
    * 500 `$VELO`/wallet &mdash; Eminence Finance affected wallets
 
 ### Protocols
@@ -171,7 +176,7 @@ The team will receive an initial allocation that it will use to vote
 to drive emissions to key protocol pairs such as `$VELO-$USDC` and to support
 ongoing protocol development.
 
-The team currently plans to vest 25% of its initial allocation in the form of a
+The team will vest 25% of its initial allocation in the form of a
 `$veVELO` and use it to vote for `$VELO` pairs in perpetuity.
 
 While a fully autonomous and immutable protocol is an admirable objective, it
