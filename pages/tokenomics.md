@@ -177,7 +177,7 @@ The weekly rebase amount is calculated with the following formula:
   <Chart
     chartType="LineChart"
     data={[
-      ["Weeks", "LP Emissions", "veRebase (@50% vesting rate)", "Total Supply"],
+      ["Week", "LP Emissions", "veRebase (@50% locking rate)", "Total Supply"],
       ["1", 15, 0, 400],
       ["50", 12, 2, 1000],
       ["100", 10, 1.5, 1500],
@@ -197,8 +197,10 @@ The weekly rebase amount is calculated with the following formula:
       },
       vAxes: {
         1: { title: "Total Supply", titleTextStyle: { color: 'white' }},
-        0: { title: "Epoch Distribution", titleTextStyle: { color: 'white' }},
-      hAxis: {title: "Week", titleTextStyle: { color: 'white' }},
+        0: { title: "Epoch Distribution", titleTextStyle: { color: 'white' }}
+      },
+      hAxis: {
+        title: "Week", titleTextStyle: { color: 'white' },
       },
       backgroundColor: '#111111',
       lineWidth: 3,

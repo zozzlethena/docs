@@ -63,5 +63,5 @@ between the stable and volatile formulas, where:
 The new stable pool curve quoting is also available:
 
 <Bleed>
-  <iframe src="https://www.desmos.com/calculator/fih9bpvmzq?embed" width="100%" height="700"></iframe>
+  <iframe src="https://www.desmos.com/calculator/zxenvez1df?embed" width="100%" height="700"></iframe>
 </Bleed>
