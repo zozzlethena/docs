@@ -29,38 +29,37 @@ critical to Optimism's ecosystem development:
 
 ## How is this different from other protocols?
 
-Velodrome Finance as a product, is inspired and built upon the good parts of
-the protocols like [Solidly](https://github.com/solidlyexchange),
+Velodrome Finance is inspired by and incorporates elements of
+the protocols such as [Solidly](https://github.com/solidlyexchange),
 [Curve](https://curve.fi/rootfaq), [Votium](https://votium.app).
 
 Where possible, the team used available open-sourced work, for which we are
 grateful and lucky to be _standing on the shoulders of such giants_.
 
 You can learn in depth about all the protocol aspects in the
-[Tokenomics](/tokenomics) section, here are some noteworthy ones.
+[Tokenomics](/tokenomics) section.
 
 ### ve(3,3) Tokenomics
 
 The protocol has a native token (`$VELO`) with weekly emissions distributed to
 liquidity providers. The native token can be locked in exchange for a
-vote-escrow NFT token (`$veVELO`). The voting power obtained from locking can
-further be used to vote where the weekly emissions are distributed, in exchange
-for trading fees and external rewards (also known as
-bribes) from voted liquidity pools, and an amount of _rebase_ in more locked
-tokens (to avoid dilution).
+vote-escrow NFT token (`$veVELO`). Holders of `$veVELO` have voting power 
+over what liquidity pools receive the weekly emissions. Voters receive the 
+trading fees and external rewards (also known as _bribes_) collected from the
+liquidity pools they vote for, as well as an anti-dilutive `$veVELO` _rebase_.
 
 ### NFT Governance
 
 By using an NFT (non fungible token) to store the locked tokens, the
-protocol allows the voting power to be traded on the open market or to be used
-as collateral. This opens up new benefits for our long-term lockers.
+protocol allows the voting power to be traded on the open market. 
+This opens up benefits for our long-term lockers.
 
 ### Bribes!
 
 The protocol allows anyone to incentivize voting for a preferred liquidity pool
 by offering rewards. These rewards are deposited on a weekly basis and are
-distributed to the liquidity pool voters proportionally to the voting
-power they cast after the voting round finished.
+distributed to the voters proportionally to the voting power allocted to the
+pool receiving the bribes. 
 
 ## Who is behind this project?
 
@@ -80,8 +79,8 @@ assets.
 
 ## What is our mission?
 
-Our mission is to make Velodrome Finance a public good and the liquidity base
-layer of the Optimism ecosystem.
+Our mission is to make Velodrome Finance the liquidity base layer of the 
+Optimism ecosystem.
 
 ## Resources
 
