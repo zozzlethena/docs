@@ -115,71 +115,8 @@ The `$WEVE` bridging service is available at https://weve.velodrome.finance
 
 ### Initial Distribution
 
-The initial distribution breakdown is available in the [Initial Distribution
-section of the Tokenomics](/tokenomics#initial-distribution).
+Velodrome will launch with initial distribution of 400M VELO airdropped to
+DeFi community members,protocols, and DAOs likely to play an active role in the Optimism 
+ecosystem. Details of the initial distribution and token emissinos are available in the 
+[Initial Distribution section of the Tokenomics](/tokenomics#initial-distribution).
 
-Below you can find all the details and on which premises the distribution
-occurred.
-
-### Community
-
-An airdrop of `$VELO` tokens for the people who have played the biggest role in
-incubating Velodrome and those most likely to contribute to its long term
-success, including:
- * `$WEVE` holders (see above)
- * `$OP` network users
- * Cross-chain DeFi users:
-   * 3500 `$VELO`/wallet &mdash; Curve Protocol wallets with 1450+ days
-     (maximum) lock time
-   * 3000 `$VELO`/wallet &mdash; Convex Protocol all `$vlCVX` lockers since new
-     lock contract deployment
-   * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for
-     1 and 3 month periods
-   * 2000 `$VELO`/wallet &mdash; Platypus Protocol `$vePTP` stakers
-   * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in launch dutch
-     auction who held their `$BTRFLY`
-   * 500 `$VELO`/wallet &mdash; Eminence Finance affected wallets
-
-### Protocols
-
-We will consider a variety of metrics in assessing the available protocols,
-including TVL, transaction volume, unique wallets, and just Optimism team input.
-
-The airdrop is aimed at attracting and engaging 10-15 protocols most
-likely to contribute to Velodrome and Optimism's long term success.
-
-The airdropped amount as `$veVELO` will give just enough power to familiarize
-the protocols with the ecosystem and get a head start, but it will leave space
-for value to accrue from acquiring `$VELO` for long term liquidity provision.
-
-### Grants
-
-We reserved a certain amount of `$veVELO` to distribute to partner protocols
-after the launch. This will be used to engage partners in the ecosystem through
-grants.
-
-### Team
-
-The team will receive an initial allocation that it will use to vote
-to drive emissions to key protocol pairs such as `$VELO-$USDC` and to support
-ongoing protocol development.
-
-The team will vest 25% of its initial allocation in the form of a
-`$veVELO` and use it to vote for `$VELO` pairs in perpetuity.
-
-While a fully autonomous and immutable protocol is an admirable objective, it
-comes at a cost. Velodrome Finance will ensure its long-term sustainability by
-employing a dedicated team focused on supporting the product, documentation,
-community, and ecosystem. As the protocol evolves, the Velodrome team will
-consider introducing more immutability or DAO components where appropriate.
-
-Upcoming allocations are considered for:
- * The team to support a product roadmap beyond base-layer AMM
- * Key functions such as marketing, product support, and community management
- * Ability to govern key protocol parameters to drive optimal performance and
-   liquidity to core protocol pairs (e.g., `$VELO-$USDC`).
-
-### Genesis Pool
-
-A genesis liquidity pool will be established to emit VELO to a few key pairs
-(i.e., `$VELO-$USDC`) in the five day period before the epoch 1 votes begin.
