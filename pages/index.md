@@ -43,29 +43,29 @@ You can learn in depth about all the protocol aspects in the
 
 The protocol has a native token (`$VELO`) with weekly emissions distributed to
 liquidity providers. The native token can be locked in exchange for a
-vote-escrow NFT token (`$veVELO`). Holders of `$veVELO` have voting power 
-over what liquidity pools receive the weekly emissions. Voters receive the 
+vote-escrow (`$veVELO`) NFT (non fungible token). Holders of `$veVELO` have voting power
+over what liquidity pools receive the weekly emissions. Voters receive the
 trading fees and external rewards (also known as _bribes_) collected from the
 liquidity pools they vote for, as well as an anti-dilutive `$veVELO` _rebase_.
 
 ### NFT Governance
 
-By using an NFT (non fungible token) to store the locked tokens, the
-protocol allows the voting power to be traded on the open market. 
+By using an NFT to certify ownership of the locked tokens, the
+protocol allows voting power to be traded on the open market.
 This opens up benefits for our long-term lockers.
 
 ### Bribes!
 
 The protocol allows anyone to incentivize voting for a preferred liquidity pool
 by offering rewards. These rewards are deposited on a weekly basis and are
-distributed to the voters proportionally to the voting power allocted to the
-pool receiving the bribes. 
+distributed to the voters proportionally to the voting power allocated to the
+pool receiving the bribes.
 
 ## Who is behind this project?
 
 The team behind Velodrome Finance previously launched
 [VeDAO](https://twitter.com/_vedao_), an initiative incubated by [IT
-DAO](https://informationtoken.io). veDAO founding mandate was to engage with
+DAO](https://informationtoken.io). veDAO's founding mandate was to engage with
 the Solidly ecosystem, a protocol launched on the Fantom network by Andre
 Cronje and his team, while driving long-term value to the VeDAO community.
 
@@ -73,13 +73,12 @@ The VeDAO team has since developed deep subject matter expertise on both
 Solidly and `ve(3,3)` mechanisms, becoming the go-to resource for protocols and
 chains seeking support around these topics.
 
-By the numbers, VeDAO, managed to attract $2.6B in TVL in the early days,
-securing ~10% of the Solidly voting power and ~$1.1M USDC in its treasury
-assets.
+By the numbers, VeDAO, managed to attract $2.6B in TVL (total value locked) in the early days,
+securing ~10% of Solidly voting power and ~$1.1M USDC in treasury assets.
 
 ## What is our mission?
 
-Our mission is to make Velodrome Finance the liquidity base layer of the 
+Our mission is to make Velodrome Finance the liquidity base layer of the
 Optimism ecosystem.
 
 ## Resources

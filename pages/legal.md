@@ -9,7 +9,7 @@ import Bleed from 'nextra-theme-docs/bleed'
 # Legal Disclaimer
 
 Please read this disclaimer carefully before using https://velodrome.finance
-and/or any of its sub-domains (hereinafter, referred to as the "Website").
+and/or any of its sub-domains (hereinafter referred to as the "Website").
 
 By using the Website, you confirm that you accept this legal disclaimer and
 agree to comply with it. If you do not agree, you must not use the Website.
@@ -28,13 +28,13 @@ up-to-date.
 
 ## Usage risks
 
-The Website will not be responsible for any losses, damages or claims arising
+The Website will not be responsible for any losses, damages, or claims arising
 from events falling within the scope of events like, but not limited to:
 mistakes made by the user (e.g., payments sent to wrong addresses), software
 problems of the Website or any related software or service (e.g., malware
 or unsafe cryptographic libraries), technical failures (e.g., hardware wallets
 malfunction), security problems experienced by the user (e.g., unauthorized
-access to wallets), actions or inactions of third parties (eg. bankruptcy of
+access to wallets), actions or inactions of third parties (e.g., bankruptcy of
 service providers, information security attacks on service providers, and fraud
 conducted by third parties).
 
@@ -57,8 +57,8 @@ user transactions.
 ## No warranties
 
 The Website is provided on an "as is" basis without any warranties of any kind
-regarding the website and/or any content, data, materials and/or services
-provided on the website.
+regarding the Website and/or any content, data, materials and/or services
+provided on the Website.
 
 The Website functionality is not guaranteed and could be disabled fully or in
 part without prior notice.

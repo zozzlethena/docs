@@ -11,55 +11,59 @@ import Bleed from 'nextra-theme-docs/bleed'
 The core functionality of Velodrome Finance is to allow users to trade
 digital assets in a secure way, with very low fees and low slippage.
 
-The slippage is the difference between the current market price of an asset and
-the price at which the actual trade/transaction is executed. This difference
-could result in a smaller (higher price paid) or higher (smaller price paid)
-amount of desired tokens returned from a trade.
+Slippage is the difference between the current market price of an asset and the
+price at which the actual trade/transaction is executed. This difference could
+result in a smaller amount (higher price paid) or a higher amount (smaller
+price paid) of desired tokens returned from a trade.
 
-To provide access to best rates on the market we identified two types of assets:
+To provide access to the best rates on the market, we identified two types of
+assets:
  * correlated - for example _stable coins_ (`$USDC`, `$DAI`, etc.)
  * uncorrelated - for example `$LINK` and `$CRV`
 
-Velodrome offers two different liquidity pool types based on token pair needs, _Stable 
-Pools_ and _Votalite Pools_. 
+Velodrome Finance offers two different liquidity pool types based on token pair needs, _Stable
+Pools_ and _Votalite Pools_.
 
-The protocol router evaluates both pool types to determine the most efficient price quotation 
-and trade execution route available. To protect against flash-loan attacks, the router will use 
-30 minutes TWAPs (time-weighted average prices). The router doesn't require _upkeep_ (external maintenance).
+The protocol router evaluates both pool types to determine the most efficient price quotation
+and trade execution route available. To protect against flashloan attacks, the router will use
+30-minute TWAPs (time-weighted average prices). The router doesn't require _upkeep_ (external maintenance).
+
+The _deeper_ the liquidity of a given pool (higher value locked), the smaller the slippage it will offer.
 
 ## Stable Pools
 
-Stable pools are designed to be used for assets which have little to no
-volatility. This means that the formula used for pricing the assets allows
+Stable pools are designed for assets which have little to no
+volatility. This means that the formula used for pricing the assets allows for
 low slippage even on large traded volumes.
 
-> x3y + y3x ≥ k
+> x³y + y³x ≥ k
 
 
 ## Variable Pools
 
-Variable pools are designed to be used for assets with high price volatility.
+Variable pools are designed for assets with high price volatility.
 These pools use a generic AMM formula.
 
 > x × y ≥ k
 
 ## A visual representation of the formulas
 
-The formulas are used to keep the total pool liquidity always the same.
+The mathematical formulas are used to keep the total pool liquidity the same at all times.
 
-Below you can find a visual comparison, where:
+Below, you can find a visual comparison (click on the charts to explore more)
+between the stable and volatile formulas, where:
  * `x` is the amount of first asset in the pool
  * `y` is the amount of second asset in the same pool
  * `k` is a fixed constant
 
 &nbsp;
 
-<iframe src="https://www.desmos.com/calculator/vri2vhdgbv?embed" width="100%" height="700"></iframe>
+<Bleed>
+  <iframe src="https://www.desmos.com/calculator/vm5nkmcqsg?embed" width="100%" height="700"></iframe>
+</Bleed>
 
 The new stable pool curve quoting is also available:
 
-&nbsp;
-
-<iframe src="https://www.desmos.com/calculator/fih9bpvmzq?embed" width="100%" height="700"></iframe>
-
-The _deeper_ the liquidity of a given pool (higher value locked), the smaller the slippage it will offer.
+<Bleed>
+  <iframe src="https://www.desmos.com/calculator/fih9bpvmzq?embed" width="100%" height="700"></iframe>
+</Bleed>
