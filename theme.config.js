@@ -24,7 +24,6 @@ export default {
     <>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta name="description" content="Velodrome Finance: The liquidity base-layer of the Optimism ecosystem." />
-      <meta name="theme-color" content="#ffffff" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:site" content="@VelodromeFi" />
