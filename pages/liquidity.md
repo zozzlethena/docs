@@ -17,20 +17,15 @@ could result in a smaller (higher price paid) or higher (smaller price paid)
 amount of desired tokens returned from a trade.
 
 To provide access to best rates on the market we identified two types of assets:
- * correlated - think of _stable coins_ like `$USDC` and `$DAI`
- * uncorrelated - think of `$LINK` and `$CRV`
+ * correlated - for example _stable coins_ (`$USDC`, `$DAI`, etc.)
+ * uncorrelated - for example `$LINK` and `$CRV`
 
-Based on these two types, we provide two different liquidity pool types. These
-pools use different mathematical formulas and are used by our router for
-price quotations and execution of the actual trades.
+Velodrome offers two different liquidity pool types based on token pair needs, _Stable 
+Pools_ and _Votalite Pools_. 
 
-The _deeper_ the liquidity of the pools (the larger the amount of
-assets is in the liquidity pools), the smaller will be the slippage.
-
-The router was also designed to route through both, stable and volatile pools
-when trading pairs of assets, it does not need _upkeep_ (external maintenance)
-and uses 30 minutes TWAPs (time-weighted average prices) which makes it
-resistant to flash-loan attacks.
+The protocol router evaluates both pool types to determine the most efficient price quotation 
+and trade execution route available. To protect against flash-loan attacks, the router will use 
+30 minutes TWAPs (time-weighted average prices). The router doesn't require _upkeep_ (external maintenance).
 
 ## Stable Pools
 
@@ -66,3 +61,5 @@ The new stable pool curve quoting is also available:
 &nbsp;
 
 <iframe src="https://www.desmos.com/calculator/fih9bpvmzq?embed" width="100%" height="700"></iframe>
+
+The _deeper_ the liquidity of a given pool (higher value locked), the smaller the slippage it will offer.
