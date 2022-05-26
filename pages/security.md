@@ -1,4 +1,5 @@
 import Bleed from 'nextra-theme-docs/bleed'
+import Callout from 'nextra-theme-docs/callout'
 
 <Bleed>
   ![Velodrome Finance Launch](/biker_hero.png)
@@ -8,10 +9,89 @@ import Bleed from 'nextra-theme-docs/bleed'
 
 # Security
 
-TODO: List and describe contracts and deployed addresses.
+As a commitment towards the safety of our users and partners, we want to
+be transparent about the changes and the status of the security audits of our
+smart contracts.
+
+Velodrome Finance was adapted from Solidly, which [codebase was open
+sourced in full](https://github.com/solidlyexchange/) by Andre Cronje and his team in
+March 2022. Since its release in February on Fantom network, no security
+incidents related to Solidly smart contracts were reported.
+
+Velodrome Finance open-source repositories can be found at:
+https://github.com/velodrome-finance
+
+<Callout emoji="⚠️">
+  Before moving forward, we'd like to remind to our users that
+  security audits do not eliminate risks completely and that
+  every user should read and agree to our
+  [legal disclaimer](/legal) before using Velodrome Finance!
+
+  For security reports, please reach out to us on
+  [Discord](https://discord.gg/bqzYruhX), or to the contacts provided on our Github page.
+</Callout>
+
+## Changelog
+
+As of May 2022, we've compiled a changelog of the Velodrome smart contracts.
+
+### Gauges/Bribes/Voting
+
+ *  Staggered epoch for _Gauges_ / _Bribes_ to ensure rewards go to the right users
+ *  Added a Compound-style weighted NFT governance for killing _bad_ gauges. This
+    governance uses block.timestamp instead of block.number because it's on an
+    L2.
+ *  Removed `veNFT` _boost_ for liquidity pool staking
+ *  Gauges can be added for any address for _Commissaire_
+ *  Removed negative voting
+
+### Emissions
+
+ * Updated emissions schedule (see the formula in [Emissions in the
+   Tokenomics](/tokenomics#emissions))
+ * Added core team emissions
+
+### Pairs
+
+ * Added variable fees for stable/volatile pairs
+
+### Distribution
+
+ * Added two _redemption_ contracts for `$WEVE` (veDAO token) to `$VELO` +
+ * `$USDC` which uses LayerZero
+
+### Areas of Concern
+
+As we're not changing any of the core swap logic, the bulk of our security
+concerns relate to the native token emissions, governance, and distribution:
+
+ * `Gauge.sol` and `Bribe.sol`, which introduce new logic related to how
+   external bribes and voting work
+ * `VotingEscrow.sol`, which adds compatibility with _OZ_ / _Compound_-style
+   governance tools like Tally
+ * `RedemptionSender.sol` and `RedemptionReceiver.sol` both use LayerZero for
+   cross-chain messaging
 
 ## Audits
 
-TODO: Explain previous Solidly audits and current Velodrome ones.
+Solidly went through a partial (only the AMM part was sent for audit) security
+audit in January 30, 2022. The audit was done by PeckShield and did reveal 5
+low-severity and 1 informal findings.
 
+The full audit is available for [download from Solidly git
+repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a816-3802-4384-894c-825a4177245a.pdf).
 
+We also ran a full MythX deep scan on Velodrome contracts and found just a
+handful of false-positive, low-severity issues reported.
+
+## Bug Bounty Programs
+
+Velodrome Finance run a [bug bounty contest on 23rd to 30th of May 2022 with
+awards up to $75,000 on Code4rena](https://code4rena.com/contests/2022-05-velodrome-finance-contest).
+The main scope of the contest was to cover all the new changes to the new and
+the original contracts.
+
+This way Velodrome Finance is happy to join efforts with the Solidly bug bounty
+program, which was launched in February 2022 (first on Immunefi.com) and already
+offers rewards up to $200,000 ([on their
+Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
