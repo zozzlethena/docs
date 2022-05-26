@@ -10,7 +10,7 @@ import { Chart } from "react-google-charts";
 
 # Launch Details
 
-Velodrome is launching on Monday, May 30th!
+Velodrome is launching on Monday, May 30th 2022!
 
 <Callout type="warning" emoji="⚠️">
   As with any launch, we'd like to warn our users about the potential limitations
@@ -111,6 +111,8 @@ Fantom network and will send `$USDC` and `$VELO` on the Optimism network.
 The tokens will be sent to the same address, as with any bridging experience.
 
 The `$WEVE` bridging service is available at https://weve.velodrome.finance
+and will be available until the 30th of June. Unclaimed `$USDC` and `$VELO` will
+be transferred back into the treasury.
 
 ### Initial Distribution
 
