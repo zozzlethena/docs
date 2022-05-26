@@ -56,10 +56,8 @@ between the stable and volatile formulas, where:
  * `y` is the amount of second asset in the same pool
  * `k` is a fixed constant
 
-&nbsp;
-
 <Bleed>
-  <iframe src="https://www.desmos.com/calculator/vm5nkmcqsg?embed" width="100%" height="700"></iframe>
+  <iframe src="https://www.desmos.com/calculator/yiwx8ev1oh?embed" width="100%" height="700"></iframe>
 </Bleed>
 
 The new stable pool curve quoting is also available:
