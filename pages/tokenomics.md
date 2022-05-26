@@ -74,7 +74,7 @@ successfully bootstrap and retain a team for its own success.
     options={{
       title: "$VELO Distribution (M)",
       backgroundColor: '#111111',
-      colors: ['#79F8DB', '#027FFF', '#F1EBE2', '#FF1301', '#871000', '#FBBF42', '#EDE7DB'],
+      colors: ['#79F8DB', '#027FFF', '#FDBF40', '#FF1301', '#F1EBE2', '#FBBF42', '#EDE7DB'],
       legend: {textStyle: {color: 'white'}},
       pieHole: 0.4,
       titleTextStyle: { color: 'white' },
@@ -177,7 +177,7 @@ The weekly rebase amount is calculated with the following formula:
   <Chart
     chartType="LineChart"
     data={[
-      ["Weeks", "LP Emissions", "veRebase (@50% locking rate)", "Total Supply"],
+      ["Weeks", "LP Emissions", "veRebase (@50% vesting rate)", "Total Supply"],
       ["1", 15, 0, 400],
       ["50", 12, 2, 1000],
       ["100", 10, 1.5, 1500],
@@ -201,7 +201,7 @@ The weekly rebase amount is calculated with the following formula:
       hAxis: {title: "Week", titleTextStyle: { color: 'white' }},
       },
       backgroundColor: '#111111',
-      lineWidth: 5,
+      lineWidth: 3,
       colors: ['#79F8DB', '#2180DF', '#EA1000', '#59BFD8', '#0281FF'],
       legend: {textStyle: {color: 'white'}},
       titleTextStyle: { color: 'white' },
