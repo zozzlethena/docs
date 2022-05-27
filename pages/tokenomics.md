@@ -150,10 +150,8 @@ distribution, to support that interest.
 ### Genesis Liquidity Pools
 
 Genesis Pools will distribute 4M (1%) `$VELO` to liquidity providers of foundational token pairs to
-provide better liquidity and user experience from launch day. Genesis emissions will begin
-a few days before the first epoch votes are counted and LP emissions start.
-
-Genesis pairs will include `$VELO`, `$OP`, `$USDC`, and `$ETH`.
+provide better liquidity and user experience from launch day. Genesis pool emissions will be first 
+directed to the `$VELO`-`$USDC` pool and will start a few days before the first epoch votes are cast.
 
 ## Emissions
 
