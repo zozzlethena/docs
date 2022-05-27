@@ -10,7 +10,7 @@ import { Chart } from "react-google-charts";
 
 # Launch Details
 
-Velodrome is launching on Monday, May 31th 2022!
+Velodrome is launching on Tuesday, May 31th 2022!
 
 <Callout type="warning" emoji="⚠️">
   As with any launch, we'd like to warn our users about the potential limitations
