@@ -22,7 +22,7 @@ Velodrome is launching on Tuesday, May 31th 2022!
   messages).
 
   If at any point you require assistance, please join our
-  [Discord](https://discord.gg/bqzYruhX), where our community and we will be
+  [Discord](https://discord.gg/eGgYPGczaf), where our community and we will be
   happy to help you!
 
   Thank you in advance for your patience as we work to deliver a flawless and
