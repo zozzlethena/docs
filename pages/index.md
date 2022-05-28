@@ -18,7 +18,7 @@ Velodrome Finance is the trading and liquidity marketplace on
 </Callout>
 
 As an AMM (automated market maker) adapted from Solidly, Velodrome Finance
-comes with standard features popularized by Uniswap, and some novel ones,
+comes with standard features popularized by _Uniswap v2_, and some novel ones,
 critical to Optimism's ecosystem development:
  * a trading fee of only 0.02%
  * near zero slippage on uncorrelated or tightly correlated digital
