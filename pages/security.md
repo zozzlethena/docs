@@ -28,7 +28,7 @@ https://github.com/velodrome-finance
   [legal disclaimer](/legal) before using Velodrome Finance!
 
   For security reports, please reach out to us on
-  [Discord](https://discord.gg/bqzYruhX), or to the contacts provided on our Github page.
+  [Discord](https://discord.gg/eGgYPGczaf), or to the contacts provided on our Github page.
 </Callout>
 
 ## Changelog
