@@ -86,7 +86,7 @@ successfully bootstrap and retain a team for its own success.
 
 ### Community
 
-An airdrop of 240M (60%) `$VELO` tokens will be distributed to the people who have played the biggest role in
+240M (60%) `$VELO` tokens will be distributed to the people who have played the biggest role in
 incubating Velodrome and those likeliest to contribute to its long-term
 success, including:
  * `$WEVE` holders (27%, 108M `$VELO`)
