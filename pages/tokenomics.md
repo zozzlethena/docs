@@ -91,15 +91,14 @@ incubating Velodrome and those likeliest to contribute to its long-term
 success, including:
  * `$WEVE` holders (27%, 108M `$VELO`)
  * `$OP` network users (18%, 72M `$VELO`)
-   * 3755 `$VELO`/wallet &mdash; Repeat Optimism Users qualified addresses (*made least 1 transaction with an 
-   Optimism application across four or more distinct weeks.*)
+   * 3755 `$VELO`/wallet &mdash; Addresses qualified as [Repeat Optimism Users](https://community.optimism.io/docs/governance/airdrop-1/#optimism-early-adopters)
  * Cross-chain DeFi users (15%, 60M `$VELO`):
    * 3500 `$VELO`/wallet &mdash; Curve Protocol wallets with a 1450+ days (maximum) `$veCRV` lock time
    * 3000 `$VELO`/wallet &mdash; Convex Protocol lockers of `$vlCVX` since new lock contract deployment
    * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1- and 3-month periods
    * 2000 `$VELO`/wallet &mdash; Platypus Protocol stakers with `$vePTP` and `$PTP` balance
    * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in genesis Dutch auction who didn't sell their `$BTRFLY`
-   * 500 `$VELO`/wallet &mdash; Eminence Finance wallets with EMN, eAAVE, eLINK, eYFI, eSNX and eCRV at snapshot
+   * 500 `$VELO`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/snapshot/01-balances.toml)
 
 ### Protocols
 
