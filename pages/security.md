@@ -35,37 +35,57 @@ https://github.com/velodrome-finance
 
 As of May 2022, we've compiled a changelog of the Velodrome smart contracts.
 
-### Gauges/Bribes/Voting
+### Major changes
 
- *  Staggered epoch for _Gauges_ / _Bribes_ to ensure rewards go to the right users
- *  Added a Compound-style weighted NFT governance for killing _bad_ gauges. This
-    governance uses block.timestamp instead of block.number because it's on an
-    L2.
- *  Removed `veNFT` _boost_ for liquidity pool staking
- *  Gauges can be added for any address for _Commissaire_
- *  Removed negative voting
+  - **Treat external bribes differently than internal bribes (i.e. fees).**
+    We split Bribe into two separate contracts, `InternalBribe` and
+    `ExternalBribe`. `InternalBribe` functions essentially the same way as `Bribe`
+    did, but `ExternalBribe` ensures that rewards are eliglble to be claimed by
+    any voter who votes for the underlying gauge during the epoch, instead of
+    only voters who vote after the rewards are sent. `ExternalBribe` also ensures
+    that rewards can only be claimed after the epoch ends.`ExternalBribe`
+    rewards must also be _whitelisted_ via on-chain governance.
+  - **One vote per epoch. In Velodrome, voters are only allowed to make "active"
+    voting decisions (i.e. vote and reset) once per epoch.** Voters must wait
+    until the next epoch to change their votes. Voters can, however, _poke_
+    their votes throughout the epoch.
+  - **On-chain governance.** To handle protocol-wide decisions (such as eligible
+    tokens for external bribes), we introduce an on-chain Governor. This will
+    likely be Tally's first on-chain governor on Optimism following their
+    support for the network.
+  - **Killable gauges.** To dissuade emissions exploitation via dummy gauges, we're
+    allowing the _Velodrome Commissaire_ (akin to Curve's Emergency DAO) to kill
+    any "bad" gauges. The Commissaire is composed of individuals from varying
+    parties meant to serve as a credibly neutral decision-maker for the broader
+    ecosystem.
 
-### Emissions
+### Minor changes
 
- * Updated emissions schedule (see the formula in [Emissions in the
-   Tokenomics](/tokenomics#emissions))
- * Added core team emissions
+  - **Removed the LP boost for voters.** We removed the boost that voters receive
+    when staking their LPs with gauges they voted for. This removes the need
+    for a veNFT aggregator (more on this later...).
+  - **Removed negative voting.** We found negative voting to be zero-sum for
+    Solidly, so we decided to remove it.
+  - **Team emissions.** 3% of new emissions will be sent to a team address, meant
+    to cover on-going expenses and future development.
 
-### Pairs
+### Small changes
 
- * Added variable fees for stable/volatile pairs
-
-### Distribution
-
- * Added two _redemption_ contracts for `$WEVE` (veDAO token) to `$VELO` +
- * `$USDC` which uses LayerZero
+  - **Modifiable fees.** Fees are now doubled to 0.02%, modifiable up to 0.05%, and
+    tracked differently for volatile vs stable pairs.
+  - **Upgradeable veNFT art.** Self-explanatory
+  - **Velodrome specific.**
+  - **Initial distribution.** Initial distribution will be handled in two ways: a
+    redemption process that uses LayerZero to burn `$WEVE` for `$USDC` and
+    `$VELO` on Optimism, and a Merkle airdrop contract. Unclaimed `$VELO` is
+    never minted to ensure emissions aren't affected.
 
 ### Areas of Concern
 
 As we're not changing any of the core swap logic, the bulk of our security
 concerns relate to the native token emissions, governance, and distribution:
 
- * `Gauge.sol` and `Bribe.sol`, which introduce new logic related to how
+ * `Gauge.sol` and `ExternalBribe.sol`, which introduce new logic related to how
    external bribes and voting work
  * `VotingEscrow.sol`, which adds compatibility with _OZ_ / _Compound_-style
    governance tools like Tally
@@ -91,7 +111,7 @@ awards up to $75,000 on Code4rena](https://code4rena.com/contests/2022-05-velodr
 The main scope of the contest was to cover all the new changes to the new and
 the original contracts.
 
-This way Velodrome Finance is happy to join efforts with the Solidly bug bounty
-program, which was launched in February 2022 (first on Immunefi.com) and already
-offers rewards up to $200,000 ([on their
+This is the second bug bounty program for Solidly. First program
+was launched in February 2022 on Immunefi.com. At the moment, there are no
+claims for any of the $200,000 rewards ([on their
 Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
