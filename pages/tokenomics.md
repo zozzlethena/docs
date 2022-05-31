@@ -233,9 +233,9 @@ done. Bribes can be collected 24–48 hours after votes are cast (snapshot is ta
 Rewards not collected will accrue to future epochs.
 
 Below is an example of bribes, voting, and rewards claim timeline:
- * Bribes are deposited from Saturday &mdash; Thursday
- * Votes are collected on Friday
- * A snapshot is taken at the end of Friday (11:59 UTC)
+ * Bribes are deposited from Thursday &mdash; Tuesday
+ * Votes are collected on Wednesday
+ * A snapshot is taken at the end of Wednesday (11:59 UTC)
  * Rewards claim is available 24–48 hours after the snapshot
 
 <Bleed>
