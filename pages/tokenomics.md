@@ -233,8 +233,8 @@ done. Bribes can be collected 24–48 hours after votes are cast (snapshot is ta
 Rewards not collected will accrue to future epochs.
 
 Below is an example of bribes, voting, and rewards claim timeline:
- * Bribes are deposited from Thursday &mdash; Tuesday
- * Votes are collected on Wednesday
+ * Bribes are deposited Thursday &mdash; Tuesday
+ * Votes can be cast Thursday &mdash; Wednesday
  * A snapshot is taken at the end of Wednesday (11:59 UTC)
  * Rewards claim is available 24–48 hours after the snapshot
 
@@ -248,20 +248,20 @@ Below is an example of bribes, voting, and rewards claim timeline:
         { type: "date", id: "Start" },
         { type: "date", id: "End" },
       ],
-      ["Round #1", "Bribes", new Date(2022, 5, 4), new Date(2022, 5, 9, 11, 59)],
-      ["Round #1", "Votes", new Date(2022, 5, 9, 12, 0), new Date(2022, 5, 10, 11, 59)],
-      ["Round #1", "Snapshot", new Date(2022, 5, 10, 11, 59), new Date(2022, 5, 11)],
-      ["Round #1", "Rewards Distributed", new Date(2022, 5, 11), new Date(2022, 5, 12)],
+      ["Round #1", "Bribes", new Date(2022, 5, 2), new Date(2022, 5, 7, 11, 59)],
+      ["Round #1", "Votes", new Date(2022, 5, 7, 12, 0), new Date(2022, 5, 8, 11, 59)],
+      ["Round #1", "Snapshot", new Date(2022, 5, 8, 11, 59), new Date(2022, 5, 9)],
+      ["Round #1", "Rewards Distributed", new Date(2022, 5, 9), new Date(2022, 5, 10)],
 
-      ["Round #2", "Bribes", new Date(2022, 5, 11), new Date(2022, 5, 16, 11, 59)],
-      ["Round #2", "Votes", new Date(2022, 5, 16, 12, 0), new Date(2022, 5, 17, 11, 59)],
-      ["Round #2", "Snapshot", new Date(2022, 5, 17, 11, 59), new Date(2022, 5, 18)],
-      ["Round #2", "Rewards Distributed", new Date(2022, 5, 18), new Date(2022, 5, 19)],
+      ["Round #2", "Bribes", new Date(2022, 5, 9), new Date(2022, 5, 14, 11, 59)],
+      ["Round #2", "Votes", new Date(2022, 5, 14, 12, 0), new Date(2022, 5, 15, 11, 59)],
+      ["Round #2", "Snapshot", new Date(2022, 5, 15, 11, 59), new Date(2022, 5, 16)],
+      ["Round #2", "Rewards Distributed", new Date(2022, 5, 16), new Date(2022, 5, 17)],
 
-      ["Round #3", "Bribes", new Date(2022, 5, 17), new Date(2022, 5, 23, 11, 59)],
-      ["Round #3", "Votes", new Date(2022, 5, 23, 12, 0), new Date(2022, 5, 24, 11, 59)],
-      ["Round #3", "Snapshot", new Date(2022, 5, 24, 11, 59), new Date(2022, 5, 25)],
-      ["Round #3", "Rewards Distributed", new Date(2022, 5, 25), new Date(2022, 5, 26)],
+      ["Round #3", "Bribes", new Date(2022, 5, 15), new Date(2022, 5, 21, 11, 59)],
+      ["Round #3", "Votes", new Date(2022, 5, 21, 12, 0), new Date(2022, 5, 22, 11, 59)],
+      ["Round #3", "Snapshot", new Date(2022, 5, 22, 11, 59), new Date(2022, 5, 23)],
+      ["Round #3", "Rewards Distributed", new Date(2022, 5, 23), new Date(2022, 5, 24)],
     ]}
     options={{
       title: "Bribing, Voting and Rewards Timeline",
