@@ -86,4 +86,4 @@ Optimism ecosystem.
 * Website: https://www.velodrome.finance
 * Twitter: https://twitter.com/VelodromeFi
 * Medium: https://medium.com/@VelodromeFi
-* Discord: https://discord.gg/eGgYPGczaf
+* Discord: https://discord.gg/velodrome
