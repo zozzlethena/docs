@@ -101,7 +101,8 @@ low-severity and 1 informal findings.
 The full audit is available for [download from Solidly git
 repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a816-3802-4384-894c-825a4177245a.pdf).
 
-We also ran a full MythX deep scan on Velodrome contracts and found just a
+Velodrome Finance went through a security audit and a peer review as part of the Code4rena bug bouncy contest.
+Finally, a full MythX deep scan on Velodrome contracts found just a
 handful of false-positive, low-severity issues reported.
 
 ## Bug Bounty Programs
