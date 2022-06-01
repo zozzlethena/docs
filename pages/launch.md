@@ -17,9 +17,9 @@ Velodrome is launching on 1st of June, 2022!
   of the first release. At launch, our dApp will render best in
   **desktop environments**.
   
-  The external rewards (bribes) functionality will be disabled at the bebining
+  The external rewards (bribes) functionality will be disabled at the beginning
   of the first epoch (first week). This will be rolled out in time when
-  gauge voting will start!
+  gauge voting starts!
 
   We anticipate having a mobile-optimized version of the dApp in future
   updates. Other functionality might not be fully optimized (e.g., error
