@@ -10,12 +10,16 @@ import { Chart } from "react-google-charts";
 
 # Launch Details
 
-Velodrome is launching on Tuesday, May 31th 2022!
+Velodrome is launching on 1st of June, 2022!
 
 <Callout type="warning" emoji="⚠️">
   As with any launch, we'd like to warn our users about the potential limitations
   of the first release. At launch, our dApp will render best in
   **desktop environments**.
+  
+  The external rewards (bribes) functionality will be disabled at the bebining
+  of the first epoch (first week). This will be rolled out in time when
+  gauge voting will start!
 
   We anticipate having a mobile-optimized version of the dApp in future
   updates. Other functionality might not be fully optimized (e.g., error
