@@ -246,48 +246,11 @@ done. Bribes can be collected 24–48 hours after votes are cast (snapshot is ta
 
 Rewards not collected will accrue to future epochs.
 
-Below is an example of bribes, voting, and rewards claim timeline:
+An example of bribes, voting, and rewards claim timeline:
  * Bribes are deposited Thursday &mdash; Tuesday
  * Votes can be cast Thursday &mdash; Wednesday
  * A snapshot is taken at the end of Wednesday (11:59 UTC)
  * Rewards claim is available 24–48 hours after the snapshot
-
-<Bleed>
-  <Chart
-    chartType="Timeline"
-    data={[
-      [
-        { type: "string", id: "Voting Round" },
-        { type: "string", id: "Action" },
-        { type: "date", id: "Start" },
-        { type: "date", id: "End" },
-      ],
-      ["Round #1", "Bribes", new Date(2022, 5, 2), new Date(2022, 5, 7, 11, 59)],
-      ["Round #1", "Votes", new Date(2022, 5, 7, 12, 0), new Date(2022, 5, 8, 11, 59)],
-      ["Round #1", "Snapshot", new Date(2022, 5, 8, 11, 59), new Date(2022, 5, 9)],
-      ["Round #1", "Rewards Distributed", new Date(2022, 5, 9), new Date(2022, 5, 10)],
-
-      ["Round #2", "Bribes", new Date(2022, 5, 9), new Date(2022, 5, 14, 11, 59)],
-      ["Round #2", "Votes", new Date(2022, 5, 14, 12, 0), new Date(2022, 5, 15, 11, 59)],
-      ["Round #2", "Snapshot", new Date(2022, 5, 15, 11, 59), new Date(2022, 5, 16)],
-      ["Round #2", "Rewards Distributed", new Date(2022, 5, 16), new Date(2022, 5, 17)],
-
-      ["Round #3", "Bribes", new Date(2022, 5, 15), new Date(2022, 5, 21, 11, 59)],
-      ["Round #3", "Votes", new Date(2022, 5, 21, 12, 0), new Date(2022, 5, 22, 11, 59)],
-      ["Round #3", "Snapshot", new Date(2022, 5, 22, 11, 59), new Date(2022, 5, 23)],
-      ["Round #3", "Rewards Distributed", new Date(2022, 5, 23), new Date(2022, 5, 24)],
-    ]}
-    options={{
-      title: "Bribing, Voting and Rewards Timeline",
-      legend: { position: 'top'},
-      colors: [
-        '#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF',
-        '#FBBF42', '#EDE7DB'
-      ],
-    }}
-    width={"100%"}
-  />
-</Bleed>
 
 ## Whitelisting
 
