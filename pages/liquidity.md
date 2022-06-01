@@ -30,6 +30,8 @@ and trade execution route available. To protect against flashloan attacks, the r
 
 The _deeper_ the liquidity of a given pool (higher value locked), the smaller the slippage it will offer.
 
+With Velodrome, swap fees are now 0.02% (up from 0.01% on Solidly), and modifiable up to 0.05%; tracked differently for volatile vs stable pairs.
+
 ## Stable Pools
 
 Stable pools are designed for assets which have little to no
@@ -65,3 +67,4 @@ The new stable pool curve quoting is also available:
 <Bleed>
   <iframe src="https://www.desmos.com/calculator/hwb0sfojbg?embed" width="100%" height="700"></iframe>
 </Bleed>
+

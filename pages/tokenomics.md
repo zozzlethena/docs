@@ -58,6 +58,8 @@ token acquisition.
 This should also ensure that Velodrome Finance as a protocol is able to
 successfully bootstrap and retain a team for its own success.
 
+For WeVE holders, distribution will be handled via a redemption process that uses LayerZero to burn WeVE for `$USDC` and `$VELO` on Optimism.
+
 ### Distribution
 
 <Bleed>
@@ -212,6 +214,10 @@ The weekly rebase amount is calculated with the following formula:
   />
 </Bleed>
 
+### Team Emissions
+
+3% of new emissions will be sent to a team address, meant to cover on-going expenses and future development.
+
 ## Gauge Voting
 
 `$veVELO` holders decide which liquidity pools receive emissions in a given epoch by
@@ -220,6 +226,10 @@ proportionally to the total votes a liquidity pool receives.
 
 In return, voters receive the trading fees and bribes collected through the liquidity pool they
 vote for.
+
+Furthermore, voters are only allowed to make "active" voting decisions once per epoch. Therefore, voters must wait until the next epoch to change their votes. 
+
+We also found that negative voting was a zero-sum for Solidly, so we decided to remove it.
 
 ## Bribes
 
@@ -275,6 +285,10 @@ Below is an example of bribes, voting, and rewards claim timeline:
   />
 </Bleed>
 
+With Velodrome, we split Bribes into two separate contracts: _InternalBribe_ and _ExternalBribe_.
+
+InternalBribe functions essentially the same way as Bribe did, but ExternalBribe ensures that rewards are eliglble to be claimed by any voter who votes for the underlying gauge during the epoch, instead of only voters who vote after the rewards are sent. ExternalBribe also ensures that rewards can only be claimed after the epoch ends. ExternalBribe rewards must also be whitelisted via on-chain governance.
+
 ## Whitelisting
 
 While Velodrome supports permissionless liquidity pool and gauge creation, these can
@@ -296,7 +310,10 @@ Requirements for _whitelisting_ are critical to ensuring that the protocol canno
 be exploited by actors attempting to game emissions.
 
 To support the health of the protocol and ecosystem, the Commissaire (a Curve-esque _Emergency DAO_)
-will have the right to disable hostile gauges or vote down whitelisting requests.
+will have the right to disable hostile gauges or vote down whitelisting requests. This will allow the Velodrome Commissaire to kill any "bad" gauges as well as dissuade emission exploitation via dummy gauges.
 
 The Commissaire will initially consist of seven members from the Velodrome team and
 prominent figures from within the Optimism community.
+
+To handle protocol-wide decisions (such as eligible tokens for external bribes), Velodrome has also introduced an on-chain Governor. This governor uses _block.timestamp_ instead of _block.number_ to support Optimism, and will likely be Tally's first on-chain governor on Optimism following their support for the network.
+
