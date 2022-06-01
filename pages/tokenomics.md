@@ -1,4 +1,5 @@
 import Bleed from 'nextra-theme-docs/bleed'
+import Callout from 'nextra-theme-docs/callout'
 import { Chart } from "react-google-charts";
 
 <Bleed>
@@ -58,7 +59,11 @@ token acquisition.
 This should also ensure that Velodrome Finance as a protocol is able to
 successfully bootstrap and retain a team for its own success.
 
-For WeVE holders, distribution will be handled via a redemption process that uses LayerZero to burn WeVE for `$USDC` and `$VELO` on Optimism.
+<Callout  emoji="🪂">
+  `$WEVE` holders should check [the launch
+  guide](/launch#a-message-to-the-vedao-community) for full distribution
+  details!
+</Callout>
 
 ### Distribution
 
@@ -135,6 +140,9 @@ employing a dedicated team focused on supporting the product, documentation,
 community, and ecosystem. As the protocol evolves, the Velodrome team will
 consider introducing more immutability or DAO components where appropriate.
 
+To cover ongoing expenses and all the upcoming development efforts, 3% of the
+emissions will be going to the team address.
+
 The team vesting compensation breakdown:
  * 15,520,816 `$VELO` vesting for 12 months, 6-month lock in a `$veVELO` followed
    by a linear 6-month unlock period. 0.5% of total emissions, taken from
@@ -153,7 +161,7 @@ distribution, to support that interest.
 ### Genesis Liquidity Pools
 
 Genesis Pools will distribute 4M (1%) `$VELO` to liquidity providers of foundational token pairs to
-provide better liquidity and user experience from launch day. Genesis pool emissions will be first 
+provide better liquidity and user experience from launch day. Genesis pool emissions will be first
 directed to the `$VELO`-`$USDC` pool and will start a few days before the first epoch votes are cast.
 
 ## Emissions
@@ -214,10 +222,6 @@ The weekly rebase amount is calculated with the following formula:
   />
 </Bleed>
 
-### Team Emissions
-
-3% of new emissions will be sent to a team address, meant to cover on-going expenses and future development.
-
 ## Gauge Voting
 
 `$veVELO` holders decide which liquidity pools receive emissions in a given epoch by
@@ -227,9 +231,9 @@ proportionally to the total votes a liquidity pool receives.
 In return, voters receive the trading fees and bribes collected through the liquidity pool they
 vote for.
 
-Furthermore, voters are only allowed to make "active" voting decisions once per epoch. Therefore, voters must wait until the next epoch to change their votes. 
-
-We also found that negative voting was a zero-sum for Solidly, so we decided to remove it.
+Voting for gauges is allowed once per epoch. The same (rolling)
+vote will be counted for the next epochs for the same gauge until the voter
+changes the vote.
 
 ## Bribes
 

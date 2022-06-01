@@ -22,7 +22,7 @@ assets:
  * uncorrelated - for example `$LINK` and `$CRV`
 
 Velodrome Finance offers two different liquidity pool types based on token pair needs, _Stable
-Pools_ and _Votalite Pools_.
+Pools_ and _Variable Pools_.
 
 The protocol router evaluates both pool types to determine the most efficient price quotation
 and trade execution route available. To protect against flashloan attacks, the router will use
@@ -30,7 +30,16 @@ and trade execution route available. To protect against flashloan attacks, the r
 
 The _deeper_ the liquidity of a given pool (higher value locked), the smaller the slippage it will offer.
 
-With Velodrome, swap fees are now 0.02% (up from 0.01% on Solidly), and modifiable up to 0.05%; tracked differently for volatile vs stable pairs.
+## Fees
+
+On Velodrome Finance the trading fees are kept in the originally traded tokens
+(if you trade `$USDC` and `$VELO` the fees will be kept in the same tokens).
+
+The trading fees for both liquidity pool types are 0.02%, and can be adjusted
+for up to 0.05%.
+
+The Variable and Stable liquidity pools can be assigned different trading fees
+on Velodrome Finance.
 
 ## Stable Pools
 
