@@ -51,6 +51,12 @@ https://github.com/velodrome-finance
 | MerkleClaim        | `0x00D59BC35174C3b250Dd92a363495d38C8777a49` | Optimism |
 | RedemptionSender   | `0x9809fB94eED086F9529df00d6f125Bf25Ee84A93` | Fantom |
 
+## Tokenlist
+
+In addition to the official Optimism tokens list, we maintain one as well
+with our partner tokens:
+https://docs.velodrome.finance/tokenlist.json
+
 ## Changelog
 
 As of May 2022, we've compiled a changelog of the Velodrome smart contracts.
