@@ -105,7 +105,8 @@ success, including:
    * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1- and 3-month periods
    * 2000 `$VELO`/wallet &mdash; Platypus Protocol stakers with `$vePTP` and `$PTP` balance
    * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in genesis Dutch auction who didn't sell their `$BTRFLY`
-   * 500 `$VELO`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/snapshot/01-balances.toml)
+   * 500 `$VELO`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/
+   shot/01-balances.toml)
 
 ### Protocols
 
@@ -249,7 +250,7 @@ Rewards not collected will accrue to future epochs.
 An example of bribes, voting, and rewards claim timeline:
  * Bribes are deposited Thursday &mdash; Tuesday
  * Votes can be cast Thursday &mdash; Wednesday
- * A snapshot is taken at the end of Wednesday (11:59 UTC)
+ * A snapshot is taken at the end of Wednesday (23:59 UTC)
  * Rewards claim is available 24–48 hours after the snapshot
 
 ## Whitelisting
