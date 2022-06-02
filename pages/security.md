@@ -31,6 +31,26 @@ https://github.com/velodrome-finance
   [Discord](https://discord.gg/eGgYPGczaf), or to the contacts provided on our Github page.
 </Callout>
 
+## Contract Addresses
+
+| Contract Name | Contract Address | Network |
+| --- | --- | --- |
+| Velo               | `0x3c8B650257cFb5f272f799F5e2b4e65093a11a05` | Optimism |
+| GaugeFactory       | `0xC5be2c918EB04B091962fDF095A217A55CFA42C5` | Optimism |
+| BribeFactory       | `0xA84EA94Aa705F7d009CDDF2a60f65c0d446b748E` | Optimism |
+| PairFactory        | `0x25CbdDb98b35ab1FF77413456B31EC81A6B6B746` | Optimism |
+| Router             | `0xa132DAB612dB5cB9fC9Ac426A0Cc215A3423F9c9` | Optimism |
+| VelodromeLibrary   | `0xe3C5e29eA198e617ebc707718707Beff9393Fa51` | Optimism |
+| VeArtProxy         | `0x5F2f6721Ca0C5AC522BC875fA3F09bF693dcFa1D` | Optimism |
+| VotingEscrow       | `0x9c7305eb78a432ced5C4D14Cac27E8Ed569A2e26` | Optimism |
+| RewardsDistributor | `0x5d5Bea9f0Fc13d967511668a60a3369fD53F784F` | Optimism |
+| Voter              | `0x09236cfF45047DBee6B921e00704bed6D6B8Cf7e` | Optimism |
+| Minter             | `0x3460Dc71A8863710D1C907B8d9D5DBC053a4102d` | Optimism |
+| RedemptionReceiver | `0x846e822e9a00669dcC647079d7d625d2cd25A951` | Optimism |
+| VeloGovernor       | `0x64DD805aa894dc001f8505e000c7535179D96C9E` | Optimism |
+| MerkleClaim        | `0x00D59BC35174C3b250Dd92a363495d38C8777a49` | Optimism |
+| RedemptionSender   | `0x9809fB94eED086F9529df00d6f125Bf25Ee84A93` | Fantom |
+
 ## Changelog
 
 As of May 2022, we've compiled a changelog of the Velodrome smart contracts.
