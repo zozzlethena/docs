@@ -73,7 +73,7 @@ As of May 2022, we've compiled a changelog of the Velodrome smart contracts.
     rewards must also be _whitelisted_ via on-chain governance.
   - **One vote per epoch. In Velodrome, voters are only allowed to make "active"
     voting decisions (i.e. vote and reset) once per epoch.** Voters must wait
-    until the next epoch to change their votes. Voters can, however, _poke_
+    until the next epoch to change their votes. Voters can, however, _cast_
     their votes throughout the epoch.
   - **On-chain governance.** To handle protocol-wide decisions (such as eligible
     tokens for external bribes), we introduce an on-chain Governor. This will
