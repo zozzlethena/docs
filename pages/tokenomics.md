@@ -105,8 +105,7 @@ success, including:
    * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1- and 3-month periods
    * 2000 `$VELO`/wallet &mdash; Platypus Protocol stakers with `$vePTP` and `$PTP` balance
    * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in genesis Dutch auction who didn't sell their `$BTRFLY`
-   * 500 `$VELO`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/
-   shot/01-balances.toml)
+   * 500 `$VELO`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/shot/01-balances.toml)
 
 ### Protocols
 
