@@ -63,6 +63,7 @@ successfully bootstrap and retain a team for its own success.
   `$WEVE` holders should check [the launch
   guide](/launch#a-message-to-the-vedao-community) for full distribution
   details!
+  The airdrop claim period is now complete. Thank you to everyone who participated.
 </Callout>
 
 ### Distribution
