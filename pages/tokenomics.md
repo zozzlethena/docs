@@ -231,12 +231,14 @@ The weekly rebase amount is calculated with the following formula:
 voting on their preferred liquidity pool _gauges_. `$VELO` emissions will be distributed
 proportionally to the total votes a liquidity pool receives.
 
-In return, voters receive the trading fees and bribes collected through the liquidity pool they
-vote for. Fee rewards accrue for voters after the vote snapshot has been taken.
+In return, voters receive 100% of the trading fees and bribes collected through the 
+liquidity pool they vote for. 
 
-Voting for gauges is allowed once per epoch. The same (rolling)
-vote will be counted for the next epochs for the same gauge until the voter
-changes the vote. 
+Voting for gauges is allowed once per epoch. The same (rolling) vote will be counted 
+for the next epochs for the same gauge until the voter changes the vote. 
+
+Note, however that to receive bribes deposited in new epochs, voters maintaining
+rolling votes must _poke_ or re-cast their votes.
 
 ## Bribes
 
@@ -245,17 +247,15 @@ In addition to the fees, liquidity pools allow external rewards from anyone
 incentivized pool proportionally to the votes they cast.
 
 The bribes can be added in each epoch to _whitelisted_ tokens, before any voting is
-done. Bribes can be collected 24–48 hours after votes are cast (snapshot is taken).
+done. Voters will earn bribes no matter when in the epoch they are added. 
 Rewards not collected will accrue to future epochs.
-
-Note: to receive bribes deposited in new epochs, voters maintaining
-rolling votes must _poke_ or re-cast their votes.
+Rewards claim is available 24–48 hours after the snapshot.
 
 An example of bribes, voting, and rewards claim timeline:
  * A new epoch starts Thursday (00:00 UTC)
  * Bribes are deposited at any point in the epoch
  * A snapshot for votes cast is taken at the end of Wednesday (23:59 UTC)
- * Rewards claim is available 24–48 hours after the snapshot
+ * Rewards available 24–48 hours after the snapshot
 
 <Bleed>
   <Chart
@@ -297,14 +297,10 @@ While Velodrome supports permissionless liquidity pool and gauge creation, these
 only include _whitelisted_ tokens. The protocol will launch with an extensive list of
 pre-whitelisted tokens, including those from partner protocols.
 
-Any `$veVELO` holder with 0.1% or more `$veVELO` supply can request additional tokens by
-creating a _whitelist_ gauge. `$veVELO` voters will vote to approve or reject
-the proposed request.
+Partners can request additional tokens to be _whitelisted_. 
 
-This process is necessary to avoid situations where a holder of 100% supply of
-a token receives 100% emissions for the same liquidity pool.
-
-By default, a request is approved if the quorum (majority of the circulating `$veVELO`) is not met.
+A permissionless _whitelisting_ on-chain governance process will be implemented in
+the future, pending required on-chain governance infrastructure on Optimism.
 
 ## Commissaire
 
@@ -312,7 +308,7 @@ Requirements for _whitelisting_ are critical to ensuring that the protocol canno
 be exploited by actors attempting to game emissions.
 
 To support the health of the protocol and ecosystem, the Commissaire (a Curve-esque _Emergency DAO_)
-will have the right to disable hostile gauges or vote down whitelisting requests. This will allow the Velodrome Commissaire to kill any "bad" gauges as well as dissuade emission exploitation via dummy gauges.
+will have the right to disable hostile gauges.
 
 The Commissaire will initially consist of seven members from the Velodrome team and
 prominent figures from within the Optimism community.
