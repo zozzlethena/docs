@@ -226,32 +226,68 @@ The weekly rebase amount is calculated with the following formula:
 ## Gauge Voting
 
 `$veVELO` holders decide which liquidity pools receive emissions in a given epoch by
-voting on their preferred liquidity pool _gauges_. `$VELO` tokens will be distributed
+voting on their preferred liquidity pool _gauges_. `$VELO` emissions will be distributed
 proportionally to the total votes a liquidity pool receives.
 
 In return, voters receive the trading fees and bribes collected through the liquidity pool they
-vote for.
+vote for. Fee rewards accrue for voters after the vote snapshot has been taken.
 
 Voting for gauges is allowed once per epoch. The same (rolling)
 vote will be counted for the next epochs for the same gauge until the voter
-changes the vote.
+changes the vote. 
 
 ## Bribes
 
 In addition to the fees, liquidity pools allow external rewards from anyone
-(known as _bribes_). These bribes are distributed only to the voters on the
+(known as _bribes_). These bribes are distributed _only_ to the voters on the
 incentivized pool proportionally to the votes they cast.
 
 The bribes can be added in each epoch to _whitelisted_ tokens, before any voting is
 done. Bribes can be collected 24–48 hours after votes are cast (snapshot is taken).
-
 Rewards not collected will accrue to future epochs.
+
+Note: to receive bribes deposited in new epochs, voters maintaining
+rolling votes must _poke_ or re-cast their votes.
 
 An example of bribes, voting, and rewards claim timeline:
  * A new epoch starts Thursday (00:00 UTC)
  * Bribes are deposited at any point in the epoch
  * A snapshot for votes cast is taken at the end of Wednesday (23:59 UTC)
  * Rewards claim is available 24–48 hours after the snapshot
+
+<Bleed>
+  <Chart
+    chartType="Timeline"
+    data={[
+      [
+        { type: "string", id: "Voting Round" },
+        { type: "string", id: "Action" },
+        { type: "date", id: "Start" },
+        { type: "date", id: "End" },
+      ],
+      ["Round #1", "Bribes Deposited, Votes Cast", new Date(2022, 5, 2), new Date(2022, 5, 8, 11, 59)],
+      ["Round #1", "Snapshot", new Date(2022, 5, 8, 11, 59), new Date(2022, 5, 9)],
+      ["Round #1", "Rewards Distributed", new Date(2022, 5, 9), new Date(2022, 5, 10)],
+
+      ["Round #2", "Bribes Deposited, Votes Cast", new Date(2022, 5, 9), new Date(2022, 5, 15, 11, 59)],
+      ["Round #2", "Snapshot", new Date(2022, 5, 15, 11, 59), new Date(2022, 5, 16)],
+      ["Round #2", "Rewards Distributed", new Date(2022, 5, 16), new Date(2022, 5, 17)],
+
+      ["Round #3", "Bribes Deposited, Votes Cast", new Date(2022, 5, 15), new Date(2022, 5, 22, 11, 59)],
+      ["Round #3", "Snapshot", new Date(2022, 5, 22, 11, 59), new Date(2022, 5, 23)],
+      ["Round #3", "Rewards Distributed", new Date(2022, 5, 23), new Date(2022, 5, 24)],
+    ]}
+    options={{
+      title: "Bribing, Voting and Rewards Timeline",
+      legend: { position: 'top'},
+      colors: [
+        '#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF',
+        '#FBBF42', '#EDE7DB'
+      ],
+    }}
+    width={"100%"}
+  />
+</Bleed>
 
 ## Whitelisting
 
