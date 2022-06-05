@@ -118,6 +118,25 @@ The `$WEVE` bridging service will be available at https://weve.velodrome.finance
 on May 31st and will be available until the 30th of June. Unclaimed `$USDC` and `$VELO` will
 be transferred back into the treasury.
 
+### Burning via Block Explorer
+
+NOTE: There is currently a small UI issue with this process. TLDR the frontend is overestimating the amount of WeVE a user has to burn, which causes the contract call to fail.
+
+Below are the steps you'll need to take in order to burn from the block explorer:
+
+1. **Figure out how much WeVE you have to burn.** Go to https://ftmscan.com/address/0x911da02c1232a3c3e1418b834a311921143b04d7#readContract and navigate to Function #2, balanceOf. Enter in your address "0xabcd..." and click Query. Copy that value.
+2. **Burn WeVE.** Navigate to the RedemptionSender (https://ftmscan.com/address/0x9809fB94eED086F9529df00d6f125Bf25Ee84A93#writeContract). NOTE Please double, triple check that this is the right address. Then enter the following arguments for Function #1, redeemWEVE
+
+*redeemWEVE*: 0.01
+
+*amount*: ANY value less than your balance found in Step 1
+
+*zroPaymentAddress*: 0x0000000000000000000000000000000000000000
+
+*zroTransactionParams*: 0x
+
+Then click "Write" and your transaction should be good to go!
+
 ### Initial Distribution
 
 Velodrome will launch with initial distribution of 400M VELO airdropped to
