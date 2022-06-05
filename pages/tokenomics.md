@@ -48,11 +48,11 @@ liquidity pools.
 
 ## Initial Distribution
 
+Note: Airdrop claim period has ended.
+
 Upon launch we will kick off with an airdrop of `$VELO` and `$veVELO` for
 users and protocols we believe are likeliest to contribute to our
 mission to become the liquidity base layer of the Optimism ecosystem.
-
-To see if you qualify for the airdrop, check https://velodrome.finance
 
 The distribution will be meaningful but will also leave enough room for new
 players to join and capture voting share through emissions and/or
