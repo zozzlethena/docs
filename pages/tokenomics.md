@@ -232,23 +232,24 @@ voting on their preferred liquidity pool _gauges_. `$VELO` emissions will be dis
 proportionally to the total votes a liquidity pool receives.
 
 In return, voters receive 100% of the trading fees and bribes collected through the 
-liquidity pool they vote for. 
+liquidity pool they vote for. Trading fees acrrue in the epoch following the vote snapshot. 
+Bribes accrue to voters in the same epoch in which they're deposited.
 
 Voting for gauges is allowed once per epoch. The same (rolling) vote will be counted 
-for the next epochs for the same gauge until the voter changes the vote. Note, however 
-that to receive bribes, voters maintaining rolling votes must _poke_ or re-cast their votes
-for the epoch in which the bribe is deposited.
+for the following epochs until a voter changes their vote. Note, however voter must _poke_ 
+or re-cast their votes in each epoch to earn bribes.
 
 ## Bribes
 
 In addition to the fees, liquidity pools allow external rewards from anyone
-(known as _bribes_). These bribes are distributed _only_ to the voters on the
-incentivized pool proportionally to the votes they cast.
+(known as _bribes_). Bribes can be added to _whitelisted_ pools and are distributed 
+_only_ to voters on that pool, proportionally to their share of pool votes.
 
-Bribes can be added in each epoch to _whitelisted_ tokens. Voters will earn 
-bribes no matter when in the epoch they are added. 
-Rewards not collected will accrue to future epochs.
+Bribes accrue to voters immediately after having been deposited. For example,
+a bribe deposited 2 days before snapshot will accrue 50% to the vote-share in day 1 
+and 50% to the vote-share in day 2.
 Rewards claim is available 24–48 hours after the snapshot.
+Rewards not collected will accrue to future epochs.
 
 An example of bribes, voting, and rewards claim timeline:
  * A new epoch starts Thursday (00:00 UTC)
