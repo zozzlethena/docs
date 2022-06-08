@@ -235,10 +235,9 @@ In return, voters receive 100% of the trading fees and bribes collected through 
 liquidity pool they vote for. 
 
 Voting for gauges is allowed once per epoch. The same (rolling) vote will be counted 
-for the next epochs for the same gauge until the voter changes the vote. 
-
-Note, however that to receive bribes deposited in new epochs, voters maintaining
-rolling votes must _poke_ or re-cast their votes.
+for the next epochs for the same gauge until the voter changes the vote. Note, however 
+that to receive bribes, voters maintaining rolling votes must _poke_ or re-cast their votes
+for the epoch in which the bribe is deposited.
 
 ## Bribes
 
@@ -246,8 +245,8 @@ In addition to the fees, liquidity pools allow external rewards from anyone
 (known as _bribes_). These bribes are distributed _only_ to the voters on the
 incentivized pool proportionally to the votes they cast.
 
-The bribes can be added in each epoch to _whitelisted_ tokens, before any voting is
-done. Voters will earn bribes no matter when in the epoch they are added. 
+Bribes can be added in each epoch to _whitelisted_ tokens. Voters will earn 
+bribes no matter when in the epoch they are added. 
 Rewards not collected will accrue to future epochs.
 Rewards claim is available 24–48 hours after the snapshot.
 
