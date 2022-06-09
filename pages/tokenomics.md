@@ -304,6 +304,47 @@ An example of bribes, voting, and rewards claim timeline:
   />
 </Bleed>
 
+## Rewards
+
+There are 4 types of rewards on Velodrome Finance.
+
+### Emissions
+
+Represent `$VELO` distributed to liquidity pool stakers. The amount of
+`$VELO` distributed towards every pool is proportional to the voting power
+received from the voters every epoch.
+
+These rewards are streaming and are available for claim as these accrue.
+
+### Fees
+
+Represent liquidity pool trading fees distributed to voters in pool tokens (
+e.g., if the pool is `vAMM-VELO/USDC` the distributed tokens are `$VELO` and
+`$USDC`).
+
+The tokens are streaming proportionally to the voting power cast by a voter and
+the accrued amount of trading fees.
+
+These rewards are available for claim as these accrue.
+
+### Bribes
+
+Represent external rewards added to incentivize voters to cast their voting
+power for a specific liquidity pool. These rewards can be in any _whitelisted_
+tokens.
+
+These rewards accrue and are available for claim after a snapshot is taken
+(after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
+voter (`$veVELO`).
+
+### Rebases
+
+Represent `$veVELO` distributed to `$veVELO` holders in order to reduce the
+voting power dilution.
+
+These rewards are available for claim as these accrue and are streaming
+proportionally to all `$veVELO` holders.
+
 ## Whitelisting
 
 While Velodrome supports permissionless liquidity pool and gauge creation, these can
