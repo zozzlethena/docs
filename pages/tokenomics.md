@@ -40,7 +40,7 @@ Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velodrome's 
 liquidity provision and long-term token holding. Liquidity providers receive `$VELO` emissions,
 and `$veVELO` holders receive protocol fees, bribes, rebases, and governance power.
 
-![image](https://user-images.githubusercontent.com/105509853/172019465-7e02fb8c-aa54-43f5-a7f1-3b80f0f9e615.png)
+![image](/velodrome-circuit.png)
 
 Below, we will walk through the components of the mechanism in order to
 explain how it helps the incentives flow to the most valuable of the ecosystem
