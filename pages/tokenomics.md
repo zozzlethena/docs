@@ -248,7 +248,11 @@ _only_ to voters on that pool, proportionally to their share of pool votes.
 Bribes accrue to voters immediately after having been deposited. For example,
 a bribe deposited 2 days before snapshot will accrue 50% to the vote-share in day 1 
 and 50% to the vote-share in day 2.
-Rewards claim is available 24–48 hours after the snapshot.
+
+## Rewards claim
+
+Rebase rewards claim is available one full epoch after tokens are locked.
+Bribe rewards claim is available 24–48 hours after the snapshot. 
 Rewards not collected will accrue to future epochs.
 
 An example of bribes, voting, and rewards claim timeline:
