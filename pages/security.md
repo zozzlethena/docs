@@ -53,7 +53,9 @@ https://github.com/velodrome-finance
 
 ## Tokenlist
 
-In addition to the official Optimism tokens list, we maintain one as well
+In addition to the [official Optimism tokens
+list](https://tokenlists.org/token-list?url=https://static.optimism.io/optimism.tokenlist.json),
+we maintain one as well
 with our partner tokens:
 https://docs.velodrome.finance/tokenlist.json
 
