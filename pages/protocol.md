@@ -38,7 +38,7 @@ Solidly had several key issues that prevented its success in the Fantom ecosyste
 
 **In Solidly, voting rewards (i.e. bribes) were claimable _before_ the emissions from that vote were committed.** Velodrome addresses this with new mechanisms:
 
-- First, we allow voters to make only one "active" voting decision (i.e. `vote()`, `reset()`) every epoch (note: this does not include the `poke()` function).
+- First, we allow voters to make only one "active" voting decision (i.e. `Voter.vote()`, `Voter.reset()`) every epoch (note: this does not include the `Voter.poke()` function).
 - Additionally, bribes from fees (_internal_) and external sources (_external_) are treated differently.
   Internal bribes function more or less the same way as they did in Solidly, streamed to voters who vote for them.
   External bribes, however, are rewarded _per epoch_ rather than streamed, and are claimable only after the next epoch starts.
