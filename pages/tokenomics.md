@@ -48,7 +48,10 @@ liquidity pools.
 
 ## Initial Distribution
 
-Note: Airdrop claim period has ended.
+<Callout emoji="🪂">
+  The airdrop claim period is now complete. Thank you to everyone who
+  participated!
+</Callout>
 
 Upon launch we will kick off with an airdrop of `$VELO` and `$veVELO` for
 users and protocols we believe are likeliest to contribute to our
@@ -61,11 +64,9 @@ token acquisition.
 This should also ensure that Velodrome Finance as a protocol is able to
 successfully bootstrap and retain a team for its own success.
 
-<Callout  emoji="🪂">
+<Callout>
   `$WEVE` holders should check [the launch
-  guide](/launch#a-message-to-the-vedao-community) for full distribution
-  details!
-  The airdrop claim period is now complete. Thank you to everyone who participated.
+  guide](/launch#a-message-to-the-vedao-community) for full distribution details!
 </Callout>
 
 ### Distribution
