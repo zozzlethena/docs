@@ -236,9 +236,8 @@ In return, voters receive 100% of the trading fees and bribes collected through 
 liquidity pool they vote for. Trading fees acrrue in the epoch following the vote snapshot. 
 Bribes accrue to voters in the same epoch in which they're deposited.
 
-Voting for gauges is allowed once per epoch. The same (rolling) vote will be counted 
-for the following epochs until a voter changes their vote. Note, however voter
-must call `Voter.poke()` or re-cast their votes in each epoch to earn bribes.
+Voting for gauges is allowed once per epoch. Voters re-cast or call `Voter.poke()` 
+their votes in each epoch to direct emissions and earn bribes.
 
 <Callout>
   Unused `$veVELO` voting power is still taken into account as we calculate the
