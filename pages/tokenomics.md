@@ -236,8 +236,15 @@ In return, voters receive 100% of the trading fees and bribes collected through 
 liquidity pool they vote for. Trading fees acrrue in the epoch following the vote snapshot. 
 Bribes accrue to voters in the same epoch in which they're deposited.
 
-Voting for gauges is allowed once per epoch. Voters re-cast or call `Voter.poke()` 
-their votes in each epoch to direct emissions and earn bribes.
+Voting for gauges, or in fact any action related to the `$veVELO` NFT is
+allowed only once per epoch. This means that calling `Voter.reset()` (used for
+resetting an NFT vote state and usually required before merging it into another
+`$veVELO` NFT) or `Voter.poke()` (used to re-cast the votes for the current epoch in
+order to direct emissions and earn bribes) counts as an action for the current
+epoch.
+
+While limiting the protocol participants to one action per epoch is not ideal,
+it does make the protocol safer against potential exploitative behaviour.
 
 <Callout>
   Unused `$veVELO` voting power is still taken into account as we calculate the
