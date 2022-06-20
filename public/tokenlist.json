@@ -58,7 +58,7 @@
       "name": "Dola USD Stablecoin",
       "symbol": "DOLA",
       "decimals": 18,
-      "logoURI": ""
+      "logoURI": "https://docs.velodrome.finance/tokens/DOLA.png"
     },
     {
       "chainId": 10,
