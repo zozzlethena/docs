@@ -67,6 +67,13 @@
       "symbol": "HND",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/HND.png"
+    },
+    {
+      "address": "0xdfa46478f9e5ea86d57387849598dbfb2e964b02",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/MAI.svg"
     }
   ]
 }
