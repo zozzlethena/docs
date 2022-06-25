@@ -232,8 +232,9 @@ The weekly rebase amount is calculated with the following formula:
 voting on their preferred liquidity pool _gauges_. `$VELO` emissions will be distributed
 proportionally to the total votes a liquidity pool receives.
 
-In return, voters receive 100% of the trading fees and bribes collected through the 
-liquidity pool they vote for. Trading fees acrrue in the epoch following the vote snapshot. 
+In return, voters receive 100% of the trading fees and bribes collected through the
+liquidity pool they vote for. Trading fees accrue in the epoch as soon as the
+vote is cast.
 Bribes accrue to voters in the same epoch in which they're deposited.
 
 Voting for gauges, or in fact any action related to the `$veVELO` NFT is
