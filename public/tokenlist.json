@@ -75,6 +75,14 @@
       "symbol": "MAI",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/MAI.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x85f6583762Bc76d775eAB9A7456db344f12409F7",
+      "name": "renBTC",
+      "symbol": "RENBTC",
+      "decimals": 8,
+      "logoURI": "https://docs.velodrome.finance/tokens/renBTC.svg"
     }
   ]
 }
