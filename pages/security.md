@@ -18,8 +18,7 @@ sourced in full](https://github.com/solidlyexchange/) by Andre Cronje and his te
 March 2022. Since its release in February on Fantom network, no security
 incidents related to Solidly smart contracts were reported.
 
-Velodrome Finance open-source repositories can be found at:
-https://github.com/velodrome-finance
+Velodrome Finance smart contracts can be found on Optimistic Etherscan at the links below.
 
 <Callout emoji="⚠️">
   Before moving forward, we'd like to remind to our users that
@@ -35,21 +34,21 @@ https://github.com/velodrome-finance
 
 | Contract Name | Contract Address | Network |
 | --- | --- | --- |
-| Velo               | `0x3c8B650257cFb5f272f799F5e2b4e65093a11a05` | Optimism |
-| GaugeFactory       | `0xC5be2c918EB04B091962fDF095A217A55CFA42C5` | Optimism |
-| BribeFactory       | `0xA84EA94Aa705F7d009CDDF2a60f65c0d446b748E` | Optimism |
-| PairFactory        | `0x25CbdDb98b35ab1FF77413456B31EC81A6B6B746` | Optimism |
-| Router             | `0xa132DAB612dB5cB9fC9Ac426A0Cc215A3423F9c9` | Optimism |
-| VelodromeLibrary   | `0xe3C5e29eA198e617ebc707718707Beff9393Fa51` | Optimism |
-| VeArtProxy         | `0x5F2f6721Ca0C5AC522BC875fA3F09bF693dcFa1D` | Optimism |
-| VotingEscrow       | `0x9c7305eb78a432ced5C4D14Cac27E8Ed569A2e26` | Optimism |
-| RewardsDistributor | `0x5d5Bea9f0Fc13d967511668a60a3369fD53F784F` | Optimism |
-| Voter              | `0x09236cfF45047DBee6B921e00704bed6D6B8Cf7e` | Optimism |
-| Minter             | `0x3460Dc71A8863710D1C907B8d9D5DBC053a4102d` | Optimism |
-| RedemptionReceiver | `0x846e822e9a00669dcC647079d7d625d2cd25A951` | Optimism |
-| VeloGovernor       | `0x64DD805aa894dc001f8505e000c7535179D96C9E` | Optimism |
-| MerkleClaim        | `0x00D59BC35174C3b250Dd92a363495d38C8777a49` | Optimism |
-| RedemptionSender   | `0x9809fB94eED086F9529df00d6f125Bf25Ee84A93` | Fantom |
+| Velo               | [0x3c8B650257cFb5f272f799F5e2b4e65093a11a05](https://optimistic.etherscan.io/address/0x3c8B650257cFb5f272f799F5e2b4e65093a11a05#code) | Optimism |
+| GaugeFactory       | [0xC5be2c918EB04B091962fDF095A217A55CFA42C5](https://optimistic.etherscan.io/address/0xC5be2c918EB04B091962fDF095A217A55CFA42C5#code) | Optimism |
+| BribeFactory       | [0xA84EA94Aa705F7d009CDDF2a60f65c0d446b748E](https://optimistic.etherscan.io/address/0xA84EA94Aa705F7d009CDDF2a60f65c0d446b748E#code) | Optimism |
+| PairFactory        | [0x25CbdDb98b35ab1FF77413456B31EC81A6B6B746](https://optimistic.etherscan.io/address/0x25CbdDb98b35ab1FF77413456B31EC81A6B6B746#code) | Optimism |
+| Router             | [0xa132DAB612dB5cB9fC9Ac426A0Cc215A3423F9c9](https://optimistic.etherscan.io/address/0xa132DAB612dB5cB9fC9Ac426A0Cc215A3423F9c9#code) | Optimism |
+| VelodromeLibrary   | [0xe3C5e29eA198e617ebc707718707Beff9393Fa51](https://optimistic.etherscan.io/address/0xe3C5e29eA198e617ebc707718707Beff9393Fa51#code) | Optimism |
+| VeArtProxy         | [0x5F2f6721Ca0C5AC522BC875fA3F09bF693dcFa1D](https://optimistic.etherscan.io/address/0x5F2f6721Ca0C5AC522BC875fA3F09bF693dcFa1D#code) | Optimism |
+| VotingEscrow       | [0x9c7305eb78a432ced5C4D14Cac27E8Ed569A2e26](https://optimistic.etherscan.io/address/0x9c7305eb78a432ced5C4D14Cac27E8Ed569A2e26#code) | Optimism |
+| RewardsDistributor | [0x5d5Bea9f0Fc13d967511668a60a3369fD53F784F](https://optimistic.etherscan.io/address/0x5d5Bea9f0Fc13d967511668a60a3369fD53F784F#code) | Optimism |
+| Voter              | [0x09236cfF45047DBee6B921e00704bed6D6B8Cf7e](https://optimistic.etherscan.io/address/0x09236cfF45047DBee6B921e00704bed6D6B8Cf7e#code) | Optimism |
+| Minter             | [0x3460Dc71A8863710D1C907B8d9D5DBC053a4102d](https://optimistic.etherscan.io/address/0x3460Dc71A8863710D1C907B8d9D5DBC053a4102d#code) | Optimism |
+| RedemptionReceiver | [0x846e822e9a00669dcC647079d7d625d2cd25A951](https://optimistic.etherscan.io/address/0x846e822e9a00669dcC647079d7d625d2cd25A951#code) | Optimism |
+| VeloGovernor       | [0x64DD805aa894dc001f8505e000c7535179D96C9E](https://optimistic.etherscan.io/address/0x64DD805aa894dc001f8505e000c7535179D96C9E#code) | Optimism |
+| MerkleClaim        | [0x00D59BC35174C3b250Dd92a363495d38C8777a49](https://optimistic.etherscan.io/address/0x00d59bc35174c3b250dd92a363495d38c8777a49#code) | Optimism |
+| RedemptionSender   | [0x9809fB94eED086F9529df00d6f125Bf25Ee84A93](https://ftmscan.com/address/0x9809fB94eED086F9529df00d6f125Bf25Ee84A93#code) | Fantom |
 
 ## Tokenlist
 
