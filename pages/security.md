@@ -134,12 +134,10 @@ handful of false-positive, low-severity issues reported.
 
 ## Bug Bounty Programs
 
-Velodrome Finance run a [bug bounty contest on 23rd to 30th of May 2022 with
+Velodrome Finance ran a [bug bounty contest on 23rd to 30th of May 2022 with
 awards up to $75,000 on Code4rena](https://code4rena.com/contests/2022-05-velodrome-finance-contest).
 The main scope of the contest was to cover all the new changes to the new and
 the original contracts.
 
-This is the second bug bounty program for Solidly. First program
-was launched in February 2022 on Immunefi.com. At the moment, there are no
-claims for any of the $200,000 rewards ([on their
-Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
+Solidly's bug bounty program was launched in February 2022 on Immunefi.com.
+There were no claims for any of the $200,000 rewards ([on their Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
