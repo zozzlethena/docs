@@ -91,6 +91,14 @@
       "symbol": "L2DAO",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/L2DAO.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x9485aca5bbBE1667AD97c7fE7C4531a624C8b1ED",
+      "name": "Angle EURO",
+      "symbol": "agEUR",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/agEUR.svg"
     }
   ]
 }
