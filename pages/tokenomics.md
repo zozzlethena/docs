@@ -192,9 +192,9 @@ The weekly rebase amount is calculated with the following formula:
     data={[
       ["Week", "LP Emissions", "veRebase (@50% locking rate)", "Total Supply"],
       ["1", 15, 0, 400],
-      ["50", 12, 2, 1000],
-      ["100", 10, 1.5, 1500],
-      ["150", 5, 1, 1700],
+      ["50", 9.1, 2, 1000],
+      ["100", 5.5, 1.5, 1500],
+      ["150", 3.3, 1, 1700],
       ["200", 2, 0.5, 2000]
     ]}
     options={{
