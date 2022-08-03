@@ -99,6 +99,14 @@
       "symbol": "agEUR",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/agEUR.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x375488f097176507e39b9653b88fdc52cde736bf",
+      "name": "Tarot Protocol",
+      "symbol": "TAROT",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/TAROT.svg"
     }
   ]
 }
