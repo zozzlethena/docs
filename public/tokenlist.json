@@ -107,6 +107,22 @@
       "symbol": "TAROT",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/TAROT.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x5A5fFf6F753d7C11A56A52FE47a177a87e431655",
+      "name": "Synapse Protocol",
+      "symbol": "SYN",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/SYN.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x6ca558bd3eaB53DA1B25aB97916dd14bf6CFEe4E",
+      "name": "Ripae Pegged ETH",
+      "symbol": "pETHo",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/pETHo.svg"
     }
   ]
 }
