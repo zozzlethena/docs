@@ -30,6 +30,31 @@ Velodrome Finance smart contracts can be found on Optimistic Etherscan at the li
   [Discord](https://discord.gg/eGgYPGczaf), or to the contacts provided on our Github page.
 </Callout>
 
+## Audits
+
+Solidly went through a partial (only the AMM part was sent for audit) security
+audit in January 30, 2022. The audit was done by PeckShield and did reveal 5
+low-severity and 1 informal findings.
+
+The full audit is available for [download from Solidly git
+repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a816-3802-4384-894c-825a4177245a.pdf).
+
+Velodrome Finance went through a security audit and a peer review as part of the Code4rena bug bouncy contest.
+Finally, a full MythX deep scan on Velodrome contracts found just a
+handful of false-positive, low-severity issues reported.
+
+The Code4rena contest results were released on August 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-velodrome/). All high- or medium-risk issues were either resolved pre-deploy, except for one known issue (users can claim eligible rewards from ExternalBribe contracts more than once) that's currently being addressed (via a wrapped contract solution). No user funds are at risk from this vulnerability, and protocols who wish to deposit external bribes should get in contact with the core team to discuss alternative solutions. More information about our C4 contest can be found [here](/c4report).
+
+## Bug Bounty Programs
+
+Velodrome Finance ran a [bug bounty contest on 23rd to 30th of May 2022 with
+awards up to $75,000 on Code4rena](https://code4rena.com/contests/2022-05-velodrome-finance-contest).
+The main scope of the contest was to cover all the new changes to the new and
+the original contracts.
+
+Solidly's bug bounty program was launched in February 2022 on Immunefi.com.
+There were no claims for any of the $200,000 rewards ([on their Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
+
 ## Contract Addresses
 
 | Contract Name | Contract Address | Network |
@@ -58,9 +83,9 @@ we maintain one as well
 with our partner tokens:
 https://docs.velodrome.finance/tokenlist.json
 
-## Changelog
+## Differences from Solidly
 
-As of May 2022, we've compiled a changelog of the Velodrome smart contracts.
+As of August 2022, we've compiled a list of key differences between Velodrome's contracts and Solidly's.
 
 ### Major changes
 
@@ -106,38 +131,3 @@ As of May 2022, we've compiled a changelog of the Velodrome smart contracts.
     redemption process that uses LayerZero to burn `$WEVE` for `$USDC` and
     `$VELO` on Optimism, and a Merkle airdrop contract. Unclaimed `$VELO` is
     never minted to ensure emissions aren't affected.
-
-### Areas of Concern
-
-As we're not changing any of the core swap logic, the bulk of our security
-concerns relate to the native token emissions, governance, and distribution:
-
- * `Gauge.sol` and `ExternalBribe.sol`, which introduce new logic related to how
-   external bribes and voting work
- * `VotingEscrow.sol`, which adds compatibility with _OZ_ / _Compound_-style
-   governance tools like Tally
- * `RedemptionSender.sol` and `RedemptionReceiver.sol` both use LayerZero for
-   cross-chain messaging
-
-## Audits
-
-Solidly went through a partial (only the AMM part was sent for audit) security
-audit in January 30, 2022. The audit was done by PeckShield and did reveal 5
-low-severity and 1 informal findings.
-
-The full audit is available for [download from Solidly git
-repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a816-3802-4384-894c-825a4177245a.pdf).
-
-Velodrome Finance went through a security audit and a peer review as part of the Code4rena bug bouncy contest.
-Finally, a full MythX deep scan on Velodrome contracts found just a
-handful of false-positive, low-severity issues reported.
-
-## Bug Bounty Programs
-
-Velodrome Finance ran a [bug bounty contest on 23rd to 30th of May 2022 with
-awards up to $75,000 on Code4rena](https://code4rena.com/contests/2022-05-velodrome-finance-contest).
-The main scope of the contest was to cover all the new changes to the new and
-the original contracts.
-
-Solidly's bug bounty program was launched in February 2022 on Immunefi.com.
-There were no claims for any of the $200,000 rewards ([on their Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
