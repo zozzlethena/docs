@@ -123,6 +123,14 @@
       "symbol": "pETHo",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/pETHo.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x09448876068907827ec15F49A8F1a58C70b04d45",
+      "name": "Ripae Share ETH",
+      "symbol": "sETHo",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/sETHo.svg"
     }
   ]
 }
