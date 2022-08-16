@@ -131,6 +131,14 @@
       "symbol": "sETHo",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/sETHo.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x676f784d19c7f1ac6c6beaeaac78b02a73427852",
+      "name": "OPP",
+      "symbol": "Optimism Prime",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OPP.svg"
     }
   ]
 }
