@@ -45,6 +45,8 @@ handful of false-positive, low-severity issues reported.
 
 The Code4rena contest results were released on August 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-velodrome/). All high- or medium-risk issues were either resolved pre-deploy, except for one known issue (users can claim eligible rewards from ExternalBribe contracts more than once) that's currently being addressed (via a wrapped contract solution). No user funds are at risk from this vulnerability, and protocols who wish to deposit external bribes should get in contact with the core team to discuss alternative solutions. More information about our C4 contest can be found [here](/c4report).
 
+Lastly, we also engaged with Coelacanth ([@ImpossibleNFT](https://twitter.com/impossiblenft)) for an informal full audit. Reports from that audit are available [here](https://github.com/velodrome-finance/contracts/tree/master/audits/velo).
+
 ## Bug Bounty Programs
 
 Velodrome Finance ran a [bug bounty contest on 23rd to 30th of May 2022 with
