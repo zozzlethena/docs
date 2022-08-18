@@ -10,7 +10,7 @@
       "name": "Optimism",
       "symbol": "OP",
       "decimals": 18,
-      "logoURI": "https://ethereum-optimism.github.io/logos/optimism.svg"
+      "logoURI": "https://ethereum-optimism.github.io/data/OP/logo.png"
     },
     {
       "chainId": 10,
