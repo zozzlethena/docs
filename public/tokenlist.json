@@ -139,6 +139,14 @@
       "symbol": "Optimism Prime",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/OPP.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x7ae97042a4a0eb4d1eb370c34bfec71042a056b7",
+      "name": "UNLOCK",
+      "symbol": "200 Keys Token",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/UNLOCK.png"
     }
   ]
 }
