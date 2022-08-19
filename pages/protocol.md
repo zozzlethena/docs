@@ -55,7 +55,6 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
-| Gabagool    | Velodrome        | 0xe9b80b4cf85d7709583dff27c1f51b289cd1e152 |
 | Jack Anorak | Velodrome        | 0x9eBd10B46B43351097caB2D3c03Ccf440957A2a9 |
 | pooltypes   | Velodrome        | 0xc0DE1436C4E247F8652476A0B9ff55699801e1d0 |
 | Nick        | Velodrome        | 0x53e0b897eae600b2f6855fce4a42482e9229d2c2 |
