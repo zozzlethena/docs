@@ -147,6 +147,14 @@
       "symbol": "200 Keys Token",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/UNLOCK.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xFBc4198702E81aE77c06D58f81b629BDf36f0a71",
+      "name": "sEUR",
+      "symbol": "Synthetix EURO",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/sEUR.png"
     }
   ]
 }
