@@ -154,7 +154,7 @@
       "name": "sEUR",
       "symbol": "Synthetix EURO",
       "decimals": 18,
-      "logoURI": "https://docs.velodrome.finance/tokens/sEUR.png"
+      "logoURI": "https://docs.velodrome.finance/tokens/sEUR.svg"
     }
   ]
 }
