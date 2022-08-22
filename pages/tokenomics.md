@@ -258,12 +258,10 @@ it does make the protocol safer against potential exploitative behaviour.
 ## Bribes
 
 In addition to the fees, liquidity pools allow external rewards from anyone
-(known as _bribes_). Bribes can be added to _whitelisted_ pools and are distributed 
-_only_ to voters on that pool, proportionally to their share of pool votes.
+(known as _bribes_). Bribes can be added to _whitelisted_ pools and are distributed
+_only_ to voters on that pool, proportionally to their cast voting power.
 
-Bribes accrue to voters immediately after having been deposited. For example,
-a bribe deposited 2 days before snapshot will accrue 50% to the vote-share in day 1 
-and 50% to the vote-share in day 2.
+Bribes accrue to voters after the voting snapshot.
 
 ## Rewards claim
 
