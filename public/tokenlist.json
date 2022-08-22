@@ -135,24 +135,24 @@
     {
       "chainId": 10,
       "address": "0x676f784d19c7f1ac6c6beaeaac78b02a73427852",
-      "name": "OPP",
-      "symbol": "Optimism Prime",
+      "name": "Optimism Prime",
+      "symbol": "OPP",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/OPP.svg"
     },
     {
       "chainId": 10,
       "address": "0x7ae97042a4a0eb4d1eb370c34bfec71042a056b7",
-      "name": "UNLOCK",
-      "symbol": "200 Keys Token",
+      "name": "200 Keys Token",
+      "symbol": "UNLOCK",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/UNLOCK.png"
     },
     {
       "chainId": 10,
       "address": "0xFBc4198702E81aE77c06D58f81b629BDf36f0a71",
-      "name": "sEUR",
-      "symbol": "Synthetix EURO",
+      "name": "Synthetix EURO",
+      "symbol": "sEUR",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/sEUR.svg"
     }
