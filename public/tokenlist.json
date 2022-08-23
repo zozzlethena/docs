@@ -155,6 +155,22 @@
       "symbol": "sEUR",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/sEUR.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xA8d83Cd5102b0A412931B12255D218B0b0E7152C",
+      "name": "OP Launcher",
+      "symbol": "OPL",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OPL.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xEe9801669C6138E84bD50dEB500827b776777d28",
+      "name": "O3 Swap",
+      "symbol": "O3",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/O3.svg"
     }
   ]
 }
