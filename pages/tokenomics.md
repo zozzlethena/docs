@@ -261,17 +261,6 @@ In addition to the fees, liquidity pools allow external rewards from anyone
 (known as _bribes_). Bribes can be added to _whitelisted_ pools and are distributed 
 _only_ to voters on that pool, proportionally to their share of pool votes.
 
-Bribes accrue to voters immediately after having been deposited. Once a bribe
-is deposited, it begins accruing to all active voters on that gauge (eg. a
-bribe deposited 2 days before snapshot will accrue 50% to the vote-share in day
-1 and 50% to the vote-share in day 2).
-
-An active vote is a vote placed in the current epoch. In this regard, voting
-right when a bribe is deposited ensures you are accruing the entirety of the
-bribe over the remaining time in the epoch, while waiting allows you to see
-what other bribes may come in on competing gauges. Remember, you only have one
-vote (one action per veNFT) per epoch.
-
 ## Rewards claim
 
 Rebase rewards claim is available one full epoch after tokens are locked.
@@ -347,7 +336,7 @@ Represent external rewards added to incentivize voters to cast their voting
 power for a specific liquidity pool. These rewards can be in any _whitelisted_
 tokens.
 
-These rewards accrue and are available for claim after a snapshot is taken
+These rewards distribute and are available for claim after a snapshot is taken
 (after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
 voter (`$veVELO`).
 
