@@ -53,21 +53,10 @@ liquidity pools.
   participated!
 </Callout>
 
-Upon launch we will kick off with an airdrop of `$VELO` and `$veVELO` for
+At launch we distributed `$VELO` and `$veVELO` to
 users and protocols we believe are likeliest to contribute to our
 mission to become the liquidity base layer of the Optimism ecosystem.
 
-The distribution will be meaningful but will also leave enough room for new
-players to join and capture voting share through emissions and/or
-token acquisition.
-
-This should also ensure that Velodrome Finance as a protocol is able to
-successfully bootstrap and retain a team for its own success.
-
-<Callout>
-  `$WEVE` holders should check [the launch
-  guide](/launch#a-message-to-the-vedao-community) for full distribution details!
-</Callout>
 
 ### Distribution
 
@@ -233,9 +222,7 @@ voting on their preferred liquidity pool _gauges_. `$VELO` emissions will be dis
 proportionally to the total votes a liquidity pool receives.
 
 In return, voters receive 100% of the trading fees and bribes collected through the
-liquidity pool they vote for. Trading fees accrue in the epoch as soon as the
-vote is cast.
-Bribes accrue to voters in the same epoch in which they're deposited.
+liquidity pool they vote for. 
 
 Voting for gauges, or in fact any action related to the `$veVELO` NFT is
 allowed only once per epoch. This means that calling `Voter.reset()` (used for
