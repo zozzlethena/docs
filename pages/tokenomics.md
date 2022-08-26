@@ -236,7 +236,7 @@ it does make the protocol safer against potential exploitative behaviour.
 
 <Callout>
   Unused `$veVELO` voting power is still taken into account as we calculate the
-  weight of the vote upon snapshot and based on the locked vesting slope.
+  weight of the vote upon epoch flip and based on the locked vesting slope.
 
   Please make sure you always cast 100% of your voting power to avoid
   unexpected outcomes!
@@ -251,14 +251,13 @@ _only_ to voters on that pool, proportionally to their share of pool votes.
 ## Rewards claim
 
 Rebase rewards claim is available one full epoch after tokens are locked.
-Bribe rewards claim is available 24–48 hours after the snapshot. 
-Rewards not collected will accrue to future epochs.
+External bribe rewards are claimable after a new epoch has started (epochs increment right after 23:59 UTC each Wednesday).
 
 An example of bribes, voting, and rewards claim timeline:
  * A new epoch starts Thursday (00:00 UTC)
  * Bribes are deposited at any point in the epoch
- * A snapshot for votes cast is taken at the end of Wednesday (23:59 UTC)
- * Rewards available 24–48 hours after the snapshot
+ * Voters vote for their preferred pools
+ * Once the next epoch arrives (the following Thursday), users are able to claim rewards from the UI or the corresponding `WrappedExternalBribe` contract
 
 <Bleed>
   <Chart
@@ -270,17 +269,14 @@ An example of bribes, voting, and rewards claim timeline:
         { type: "date", id: "Start" },
         { type: "date", id: "End" },
       ],
-      ["Round #1", "Bribes Deposited, Votes Cast", new Date(2022, 5, 2), new Date(2022, 5, 8, 11, 59)],
-      ["Round #1", "Snapshot", new Date(2022, 5, 8, 11, 59), new Date(2022, 5, 9)],
-      ["Round #1", "Rewards Distributed", new Date(2022, 5, 9), new Date(2022, 5, 10)],
+      ["Round #1", "Bribes Deposited, Votes Cast", new Date(2022, 5, 2), new Date(2022, 5, 8, 23, 59)],
+      ["Round #1", "Rewards Claimable", new Date(2022, 5, 9), new Date(2022, 5, 30)],
 
-      ["Round #2", "Bribes Deposited, Votes Cast", new Date(2022, 5, 9), new Date(2022, 5, 15, 11, 59)],
-      ["Round #2", "Snapshot", new Date(2022, 5, 15, 11, 59), new Date(2022, 5, 16)],
-      ["Round #2", "Rewards Distributed", new Date(2022, 5, 16), new Date(2022, 5, 17)],
+      ["Round #2", "Bribes Deposited, Votes Cast", new Date(2022, 5, 9), new Date(2022, 5, 15, 23, 59)],
+      ["Round #2", "Rewards Claimable", new Date(2022, 5, 16), new Date(2022, 5, 30)],
 
-      ["Round #3", "Bribes Deposited, Votes Cast", new Date(2022, 5, 15), new Date(2022, 5, 22, 11, 59)],
-      ["Round #3", "Snapshot", new Date(2022, 5, 22, 11, 59), new Date(2022, 5, 23)],
-      ["Round #3", "Rewards Distributed", new Date(2022, 5, 23), new Date(2022, 5, 24)],
+      ["Round #3", "Bribes Deposited, Votes Cast", new Date(2022, 5, 15), new Date(2022, 5, 22, 23, 59)],
+      ["Round #3", "Rewards Claimable", new Date(2022, 5, 23), new Date(2022, 5, 30)],
     ]}
     options={{
       title: "Bribing, Voting and Rewards Timeline",
@@ -323,7 +319,7 @@ Represent external rewards added to incentivize voters to cast their voting
 power for a specific liquidity pool. These rewards can be in any _whitelisted_
 tokens.
 
-These rewards distribute and are available for claim after a snapshot is taken
+These rewards distribute and are available for claim after the epoch flips 
 (after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
 voter (`$veVELO`).
 
