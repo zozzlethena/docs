@@ -242,11 +242,47 @@ it does make the protocol safer against potential exploitative behaviour.
   unexpected outcomes!
 </Callout>
 
-## Bribes
+
+## Rewards
+
+There are 4 types of rewards on Velodrome Finance.
+
+### Emissions
+
+Represent `$VELO` distributed to liquidity pool stakers. The amount of
+`$VELO` distributed towards every pool is proportional to the voting power
+received from the voters every epoch.
+
+These rewards are streaming and are available for claim as these accrue.
+
+### Fees
+
+Represent liquidity pool trading fees distributed to voters in pool tokens (
+e.g., if the pool is `vAMM-VELO/USDC` the distributed tokens are `$VELO` and
+`$USDC`).
+
+The tokens are streaming proportionally to the voting power cast by a voter and
+the accrued amount of trading fees.
+
+These rewards are available for claim as they accrue.
+
+### Bribes
 
 In addition to the fees, liquidity pools allow external rewards from anyone
 (known as _bribes_). Bribes can be added to _whitelisted_ pools and are distributed 
 _only_ to voters on that pool, proportionally to their share of pool votes.
+
+These rewards are available for claim after the epoch flips 
+(after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
+voter (`$veVELO`).
+
+### Rebases
+
+Represent `$veVELO` distributed to `$veVELO` holders in order to reduce the
+voting power dilution.
+
+These rewards are available for claim as these accrue and are streaming
+proportionally to all `$veVELO` holders.
 
 ## Rewards claim
 
@@ -275,7 +311,7 @@ An example of bribes, voting, and rewards claim timeline:
       ["Round #2", "Bribes Deposited, Votes Cast", new Date(2022, 5, 9), new Date(2022, 5, 15, 23, 59)],
       ["Round #2", "Rewards Claimable", new Date(2022, 5, 16), new Date(2022, 5, 30)],
 
-      ["Round #3", "Bribes Deposited, Votes Cast", new Date(2022, 5, 15), new Date(2022, 5, 22, 23, 59)],
+      ["Round #3", "Bribes Deposited, Votes Cast", new Date(2022, 5, 16), new Date(2022, 5, 22, 23, 59)],
       ["Round #3", "Rewards Claimable", new Date(2022, 5, 23), new Date(2022, 5, 30)],
     ]}
     options={{
@@ -289,47 +325,6 @@ An example of bribes, voting, and rewards claim timeline:
     width={"100%"}
   />
 </Bleed>
-
-## Rewards
-
-There are 4 types of rewards on Velodrome Finance.
-
-### Emissions
-
-Represent `$VELO` distributed to liquidity pool stakers. The amount of
-`$VELO` distributed towards every pool is proportional to the voting power
-received from the voters every epoch.
-
-These rewards are streaming and are available for claim as these accrue.
-
-### Fees
-
-Represent liquidity pool trading fees distributed to voters in pool tokens (
-e.g., if the pool is `vAMM-VELO/USDC` the distributed tokens are `$VELO` and
-`$USDC`).
-
-The tokens are streaming proportionally to the voting power cast by a voter and
-the accrued amount of trading fees.
-
-These rewards are available for claim as these accrue.
-
-### Bribes
-
-Represent external rewards added to incentivize voters to cast their voting
-power for a specific liquidity pool. These rewards can be in any _whitelisted_
-tokens.
-
-These rewards distribute and are available for claim after the epoch flips 
-(after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
-voter (`$veVELO`).
-
-### Rebases
-
-Represent `$veVELO` distributed to `$veVELO` holders in order to reduce the
-voting power dilution.
-
-These rewards are available for claim as these accrue and are streaming
-proportionally to all `$veVELO` holders.
 
 ## Whitelisting
 
