@@ -264,7 +264,7 @@ e.g., if the pool is `vAMM-VELO/USDC` the distributed tokens are `$VELO` and
 The tokens are streaming proportionally to the voting power cast by a voter and
 the accrued amount of trading fees.
 
-These rewards are available for claim as they accrue.
+These rewards are available for claim as they accrue. They do not need to be claimed each epoch.
 
 ### Bribes
 
@@ -275,6 +275,8 @@ _only_ to voters on that pool, proportionally to their share of pool votes.
 These rewards are available for claim after the epoch flips 
 (after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
 voter (`$veVELO`).
+
+Note: Bribes need to be claimed each epoch and do not roll-over.
 
 ### Rebases
 
