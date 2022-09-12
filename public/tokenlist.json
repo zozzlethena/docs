@@ -203,6 +203,14 @@
       "symbol": "jEUR",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/jEUR.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x39FdE572a18448F8139b7788099F0a0740f51205",
+      "name": "Oath Token",
+      "symbol": "OATH",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OATH.png"
     }
   ]
 }
