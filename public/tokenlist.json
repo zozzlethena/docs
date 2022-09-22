@@ -219,6 +219,22 @@
       "symbol": "BIFI",
       "decimals": 18,
       "logoURI": "https://beefy.com/dc51eaea08082ebf39ee2302e485a12f.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xc3864f98f2a61A7cAeb95b039D031b4E2f55e0e9",
+      "decimals": 18,
+      "name": "OpenX Optimism",
+      "symbol": "OpenX",
+      "logoURI": "https://raw.githubusercontent.com/openXswap/openXswap-misc/master/img/X.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x5AE99ccE8b5BC9c639A27CCC2c84448C7a6a0A12",
+      "decimals": 18,
+      "name": "xOpenX Optimism",
+      "symbol": "xOpenX",
+      "logoURI": "https://raw.githubusercontent.com/openXswap/openXswap-misc/master/img/xX.png"
     }
   ]
 }
