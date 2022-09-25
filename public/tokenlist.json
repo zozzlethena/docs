@@ -230,19 +230,19 @@
     },
     {
       "chainId": 10,
-      "address": "0x5AE99ccE8b5BC9c639A27CCC2c84448C7a6a0A12",
-      "decimals": 18,
-      "name": "Locked OPENX",
-      "symbol": "xOPENX",
-      "logoURI": "https://docs.velodrome.finance/tokens/OPENX.png"
-    },
-    {
-      "chainId": 10,
       "address": "0x1DB2466d9F5e10D7090E7152B68d62703a2245F0",
       "decimals": 18,
       "name": "Sonne Finance",
       "symbol": "SONNE",
       "logoURI": "https://docs.velodrome.finance/tokens/SONNE.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x2513486f18eeE1498D7b6281f668B955181Dd0D9",
+      "decimals": 18,
+      "name": "OpenXSwap Gov Token",
+      "symbol": "xOpenX",
+      "logoURI": "https://raw.githubusercontent.com/openXswap/openXswap-misc/master/img/xX.png"
     }
   ]
 }
