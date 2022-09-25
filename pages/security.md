@@ -64,7 +64,7 @@ There were no claims for any of the $200,000 rewards ([on their Github](https://
 | Velo               | [0x3c8B650257cFb5f272f799F5e2b4e65093a11a05](https://optimistic.etherscan.io/address/0x3c8B650257cFb5f272f799F5e2b4e65093a11a05#code) | Optimism |
 | GaugeFactory       | [0xC5be2c918EB04B091962fDF095A217A55CFA42C5](https://optimistic.etherscan.io/address/0xC5be2c918EB04B091962fDF095A217A55CFA42C5#code) | Optimism |
 | BribeFactory       | [0xA84EA94Aa705F7d009CDDF2a60f65c0d446b748E](https://optimistic.etherscan.io/address/0xA84EA94Aa705F7d009CDDF2a60f65c0d446b748E#code) | Optimism |
-| WrappedBribeFactory| [0x7955519E14fdF498E28831F4cC06af4B8e3086A8](https://optimistic.etherscan.io/address/0x7955519E14fdF498E28831F4cC06af4B8e3086A8#code) | Optimism |
+| WrappedBribeFactory| [0xFC1AA395EBd27664B11fC093C07E10FF00f0122C](https://optimistic.etherscan.io/address/0xFC1AA395EBd27664B11fC093C07E10FF00f0122C#code) | Optimism |
 | PairFactory        | [0x25CbdDb98b35ab1FF77413456B31EC81A6B6B746](https://optimistic.etherscan.io/address/0x25CbdDb98b35ab1FF77413456B31EC81A6B6B746#code) | Optimism |
 | Router             | [0x9c12939390052919aF3155f41Bf4160Fd3666A6f](https://optimistic.etherscan.io/address/0x9c12939390052919aF3155f41Bf4160Fd3666A6f#code) | Optimism |
 | VelodromeLibrary   | [0xfb1Fc21D2937bF5a49D480189e7FEd42bF8282aD](https://optimistic.etherscan.io/address/0xfb1Fc21D2937bF5a49D480189e7FEd42bF8282aD#code) | Optimism |
