@@ -242,7 +242,15 @@
       "decimals": 18,
       "name": "OpenXSwap Gov Token",
       "symbol": "xOpenX",
-      "logoURI": "https://raw.githubusercontent.com/openXswap/openXswap-misc/master/img/xX.png"
+      "logoURI": "https://docs.velodrome.finance/tokens/xOPENX.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xb153fb3d196a8eb25522705560ac152eeec57901",
+      "decimals": 18,
+      "name": "Magic Internet Money",
+      "symbol": "MIM",
+      "logoURI": "https://docs.velodrome.finance/tokens/MIM.svg"
     }
   ]
 }
