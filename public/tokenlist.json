@@ -251,6 +251,14 @@
       "name": "Magic Internet Money",
       "symbol": "MIM",
       "logoURI": "https://docs.velodrome.finance/tokens/MIM.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xE3AB61371ECc88534C522922a026f2296116C109",
+      "decimals": 18,
+      "name": "Spell Token",
+      "symbol": "SPELL",
+      "logoURI": "https://docs.velodrome.finance/tokens/SPELL.svg"
     }
   ]
 }
