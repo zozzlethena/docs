@@ -259,6 +259,14 @@
       "name": "Spell Token",
       "symbol": "SPELL",
       "logoURI": "https://docs.velodrome.finance/tokens/SPELL.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
+      "decimals": 18,
+      "name": "HOP Protocol Token",
+      "symbol": "HOP",
+      "logoURI": "https://docs.velodrome.finance/tokens/HOP.svg"
     }
   ]
 }
