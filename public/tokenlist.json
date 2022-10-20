@@ -267,6 +267,14 @@
       "name": "HOP Protocol Token",
       "symbol": "HOP",
       "logoURI": "https://docs.velodrome.finance/tokens/HOP.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x3417e54a51924c225330f8770514ad5560b9098d",
+      "decimals": 18,
+      "name": "REDKoin",
+      "symbol": "RED",
+      "logoURI": "https://docs.velodrome.finance/tokens/RED.png"
     }
   ]
 }
