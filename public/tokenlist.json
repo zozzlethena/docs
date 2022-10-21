@@ -275,6 +275,14 @@
       "name": "REDKoin",
       "symbol": "RED",
       "logoURI": "https://docs.velodrome.finance/tokens/RED.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x29FAF5905bfF9Cfcc7CF56a5ed91E0f091F8664B",
+      "decimals": 18,
+      "name": "Bankless Token",
+      "symbol": "BANK",
+      "logoURI": "https://docs.velodrome.finance/tokens/BANK.png"
     }
   ]
 }
