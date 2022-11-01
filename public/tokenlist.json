@@ -283,6 +283,14 @@
       "name": "Bankless Token",
       "symbol": "BANK",
       "logoURI": "https://docs.velodrome.finance/tokens/BANK.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xCa98d642E158c3016E1c75dbcC3D5ECFe3E02A19",
+      "decimals": 6,
+      "name": "ETS Night over Arrakis",
+      "symbol": "ETS WETH/USDC",
+      "logoURI": "https://docs.velodrome.finance/tokens/ETS.svg"
     }
   ]
 }
