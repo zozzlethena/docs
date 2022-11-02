@@ -291,6 +291,14 @@
       "name": "ETS Night over Arrakis",
       "symbol": "ETS WETH/USDC",
       "logoURI": "https://docs.velodrome.finance/tokens/ETS.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x46f21fDa29F1339e0aB543763FF683D399e393eC",
+      "decimals": 18,
+      "name": "Perpetually Bonded OpenX Velo",
+      "symbol": "opxveVELO",
+      "logoURI": "https://docs.velodrome.finance/tokens/opxveVELO.png"
     }
   ]
 }
