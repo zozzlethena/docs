@@ -299,6 +299,14 @@
       "name": "Perpetually Bonded OpenX Velo",
       "symbol": "opxveVELO",
       "logoURI": "https://docs.velodrome.finance/tokens/opxveVELO.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
+      "decimals": 6,
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://docs.velodrome.finance/tokens/USDC.png"
     }
   ]
 }
