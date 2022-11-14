@@ -61,8 +61,8 @@ These pools use a generic AMM formula.
 
 The mathematical formulas are used to keep the total pool liquidity the same at all times.
 
-Below, you can find a visual comparison (click on the charts to explore more)
-between the stable and volatile formulas, where:
+Below, you can find a visual comparison between the stable (red) and volatile (green) 
+AMM pricing equations, where:
  * `x` is the amount of first asset in the pool
  * `y` is the amount of second asset in the same pool
  * `k` is a fixed constant
@@ -71,9 +71,4 @@ between the stable and volatile formulas, where:
   <iframe src="https://www.desmos.com/calculator/yiwx8ev1oh?embed" width="100%" height="700"></iframe>
 </Bleed>
 
-The new stable pool curve quoting is also available:
-
-<Bleed>
-  <iframe src="https://www.desmos.com/calculator/hwb0sfojbg?embed" width="100%" height="700"></iframe>
-</Bleed>
 
