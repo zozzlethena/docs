@@ -276,8 +276,6 @@ These rewards are available for claim after the epoch flips
 (after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
 voter (`$veVELO`).
 
-Note: Bribes need to be claimed each epoch and do not roll-over.
-
 ### Rebases
 
 Represent `$veVELO` distributed to `$veVELO` holders in order to reduce the
