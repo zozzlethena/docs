@@ -307,6 +307,46 @@
       "name": "USD Coin",
       "symbol": "USDC",
       "logoURI": "https://docs.velodrome.finance/tokens/USDC.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
+      "name": "Synthetix USD",
+      "symbol": "sUSD",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/SUSD.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/WSTETH.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
+      "name": "Synthetic Ether",
+      "symbol": "sETH",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/SETH.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/DAI.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xc40f949f8a4e094d1b49a23ea9241d289b7b2819",
+      "name": "LUSD Stablecoin",
+      "symbol": "LUSD",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/LUSD.svg"
     }
   ]
 }
