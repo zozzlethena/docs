@@ -184,7 +184,7 @@ The weekly rebase amount is calculated with the following formula:
       ["50", 9.1, 2, 1000],
       ["100", 5.5, 1.5, 1500],
       ["150", 3.3, 1, 1700],
-      ["200", 2, 0.5, 2000]
+      ["200", 2, 0.5, 1800]
     ]}
     options={{
       title: "$VELO Emissions (M)",
