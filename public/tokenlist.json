@@ -347,6 +347,14 @@
       "symbol": "LUSD",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/LUSD.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x5d47baba0d66083c52009271faf3f50dcc01023c",
+      "name": "UniDex",
+      "symbol": "UNIDX",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/UNIDX.png"
     }
   ]
 }
