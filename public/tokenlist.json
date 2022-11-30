@@ -355,6 +355,14 @@
       "symbol": "UNIDX",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/UNIDX.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x139283255069Ea5deeF6170699AAEF7139526f1f",
+      "name": "OptiDoge",
+      "symbol": "OPTIDOGE",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OPTIDOGE.svg"
     }
   ]
 }
