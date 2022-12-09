@@ -363,6 +363,14 @@
       "symbol": "OPTIDOGE",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/OPTIDOGE.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x920Cf626a271321C151D027030D5d08aF699456b",
+      "name": "Kwenta DAO",
+      "symbol": "KWENTA",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/KWENTA.svg"
     }
   ]
 }
