@@ -371,6 +371,14 @@
       "symbol": "KWENTA",
       "decimals": 18,
       "logoURI": "https://docs.velodrome.finance/tokens/KWENTA.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xb0ae108669ceb86e9e98e8fe9e40d98b867855fd",
+      "name": "OneRing",
+      "symbol": "RING",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/RING.png"
     }
   ]
 }
