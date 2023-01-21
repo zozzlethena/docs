@@ -1,6 +1,6 @@
 # Addressing Issues in Our C4 Contest
 
-Our Code4rena contest results were released on August 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-Velocimeter/).
+Veldrome conducting an audit Code4rena contest results were released gust 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-Velodrome/).
 
 Below details how our team addressed these issues prior to our mainnet deploy.
 
