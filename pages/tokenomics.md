@@ -55,7 +55,7 @@ liquidity pools.
 
 At launch we distributed `FLOW` and `$FLOW` to
 users and protocols we believe are likeliest to contribute to our
-mission to become the liquidity base layer of the Optimism ecosystem.
+mission to become the liquidity base layer of the Arbitrum ecosystem.
 
 
 ### Distribution
@@ -68,7 +68,7 @@ mission to become the liquidity base layer of the Optimism ecosystem.
       [ "Community", 240 ],
       [ "Partner Protocol/DAOs", 96 ],
       [ "Velocimeter Team", 40 ],
-      [ "Optimism Team", 20 ],
+      [ "Arbitrum Team", 20 ],
       [ "Genesis Liquidity Pool", 4 ]
     ]}
     options={{
@@ -91,7 +91,7 @@ incubating Velocimeter and those likeliest to contribute to its long-term
 success, including:
  * `$WEVE` holders (27%, 108M `FLOW`)
  * `$OP` network users (18%, 72M `FLOW`)
-   * 3755 `FLOW`/wallet &mdash; Addresses qualified as [Repeat Optimism Users](https://community.optimism.io/docs/governance/airdrop-1/#optimism-early-adopters)
+   * 3755 `FLOW`/wallet &mdash; Addresses qualified as [Repeat Arbitrum Users](https://community.Arbitrum.io/docs/governance/airdrop-1/#Arbitrum-early-adopters)
  * Cross-chain DeFi users (15%, 60M `FLOW`):
    * 3500 `FLOW`/wallet &mdash; Curve Protocol wallets with a 1450+ days (maximum) `$veCRV` lock time
    * 3000 `FLOW`/wallet &mdash; Convex Protocol lockers of `$vlCVX` since new lock contract deployment
@@ -103,10 +103,10 @@ success, including:
 ### Protocols
 
 We will consider a variety of metrics in assessing the available protocols,
-including TVL, transaction volume, unique wallets, and Optimism team input.
+including TVL, transaction volume, unique wallets, and Arbitrum team input.
 
 The airdrop of 72M (18%) `$FLOW` is aimed at attracting and engaging 10-15 protocols most
-likely to contribute to Velocimeter and Optimism's long-term success.
+likely to contribute to Velocimeter and Arbitrum's long-term success.
 
 The amount of `$FLOW` airdropped will provide just enough voting power to familiarize
 the protocols with the ecosystem and give them a head start, but it will leave space
@@ -145,9 +145,9 @@ The team vesting compensation breakdown:
  * All ongoing payments made to the team members in `FLOW` will vest for 6
    months, 3-month lock in a `$FLOW` followed by a linear 3-month unlock period.
 
-### Optimism Team
+### Arbitrum Team
 
-The Optimism team has a vested interest in ensuring that Velocimeter achieves its
+The Arbitrum team has a vested interest in ensuring that Velocimeter achieves its
 mission of serving as an ecosystem public good. The team will receive 20M (5%) `$FLOW` in the initial
 distribution, to support that interest.
 
@@ -335,7 +335,7 @@ pre-whitelisted tokens, including those from partner protocols.
 Partners can request additional tokens to be _whitelisted_. 
 
 A permissionless _whitelisting_ on-chain governance process will be implemented in
-the future, pending required on-chain governance infrastructure on Optimism.
+the future, pending required on-chain governance infrastructure on Arbitrum.
 
 ## Commissaire
 
@@ -346,4 +346,4 @@ To support the health of the protocol and ecosystem, the Commissaire (a Curve-es
 will have the right to disable hostile gauges.
 
 The Commissaire will initially consist of seven members from the Velocimeter team and
-prominent figures from within the Optimism community.
+prominent figures from within the Arbitrum community.

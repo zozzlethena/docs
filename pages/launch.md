@@ -24,26 +24,26 @@ Velocimeter launched on Thursday, June 2, 2022.
 
 ## Getting Ready
 
-Velocimeter operates exclusively on the Optimism network (a
+Velocimeter operates exclusively on the Arbitrum network (a
 layer 2 of the Ethereum main network that uses Optimistic Rollups).
 
-If you are unfamiliar with Optimism, you can find a lot of resources
-about the network, its ecosystem, and its mission on the Optimism website
-https://www.optimism.io
+If you are unfamiliar with Arbitrum, you can find a lot of resources
+about the network, its ecosystem, and its mission on the Arbitrum website
+https://www.Arbitrum.io
 
 To set up your wallet, please go to https://chainlist.org and search for
-_Optimism_. You can use the _Connect Wallet_ button to automatically configure
-your default wallet to use Optimism. Use the _arrow down_ to expand for more
+_Arbitrum_. You can use the _Connect Wallet_ button to automatically configure
+your default wallet to use Arbitrum. Use the _arrow down_ to expand for more
 configuration options.
 
 
 
 ## Bridging
 
-New Optimism users who want to participate in Velocimeter should make sure they
-have `$ETH` on Optimism in order to be able to pay for transaction/gas fees.
+New Arbitrum users who want to participate in Velocimeter should make sure they
+have `$ETH` on Arbitrum in order to be able to pay for transaction/gas fees.
 
-Bridging to Optimism is possible here: https://app.optimism.io/bridge
+Bridging to Arbitrum is possible here: https://app.Arbitrum.io/bridge
 
 If you're bridging from a network other than the Ethereum network, we recommend the
 following services:
@@ -52,7 +52,7 @@ following services:
 * https://www.bungee.exchange &mdash; an aggregator that shows the best
    available bridging options. Use their _Refuel_ service to deposit smaller
    amounts in case you run out of `$ETH` to pay transaction fees.
- * https://www.optimism.io/apps/bridges &mdash; for a full list of Optimism
+ * https://www.Arbitrum.io/apps/bridges &mdash; for a full list of Arbitrum
    network bridging services.
 
 <Callout emoji="⚠️">
@@ -60,7 +60,7 @@ following services:
   the assets.
 </Callout>
 
-Here's a walkthrough for how to use the Optimism Bridge on mobile:
+Here's a walkthrough for how to use the Arbitrum Bridge on mobile:
 
 <Bleed>
   <iframe width="100%" height="800"
@@ -74,7 +74,7 @@ Here's a walkthrough for how to use the Optimism Bridge on mobile:
 ### Initial Distribution
 
 Velocimeter will launch with initial distribution of 400M VELO airdropped to
-DeFi community members, protocols, and DAOs likeliest to play an active role in the Optimism
+DeFi community members, protocols, and DAOs likeliest to play an active role in the Arbitrum
 ecosystem.
 
 Details of the initial distribution and token emissinos are available in the

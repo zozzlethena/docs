@@ -51,7 +51,7 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 **In Solidly, exploitive voters were able to direct emissions towards unproductive gauges, including those for pools 100% owned by those voters.** Velocimeter addresses this in three ways:
 
 - First, we've added an [on-chain governor](https://optimistic.etherscan.io/address/0x64DD805aa894dc001f8505e000c7535179D96C9E) to whitelist pairs used in gauges. Voters will need at least 0.02% to submit a proposal, and 4% to reach quorum. To ensure that those who whitelist gauges are economically aligned economically with our system, we've also removed the ability to whitelist by paying a whitelisting fee. Note that the on-chain governor is currently not live, as we're still working with Tally to get the process set up.
-- Second, we've also added an Emergency ["Commissaire"](https://optimistic.etherscan.io/address/0xcc2d01030ec2cd187346f70bfc483f24488c32e8), which has the ability to kill any gauge it deems unproductive to the broader ecosystem. This Commissaire consists of folks from both the Velocimeter core team, and the broader Optimism and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
+- Second, we've also added an Emergency ["Commissaire"](https://optimistic.etherscan.io/address/0xcc2d01030ec2cd187346f70bfc483f24488c32e8), which has the ability to kill any gauge it deems unproductive to the broader ecosystem. This Commissaire consists of folks from both the Velocimeter core team, and the broader Arbitrum and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
@@ -60,7 +60,7 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 | Nick        | Velocimeter        | 0x53e0b897eae600b2f6855fce4a42482e9229d2c2 |
 | vfat        | Hundred Finance  | 0xeF0Ca09fbf9a5f61E657Fb208b46b8685c1d4766 |
 | 0xHamZ      | DeFi Independent | 0x698c3619f9ecB540cEc21E056ae4A900Bca1649C |
-| Optimism    | Optimism         | TBD                                        |
+| Arbitrum    | Arbitrum         | TBD                                        |
 
 - Third, we've doubled the initial swap fee from 0.01% to 0.02% to ensure that voters have more twice the incentive to direct emissions towards productive liquidity. Note that this rate is still much lower than alternative exchanges (e.g. Curve at 0.04%). Stable and volatile pairs also have different fees, both modifiable up to 0.05%.
 

@@ -20,7 +20,7 @@ export default {
       />
       <span className='mr-2 font-extrabold md:inline'>Velocimeter</span>
       <span className='text-gray-600 font-normal hidden md:inline'>
-        The liquidity base-layer of the Optimism ecosystem.
+        The liquidity base-layer of the Arbitrum ecosystem.
       </span>
     </>
   ),
@@ -29,18 +29,18 @@ export default {
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta
         name='description'
-        content='Velocimeter: The liquidity base-layer of the Optimism ecosystem.'
+        content='Velocimeter: The liquidity base-layer of the Arbitrum ecosystem.'
       />
 
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@VelocimeterFi' />
       <meta
         name='twitter:title'
-        content='Velocimeter: The liquidity base-layer of the Optimism ecosystem.'
+        content='Velocimeter: The liquidity base-layer of the Arbitrum ecosystem.'
       />
       <meta
         name='twitter:description'
-        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) on Optimism L2 blockchain.'
+        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) on Arbitrum L2 blockchain.'
       />
       <meta
         name='twitter:image'
@@ -49,11 +49,11 @@ export default {
 
       <meta
         property='og:title'
-        content='Velocimeter: The liquidity base-layer of the Optimism ecosystem.'
+        content='Velocimeter: The liquidity base-layer of the Arbitrum ecosystem.'
       />
       <meta
         property='og:description'
-        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) on Optimism L2 blockchain.'
+        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) on Arbitrum L2 blockchain.'
       />
       <meta
         property='og:image'
