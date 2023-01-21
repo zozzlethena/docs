@@ -3,14 +3,14 @@ import Callout from 'nextra-theme-docs/callout'
 import { Chart } from "react-google-charts";
 
 <Bleed>
-  ![Velodrome Finance Tokenomics](/velodrome_tokenomics_hero.jpg)
+  ![Velocimeter Tokenomics](/Velocimeter_tokenomics_hero.jpg)
 </Bleed>
 
 &nbsp;
 
 # Tokenomics
 
-Velodrome Finance uses two tokens to manage its utility and governance:
+Velocimeter uses two tokens to manage its utility and governance:
 
  * `$VELO` &mdash; ERC-20 utility token of the protocol
  * `$veVELO` &mdash; ERC-721 governance token in the form of an NFT
@@ -32,15 +32,15 @@ rewards the `$veVELO` holder receives.
 
 ## ve(3,3) Mechanics
 
-Velodrome Finance mechanics reflect a combination of two DeFi concepts:
+Velocimeter mechanics reflect a combination of two DeFi concepts:
  * Vote-Escrow &mdash; first introduced by Curve to strengthen incentives for long-term token holders
  * Staking/Rebasing/Bonding or (3,3) game theory &mdash; designed by Olympus DAO
 
-Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velodrome's success, such as
+Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velocimeter's success, such as
 liquidity provision and long-term token holding. Liquidity providers receive `$VELO` emissions,
 and `$veVELO` holders receive protocol fees, bribes, rebases, and governance power.
 
-![image](/velodrome-circuit.png)
+![image](/Velocimeter-circuit.png)
 
 Below, we will walk through the components of the mechanism in order to
 explain how it helps the incentives flow to the most valuable of the ecosystem
@@ -67,7 +67,7 @@ mission to become the liquidity base layer of the Optimism ecosystem.
       [ "Receivers", "Amount" ],
       [ "Community", 240 ],
       [ "Partner Protocol/DAOs", 96 ],
-      [ "Velodrome Team", 40 ],
+      [ "Velocimeter Team", 40 ],
       [ "Optimism Team", 20 ],
       [ "Genesis Liquidity Pool", 4 ]
     ]}
@@ -87,7 +87,7 @@ mission to become the liquidity base layer of the Optimism ecosystem.
 ### Community
 
 240M (60%) `$VELO` tokens will be distributed to the people who have played the biggest role in
-incubating Velodrome and those likeliest to contribute to its long-term
+incubating Velocimeter and those likeliest to contribute to its long-term
 success, including:
  * `$WEVE` holders (27%, 108M `$VELO`)
  * `$OP` network users (18%, 72M `$VELO`)
@@ -106,7 +106,7 @@ We will consider a variety of metrics in assessing the available protocols,
 including TVL, transaction volume, unique wallets, and Optimism team input.
 
 The airdrop of 72M (18%) `$veVELO` is aimed at attracting and engaging 10-15 protocols most
-likely to contribute to Velodrome and Optimism's long-term success.
+likely to contribute to Velocimeter and Optimism's long-term success.
 
 The amount of `$veVELO` airdropped will provide just enough voting power to familiarize
 the protocols with the ecosystem and give them a head start, but it will leave space
@@ -128,9 +128,9 @@ The team will vest 25% of its initial allocation in the form of a
 `$veVELO` and use it to vote for `$VELO` pairs in perpetuity.
 
 While a fully autonomous and immutable protocol is an admirable objective, it
-comes at a cost. Velodrome Finance will ensure its long-term sustainability by
+comes at a cost. Velocimeter will ensure its long-term sustainability by
 employing a dedicated team focused on supporting the product, documentation,
-community, and ecosystem. As the protocol evolves, the Velodrome team will
+community, and ecosystem. As the protocol evolves, the Velocimeter team will
 consider introducing more immutability or DAO components where appropriate.
 
 To cover ongoing expenses and all the upcoming development efforts, 3% of the
@@ -147,7 +147,7 @@ The team vesting compensation breakdown:
 
 ### Optimism Team
 
-The Optimism team has a vested interest in ensuring that Velodrome achieves its
+The Optimism team has a vested interest in ensuring that Velocimeter achieves its
 mission of serving as an ecosystem public good. The team will receive 20M (5%) `$veVELO` in the initial
 distribution, to support that interest.
 
@@ -245,7 +245,7 @@ it does make the protocol safer against potential exploitative behaviour.
 
 ## Rewards
 
-There are 4 types of rewards on Velodrome Finance.
+There are 4 types of rewards on Velocimeter.
 
 ### Emissions
 
@@ -328,7 +328,7 @@ An example of bribes, voting, and rewards claim timeline:
 
 ## Whitelisting
 
-While Velodrome supports permissionless liquidity pool and gauge creation, these can
+While Velocimeter supports permissionless liquidity pool and gauge creation, these can
 only include _whitelisted_ tokens. The protocol will launch with an extensive list of
 pre-whitelisted tokens, including those from partner protocols.
 
@@ -345,5 +345,5 @@ be exploited by actors attempting to game emissions.
 To support the health of the protocol and ecosystem, the Commissaire (a Curve-esque _Emergency DAO_)
 will have the right to disable hostile gauges.
 
-The Commissaire will initially consist of seven members from the Velodrome team and
+The Commissaire will initially consist of seven members from the Velocimeter team and
 prominent figures from within the Optimism community.

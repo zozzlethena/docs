@@ -1,6 +1,6 @@
-# Velodrome Finance 🚲💨📃
+# Velocimeter 🚲💨📃
 
-Velodrome Finance product documentation.
+Velocimeter product documentation.
 
 This is where we work on product documentation which is built and deployed
 into the main app.

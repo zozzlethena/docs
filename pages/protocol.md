@@ -1,7 +1,7 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
 <Bleed>
-  ![Velodrome Finance Problem Statement](/velodrome_biker_hero.png)
+  ![Velocimeter Problem Statement](/Velocimeter_biker_hero.png)
 </Bleed>
 
 &nbsp;
@@ -26,17 +26,17 @@ However, current solutions for incentivizing liquidity come with their own trade
 
 - Bribing voters in the CRV/CVX system can be costly as incumbents already have a sizeable lead. Additionally, the universe of pool types here are limited.
 
-## Introducing Velodrome
+## Introducing Velocimeter
 
-Velodrome addresses these issues and presents an attractive alternative by addressing the core issues in Solidly and adding its own improvements. To recall, the key innovation of Solidly was to align protocol emissions with fees generated, not simply liquidity. To do this, it would allow protocols and other large stakeholders to become veNFT "voters", using their locked voting power to direct future emissions and collecting fees (termed bribes in Solidly) from the pools they voted for.
+Velocimeter addresses these issues and presents an attractive alternative by addressing the core issues in Solidly and adding its own improvements. To recall, the key innovation of Solidly was to align protocol emissions with fees generated, not simply liquidity. To do this, it would allow protocols and other large stakeholders to become veNFT "voters", using their locked voting power to direct future emissions and collecting fees (termed bribes in Solidly) from the pools they voted for.
 
-Velodrome has made several improvements to the Solidly codebase, all of which were thoughtfully chosen to ensure that the protocol would carry out the original intended mechanism of allowing voters to _fairly compensate_ LPs for impermanent loss.
+Velocimeter has made several improvements to the Solidly codebase, all of which were thoughtfully chosen to ensure that the protocol would carry out the original intended mechanism of allowing voters to _fairly compensate_ LPs for impermanent loss.
 
 Solidly had several key issues that prevented its success in the Fantom ecosystem:
 
 ## Improvement: Tying Rewards with Emissions
 
-**In Solidly, voting rewards (i.e. bribes) were claimable _before_ the emissions from that vote were committed.** Velodrome addresses this with new mechanisms:
+**In Solidly, voting rewards (i.e. bribes) were claimable _before_ the emissions from that vote were committed.** Velocimeter addresses this with new mechanisms:
 
 - First, we allow voters to make only one "active" voting decision (i.e. `Voter.vote()`, `Voter.reset()`) every epoch (note: this does not include the `Voter.poke()` function).
 - Additionally, bribes from fees (_internal_) and external sources (_external_) are treated differently.
@@ -48,16 +48,16 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 
 ## Improvement: Ensuring Productive Gauges
 
-**In Solidly, exploitive voters were able to direct emissions towards unproductive gauges, including those for pools 100% owned by those voters.** Velodrome addresses this in three ways:
+**In Solidly, exploitive voters were able to direct emissions towards unproductive gauges, including those for pools 100% owned by those voters.** Velocimeter addresses this in three ways:
 
 - First, we've added an [on-chain governor](https://optimistic.etherscan.io/address/0x64DD805aa894dc001f8505e000c7535179D96C9E) to whitelist pairs used in gauges. Voters will need at least 0.02% to submit a proposal, and 4% to reach quorum. To ensure that those who whitelist gauges are economically aligned economically with our system, we've also removed the ability to whitelist by paying a whitelisting fee. Note that the on-chain governor is currently not live, as we're still working with Tally to get the process set up.
-- Second, we've also added an Emergency ["Commissaire"](https://optimistic.etherscan.io/address/0xcc2d01030ec2cd187346f70bfc483f24488c32e8), which has the ability to kill any gauge it deems unproductive to the broader ecosystem. This Commissaire consists of folks from both the Velodrome core team, and the broader Optimism and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
+- Second, we've also added an Emergency ["Commissaire"](https://optimistic.etherscan.io/address/0xcc2d01030ec2cd187346f70bfc483f24488c32e8), which has the ability to kill any gauge it deems unproductive to the broader ecosystem. This Commissaire consists of folks from both the Velocimeter core team, and the broader Optimism and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
-| Jack Anorak | Velodrome        | 0x9eBd10B46B43351097caB2D3c03Ccf440957A2a9 |
-| pooltypes   | Velodrome        | 0xc0DE1436C4E247F8652476A0B9ff55699801e1d0 |
-| Nick        | Velodrome        | 0x53e0b897eae600b2f6855fce4a42482e9229d2c2 |
+| Jack Anorak | Velocimeter        | 0x9eBd10B46B43351097caB2D3c03Ccf440957A2a9 |
+| pooltypes   | Velocimeter        | 0xc0DE1436C4E247F8652476A0B9ff55699801e1d0 |
+| Nick        | Velocimeter        | 0x53e0b897eae600b2f6855fce4a42482e9229d2c2 |
 | vfat        | Hundred Finance  | 0xeF0Ca09fbf9a5f61E657Fb208b46b8685c1d4766 |
 | 0xHamZ      | DeFi Independent | 0x698c3619f9ecB540cEc21E056ae4A900Bca1649C |
 | Optimism    | Optimism         | TBD                                        |

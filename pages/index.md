@@ -2,24 +2,24 @@ import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 
 <Bleed>
-  ![Velodrome Finance](/velodrome_hero.jpg)
+  ![Velocimeter](/Velocimeter_hero.jpg)
 </Bleed>
 
 &nbsp;
 
 # About
 
-Velodrome Finance, at its core, is a solution for protocols on [Optimism](https://www.optimism.io/) to properly incentivize liquidity for their own use cases.
+Velocimeter, at its core, is a solution for protocols on [Optimism](https://www.optimism.io/) to properly incentivize liquidity for their own use cases.
 Building on top of the groundwork laid out by Solidly, our team has addressed that first iteration's core issues to realize its full potential.
 
 <Callout emoji="⚠️">
-  Before using Velodrome Finance, you are required to read and agree to our
+  Before using Velocimeter, you are required to read and agree to our
   [legal disclaimer](/legal).
 </Callout>
 
 ## Who is behind this project?
 
-The team behind Velodrome Finance previously launched
+The team behind Velocimeter previously launched
 [veDAO](https://twitter.com/_vedao_), an initiative incubated by [Information Token](https://informationtoken.io). veDAO's founding mandate was to engage with
 the Solidly ecosystem, a protocol launched on the Fantom network by Andre
 Cronje, while driving long-term value to the veDAO community.
@@ -33,7 +33,7 @@ securing ~10% of Solidly voting power and ~$1.1M USDC in treasury assets.
 
 ## Resources
 
-* Website: https://www.velodrome.finance
-* Twitter: https://twitter.com/VelodromeFi
-* Medium: https://medium.com/@VelodromeFi
-* Discord: https://discord.gg/velodrome
+* Website: https://www.Velocimeter.finance
+* Twitter: https://twitter.com/VelocimeterFi
+* Medium: https://medium.com/@VelocimeterFi
+* Discord: https://discord.gg/Velocimeter

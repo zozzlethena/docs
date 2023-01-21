@@ -3,14 +3,14 @@ import Callout from 'nextra-theme-docs/callout'
 import { Chart } from "react-google-charts";
 
 <Bleed>
-  ![Velodrome Finance Launch](/velodrome_banner.jpg)
+  ![Velocimeter Launch](/Velocimeter_banner.jpg)
 </Bleed>
 
 &nbsp;
 
 # Launch Details
 
-Velodrome launched on Thursday, June 2, 2022.
+Velocimeter launched on Thursday, June 2, 2022.
 
 <Callout type="warning" emoji="⚠️">
   As with any launch, we'd like to warn our users about the potential limitations
@@ -24,7 +24,7 @@ Velodrome launched on Thursday, June 2, 2022.
 
 ## Getting Ready
 
-Velodrome Finance operates exclusively on the Optimism network (a
+Velocimeter operates exclusively on the Optimism network (a
 layer 2 of the Ethereum main network that uses Optimistic Rollups).
 
 If you are unfamiliar with Optimism, you can find a lot of resources
@@ -44,7 +44,7 @@ configuration options.
 
 ## Bridging
 
-New Optimism users who want to participate in Velodrome should make sure they
+New Optimism users who want to participate in Velocimeter should make sure they
 have `$ETH` on Optimism in order to be able to pay for transaction/gas fees.
 
 Bridging to Optimism is possible here: https://app.optimism.io/bridge
@@ -81,19 +81,19 @@ This experience resulted in a veDAO governance proposal, which passed, directing
 team to seek opportunities outside of accruing Solidly vote share on the Fantom
 network.
 
-The veDAO core team incubated Velodrome in accordance with DAO
+The veDAO core team incubated Velocimeter in accordance with DAO
 governance principles for the benefit of the DAO. veDAO's final governance act was to make
 good on this promise, distributing accumulated treasury in `$USDC` and `$VELO`
 tokens to `$WEVE` holders.
 
 The veDAO community stuck with us through a seemingly impossible number of
 surprises, challenges, and disappointments. They're friends, allies, and, in
-some cases, central team members. Everything we do with Velodrome from here is
+some cases, central team members. Everything we do with Velocimeter from here is
 rooted in our shared experience.
 
 We believe that the veDAO members will be valuable, enthusiastic additions to
 the Optimism community in the coming weeks and will be instrumental in the long-term
-success of Velodrome.
+success of Velocimeter.
 
 ### Burning `$WEVE`
 
@@ -103,7 +103,7 @@ Fantom network and will send `$USDC` and `$VELO` on the Optimism network.
 
 The tokens will be sent to the same address, as with any bridging experience.
 
-The `$WEVE` bridging service will be available at https://weve.velodrome.finance
+The `$WEVE` bridging service will be available at https://weve.Velocimeter.finance
 on May 31st and will be available until the 30th of June. Unclaimed `$USDC` and `$VELO` will
 be transferred back into the treasury.
 
@@ -128,7 +128,7 @@ Then click "Write" and your transaction should be good to go!
 
 ### Initial Distribution
 
-Velodrome will launch with initial distribution of 400M VELO airdropped to
+Velocimeter will launch with initial distribution of 400M VELO airdropped to
 DeFi community members, protocols, and DAOs likeliest to play an active role in the Optimism
 ecosystem.
 
