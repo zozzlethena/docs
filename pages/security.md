@@ -132,5 +132,5 @@ As of August 2022, we've compiled a list of key differences between Velocimeter'
   - **Velocimeter specific.**
   - **Initial distribution.** Initial distribution will be handled in two ways: a
     redemption process that uses LayerZero to burn `$WEVE` for `$USDC` and
-    `$VELO` on Optimism, and a Merkle airdrop contract. Unclaimed `$VELO` is
+    `FLOW` on Optimism, and a Merkle airdrop contract. Unclaimed `FLOW` is
     never minted to ensure emissions aren't affected.

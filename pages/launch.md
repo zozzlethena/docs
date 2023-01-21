@@ -18,7 +18,7 @@ Velocimeter launched on Thursday, June 2, 2022.
   **desktop environments**.
   
   If at any point you require assistance, please join our
-  [Discord](https://discord.gg/eGgYPGczaf), where our community and we will be
+  [Discord](), where our community and we will be
   happy to help you!
 </Callout>
 
@@ -36,11 +36,7 @@ _Optimism_. You can use the _Connect Wallet_ button to automatically configure
 your default wallet to use Optimism. Use the _arrow down_ to expand for more
 configuration options.
 
-<Callout  emoji="🪂">
-  Be sure to learn about the [Optimism
-  Collective](https://app.optimism.io/governance) and see if you qualify for an
-  OP token airdrop!
-</Callout>
+
 
 ## Bridging
 
@@ -71,60 +67,9 @@ Here's a walkthrough for how to use the Optimism Bridge on mobile:
   src="https://www.youtube.com/embed/pR31stuRejg?rel=0" frameborder="0"></iframe>
 </Bleed>
 
-## A message to the veDAO community
 
-The members of the veDAO core team learned a tremendous amount about `ve(3,3)`
-mechanics after receiving the 4th largest `$veNFT` in what's come to be called the
-_Solidly Wars_.
 
-This experience resulted in a veDAO governance proposal, which passed, directing the
-team to seek opportunities outside of accruing Solidly vote share on the Fantom
-network.
 
-The veDAO core team incubated Velocimeter in accordance with DAO
-governance principles for the benefit of the DAO. veDAO's final governance act was to make
-good on this promise, distributing accumulated treasury in `$USDC` and `$VELO`
-tokens to `$WEVE` holders.
-
-The veDAO community stuck with us through a seemingly impossible number of
-surprises, challenges, and disappointments. They're friends, allies, and, in
-some cases, central team members. Everything we do with Velocimeter from here is
-rooted in our shared experience.
-
-We believe that the veDAO members will be valuable, enthusiastic additions to
-the Optimism community in the coming weeks and will be instrumental in the long-term
-success of Velocimeter.
-
-### Burning `$WEVE`
-
-The redemption process uses [LayerZero](https://layerzero.network/) for a
-seamless experience. The process will burn user-provided `$WEVE` tokens on the
-Fantom network and will send `$USDC` and `$VELO` on the Optimism network.
-
-The tokens will be sent to the same address, as with any bridging experience.
-
-The `$WEVE` bridging service will be available at https://weve.Velocimeter.finance
-on May 31st and will be available until the 30th of June. Unclaimed `$USDC` and `$VELO` will
-be transferred back into the treasury.
-
-### Burning via Block Explorer
-
-NOTE: There is currently a small UI issue with this process. TLDR the frontend is overestimating the amount of WeVE a user has to burn, which causes the contract call to fail.
-
-Below are the steps you'll need to take in order to burn from the block explorer:
-
-1. **Figure out how much WeVE you have to burn.** Go to https://ftmscan.com/address/0x911da02c1232a3c3e1418b834a311921143b04d7#readContract and navigate to Function #2, balanceOf. Enter in your address "0xabcd..." and click Query. Copy that value.
-2. **Burn WeVE.** Navigate to the RedemptionSender (https://ftmscan.com/address/0x9809fB94eED086F9529df00d6f125Bf25Ee84A93#writeContract). NOTE Please double, triple check that this is the right address. Then enter the following arguments for Function #1, redeemWEVE
-
-*redeemWEVE*: 30 (note that this value changes as gas on Optimism increases/decreases. Any leftover unused gas will be refunded by LayerZero)
-
-*amount*: ANY value less than your balance found in Step 1
-
-*zroPaymentAddress*: 0x0000000000000000000000000000000000000000
-
-*zroTransactionParams*: 0x
-
-Then click "Write" and your transaction should be good to go!
 
 ### Initial Distribution
 

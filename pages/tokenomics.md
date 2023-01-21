@@ -12,23 +12,23 @@ import { Chart } from "react-google-charts";
 
 Velocimeter uses two tokens to manage its utility and governance:
 
- * `$VELO` &mdash; ERC-20 utility token of the protocol
- * `$veVELO` &mdash; ERC-721 governance token in the form of an NFT
+ * `FLOW` &mdash; ERC-20 utility token of the protocol
+ * `$FLOW` &mdash; ERC-721 governance token in the form of an NFT
    (non-fungible token)
 
-`$VELO` is used for rewarding liquidity providers through emissions.
+`FLOW` is used for rewarding liquidity providers through emissions.
 
-`$veVELO` is used for governance. Any `$VELO` holder can vote-escrow their tokens and
-receive a `$veVELO` (also known as veNFT) in exchange. Additional tokens can be
-added to the `$veVELO` NFT at any time.
+`$FLOW` is used for governance. Any `FLOW` holder can vote-escrow their tokens and
+receive a `$FLOW` (also known as veNFT) in exchange. Additional tokens can be
+added to the `$FLOW` NFT at any time.
 
 The lock period (also known as vote-escrowed period, hence the _ve_ prefix) can be up
 to 4 years, following the linear relationship shown below:
- * 100 `$VELO` locked for 4 years will become 100 `$veVELO`
- * 100 `$VELO` locked for 1 year will become 25 `$veVELO`
+ * 100 `FLOW` locked for 4 years will become 100 `$FLOW`
+ * 100 `FLOW` locked for 1 year will become 25 `$FLOW`
 
 The longer the vesting time, the higher the voting power (voting weight) and
-rewards the `$veVELO` holder receives.
+rewards the `$FLOW` holder receives.
 
 ## ve(3,3) Mechanics
 
@@ -37,8 +37,8 @@ Velocimeter mechanics reflect a combination of two DeFi concepts:
  * Staking/Rebasing/Bonding or (3,3) game theory &mdash; designed by Olympus DAO
 
 Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velocimeter's success, such as
-liquidity provision and long-term token holding. Liquidity providers receive `$VELO` emissions,
-and `$veVELO` holders receive protocol fees, bribes, rebases, and governance power.
+liquidity provision and long-term token holding. Liquidity providers receive `FLOW` emissions,
+and `$FLOW` holders receive protocol fees, bribes, rebases, and governance power.
 
 ![image](/Velocimeter-circuit.png)
 
@@ -53,7 +53,7 @@ liquidity pools.
   participated!
 </Callout>
 
-At launch we distributed `$VELO` and `$veVELO` to
+At launch we distributed `FLOW` and `$FLOW` to
 users and protocols we believe are likeliest to contribute to our
 mission to become the liquidity base layer of the Optimism ecosystem.
 
@@ -72,7 +72,7 @@ mission to become the liquidity base layer of the Optimism ecosystem.
       [ "Genesis Liquidity Pool", 4 ]
     ]}
     options={{
-      title: "$VELO Distribution (M)",
+      title: "FLOW Distribution (M)",
       backgroundColor: '#111111',
       colors: ['#79F8DB', '#027FFF', '#FDBF40', '#FF1301', '#F1EBE2', '#FBBF42', '#EDE7DB'],
       legend: {textStyle: {color: 'white'}},
@@ -86,46 +86,46 @@ mission to become the liquidity base layer of the Optimism ecosystem.
 
 ### Community
 
-240M (60%) `$VELO` tokens will be distributed to the people who have played the biggest role in
+240M (60%) `FLOW` tokens will be distributed to the people who have played the biggest role in
 incubating Velocimeter and those likeliest to contribute to its long-term
 success, including:
- * `$WEVE` holders (27%, 108M `$VELO`)
- * `$OP` network users (18%, 72M `$VELO`)
-   * 3755 `$VELO`/wallet &mdash; Addresses qualified as [Repeat Optimism Users](https://community.optimism.io/docs/governance/airdrop-1/#optimism-early-adopters)
- * Cross-chain DeFi users (15%, 60M `$VELO`):
-   * 3500 `$VELO`/wallet &mdash; Curve Protocol wallets with a 1450+ days (maximum) `$veCRV` lock time
-   * 3000 `$VELO`/wallet &mdash; Convex Protocol lockers of `$vlCVX` since new lock contract deployment
-   * 3000 `$VELO`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1- and 3-month periods
-   * 2000 `$VELO`/wallet &mdash; Platypus Protocol stakers with `$vePTP` and `$PTP` balance
-   * 500 `$VELO`/wallet &mdash; Redacted Cartel participants in genesis Dutch auction who didn't sell their `$BTRFLY`
-   * 500 `$VELO`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/shot/01-balances.toml)
+ * `$WEVE` holders (27%, 108M `FLOW`)
+ * `$OP` network users (18%, 72M `FLOW`)
+   * 3755 `FLOW`/wallet &mdash; Addresses qualified as [Repeat Optimism Users](https://community.optimism.io/docs/governance/airdrop-1/#optimism-early-adopters)
+ * Cross-chain DeFi users (15%, 60M `FLOW`):
+   * 3500 `FLOW`/wallet &mdash; Curve Protocol wallets with a 1450+ days (maximum) `$veCRV` lock time
+   * 3000 `FLOW`/wallet &mdash; Convex Protocol lockers of `$vlCVX` since new lock contract deployment
+   * 3000 `FLOW`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1- and 3-month periods
+   * 2000 `FLOW`/wallet &mdash; Platypus Protocol stakers with `$vePTP` and `$PTP` balance
+   * 500 `FLOW`/wallet &mdash; Redacted Cartel participants in genesis Dutch auction who didn't sell their `$BTRFLY`
+   * 500 `FLOW`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/shot/01-balances.toml)
 
 ### Protocols
 
 We will consider a variety of metrics in assessing the available protocols,
 including TVL, transaction volume, unique wallets, and Optimism team input.
 
-The airdrop of 72M (18%) `$veVELO` is aimed at attracting and engaging 10-15 protocols most
+The airdrop of 72M (18%) `$FLOW` is aimed at attracting and engaging 10-15 protocols most
 likely to contribute to Velocimeter and Optimism's long-term success.
 
-The amount of `$veVELO` airdropped will provide just enough voting power to familiarize
+The amount of `$FLOW` airdropped will provide just enough voting power to familiarize
 the protocols with the ecosystem and give them a head start, but it will leave space
-for the protocols to accrue value by acquiring `$VELO` for long-term liquidity provision.
+for the protocols to accrue value by acquiring `FLOW` for long-term liquidity provision.
 
 ### Grants
 
-We have reserved 24M (6%) `$veVELO` to distribute to partner protocols
+We have reserved 24M (6%) `$FLOW` to distribute to partner protocols
 after the launch. This will be used to engage partners in the ecosystem through
 grants.
 
 ### Team
 
 The team will receive an initial allocation that it will use to vote
-to drive emissions to key protocol pairs such as `$VELO-$USDC` and to support
-ongoing protocol development. The total team allocation is 40M (10%) in `$VELO` and `$veVELO`.
+to drive emissions to key protocol pairs such as `FLOW-$USDC` and to support
+ongoing protocol development. The total team allocation is 40M (10%) in `FLOW` and `$FLOW`.
 
 The team will vest 25% of its initial allocation in the form of a
-`$veVELO` and use it to vote for `$VELO` pairs in perpetuity.
+`$FLOW` and use it to vote for `FLOW` pairs in perpetuity.
 
 While a fully autonomous and immutable protocol is an admirable objective, it
 comes at a cost. Velocimeter will ensure its long-term sustainability by
@@ -137,41 +137,41 @@ To cover ongoing expenses and all the upcoming development efforts, 3% of the
 emissions will be going to the team address.
 
 The team vesting compensation breakdown:
- * 15,520,816 `$VELO` vesting for 12 months, 6-month lock in a `$veVELO` followed
+ * 15,520,816 `FLOW` vesting for 12 months, 6-month lock in a `$FLOW` followed
    by a linear 6-month unlock period. 0.5% of total emissions, taken from
    emissions to treasury, will be added to this bucket for dilution control.
- * 7,200,000 `$VELO` vesting for 24 months, 12-month lock in a `$veVELO` followed
+ * 7,200,000 `FLOW` vesting for 24 months, 12-month lock in a `$FLOW` followed
    by a linear 12-month unlock period.
- * All ongoing payments made to the team members in `$VELO` will vest for 6
-   months, 3-month lock in a `$veVELO` followed by a linear 3-month unlock period.
+ * All ongoing payments made to the team members in `FLOW` will vest for 6
+   months, 3-month lock in a `$FLOW` followed by a linear 3-month unlock period.
 
 ### Optimism Team
 
 The Optimism team has a vested interest in ensuring that Velocimeter achieves its
-mission of serving as an ecosystem public good. The team will receive 20M (5%) `$veVELO` in the initial
+mission of serving as an ecosystem public good. The team will receive 20M (5%) `$FLOW` in the initial
 distribution, to support that interest.
 
 ### Genesis Liquidity Pools
 
-Genesis Pools will distribute 4M (1%) `$VELO` to liquidity providers of foundational token pairs to
+Genesis Pools will distribute 4M (1%) `FLOW` to liquidity providers of foundational token pairs to
 provide better liquidity and user experience from launch day. Genesis pool emissions will be first
-directed to the `$VELO`-`$USDC` pool and will start a few days before the first epoch votes are cast.
+directed to the `FLOW`-`$USDC` pool and will start a few days before the first epoch votes are cast.
 
 ## Emissions
 
-The initial supply of `$VELO` is 400M.
+The initial supply of `FLOW` is 400M.
 
-Weekly emissions start at 15M `$VELO` (3.75% of the initial supply)
+Weekly emissions start at 15M `FLOW` (3.75% of the initial supply)
 and decay at 1% per week (epoch).
 
-`$veVELO` holders receive a rebase proportional to epoch LP emissions
-and the ratio of `$veVELO` to `$VELO` supply, thus reducing vote power
-dilution for `$veVELO`!
+`$FLOW` holders receive a rebase proportional to epoch LP emissions
+and the ratio of `$FLOW` to `FLOW` supply, thus reducing vote power
+dilution for `$FLOW`!
 
 The weekly rebase amount is calculated with the following formula:
-> (veVELO.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
+> (FLOW.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
 
-`$veVELO` supply does not affect weekly LP emissions.
+`$FLOW` supply does not affect weekly LP emissions.
 
 ### Emission Schedule
 
@@ -187,7 +187,7 @@ The weekly rebase amount is calculated with the following formula:
       ["200", 2, 0.5, 1800]
     ]}
     options={{
-      title: "$VELO Emissions (M)",
+      title: "FLOW Emissions (M)",
       curveType: 'function',
       aggregationTarget: 'series',
       selectionMode: 'multiple',
@@ -217,17 +217,17 @@ The weekly rebase amount is calculated with the following formula:
 
 ## Gauge Voting
 
-`$veVELO` holders decide which liquidity pools receive emissions in a given epoch by
-voting on their preferred liquidity pool _gauges_. `$VELO` emissions will be distributed
+`$FLOW` holders decide which liquidity pools receive emissions in a given epoch by
+voting on their preferred liquidity pool _gauges_. `FLOW` emissions will be distributed
 proportionally to the total votes a liquidity pool receives.
 
 In return, voters receive 100% of the trading fees and bribes collected through the
 liquidity pool they vote for. 
 
-Voting for gauges, or in fact any action related to the `$veVELO` NFT is
+Voting for gauges, or in fact any action related to the `$FLOW` NFT is
 allowed only once per epoch. This means that calling `Voter.reset()` (used for
 resetting an NFT vote state and usually required before merging it into another
-`$veVELO` NFT) or `Voter.poke()` (used to re-cast the votes for the current epoch in
+`$FLOW` NFT) or `Voter.poke()` (used to re-cast the votes for the current epoch in
 order to direct emissions and earn bribes) counts as an action for the current
 epoch.
 
@@ -235,7 +235,7 @@ While limiting the protocol participants to one action per epoch is not ideal,
 it does make the protocol safer against potential exploitative behaviour.
 
 <Callout>
-  Unused `$veVELO` voting power is still taken into account as we calculate the
+  Unused `$FLOW` voting power is still taken into account as we calculate the
   weight of the vote upon epoch flip and based on the locked vesting slope.
 
   Please make sure you always cast 100% of your voting power to avoid
@@ -249,8 +249,8 @@ There are 4 types of rewards on Velocimeter.
 
 ### Emissions
 
-Represent `$VELO` distributed to liquidity pool stakers. The amount of
-`$VELO` distributed towards every pool is proportional to the voting power
+Represent `FLOW` distributed to liquidity pool stakers. The amount of
+`FLOW` distributed towards every pool is proportional to the voting power
 received from the voters every epoch.
 
 These rewards are streaming and are available for claim as these accrue.
@@ -258,7 +258,7 @@ These rewards are streaming and are available for claim as these accrue.
 ### Fees
 
 Represent liquidity pool trading fees distributed to voters in pool tokens (
-e.g., if the pool is `vAMM-VELO/USDC` the distributed tokens are `$VELO` and
+e.g., if the pool is `vAMM-VELO/USDC` the distributed tokens are `FLOW` and
 `$USDC`).
 
 The tokens are streaming proportionally to the voting power cast by a voter and
@@ -274,15 +274,15 @@ _only_ to voters on that pool, proportionally to their share of pool votes.
 
 These rewards are available for claim after the epoch flips 
 (after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
-voter (`$veVELO`).
+voter (`$FLOW`).
 
 ### Rebases
 
-Represent `$veVELO` distributed to `$veVELO` holders in order to reduce the
+Represent `$FLOW` distributed to `$FLOW` holders in order to reduce the
 voting power dilution.
 
 These rewards are available for claim as these accrue and are streaming
-proportionally to all `$veVELO` holders.
+proportionally to all `$FLOW` holders.
 
 ## Rewards claim
 

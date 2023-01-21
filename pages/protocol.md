@@ -44,7 +44,7 @@ Solidly had several key issues that prevented its success in the Fantom ecosyste
   External bribes, however, are rewarded _per epoch_ rather than streamed, and are claimable only after the next epoch starts.
   This means that a bribe sent at the last minute of an epoch will accrue to all voters of that epoch, and be claimable once the epoch flips.
 
-The goal of these changes is to ensure a healthy equilibrium between voters and external bribers. Bribers are incentivized to get their bribes early in that week, as to attract early voters. They also benefit from bribing later, as to have more information on competing bribes. Voters face a similar dilemma, as voting too early means forgoing potentially lucrative bribes that come later, and voting too late means voting with a lower (`$veVELO`) balance. Note that this latter affect is especially pronounced for voters who have locked for shorter time periods (e.g. voters who have locked for weeks rather than months/years will experience larger differences in the bribes they receive from voting later vs. earlier in the epoch).
+The goal of these changes is to ensure a healthy equilibrium between voters and external bribers. Bribers are incentivized to get their bribes early in that week, as to attract early voters. They also benefit from bribing later, as to have more information on competing bribes. Voters face a similar dilemma, as voting too early means forgoing potentially lucrative bribes that come later, and voting too late means voting with a lower (`$FLOW`) balance. Note that this latter affect is especially pronounced for voters who have locked for shorter time periods (e.g. voters who have locked for weeks rather than months/years will experience larger differences in the bribes they receive from voting later vs. earlier in the epoch).
 
 ## Improvement: Ensuring Productive Gauges
 
@@ -70,7 +70,7 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 
 - First, we modified the emissions growth function to
 
-    > (veVELO.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
+    > (FLOW.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
 
 - Second, we removed negative voting, as we found it too zero-sum.
 - Third, we removed the LP emissions "boost" for voters. Those emissions are instead reallocated towards all LPs, regardless of veNFT ownership status, to ensure voters are able to incentivize outside liquidity.
