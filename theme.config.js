@@ -39,7 +39,7 @@ export default {
       />
       <meta
         name='twitter:image'
-        content='https://Velocimeter-docs.pages.dev/Velocimeter_banner.jpg'
+        content='https://docs.velocimeter.xyz/dome6.jpg'
       />
       <meta
         property='og:title'
