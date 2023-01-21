@@ -24,8 +24,7 @@ Velocimeter launched on Thursday, June 2, 2022.
 
 ## Getting Ready
 
-Velocimeter operates exclusively on the Arbitrum network (a
-layer 2 of the Ethereum main network that uses Optimistic Rollups).
+Velocimeter operates exclusively on the Arbitrum network.
 
 If you are unfamiliar with Arbitrum, you can find a lot of resources
 about the network, its ecosystem, and its mission on the Arbitrum website

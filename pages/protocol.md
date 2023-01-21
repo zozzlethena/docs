@@ -1,8 +1,12 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
 <Bleed>
-  ![Velocimeter Problem Statement](/Velocimeter_biker_hero.png)
+<div align="center">
+![Velocimeter Problem Statement](/dome.jpg)
+</div>
+
 </Bleed>
+
 
 &nbsp;
 
