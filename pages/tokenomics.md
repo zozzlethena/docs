@@ -2,13 +2,17 @@ import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 import { Chart } from "react-google-charts";
 
+# Tokenomics
+
 <Bleed>
-  ![Velocimeter Tokenomics](/Velocimeter_tokenomics_hero.jpg)
+<div align="center">
+  ![Velocimeter Tokenomics](/dome6.jpg)
+</div>
 </Bleed>
 
 &nbsp;
 
-# Tokenomics
+
 
 Velocimeter uses two tokens to manage its utility and governance:
 

@@ -2,13 +2,17 @@ import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 import { Chart } from "react-google-charts";
 
+# Launch Details
+
 <Bleed>
-  ![Velocimeter Launch](/Velocimeter_banner.jpg)
+<div align="center">
+  ![Velocimeter Launch](/dome4.jpg)
+  </div>
 </Bleed>
 
 &nbsp;
 
-# Launch Details
+
 
 Velocimeter launched on Thursday, June 2, 2022.
 

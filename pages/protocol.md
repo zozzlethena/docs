@@ -1,12 +1,14 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
+# Protocol Overview
+
 <Bleed>
   ![Velocimeter Problem Statement](/Velocimeter_biker_hero.png)
 </Bleed>
 
 &nbsp;
 
-# Protocol Overview
+
 
 ## Problems with Liquidity Incentivization
 

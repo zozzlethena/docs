@@ -1,7 +1,7 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
 <Bleed>
-  ![Velocimeter Launch](/biker_hero_red.png)
+  ![Velocimeter Launch](/dome7.png)
 </Bleed>
 
 &nbsp;
