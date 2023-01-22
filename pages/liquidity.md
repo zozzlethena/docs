@@ -1,12 +1,16 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
+# Liquidity Pools
+
 <Bleed>
-  ![Velocimeter Launch](/Velocimeter_biker_hero.png)
+<div align="center">
+  ![Velocimeter Launch](/dome5.jpg)
+  </div>
 </Bleed>
 
 &nbsp;
 
-# Liquidity Pools
+
 
 The core functionality of Velocimeter is to allow users to trade
 digital assets in a secure way, with very low fees and low slippage.

@@ -1,13 +1,17 @@
 import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 
+# About
+
 <Bleed>
-  ![Velocimeter](/Velocimeter_hero.jpg)
+<div align="center">
+  ![Velocimeter](/dome3.jpg)
+  </div>
 </Bleed>
 
 &nbsp;
 
-# About
+
 
 Velocimeter, at its core, is a solution for protocols on [Arbitrum](https://www.Arbitrum.io/) to properly incentivize liquidity for their own use cases.
 Building on top of the groundwork laid out by Solidly, our team has addressed that first iteration's core issues to realize its full potential.

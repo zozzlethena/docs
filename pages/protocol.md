@@ -1,5 +1,7 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
+# Protocol Overview
+
 <Bleed>
 <div align="center">
 ![Velocimeter Problem Statement](/dome.jpg)
@@ -10,7 +12,7 @@ import Bleed from 'nextra-theme-docs/bleed'
 
 &nbsp;
 
-# Protocol Overview
+
 
 ## Problems with Liquidity Incentivization
 

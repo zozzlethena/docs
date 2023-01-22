@@ -1,9 +1,11 @@
 import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 
-<Bleed>
-  ![Velocimeter Launch](/biker_hero.png)
-</Bleed>
+<!-- <Bleed>
+<div align="center">
+  ![Velocimeter Launch](/dome2.jpg)
+  </div>
+</Bleed> -->
 
 &nbsp;
 
