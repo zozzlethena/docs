@@ -20,7 +20,7 @@ Almost every protocol in DeFi needs to have a certain amount of liquidity for on
 
 | Liquidity    | Example   | Benefit                                        |
 | ------------ | --------- | ---------------------------------------------- |
-| Native token | OP-USDC   | Treasury access to capital markets             |
+| Native token | WETH-USDC | Treasury access to capital markets             |
 | Stablecoins  | DAI-USDC  | Ensure stability by minimizing depeg risk      |
 | Pegged asset | ETH-stETH | Minimize opportunity cost of converting assets |
 
@@ -56,19 +56,40 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 
 **In Solidly, exploitive voters were able to direct emissions towards unproductive gauges, including those for pools 100% owned by those voters.** Velocimeter addresses this in three ways:
 
-- First, we've added an [on-chain governor](https://optimistic.etherscan.io/address/0x64DD805aa894dc001f8505e000c7535179D96C9E) to whitelist pairs used in gauges. Voters will need at least 0.02% to submit a proposal, and 4% to reach quorum. To ensure that those who whitelist gauges are economically aligned economically with our system, we've also removed the ability to whitelist by paying a whitelisting fee. Note that the on-chain governor is currently not live, as we're still working with Tally to get the process set up.
-- Second, we've also added an Emergency ["Commissaire"](https://optimistic.etherscan.io/address/0xcc2d01030ec2cd187346f70bfc483f24488c32e8), which has the ability to kill any gauge it deems unproductive to the broader ecosystem. This Commissaire consists of folks from both the Velocimeter core team, and the broader Arbitrum and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
+- First, the team only has the ability to whitelist tokens for gauges. The following list of tokens are already whitelisted at genesis.
+| Signer      | Project          | Address                                    |
+| ----------- | ---------------- | ------------------------------------------ |
+| WETH        | Etherum          | 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1 |
+| USDC        | Circle           | 0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8 |
+| USDT        | Tether           | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9 |
+| MIM         | Abracadabra      | 0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A |
+| FRAX        | FRAX Finance     | 0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F |
+| FLOW        | Velocimeter      | ??? |
+
+The basic guidelines for whitelisting a token is a committment to supply, or have, a TVL in the pool of at least $30,000 USD. This ensures trading in that pool at least a small measure of stability before a guage is granted. There could be individual cases where this requirement might be modified.
+
+<Callout>If your team wants a gauge, we suggest you first ask for token whitelisting prior to making the gauge. This is because you will be able to complete the entire process. However, if you have already created a liquidity pool, we can still help you to get a gauge.</Callout> 
+
+- Second, we've also added an Emergency ["Council"](), which has the ability to perform the following functions 
+| Function           | Purpose                                                        |
+| killGauge          | This kills a certain gauge and stops it from receiving FLOW    |
+| reviveGauge        | This resets a killed gauge and allow to to start reciving FLOW |
+| setEmergencyCouncil| This changes the MSIG address                                  |
+
+Any gauge that is deeemed unproductive to the broader ecosystem or violates the agreement with the partners. ie, isn't using a valid rightside token, may be killed. This Council will start off containing only the Velocimeter core team but individuals from the community will be added later, and the broader Arbitrum and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
-| Jack Anorak | Velocimeter        | 0x9eBd10B46B43351097caB2D3c03Ccf440957A2a9 |
-| pooltypes   | Velocimeter        | 0xc0DE1436C4E247F8652476A0B9ff55699801e1d0 |
-| Nick        | Velocimeter        | 0x53e0b897eae600b2f6855fce4a42482e9229d2c2 |
-| vfat        | Hundred Finance  | 0xeF0Ca09fbf9a5f61E657Fb208b46b8685c1d4766 |
-| 0xHamZ      | DeFi Independent | 0x698c3619f9ecB540cEc21E056ae4A900Bca1649C |
-| Arbitrum    | Arbitrum         | TBD                                        |
+| Ceazor      | Velocimeter      | ??? |
+| Dunks       | Velocimeter      | ??? |
+| Coolie      | Velocimeter      | ??? |
+| Faeflow     | Velocimeter      | ??? |
+| Torbik      | Velocimeter      | ??? |
+| wtkc        | Velocimeter      | ??? |
 
-- Third, we've doubled the initial swap fee from 0.01% to 0.02% to ensure that voters have more twice the incentive to direct emissions towards productive liquidity. Note that this rate is still much lower than alternative exchanges (e.g. Curve at 0.04%). Stable and volatile pairs also have different fees, both modifiable up to 0.05%.
+- Third, the initial swap fee was changed from 0.01% to 0.02% to ensure that voters have more twice the incentive to direct emissions towards productive liquidity. Note that this rate is still much lower than alternative exchanges (e.g. Curve at 0.04%). Stable and volatile pairs also have different fees, both modifiable up to 0.05%.
+
+- Forth, to reward our most loyal partner, the requiremnt of TVL for whitelisting is halved for new gauges that use their token as the right side token in their pool. 
 
 ## Improvement: Prolonged Emissions Decay
 
@@ -76,13 +97,13 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 
 - First, we modified the emissions growth function to
 
-    > (FLOW.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
+    > (FLOW.totalSupply ÷ FLOW.totalsupply)³ × 0.5 × Emissions
 
-- Second, we removed negative voting, as we found it too zero-sum.
-- Third, we removed the LP emissions "boost" for voters. Those emissions are instead reallocated towards all LPs, regardless of veNFT ownership status, to ensure voters are able to incentivize outside liquidity.
-- Fourth, we adjusted the initial distribution to skew much heavier towards retail: the veDAO community and other sophisticated DeFi ecosystem participants. This was done to avoid an fleeting TVL race, and is implemented with both a standard MerkleClaim airdrop contract that dynamically mints VELO for eligible addresses, and a cross-chain WeVE burn contract powered by LayerZero.
+- Second, there is no negative voting.
+- Third, there is no emissions "boost" for voters.
+- Fourth, the initial distribution has been carefully selected to include partner protocols that were felt would bring their own types of unique value to the ecosystem.
 
 ## Improvement: White-Glove Support
 
 **In Solidly, the lack of a "team" meant lack of support post-launch.**
-In line with the veDAO ethos, we want to ensure that our protocol has white-glove support for our partners and other stakeholders. To ensure that our team has sufficient resources to pay contributors an expand on our product offering, 3% of perpetual emissions will be directed towards our team multisig.
+To ensure that our team has sufficient resources to pay contributors an expand on our product offering, a maximum of 2% of emissions can be directed towards our team multisig. At genesis, this will be set to 0%
