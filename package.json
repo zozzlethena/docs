@@ -9,10 +9,10 @@
   },
   "name": "velodrome-docs",
   "version": "1.0.0",
-  "description": "Velodrome Finance Product Documentation",
+  "description": "Velocimeter Product Documentation",
   "main": "index.js",
-  "repository": "https://github.com/velodrome-finance/docs/",
-  "author": "Velodrome Chads",
+  "repository": "https://github.com/velocimeter/docs/",
+  "author": "FLOW Addicts",
   "license": "MIT",
   "private": true
 }
