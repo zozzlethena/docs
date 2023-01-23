@@ -1,12 +1,18 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
+# Protocol Overview
+
 <Bleed>
-  ![Velocimeter Problem Statement](/Velocimeter_biker_hero.png)
+<div align="center">
+![Velocimeter Problem Statement](/dome.jpg)
+</div>
+
 </Bleed>
+
 
 &nbsp;
 
-# Protocol Overview
+
 
 ## Problems with Liquidity Incentivization
 
@@ -44,14 +50,14 @@ Solidly had several key issues that prevented its success in the Fantom ecosyste
   External bribes, however, are rewarded _per epoch_ rather than streamed, and are claimable only after the next epoch starts.
   This means that a bribe sent at the last minute of an epoch will accrue to all voters of that epoch, and be claimable once the epoch flips.
 
-The goal of these changes is to ensure a healthy equilibrium between voters and external bribers. Bribers are incentivized to get their bribes early in that week, as to attract early voters. They also benefit from bribing later, as to have more information on competing bribes. Voters face a similar dilemma, as voting too early means forgoing potentially lucrative bribes that come later, and voting too late means voting with a lower (`$veVELO`) balance. Note that this latter affect is especially pronounced for voters who have locked for shorter time periods (e.g. voters who have locked for weeks rather than months/years will experience larger differences in the bribes they receive from voting later vs. earlier in the epoch).
+The goal of these changes is to ensure a healthy equilibrium between voters and external bribers. Bribers are incentivized to get their bribes early in that week, as to attract early voters. They also benefit from bribing later, as to have more information on competing bribes. Voters face a similar dilemma, as voting too early means forgoing potentially lucrative bribes that come later, and voting too late means voting with a lower (`$FLOW`) balance. Note that this latter affect is especially pronounced for voters who have locked for shorter time periods (e.g. voters who have locked for weeks rather than months/years will experience larger differences in the bribes they receive from voting later vs. earlier in the epoch).
 
 ## Improvement: Ensuring Productive Gauges
 
 **In Solidly, exploitive voters were able to direct emissions towards unproductive gauges, including those for pools 100% owned by those voters.** Velocimeter addresses this in three ways:
 
 - First, we've added an [on-chain governor](https://optimistic.etherscan.io/address/0x64DD805aa894dc001f8505e000c7535179D96C9E) to whitelist pairs used in gauges. Voters will need at least 0.02% to submit a proposal, and 4% to reach quorum. To ensure that those who whitelist gauges are economically aligned economically with our system, we've also removed the ability to whitelist by paying a whitelisting fee. Note that the on-chain governor is currently not live, as we're still working with Tally to get the process set up.
-- Second, we've also added an Emergency ["Commissaire"](https://optimistic.etherscan.io/address/0xcc2d01030ec2cd187346f70bfc483f24488c32e8), which has the ability to kill any gauge it deems unproductive to the broader ecosystem. This Commissaire consists of folks from both the Velocimeter core team, and the broader Optimism and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
+- Second, we've also added an Emergency ["Commissaire"](https://optimistic.etherscan.io/address/0xcc2d01030ec2cd187346f70bfc483f24488c32e8), which has the ability to kill any gauge it deems unproductive to the broader ecosystem. This Commissaire consists of folks from both the Velocimeter core team, and the broader Arbitrum and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
@@ -60,7 +66,7 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 | Nick        | Velocimeter        | 0x53e0b897eae600b2f6855fce4a42482e9229d2c2 |
 | vfat        | Hundred Finance  | 0xeF0Ca09fbf9a5f61E657Fb208b46b8685c1d4766 |
 | 0xHamZ      | DeFi Independent | 0x698c3619f9ecB540cEc21E056ae4A900Bca1649C |
-| Optimism    | Optimism         | TBD                                        |
+| Arbitrum    | Arbitrum         | TBD                                        |
 
 - Third, we've doubled the initial swap fee from 0.01% to 0.02% to ensure that voters have more twice the incentive to direct emissions towards productive liquidity. Note that this rate is still much lower than alternative exchanges (e.g. Curve at 0.04%). Stable and volatile pairs also have different fees, both modifiable up to 0.05%.
 
@@ -70,7 +76,7 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 
 - First, we modified the emissions growth function to
 
-    > (veVELO.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
+    > (FLOW.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
 
 - Second, we removed negative voting, as we found it too zero-sum.
 - Third, we removed the LP emissions "boost" for voters. Those emissions are instead reallocated towards all LPs, regardless of veNFT ownership status, to ensure voters are able to incentivize outside liquidity.

@@ -1,12 +1,16 @@
 import Bleed from 'nextra-theme-docs/bleed'
 
+# Liquidity Pools
+
 <Bleed>
-  ![Velocimeter Launch](/Velocimeter_biker_hero.png)
+<div align="center">
+  ![Velocimeter Launch](/dome5.jpg)
+  </div>
 </Bleed>
 
 &nbsp;
 
-# Liquidity Pools
+
 
 The core functionality of Velocimeter is to allow users to trade
 digital assets in a secure way, with very low fees and low slippage.
@@ -33,7 +37,7 @@ The _deeper_ the liquidity of a given pool (higher value locked), the smaller th
 ## Fees
 
 On Velocimeter the trading fees are kept in the originally traded tokens
-(if you trade `$USDC` and `$VELO` the fees will be kept in the same tokens).
+(if you trade `$USDC` and `FLOW` the fees will be kept in the same tokens).
 
 The trading fees for both liquidity pool types are 0.02%, and can be adjusted
 for up to 0.05%.

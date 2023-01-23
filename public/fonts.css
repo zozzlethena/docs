@@ -1,24 +1,29 @@
 @font-face {
-  font-family: "Universal Sans";
-  src: url("UniversalSansRegular.ttf");
+  font-family: "Bebas Neue";
+  src: url("BebasNeue-Regular.ttf");
   font-style: normal;
-  font-weight: 400;
+ 
   font-display: swap;
+  letter-spacing: 0.2em;
   ascent-override: 110%;
 }
 
 @font-face {
-  font-family: "Epika Serif";
-  src: url("EpikaSerifCondensedPremium-SemiBold.otf");
+  font-family: "Open Sans";
+  src: url("OpenSans-Regular.ttf");
   font-style: normal;
-  font-weight: 400;
+  
   font-display: swap;
 }
 
 html * {
- font-family: "Universal Sans", sans-serif;
+ font-family: "Open Sans";
+
 }
 
 h1, h2 *, h3 *, h4 *, h5 *, h6 * {
- font-family: "Epika Serif", serif;
+ 
+ font-family: "Bebas Neue";
+ font-kerning: normal;
+ letter-spacing: 0.07em;
 }
