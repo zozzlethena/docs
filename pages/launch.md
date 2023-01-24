@@ -14,16 +14,13 @@ import { Chart } from "react-google-charts";
 
 
 
-Velocimeter launched on Thursday, June 2, 2022.
+Velocimeter launched on Thursday, Jan 25th 2023.
 
 <Callout type="warning" emoji="⚠️">
-  As with any launch, we'd like to warn our users about the potential limitations
-  of the first release. At launch, our dApp will render best in
-  **desktop environments**.
+  As with any launch, we want to warn users that this product is in beta. Users should use at their own risk. We also recommend that you interact with the site in **desktop environments**.
   
   If at any point you require assistance, please join our
-  [Discord](), where our community and we will be
-  happy to help you!
+  [Discord](https://discord.gg/qpue2s6VfJ), where there are many degens that will be more than happy to help you so you can pamp their bags.
 </Callout>
 
 ## Getting Ready
@@ -46,39 +43,18 @@ configuration options.
 New Arbitrum users who want to participate in Velocimeter should make sure they
 have `$ETH` on Arbitrum in order to be able to pay for transaction/gas fees.
 
-Bridging to Arbitrum is possible here: https://app.Arbitrum.io/bridge
-
-If you're bridging from a network other than the Ethereum network, we recommend the
-following services:
-* https://stargate.finance/transfer &mdash; a multi-network bridge for stable
-   coins
-* https://www.bungee.exchange &mdash; an aggregator that shows the best
-   available bridging options. Use their _Refuel_ service to deposit smaller
-   amounts in case you run out of `$ETH` to pay transaction fees.
- * https://www.Arbitrum.io/apps/bridges &mdash; for a full list of Arbitrum
-   network bridging services.
+Bridging to Arbitrum is possible here: [Arbitrum Bridge](https://app.Arbitrum.io/bridge). 
+You can also bridge via [Multichain](https://app.multichain.org/#/router) or [Bungee](https://www.bungee.exchange/)
 
 <Callout emoji="⚠️">
   Some bridging services can take up to 20-30 minutes to complete a transfer of
-  the assets.
+  the assets. Velocimeter doesn't guarantee the results of any of the bridges. Issue with bridges 
+  are best taken up with the respective communities of those bridges.
 </Callout>
-
-Here's a walkthrough for how to use the Arbitrum Bridge on mobile:
-
-<Bleed>
-  <iframe width="100%" height="800"
-  src="https://www.youtube.com/embed/pR31stuRejg?rel=0" frameborder="0"></iframe>
-</Bleed>
-
-
-
-
 
 ### Initial Distribution
 
-Velocimeter will launch with initial distribution of 400M VELO airdropped to
-DeFi community members, protocols, and DAOs likeliest to play an active role in the Arbitrum
-ecosystem.
+Velocimeter will launch with initial supply of 400M FLOW token most of which are locked for four years and airdroped to partner protocols, early investors, farmable by early communtity members via [Amplifi](https://app.amplifi.gg/), and held for furture partners.  
 
 Details of the initial distribution and token emissinos are available in the
 [Initial Distribution section of the Tokenomics](/tokenomics#initial-distribution).
