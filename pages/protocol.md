@@ -51,7 +51,7 @@ Solidly had several key issues that prevented its success in the Fantom ecosyste
   External bribes, however, are rewarded _per epoch_ rather than streamed, and are claimable only after the next epoch starts.
   This means that a bribe sent at the last minute of an epoch will accrue to all voters of that epoch, and be claimable once the epoch flips.
 
-The goal of these changes is to ensure a healthy equilibrium between voters and external bribers. Bribers are incentivized to get their bribes early in that week, as to attract early voters. They also benefit from bribing later, as to have more information on competing bribes. Voters face a similar dilemma, as voting too early means forgoing potentially lucrative bribes that come later, and voting too late means voting with a lower (`$FLOW`) balance. Note that this latter affect is especially pronounced for voters who have locked for shorter time periods (e.g. voters who have locked for weeks rather than months/years will experience larger differences in the bribes they receive from voting later vs. earlier in the epoch).
+The goal of these changes is to ensure a healthy equilibrium between voters and external bribers. Bribers are incentivized to get their bribes early in that week, as to attract early voters. They also benefit from bribing later, as to have more information on competing bribes. Voters face a similar dilemma, as voting too early means forgoing potentially lucrative bribes that come later, and voting too late means voting with a lower (`veFLOW`) balance. Note that this latter affect is especially pronounced for voters who have locked for shorter time periods (e.g. voters who have locked for weeks rather than months/years will experience larger differences in the bribes they receive from voting later vs. earlier in the epoch).
 
 ## Improvement: Ensuring Productive Gauges
 
@@ -90,7 +90,7 @@ Any gauge that is deeemed unproductive to the broader ecosystem or violates the 
 
 - Third, the initial swap fee was changed from 0.01% to 0.02% to ensure that voters have more twice the incentive to direct emissions towards productive liquidity. Note that this rate is still much lower than alternative exchanges (e.g. Curve at 0.04%). Stable and volatile pairs also have different fees, both modifiable up to 0.05%.
 
-- Forth, to reward our most loyal partner, the requiremnt of TVL for whitelisting is halved for new gauges that use their token as the right side token in their pool. 
+- Forth, to reward our most loyal partner, the requirement of TVL for whitelisting is halved for new gauges that use their token as the right side token in their pool. 
 
 ## Improvement: Prolonged Emissions Decay
 

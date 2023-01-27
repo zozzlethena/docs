@@ -17,22 +17,22 @@ import { Chart } from "react-google-charts";
 Velocimeter uses two tokens to manage its utility and governance:
 
  * `FLOW` &mdash; ERC-20 utility token of the protocol
- * `$FLOW` &mdash; ERC-721 governance token in the form of an NFT
+ * `veFLOW` &mdash; ERC-721 governance token in the form of an NFT
    (non-fungible token)
 
 `FLOW` is used for rewarding liquidity providers through emissions.
 
-`$FLOW` is used for governance. Any `FLOW` holder can vote-escrow their tokens and
-receive a `$FLOW` (also known as veNFT) in exchange. Additional tokens can be
-added to the `$FLOW` NFT at any time.
+`veFLOW` is used for governance. Any `FLOW` holder can vote-escrow their tokens and
+receive a `veFLOW` (also known as veNFT) in exchange. Additional tokens can be
+added to the `veFLOW` NFT at any time.
 
 The lock period (also known as vote-escrowed period, hence the _ve_ prefix) can be up
 to 4 years, following the linear relationship shown below:
- * 100 `FLOW` locked for 4 years will become 100 `$FLOW`
- * 100 `FLOW` locked for 1 year will become 25 `$FLOW`
+ * 100 `FLOW` locked for 4 years will become 100 `veFLOW`
+ * 100 `FLOW` locked for 1 year will become 25 `veFLOW`
 
 The longer the vesting time, the higher the voting power (voting weight) and
-rewards the `$FLOW` holder receives.
+rewards the `veFLOW` holder receives.
 
 ## ve(3,3) Mechanics
 
@@ -42,23 +42,17 @@ Velocimeter mechanics reflect a combination of two DeFi concepts:
 
 Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velocimeter's success, such as
 liquidity provision and long-term token holding. Liquidity providers receive `FLOW` emissions,
-and `$FLOW` holders receive protocol fees, bribes, rebases, and governance power.
+and `veFLOW` holders receive protocol fees, bribes, rebases, and governance power.
 
-![image](/Velocimeter-circuit.png)
+![image](/dome3.jpg)
 
 Below, we will walk through the components of the mechanism in order to
-explain how it helps the incentives flow to the most valuable of the ecosystem
-liquidity pools.
+explain how it helps the incentives flow to the most ideal liquidity pools.
 
 ## Initial Distribution
 
-<Callout emoji="🪂">
-  The airdrop claim period is now complete. Thank you to everyone who
-  participated!
-</Callout>
-
-At launch we distributed `FLOW` and `$FLOW` to
-users and protocols we believe are likeliest to contribute to our
+At launch we distributed `veFLOW` to
+users and protocols we believe will contribute to our
 mission to become the liquidity base layer of the Arbitrum ecosystem.
 
 
@@ -69,17 +63,20 @@ mission to become the liquidity base layer of the Arbitrum ecosystem.
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "Community", 240 ],
-      [ "Partner Protocol/DAOs", 96 ],
-      [ "Velocimeter Team", 40 ],
-      [ "Arbitrum Team", 20 ],
-      [ "Genesis Liquidity Pool", 4 ]
+      [ "Protocol Owned NFT", 60 ],
+      [ "Protocol Controlled Liquidity", 16],
+      [ "Presale", 4],
+      [ "Velocimeter Team", 72],
+      [ "Tribute", 8],
+      [ "Partner Protocol/DAOs", 140],
+      [ "Partner Boost", 60],
+      [ "Amplify Awareness Campaign", 40]
     ]}
     options={{
       title: "FLOW Distribution (M)",
       backgroundColor: '#111111',
-      colors: ['#79F8DB', '#027FFF', '#FDBF40', '#FF1301', '#F1EBE2', '#FBBF42', '#EDE7DB'],
-      legend: {textStyle: {color: 'white'}},
+      colors: ['#79F8DB', '#027FFF', '#FDBF40', '#FF1301', '#F1EBE2', '#FBBF42', '#EDE7DB', '#EDE7DB' ],
+      legend: {textStyle: {color: 'white' }},
       pieHole: 0.4,
       titleTextStyle: { color: 'white' },
     }}
@@ -88,78 +85,37 @@ mission to become the liquidity base layer of the Arbitrum ecosystem.
   />
 </Bleed>
 
-### Community
+### Protocol Owned NFT
 
-240M (60%) `FLOW` tokens will be distributed to the people who have played the biggest role in
-incubating Velocimeter and those likeliest to contribute to its long-term
-success, including:
- * `$WEVE` holders (27%, 108M `FLOW`)
- * `$OP` network users (18%, 72M `FLOW`)
-   * 3755 `FLOW`/wallet &mdash; Addresses qualified as [Repeat Arbitrum Users](https://community.Arbitrum.io/docs/governance/airdrop-1/#Arbitrum-early-adopters)
- * Cross-chain DeFi users (15%, 60M `FLOW`):
-   * 3500 `FLOW`/wallet &mdash; Curve Protocol wallets with a 1450+ days (maximum) `$veCRV` lock time
-   * 3000 `FLOW`/wallet &mdash; Convex Protocol lockers of `$vlCVX` since new lock contract deployment
-   * 3000 `FLOW`/wallet &mdash; Treasure DAO Genesis Mine `$MAGIC` stakers for 1- and 3-month periods
-   * 2000 `FLOW`/wallet &mdash; Platypus Protocol stakers with `$vePTP` and `$PTP` balance
-   * 500 `FLOW`/wallet &mdash; Redacted Cartel participants in genesis Dutch auction who didn't sell their `$BTRFLY`
-   * 500 `FLOW`/wallet &mdash; Eminence Finance wallets affected with EMN, eAAVE, eLINK, eYFI, eSNX or eCRV [balance](https://github.com/banteg/your-eminence/blob/master/shot/01-balances.toml)
+60M `FLOW` tokens were four year locked as an `veFLOW` and used to vote solely on core liquidity pools such as the `FLOW/USDC` LP. Any and all fees earned through these actions will be used to build up Protocol Owned Liquidity (POL) to ensure healthy trading of the `FLOW` token.
 
-### Protocols
+### Protocol Controlled Liquidity
 
-We will consider a variety of metrics in assessing the available protocols,
-including TVL, transaction volume, unique wallets, and Arbitrum team input.
+16M `FLOW` tokens were set aside to add to initial liquidity for the `FLOW` token and is referred to as Protocol Controlled Liquidity (PCL). The amount of `FLOW` utilized for this was dependant on the amount of right side tokens *ie `USDC`* that were raised in the presale. As POL is developed this liquidity can be dismantled at the team discretion.
 
-The airdrop of 72M (18%) `$FLOW` is aimed at attracting and engaging 10-15 protocols most
-likely to contribute to Velocimeter and Arbitrum's long-term success.
+### Presale
 
-The amount of `$FLOW` airdropped will provide just enough voting power to familiarize
-the protocols with the ecosystem and give them a head start, but it will leave space
-for the protocols to accrue value by acquiring `FLOW` for long-term liquidity provision.
+4M `FLOW` tokens were sold as `veFLOW` to initial investors. This raise was used solely for the PCL
 
-### Grants
+### Velocimeter Team
 
-We have reserved 24M (6%) `$FLOW` to distribute to partner protocols
-after the launch. This will be used to engage partners in the ecosystem through
-grants.
+72M `FLOW` tokens were four year locked at veFLOW and given to the team. The individuals in the team are able to vote at their own personal discretion. This is considered the method of cash flow for those team members.
 
-### Team
+### Tribute
 
-The team will receive an initial allocation that it will use to vote
-to drive emissions to key protocol pairs such as `FLOW-$USDC` and to support
-ongoing protocol development. The total team allocation is 40M (10%) in `FLOW` and `$FLOW`.
+8M `FLOW` tokens were set aside to pay tribute to both Andre Cronje and Anton Nell, as well as, to the team at Velodrome. These tokens were four year locked in as many `veFLOW` as per requested by the respective recipients.
 
-The team will vest 25% of its initial allocation in the form of a
-`$FLOW` and use it to vote for `FLOW` pairs in perpetuity.
+### Partners
 
-While a fully autonomous and immutable protocol is an admirable objective, it
-comes at a cost. Velocimeter will ensure its long-term sustainability by
-employing a dedicated team focused on supporting the product, documentation,
-community, and ecosystem. As the protocol evolves, the Velocimeter team will
-consider introducing more immutability or DAO components where appropriate.
+140M `FLOW` tokens were four year locked in `veFLOW` NFTs of various sizes, ranging from 0.25% to 1%, and given to projects and DAOs in the ecosystem that the team felt would direct value to the Velocimeter ecosystem. As projects are selected and given their shares, this section will be updated.
 
-To cover ongoing expenses and all the upcoming development efforts, 3% of the
-emissions will be going to the team address.
+### Partner Boost
 
-The team vesting compensation breakdown:
- * 15,520,816 `FLOW` vesting for 12 months, 6-month lock in a `$FLOW` followed
-   by a linear 6-month unlock period. 0.5% of total emissions, taken from
-   emissions to treasury, will be added to this bucket for dilution control.
- * 7,200,000 `FLOW` vesting for 24 months, 12-month lock in a `$FLOW` followed
-   by a linear 12-month unlock period.
- * All ongoing payments made to the team members in `FLOW` will vest for 6
-   months, 3-month lock in a `$FLOW` followed by a linear 3-month unlock period.
+60M `FLOW` tokens were set aside and will be used over the span of the 1st year to increase the `FLOW` in various partner `veFLOW` NFTs based on the value brought by those teams. Different teams have the potential to bring highly different value, so it's hard to describe. Approximately 1.15M tokens will be granted to these partners pro rata.
 
-### Arbitrum Team
+### Amplify
 
-The Arbitrum team has a vested interest in ensuring that Velocimeter achieves its
-mission of serving as an ecosystem public good. The team will receive 20M (5%) `$FLOW` in the initial
-distribution, to support that interest.
-
-### Genesis Liquidity Pools
-
-Genesis Pools will distribute 4M (1%) `FLOW` to liquidity providers of foundational token pairs to
-provide better liquidity and user experience from launch day. Genesis pool emissions will be first
-directed to the `FLOW`-`$USDC` pool and will start a few days before the first epoch votes are cast.
+40M `FLOW` tokens were set aside to be earned, as `veFLOW`, by community members for different campaigns that are launched via Amplify Affiliate Campaigns. Follow their [twitter](https://twitter.com/AmpliFiDAO) to see announcements on how you can take part and earn `veFLOW`
 
 ## Emissions
 
@@ -168,14 +124,14 @@ The initial supply of `FLOW` is 400M.
 Weekly emissions start at 15M `FLOW` (3.75% of the initial supply)
 and decay at 1% per week (epoch).
 
-`$FLOW` holders receive a rebase proportional to epoch LP emissions
-and the ratio of `$FLOW` to `FLOW` supply, thus reducing vote power
-dilution for `$FLOW`!
+`veFLOW` holders receive a rebase proportional to epoch LP emissions
+and the ratio of `veFLOW` to `FLOW` supply, thus reducing vote power
+dilution for `veFLOW`!
 
 The weekly rebase amount is calculated with the following formula:
-> (FLOW.totalSupply ÷ VELO.totalsupply)³ × 0.5 × Emissions
+> (FLOW.totalSupply ÷ FLOW.totalsupply)³ × 0.5 × Emissions
 
-`$FLOW` supply does not affect weekly LP emissions.
+`veFLOW` supply does not affect weekly LP emissions.
 
 ### Emission Schedule
 
@@ -221,25 +177,25 @@ The weekly rebase amount is calculated with the following formula:
 
 ## Gauge Voting
 
-`$FLOW` holders decide which liquidity pools receive emissions in a given epoch by
+`veFLOW` holders decide which liquidity pools receive emissions in a given epoch by
 voting on their preferred liquidity pool _gauges_. `FLOW` emissions will be distributed
 proportionally to the total votes a liquidity pool receives.
 
 In return, voters receive 100% of the trading fees and bribes collected through the
 liquidity pool they vote for. 
 
-Voting for gauges, or in fact any action related to the `$FLOW` NFT is
+Voting for gauges, or in fact any action related to the `veFLOW` NFT is
 allowed only once per epoch. This means that calling `Voter.reset()` (used for
 resetting an NFT vote state and usually required before merging it into another
-`$FLOW` NFT) or `Voter.poke()` (used to re-cast the votes for the current epoch in
+`veFLOW` NFT) or `Voter.poke()` (used to re-cast the votes for the current epoch in
 order to direct emissions and earn bribes) counts as an action for the current
 epoch.
 
 While limiting the protocol participants to one action per epoch is not ideal,
-it does make the protocol safer against potential exploitative behaviour.
+it does make the protocol safer against potential exploitative behavior.
 
 <Callout>
-  Unused `$FLOW` voting power is still taken into account as we calculate the
+  Unused `veFLOW` voting power is still taken into account as we calculate the
   weight of the vote upon epoch flip and based on the locked vesting slope.
 
   Please make sure you always cast 100% of your voting power to avoid
@@ -253,17 +209,17 @@ There are 4 types of rewards on Velocimeter.
 
 ### Emissions
 
-Represent `FLOW` distributed to liquidity pool stakers. The amount of
+`FLOW` is distributed to liquidity pool stakers. The amount of
 `FLOW` distributed towards every pool is proportional to the voting power
 received from the voters every epoch.
 
-These rewards are streaming and are available for claim as these accrue.
+These rewards are streaming and are available for claim as they accrue.
 
 ### Fees
 
-Represent liquidity pool trading fees distributed to voters in pool tokens (
-e.g., if the pool is `vAMM-VELO/USDC` the distributed tokens are `FLOW` and
-`$USDC`).
+Liquidity pool trading fees are distributed to voters in pool tokens (
+e.g., if the pool voted on is `vAMM-FLOW/USDC` the distributed tokens are `FLOW` and
+`$USDC`) in proportion to the activity of trading in the pool. These will likely not be evenly balanced.
 
 The tokens are streaming proportionally to the voting power cast by a voter and
 the accrued amount of trading fees.
@@ -278,15 +234,12 @@ _only_ to voters on that pool, proportionally to their share of pool votes.
 
 These rewards are available for claim after the epoch flips 
 (after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
-voter (`$FLOW`).
+voter (`veFLOW`).
 
 ### Rebases
 
-Represent `$FLOW` distributed to `$FLOW` holders in order to reduce the
-voting power dilution.
-
-These rewards are available for claim as these accrue and are streaming
-proportionally to all `$FLOW` holders.
+Represent `veFLOW` distributed to `veFLOW` holders in order to reduce the
+voting power dilution from the inflationary rewards given to LP stakers.
 
 ## Rewards claim
 
@@ -332,22 +285,20 @@ An example of bribes, voting, and rewards claim timeline:
 
 ## Whitelisting
 
-While Velocimeter supports permissionless liquidity pool and gauge creation, these can
-only include _whitelisted_ tokens. The protocol will launch with an extensive list of
-pre-whitelisted tokens, including those from partner protocols.
+While Velocimeter supports permissionless liquidity pool. Gauge creation can
+only include _whitelisted_ tokens. Part of the partner onboarding program will include whitelisting of their tokens where needed.
 
 Partners can request additional tokens to be _whitelisted_. 
 
-A permissionless _whitelisting_ on-chain governance process will be implemented in
-the future, pending required on-chain governance infrastructure on Arbitrum.
 
-## Commissaire
+## Council of Velocimetry
 
 Requirements for _whitelisting_ are critical to ensuring that the protocol cannot
 be exploited by actors attempting to game emissions.
 
-To support the health of the protocol and ecosystem, the Commissaire (a Curve-esque _Emergency DAO_)
+To support the health of the protocol and ecosystem, the Council of Velocimetry (similar to the Curve.Finance _Emergency DAO_)
 will have the right to disable hostile gauges.
 
-The Commissaire will initially consist of seven members from the Velocimeter team and
-prominent figures from within the Arbitrum community.
+An example of a hostile gauge would be one that has two tokens that cannot be obtained public via any route either inside Velocimeter or in other protocols. 
+
+The Council of Velocimetry will initially consist of members from the Velocimeter team but community members will be recruited to bolster this role.
