@@ -1,8 +1,8 @@
-# Addressing Issues in Our C4 Contest
+# How Velodrome is Addressing Issues in the C4 Contest
 
-Our Code4rena contest results were released on August 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-velodrome/).
+The Code4rena contest results were released on August 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-velodrome/).
 
-Below details how our team addressed these issues prior to our mainnet deploy.
+Below details how the `Velodrome` team addressed these issues prior to their mainnet deploy on Optimism.
 
 ## High Risk (6)
 

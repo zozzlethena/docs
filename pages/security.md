@@ -9,56 +9,6 @@ import Callout from 'nextra-theme-docs/callout'
 
 &nbsp;
 
-# Security
-
-As a commitment towards the safety of our users and partners, we want to
-be transparent about the changes and the status of the security audits of our
-smart contracts.
-
-Velocimeter was adapted from Solidly, which [codebase was open
-sourced in full](https://github.com/solidlyexchange/) by Andre Cronje and his team in
-March 2022. Since its release in February on Fantom network, no security
-incidents related to Solidly smart contracts were reported.
-
-Velocimeter smart contracts can be found on Optimistic Etherscan at the links below.
-
-<Callout emoji="⚠️">
-  Before moving forward, we'd like to remind to our users that
-  security audits do not eliminate risks completely and that
-  every user should read and agree to our
-  [legal disclaimer](/legal) before using Velocimeter!
-
-  For security reports, please reach out to us on
-  [Discord](https://discord.gg/eGgYPGczaf), or to the contacts provided on our Github page.
-</Callout>
-
-## Audits
-
-Solidly went through a partial (only the AMM part was sent for audit) security
-audit in January 30, 2022. The audit was done by PeckShield and did reveal 5
-low-severity and 1 informal findings.
-
-The full audit is available for [download from Solidly git
-repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a816-3802-4384-894c-825a4177245a.pdf).
-
-Velocimeter went through a security audit and a peer review as part of the Code4rena bug bouncy contest.
-Finally, a full MythX deep scan on Velocimeter contracts found just a
-handful of false-positive, low-severity issues reported.
-
-The Code4rena contest results were released on August 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-Velocimeter/). All high- or medium-risk issues were either resolved pre-deploy, except for one known issue (users can claim eligible rewards from ExternalBribe contracts more than once) that's currently being addressed (via a wrapped contract solution). No user funds are at risk from this vulnerability, and protocols who wish to deposit external bribes should get in contact with the core team to discuss alternative solutions. More information about our C4 contest can be found [here](/c4report).
-
-Lastly, we also engaged with Coelacanth ([@ImpossibleNFT](https://twitter.com/impossiblenft)) for an informal full audit. Reports from that audit are available [here](https://github.com/Velocimeter-finance/contracts/tree/master/audits/velo).
-
-## Bug Bounty Programs
-
-Velocimeter ran a [bug bounty contest on 23rd to 30th of May 2022 with
-awards up to $75,000 on Code4rena](https://code4rena.com/contests/2022-05-Velocimeter-finance-contest).
-The main scope of the contest was to cover all the new changes to the new and
-the original contracts.
-
-Solidly's bug bounty program was launched in February 2022 on Immunefi.com.
-There were no claims for any of the $200,000 rewards ([on their Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
-
 ## Contract Addresses
 
 | Contract Name | Contract Address | Network |
@@ -95,34 +45,30 @@ As of August 2022, we've compiled a list of key differences between Velocimeter'
 ### Major changes
 
   - **Treat external bribes differently than internal bribes (i.e. fees).**
-    We split Bribe into two separate contracts, `InternalBribe` and
+    The Bribe contracts are spilt into two separate contracts, `InternalBribe` and
     `ExternalBribe`. `InternalBribe` functions essentially the same way as `Bribe`
     did, but `ExternalBribe` ensures that rewards are eliglble to be claimed by
     any voter who votes for the underlying gauge during the epoch, instead of
     only voters who vote after the rewards are sent. `ExternalBribe` also ensures
     that rewards can only be claimed after the epoch ends.`ExternalBribe`
     rewards must also be _whitelisted_ via on-chain governance.
-  - **One vote per epoch. In Velocimeter, voters are only allowed to make "active"
-    voting decisions (i.e. vote and reset) once per epoch.** Voters must wait
+  - **One vote per epoch.** In Velocimeter, voters are only allowed to make "active"
+    voting decisions (i.e. vote and reset) once per epoch. Voters must wait
     until the next epoch to change their votes. Voters can, however, _cast_
     their votes throughout the epoch.
-  - **On-chain governance.** To handle protocol-wide decisions (such as eligible
-    tokens for external bribes), we introduce an on-chain Governor. This will
-    likely be Tally's first on-chain governor on Arbitrum following their
-    support for the network.
   - **Killable gauges.** To dissuade emissions exploitation via dummy gauges, we're
-    allowing the _Velocimeter Commissaire_ (akin to Curve's Emergency DAO) to kill
-    any "bad" gauges. The Commissaire is composed of individuals from varying
+    allowing the _Velocimeter Council of Velocimetry_ (akin to Curve's Emergency DAO) to kill
+    any "bad" gauges. The Council is composed of individuals from varying
     parties meant to serve as a credibly neutral decision-maker for the broader
     ecosystem.
 
 ### Minor changes
 
-  - **Removed the LP boost for voters.** We removed the boost that voters receive
+  - **Removed the LP boost for voters.** The boost was removed that voters receive
     when staking their LPs with gauges they voted for. This removes the need
     for a veNFT aggregator (more on this later...).
-  - **Removed negative voting.** We found negative voting to be zero-sum for
-    Solidly, so we decided to remove it.
+  - **Removed negative voting.** Negative voting was considered zero-sum for
+    Solidly, so it was removed.
   - **Team emissions.** 3% of new emissions will be sent to a team address, meant
     to cover on-going expenses and future development.
 
@@ -131,8 +77,61 @@ As of August 2022, we've compiled a list of key differences between Velocimeter'
   - **Modifiable fees.** Fees are now doubled to 0.02%, modifiable up to 0.05%, and
     tracked differently for volatile vs stable pairs.
   - **Upgradeable veNFT art.** Self-explanatory
-  - **Velocimeter specific.**
-  - **Initial distribution.** Initial distribution will be handled in two ways: a
-    redemption process that uses LayerZero to burn `$WEVE` for `$USDC` and
-    `FLOW` on Arbitrum, and a Merkle airdrop contract. Unclaimed `FLOW` is
-    never minted to ensure emissions aren't affected.
+  - **Initial distribution.** Initial distribution(ID) or `SOLID` was based on TVL brought
+  to the Fantom Network. ID of `VELO` had holders of `WEVE` being granted `VELO`. ID of `FLOW` is completely fresh.
+  More on the ID of `FLOW` can be found in the [Tokenomics section](/tokenomics#initial-distribution).
+
+# Security
+
+Velocimeter is a direct fork of [Velodrome Finance](https://github.com/velodrome-finance) which was adapted from Solidly, which [codebase was open
+sourced in full](https://github.com/solidlyexchange/) by Andre Cronje and his team in
+March 2022. Since its release in February on Fantom network, no security
+incidents related to Solidly smart contracts were reported.
+
+Velocimeter smart contracts can be found on Optimistic Etherscan at the links above.
+
+<Callout emoji="⚠️">
+  Before moving forward, we'd like to remind to our users that
+  security audits do not eliminate risks completely and that
+  every user should read and agree to our
+  [legal disclaimer](/legal) before using Velocimeter!
+
+  For security reports, please reach out to us on
+  [Discord](https://discord.gg/qpue2s6VfJ), or to the contacts provided on our Github page.
+</Callout>
+
+## Audits
+
+Solidly went through a partial (only the AMM part was sent for audit) security
+audit in January 30, 2022. The audit was done by PeckShield and did reveal 5
+low-severity and 1 informal findings.
+
+The full audit is available for [download from Solidly git
+repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a816-3802-4384-894c-825a4177245a.pdf).
+
+Velodrome went through a security audit and a peer review as part of the Code4rena bug bouncy contest.
+Finally, a full MythX deep scan on Velodrome contracts found just a
+handful of false-positive, low-severity issues reported.
+
+<Callout emoji="⚠️">
+Velocimeter has NOT gone through any form of audit or code review but rather adopts the following from the Velodrome security procedures. None of the code was changed other than the naming of a few contracts. ALL the following, applies directly only to the Velodrome contracts. 
+
+ Users of Velocimeter should take note of this, and accept this risk if they wish to interact with the Velocimeter contracts. 
+</Callout>
+
+### VELODROME Security Procedures
+
+The Code4rena contest results were released on August 8, 2022 and are available [here](https://code4rena.com/reports/2022-05-Velocimeter/). All high- or medium-risk issues were either resolved pre-deploy, except for one known issue (users can claim eligible rewards from ExternalBribe contracts more than once) that's currently being addressed (via a wrapped contract solution). No user funds are at risk from this vulnerability, and protocols who wish to deposit external bribes should get in contact with the core team to discuss alternative solutions. More information about our C4 contest can be found [here](/c4report).
+
+Lastly, we also engaged with Coelacanth ([@ImpossibleNFT](https://twitter.com/impossiblenft)) for an informal full audit. Reports from that audit are available [here](https://github.com/Velocimeter-finance/contracts/tree/master/audits/velo).
+
+## Bug Bounty Programs
+
+Velocimeter ran a [bug bounty contest on 23rd to 30th of May 2022 with
+awards up to $75,000 on Code4rena](https://code4rena.com/contests/2022-05-Velocimeter-finance-contest).
+The main scope of the contest was to cover all the new changes to the new and
+the original contracts.
+
+Solidly's bug bounty program was launched in February 2022 on Immunefi.com.
+There were no claims for any of the $200,000 rewards ([on their Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
+

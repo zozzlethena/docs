@@ -23,7 +23,7 @@ price paid) of desired tokens returned from a trade.
 To provide access to the best rates on the market, we identified two types of
 assets:
  * correlated - for example _stable coins_ (`$USDC`, `$DAI`, etc.)
- * uncorrelated - for example `$LINK` and `$CRV`
+ * uncorrelated - for example `$ETH` and `$FLOW`
 
 Velocimeter offers two different liquidity pool types based on token pair needs, _Stable
 Pools_ and _Variable Pools_.
