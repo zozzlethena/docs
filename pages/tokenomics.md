@@ -85,6 +85,10 @@ mission to become the liquidity base layer of the Arbitrum ecosystem.
   />
 </Bleed>
 
+<Callout>
+No loose `FLOW` tokens were given to anyone. The team doesn't get any vesting `FLOW` tokens. The only loose tokens minted were for initial liquidity, for Partner Boost, and for Amplify Campaigns. The latter two will all be either added to existing `veFLOW` or used to create new `veFLOW` before being dispersed.
+</Callout>
+
 ### Protocol Owned NFT
 
 60M `FLOW` tokens were four year locked as an `veFLOW` and used to vote solely on core liquidity pools such as the `FLOW/USDC` LP. Any and all fees earned through these actions will be used to build up Protocol Owned Liquidity (POL) to ensure healthy trading of the `FLOW` token.
