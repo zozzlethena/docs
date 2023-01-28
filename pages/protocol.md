@@ -67,17 +67,17 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 | FRAX        | FRAX Finance     | 0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F |
 | FLOW        | Velocimeter      | ??? |
 
-The basic guidelines for whitelisting a token is a committment to supply, or have, a TVL in the pool of at least $30,000 USD. This ensures trading in that pool at least a small measure of stability before a guage is granted. There could be individual cases where this requirement might be modified.
+The basic guidelines for whitelisting a token is a commitment to supply, or have, a TVL in the pool of at least $30,000 USD. This ensures trading in that pool at least a small measure of stability before a guage is granted. There could be individual cases where this requirement might be modified.
 
 <Callout>If your team wants a gauge, we suggest you first ask for token whitelisting prior to making the gauge. This is because you will be able to complete the entire process. However, if you have already created a liquidity pool, we can still help you to get a gauge.</Callout> 
 
 - Second, we've also added an Emergency ["Council"](), which has the ability to perform the following functions 
 | Function           | Purpose                                                        |
 | killGauge          | This kills a certain gauge and stops it from receiving FLOW    |
-| reviveGauge        | This resets a killed gauge and allow to to start reciving FLOW |
+| reviveGauge        | This resets a killed gauge and allow to to start receiving FLOW |
 | setEmergencyCouncil| This changes the MSIG address                                  |
 
-Any gauge that is deeemed unproductive to the broader ecosystem or violates the agreement with the partners. ie, isn't using a valid rightside token, may be killed. This Council will start off containing only the Velocimeter core team but individuals from the community will be added later, and the broader Arbitrum and DeFi ecosystems. The Commissaire multisig is available here, and signers include:
+Any gauge that is deemed unproductive to the broader ecosystem or violates the agreement with the partners. ie, isn't using a valid rightside token, may be killed. This Council will start off containing only the Velocimeter core team but individuals from the community will be added later, and the broader Arbitrum and DeFi ecosystems. The Council of Velocimetry multisig is available here, and signers include:
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
