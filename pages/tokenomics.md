@@ -293,6 +293,7 @@ While Velocimeter supports permissionless liquidity pool. Gauge creation can
 only include _whitelisted_ tokens. Part of the partner onboarding program will include whitelisting of their tokens where needed.
 
 Partners can request additional tokens to be _whitelisted_. 
+There is a complete list of all the whitelisted tokens in the [Gauges Section](/gauges)
 
 
 ## Council of Velocimetry

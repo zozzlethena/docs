@@ -57,15 +57,7 @@ The goal of these changes is to ensure a healthy equilibrium between voters and 
 
 **In Solidly, exploitive voters were able to direct emissions towards unproductive gauges, including those for pools 100% owned by those voters.** Velocimeter addresses this in three ways:
 
-- First, the team only has the ability to whitelist tokens for gauges. The following list of tokens are already whitelisted at genesis.
-| Signer      | Project          | Address                                    |
-| ----------- | ---------------- | ------------------------------------------ |
-| WETH        | Etherum          | 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1 |
-| USDC        | Circle           | 0xFF970A61A04b1cA14834A43f5dE4533eBDDB5CC8 |
-| USDT        | Tether           | 0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9 |
-| MIM         | Abracadabra      | 0xFEa7a6a0B346362BF88A9e4A88416B77a57D6c2A |
-| FRAX        | FRAX Finance     | 0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F |
-| FLOW        | Velocimeter      | ??? |
+- First, the team only has the ability to whitelist tokens for gauges. There is a complete list of all the whitelisted tokens in the [Gauges Section](/gauges)
 
 The basic guidelines for whitelisting a token is a commitment to supply, or have, a TVL in the pool of at least $30,000 USD. This ensures trading in that pool at least a small measure of stability before a guage is granted. There could be individual cases where this requirement might be modified.
 
