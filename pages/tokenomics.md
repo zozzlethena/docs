@@ -115,9 +115,9 @@ No loose `FLOW` tokens were given to anyone. The team doesn't get any vesting `F
 
 ### Partner Boost
 
-60M `FLOW` tokens were set aside and will be used over the span of the 1st year to increase the `FLOW` in various partner `veFLOW` NFTs based on the value brought by those teams. Different teams have the potential to bring highly different value, so it's hard to describe. Approximately 1.15M tokens will be granted to these partners pro rata.
+60M `FLOW` tokens were set aside and used to mint 60 x 0.25% `veFLOW`. These NFTs will be granted, 5 per month, to the protocols that have the most positive impact on Velocimeter. This allocation will be done via a Snapshot vote with the `veFLOW` holding as a requisite for voting. 
 
-### Amplify
+### Amplifi and Airdrop
 
 40M `FLOW` tokens were set aside to be earned, as `veFLOW`, by community members for different campaigns that are launched via Amplify Affiliate Campaigns. Follow their [twitter](https://twitter.com/AmpliFiDAO) to see announcements on how you can take part and earn `veFLOW`
 
