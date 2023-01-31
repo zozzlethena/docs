@@ -25,9 +25,6 @@ import Callout from 'nextra-theme-docs/callout'
 | RewardsDistributor | [????](URL) | Arbitrum |
 | Voter              | [????](URL) | Arbitrum |
 | Minter             | [????](URL) | Arbitrum |
-| RedemptionReceiver | [????](URL) | Arbitrum |
-| FlowGovernor       | [[????](URL) | Arbitrum |
-| MerkleClaim        | [????](URL) | Arbitrum |
 
 ## Tokenlist
 
