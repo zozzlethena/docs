@@ -103,7 +103,7 @@ No loose `FLOW` tokens were given to anyone. The team doesn't get any vesting `F
 
 ### Velocimeter Team
 
-72M `FLOW` tokens were four year locked at veFLOW and given to the team. The individuals in the team are able to vote at their own personal discretion. This is considered the method of cash flow for those team members.
+72M `FLOW` tokens were four year locked as `veFLOW` and given to the team. The individuals in the team are able to vote at their own personal discretion. This is considered the method of cash flow for those team members.
 
 ### Tribute
 
