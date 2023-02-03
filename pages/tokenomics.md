@@ -188,23 +188,7 @@ proportionally to the total votes a liquidity pool receives.
 In return, voters receive 100% of the trading fees and bribes collected through the
 liquidity pool they vote for. 
 
-Voting for gauges, or in fact any action related to the `veFLOW` NFT is
-allowed only once per epoch. This means that calling `Voter.reset()` (used for
-resetting an NFT vote state and usually required before merging it into another
-`veFLOW` NFT) or `Voter.poke()` (used to re-cast the votes for the current epoch in
-order to direct emissions and earn bribes) counts as an action for the current
-epoch.
-
-While limiting the protocol participants to one action per epoch is not ideal,
-it does make the protocol safer against potential exploitative behavior.
-
-<Callout>
-  Unused `veFLOW` voting power is still taken into account as we calculate the
-  weight of the vote upon epoch flip and based on the locked vesting slope.
-
-  Please make sure you always cast 100% of your voting power to avoid
-  unexpected outcomes!
-</Callout>
+More information on voting can be found the [Voting Section](/voting) section of this document.
 
 
 ## Rewards
