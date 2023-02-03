@@ -35,7 +35,7 @@ to a pool at any time during an epoch. A snapshot of votes is taken at the end o
 
 ## Reset to Transfer
 
-If a `veFLOW` holder wishes to transfer, or sell, their NFTs , they need to be aware that they first must reset their NFT which causes them to vote on NO gauges this epoch, thus forfeiting trading fees and any bribes. A recipient of the NFT (buyer from a market) should also be aware that they will not be able to vote until the next epoch. This is feature rewards participants that stay consistent in their voting activity.
+If a `veFLOW` holder wishes to transfer, or sell, their NFTs, they need to be aware that they first must reset their NFT which causes them to vote on NO gauges this epoch, thus forfeiting trading fees and any bribes. A recipient of the NFT (buyer from a market) should also be aware that they will not be able to vote until the next epoch. This feature rewards participants that stay consistent in their voting activity.
 
 
 
