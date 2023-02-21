@@ -38,19 +38,19 @@ Here is a list of key differences in the Velocimeter's contracts.
 
 ### Major changes
 
-  - **Use trading fees as external bribes.**
+  - ***Use trading fees as external bribes.***
     In contrast to Velodrome, Velocimeter takes the trading fees of liquidity pools with gauges and sends them
     as external bribes for that respective pool. `USDC` and `FLOW` trading fees directly bribe upcoming
     voters to direct their votes to the `USDC:FLOW` pool. Velocimeter believes this creates a much better
     voting experience as voters clearly can see what they will get, rather than wait to see what trading fees
     they happen to accumulate in the week following their vote.
-  - **Trading fees without gauges.**
+  - ***Trading fees without gauges.***
     With pairs that don't have a gauge, the trading fees are sent to the treasury.   
-  - **One vote per epoch.** In Velocimeter, voters are only allowed to make "active"
+  - ***One vote per epoch.*** In Velocimeter, voters are only allowed to make "active"
     voting decisions (i.e. vote and reset) once per epoch. Voters must wait
     until the next epoch to change their votes. Voters can, however, _cast_
     their votes throughout the epoch.
-  - **Killable gauges.** To dissuade emissions exploitation via dummy gauges, we're
+  - ***Killable gauges.*** To dissuade emissions exploitation via dummy gauges, we're
     allowing the _Velocimeter Council of Velocimetry_ (akin to Curve's Emergency DAO) to kill
     any "bad" gauges. The Council is composed of individuals from varying
     parties meant to serve as a credibly neutral decision-maker for the broader
@@ -58,18 +58,18 @@ Here is a list of key differences in the Velocimeter's contracts.
 
 ### Minor changes
 
-  - **Removed the LP boost for voters.** The boost was removed that voters receive
+  - ***Removed the LP boost for voters.*** The boost was removed that voters receive
     when staking their LPs with gauges they voted for. This removes the need
     for a veNFT aggregator (more on this later...).
-  - **Removed negative voting.** Negative voting was considered zero-sum for
+  - ***Removed negative voting.*** Negative voting was considered zero-sum for
     Solidly, so it was removed.
-  - **Team emissions.** 3% of new emissions will be sent to a team address, meant
+  - ***Team emissions.*** 3% of new emissions will be sent to a team address, meant
     to cover on-going expenses and future development.
 
 ### Small changes
 
-  - **Modifiable fees.** Fees on Velocimeter are 0.03% for stable pools and 0.25% for volatile pools.
-  - **Upgradeable veNFT art.** Self-explanatory
+  - ***Modifiable fees.*** Fees on Velocimeter are 0.03% for stable pools and 0.25% for volatile pools.
+  - ***Upgradeable veNFT art.*** Self-explanatory
 
 # Security
 
