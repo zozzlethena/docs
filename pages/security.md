@@ -16,10 +16,10 @@ import Callout from 'nextra-theme-docs/callout'
 | FLOW               | [????](URL) | Arbitrum |
 | GaugeFactory       | [????](URL) | Arbitrum |
 | BribeFactory       | [????](URL) | Arbitrum |
-| WrappedBribeFactory| [[????](URL) | Arbitrum |
+| WrappedBribeFactory| [????](URL) | Arbitrum |
 | PairFactory        | [????](URL) | Arbitrum |
 | Router             | [????](URL) | Arbitrum |
-| VelocimeterLibrary   | [????](URL) | Arbitrum |
+| VelocimeterLibrary | [????](URL) | Arbitrum |
 | VeArtProxy         | [????](URL) | Arbitrum |
 | VotingEscrow       | [????](URL) | Arbitrum |
 | RewardsDistributor | [????](URL) | Arbitrum |
@@ -28,26 +28,24 @@ import Callout from 'nextra-theme-docs/callout'
 
 ## Tokenlist
 
-In addition to the [official Arbitrum tokens
-list](https://tokenlists.org/token-list?url=https://static.Arbitrum.io/Arbitrum.tokenlist.json),
-we maintain one as well
-with our partner tokens:
+In addition to the [official Arbitrum tokens list](https://tokenlists.org/token-list?url=https://static.Arbitrum.io/Arbitrum.tokenlist.json),
+we maintain one as well with our partner tokens:
 https://docs.Velocimeter.finance/tokenlist.json
 
-## Differences from Solidly
+## Differences from Solidly and Velodrome
 
-As of August 2022, we've compiled a list of key differences between Velocimeter's contracts and Solidly's.
+Here is a list of key differences in the Velocimeter's contracts.
 
 ### Major changes
 
-  - **Treat external bribes differently than internal bribes (i.e. fees).**
-    The Bribe contracts are spilt into two separate contracts, `InternalBribe` and
-    `ExternalBribe`. `InternalBribe` functions essentially the same way as `Bribe`
-    did, but `ExternalBribe` ensures that rewards are eliglble to be claimed by
-    any voter who votes for the underlying gauge during the epoch, instead of
-    only voters who vote after the rewards are sent. `ExternalBribe` also ensures
-    that rewards can only be claimed after the epoch ends.`ExternalBribe`
-    rewards must also be _whitelisted_ via on-chain governance.
+  - **Use trading fees as external bribes.**
+    In contrast to Velodrome, Velocimeter takes the trading fees of liquidity pools with gauges and sends them
+    as external bribes for that respective pool. `USDC` and `FLOW` trading fees directly bribe upcoming
+    voters to direct their votes to the `USDC:FLOW` pool. Velocimeter believes this creates a much better
+    voting experience as voters clearly can see what they will get, rather than wait to see what trading fees
+    they happen to accumulate in the week following their vote.
+  - **Trading fees without gauges.**
+    With pairs that don't have a gauge, the trading fees are sent to the treasury.   
   - **One vote per epoch.** In Velocimeter, voters are only allowed to make "active"
     voting decisions (i.e. vote and reset) once per epoch. Voters must wait
     until the next epoch to change their votes. Voters can, however, _cast_
@@ -70,21 +68,17 @@ As of August 2022, we've compiled a list of key differences between Velocimeter'
 
 ### Small changes
 
-  - **Modifiable fees.** Fees are now doubled to 0.02%, modifiable up to 0.05%, and
-    tracked differently for volatile vs stable pairs.
+  - **Modifiable fees.** Fees on Velocimeter are 0.03% for stable pools and 0.25% for volatile pools.
   - **Upgradeable veNFT art.** Self-explanatory
-  - **Initial distribution.** Initial distribution(ID) or `SOLID` was based on TVL brought
-  to the Fantom Network. ID of `VELO` had holders of `WEVE` being granted `VELO`. ID of `FLOW` is completely fresh.
-  More on the ID of `FLOW` can be found in the [Tokenomics section](/tokenomics#initial-distribution).
 
 # Security
 
-Velocimeter is a direct fork of [Velodrome Finance](https://github.com/velodrome-finance) which was adapted from Solidly, which [codebase was open
+Velocimeter is a fork of [Velodrome Finance](https://github.com/velodrome-finance) which was adapted from Solidly, which [codebase was open
 sourced in full](https://github.com/solidlyexchange/) by Andre Cronje and his team in
 March 2022. Since its release in February on Fantom network, no security
 incidents related to Solidly smart contracts were reported.
 
-Velocimeter smart contracts can be found on Optimistic Etherscan at the links above.
+Velocimeter smart contracts can be found on Arbiscan at the links above.
 
 <Callout emoji="⚠️">
   Before moving forward, we'd like to remind to our users that
@@ -108,11 +102,12 @@ repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a8
 Velodrome went through a security audit and a peer review as part of the Code4rena bug bouncy contest.
 Finally, a full MythX deep scan on Velodrome contracts found just a
 handful of false-positive, low-severity issues reported.
+!
 
 <Callout emoji="⚠️">
-Velocimeter has NOT gone through any form of audit or code review but rather adopts the following from the Velodrome security procedures. None of the code was changed other than the naming of a few contracts. ALL the following, applies directly only to the Velodrome contracts. 
+Velocimeter has NOT gone through any form of audit or code review but rather adopts the following from the Velodrome security procedures. The following point of code was changed. 
 
- Users of Velocimeter should take note of this, and accept this risk if they wish to interact with the Velocimeter contracts. 
+ - **Removal of Internal Fees** Because the fees are now directed as external bribes, the need for many contracts became redundant, ie pairFees.sol, internalBribe.sol
 </Callout>
 
 ### VELODROME Security Procedures

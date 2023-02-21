@@ -14,7 +14,7 @@ import { Chart } from "react-google-charts";
 
 
 
-Velocimeter launched on Thursday, Jan 25th 2023.
+Velocimeter launched on 
 
 <Callout type="warning" emoji="⚠️">
   As with any launch, we want to warn users that this product is in beta. Users should use at their own risk. We also recommend that you interact with the site in **desktop environments**.
@@ -54,7 +54,7 @@ You can also bridge via [Multichain](https://app.multichain.org/#/router) or [Bu
 
 ### Initial Distribution
 
-Velocimeter will launch with initial supply of 400M FLOW token most of which are locked for four years and airdroped to partner protocols, early investors, farmable by early communtity members via [Amplifi](https://app.amplifi.gg/), and held for furture partners.  
+Velocimeter will launch with initial supply of 400M FLOW tokens, most of which are locked for four years and airdropped to partner protocols, early investors, farmable by early communtity members via [Amplifi](https://app.amplifi.gg/), and held for future partners.  
 
 Details of the initial distribution and token emissinos are available in the
 [Initial Distribution section of the Tokenomics](/tokenomics#initial-distribution).

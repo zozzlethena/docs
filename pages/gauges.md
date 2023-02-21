@@ -1,6 +1,10 @@
 # Gauges
 As mentioned in protocol overview, in order to get an active gauge, a token requires whitelisting. Partners will all have various gauges for the tokens of their ecosystems on a token by token based consideration. Other "core" tokens (wETH, wBTC...) may also have gauges setup at the discretion of the team. 
 
+# Fees and Gauge-less LPs
+Trading fees from LPs that are not granted gauges are sent to the treasury. Velocimeter found this to be best for the protocol as it was found that some projects could
+make trading pairs, avoid the gauge application process, and get the benefit of the protocol without returning any benefit. Once a gauge it produced, all fees going forward will be sent as bribe to voters. Because of this, it is recommended that projects attempt to follow the directions above.
+
 
 # Future Partners
 
