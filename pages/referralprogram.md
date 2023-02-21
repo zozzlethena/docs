@@ -1,7 +1,7 @@
 # Referral Program
 
 <div align="center">
-![AmpliFi](/AmpliFi.jpg)
+![AmpliFi](/AmpliFixFlow.jpg)
 </div>
 
 60M `FLOW` tokens were set aside for a referral program that will be run by Amplify. There will be various actions which anyone can take in each campaign with the goals to: 
