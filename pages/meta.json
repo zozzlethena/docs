@@ -5,8 +5,10 @@
   "tokenomics": "Tokenomics and Emissions",
   "liquidity": "Liquidity Pools",
   "revenue": "Protocol Revenue",
+  "gauges": "Flow Gauges",
+  "voting": "veFLOW Voting",
   "security": "Security",
+  "referralprogram": "Referral Program",
   "c4report": "C4 Report",
-  "legal": "Legal Disclaimer",
-  "referralprogram": "Referral Program"
+  "legal": "Legal Disclaimer"
 }
