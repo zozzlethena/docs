@@ -94,7 +94,4 @@ Any gauge that is deemed unproductive to the broader ecosystem or violates the a
 - Third, there is no emissions "boost" for voters.
 - Fourth, the initial distribution has been carefully selected to include partner protocols that were felt would bring their own types of unique value to the ecosystem.
 
-## Improvement: White-Glove Support
 
-**In Solidly, the lack of a "team" meant lack of support post-launch.**
-To ensure that our team has sufficient resources to pay contributors an expand on our product offering, a maximum of 2% of emissions can be directed towards our team multisig. At genesis, this will be set to 0%

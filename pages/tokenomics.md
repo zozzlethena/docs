@@ -6,7 +6,7 @@ import { Chart } from "react-google-charts";
 
 <Bleed>
 <div align="center">
-  ![Velocimeter Tokenomics](/dome6.jpg)
+  ![The FLOW Token](/Flow-circle-aqua.png)
 </div>
 </Bleed>
 
