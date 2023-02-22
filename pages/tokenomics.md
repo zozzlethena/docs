@@ -1,14 +1,23 @@
 import Bleed from 'nextra-theme-docs/bleed'
 import Callout from 'nextra-theme-docs/callout'
 import { Chart } from "react-google-charts";
+import Image from 'next/image'
 
 # Tokenomics
 
-<Bleed>
-<div align="center">
-  ![The FLOW Token](/Flow-circle-aqua.png)
+
+<div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
+      >
+<Image src="/Flow-circle-aqua.png" alt="Hello" width={250} height={250} style={{
+          margin-top: "30px"
+          
+        }}  />
 </div>
-</Bleed>
+
 
 &nbsp;
 
