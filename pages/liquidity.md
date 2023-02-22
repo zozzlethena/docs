@@ -42,8 +42,7 @@ On Velocimeter the trading fees are kept in the originally traded tokens
 The trading fees for stable liquidity pool types are 0.03%, and for volatile pools are 0.25%. Both these setting can be adjusted
 for up to 0.4%.
 
-The Variable and Stable liquidity pools can be assigned different trading fees
-on Velocimeter.
+The Variable and Stable liquidity pools can be assigned different trading fees on Velocimeter.
 
 ## Stable Pools
 

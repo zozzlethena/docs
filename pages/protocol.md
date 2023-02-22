@@ -13,8 +13,6 @@ import Callout from 'nextra-theme-docs/callout'
 
 &nbsp;
 
-<Callout>👀 This documentation is a work in progress and subject to FLOWing changes.</Callout> 
-
 
 ## Problems with Liquidity Incentivization
 
