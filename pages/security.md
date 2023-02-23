@@ -85,7 +85,6 @@ Velocimeter smart contracts can be found on Arbiscan at the links above.
   security audits do not eliminate risks completely and that
   every user should read and agree to our
   [legal disclaimer](/legal) before using Velocimeter!
-
   For security reports, please reach out to us on
   [Discord](https://discord.gg/qpue2s6VfJ), or to the contacts provided on our Github page.
 </Callout>
@@ -106,7 +105,6 @@ handful of false-positive, low-severity issues reported.
 
 <Callout emoji="⚠️">
 Velocimeter has NOT gone through any form of audit or code review but rather adopts the following from the Velodrome security procedures. The following point of code was changed. 
-
  - **Removal of Internal Fees** Because the fees are now directed as external bribes, the need for many contracts became redundant, ie pairFees.sol, internalBribe.sol
 </Callout>
 
