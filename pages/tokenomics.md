@@ -6,20 +6,12 @@ import Image from 'next/image'
 # Tokenomics
 
 
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-<Image src="/Flow-circle-aqua.png" alt="Hello" width={250} height={250} style={{
-          margin-top: "30px"
-          
-        }}  />
+<div style={{display: "flex", justifyContent: "center"}}>
+   <Image src="/Flow-circle-aqua.png" alt="Hello" width={250} height={250} style={{margin-top:"30px"}}  />
 </div>
 
 
-&nbsp;
+
 
 
 

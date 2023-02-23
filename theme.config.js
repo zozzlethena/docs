@@ -1,7 +1,7 @@
 export default {
   projectLink: 'https://github.com/Velocimeter-finance/',
   docsRepositoryBase: 'https://github.com/Velocimeter-finance/docs/blob/master',
-  // titleSuffix: 'Velocimeter',
+  titleSuffix: 'Velocimeter',
   nextLinks: true,
   prevLinks: true,
   search: true,
@@ -13,8 +13,8 @@ export default {
   footerEditLink: `Edit this page on GitHub`,
   logo: (
     <>
-      <img src='/velocimeter.png' alt='Velocimeter' height={59} width={59} />
-      <span className='mr-2 font-extrabold md:inline'>Velocimeter</span>
+      <img src='/velocimeter.png' alt='Velocimeter' height={240} width={240} />
+      <span className='mr-2 font-extrabold md:inline'></span>
       <span className='text-gray-600 font-normal hidden md:inline'>
         The liquidity base-layer of the Arbitrum ecosystem.
       </span>

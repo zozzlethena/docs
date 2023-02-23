@@ -32,5 +32,5 @@ Velocimeter is a project built based on the orignal designs of [Andre Cronje's S
 ## Resources
 
 * Website: https://www.Velocimeter.xyz
-* Twitter: https://twitter.com/Velocimeter
-* Discord: https://discord.gg/Velocimeter
+* Twitter: https://twitter.com/VelocimeterDEX
+* Discord: https://discord.gg/TK8jnUpZME
