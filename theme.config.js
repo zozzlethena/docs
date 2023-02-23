@@ -1,7 +1,7 @@
 export default {
-  projectLink: 'https://github.com/Velocimeter-finance/',
-  docsRepositoryBase: 'https://github.com/Velocimeter-finance/docs/blob/master',
-  titleSuffix: 'Velocimeter',
+  projectLink: "https://github.com/Velocimeter/",
+  docsRepositoryBase: "https://github.com/Velocimeter/docs/blob/main",
+  titleSuffix: "Velocimeter",
   nextLinks: true,
   prevLinks: true,
   search: true,
@@ -54,19 +54,6 @@ export default {
         content='https://Velocimeter-docs.pages.dev/Velocimeter_banner.jpg'
       />
       <meta name='apple-mobile-web-app-title' content='Velocimeter' />
-
-      {/* <script
-        lang='javascript'
-        dangerouslySetInnerHTML={{
-          __html: `if (!window.localStorage.getItem("theme_default")) {
-      window.localStorage.setItem("theme", "dark");
-      window.localStorage.setItem("theme_default", "dark");
-      document.documentElement.classList.add("dark");
-      document.documentElement.classList.remove("light");
-    }`
-        }}
-      />
-      ; */}
     </>
-  )
-}
+  ),
+};
