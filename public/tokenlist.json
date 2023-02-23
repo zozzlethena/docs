@@ -1,0 +1,394 @@
+{
+  "name": "Velocimeter",
+  "logoURI": "https://docs.velodrome.finance/velodrome.svg",
+  "keywords": ["layer2", "amm"],
+  "timestamp": "2021-05-22T10:01:21.042+00:00",
+  "tokens": [
+    {
+      "chainId": 10,
+      "address": "0x4200000000000000000000000000000000000042",
+      "name": "Optimism",
+      "symbol": "OP",
+      "decimals": 18,
+      "logoURI": "https://ethereum-optimism.github.io/data/OP/logo.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x3c8B650257cFb5f272f799F5e2b4e65093a11a05",
+      "name": "Velodrome",
+      "symbol": "VELO",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/velodrome.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x2E3D870790dC77A83DD1d18184Acc7439A53f475",
+      "name": "FRAX",
+      "symbol": "FRAX",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/FRAX.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x67CCEA5bb16181E7b4109c9c2143c24a1c2205Be",
+      "name": "Frax Share",
+      "symbol": "FXS",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/FXS.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xcb8fa9a76b8e203d8c3797bf438d8fb81ea3326a",
+      "name": "Alchemix USD",
+      "symbol": "alUSD",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/alUSD.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x3e29d3a9316dab217754d13b28646b76607c5f04",
+      "name": "Alchemix ETH",
+      "symbol": "alETH",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/alETH.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x8aE125E8653821E851F12A49F7765db9a9ce7384",
+      "name": "Dola USD Stablecoin",
+      "symbol": "DOLA",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/DOLA.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x10010078a54396F62c96dF8532dc2B4847d47ED3",
+      "name": "Hundred Finance",
+      "symbol": "HND",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/HND.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xdfa46478f9e5ea86d57387849598dbfb2e964b02",
+      "name": "Mai Stablecoin",
+      "symbol": "MAI",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/MAI.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x85f6583762Bc76d775eAB9A7456db344f12409F7",
+      "name": "renBTC",
+      "symbol": "RENBTC",
+      "decimals": 8,
+      "logoURI": "https://docs.velodrome.finance/tokens/renBTC.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xd52f94DF742a6F4B4C8b033369fE13A41782Bf44",
+      "name": "Layer2DAO",
+      "symbol": "L2DAO",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/L2DAO.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x9485aca5bbBE1667AD97c7fE7C4531a624C8b1ED",
+      "name": "Angle EURO",
+      "symbol": "agEUR",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/agEUR.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x375488f097176507e39b9653b88fdc52cde736bf",
+      "name": "Tarot Protocol",
+      "symbol": "TAROT",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/TAROT.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x5A5fFf6F753d7C11A56A52FE47a177a87e431655",
+      "name": "Synapse Protocol",
+      "symbol": "SYN",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/SYN.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x6ca558bd3eaB53DA1B25aB97916dd14bf6CFEe4E",
+      "name": "Ripae Pegged ETH",
+      "symbol": "pETHo",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/pETHo.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x09448876068907827ec15F49A8F1a58C70b04d45",
+      "name": "Ripae Share ETH",
+      "symbol": "sETHo",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/sETHo.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x676f784d19c7f1ac6c6beaeaac78b02a73427852",
+      "name": "Optimism Prime",
+      "symbol": "OPP",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OPP.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x7ae97042a4a0eb4d1eb370c34bfec71042a056b7",
+      "name": "200 Keys Token",
+      "symbol": "UNLOCK",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/UNLOCK.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xFBc4198702E81aE77c06D58f81b629BDf36f0a71",
+      "name": "Synthetix EURO",
+      "symbol": "sEUR",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/sEUR.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xA8d83Cd5102b0A412931B12255D218B0b0E7152C",
+      "name": "OP Launcher",
+      "symbol": "OPL",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OPL.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xEe9801669C6138E84bD50dEB500827b776777d28",
+      "name": "O3 Swap",
+      "symbol": "O3",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/O3.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x3F56e0c36d275367b8C502090EDF38289b3dEa0d",
+      "name": "QiDao",
+      "symbol": "QI",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/QI.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x73cb180bf0521828d8849bc8CF2B920918e23032",
+      "name": "Overnight Finance USD",
+      "symbol": "USD+",
+      "decimals": 6,
+      "logoURI": "https://docs.velodrome.finance/tokens/USD+.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xB153FB3d196A8eB25522705560ac152eeEc57901",
+      "name": "Magic Internet Money",
+      "symbol": "MIM",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/MIM.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x79AF5dd14e855823FA3E9ECAcdF001D99647d043",
+      "name": "Jarvis Synthetic Euro",
+      "symbol": "jEUR",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/jEUR.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x39FdE572a18448F8139b7788099F0a0740f51205",
+      "name": "Oath Token",
+      "symbol": "OATH",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OATH.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x4E720DD3Ac5CFe1e1fbDE4935f386Bb1C66F4642",
+      "name": "Beefy",
+      "symbol": "BIFI",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/BIFI.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xc3864f98f2a61A7cAeb95b039D031b4E2f55e0e9",
+      "decimals": 18,
+      "name": "OpenX Project",
+      "symbol": "OPENX",
+      "logoURI": "https://docs.velodrome.finance/tokens/OPENX.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x1DB2466d9F5e10D7090E7152B68d62703a2245F0",
+      "decimals": 18,
+      "name": "Sonne Finance",
+      "symbol": "SONNE",
+      "logoURI": "https://docs.velodrome.finance/tokens/SONNE.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x2513486f18eeE1498D7b6281f668B955181Dd0D9",
+      "decimals": 18,
+      "name": "OpenXSwap Gov Token",
+      "symbol": "xOpenX",
+      "logoURI": "https://docs.velodrome.finance/tokens/xOPENX.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xb153fb3d196a8eb25522705560ac152eeec57901",
+      "decimals": 18,
+      "name": "Magic Internet Money",
+      "symbol": "MIM",
+      "logoURI": "https://docs.velodrome.finance/tokens/MIM.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xE3AB61371ECc88534C522922a026f2296116C109",
+      "decimals": 18,
+      "name": "Spell Token",
+      "symbol": "SPELL",
+      "logoURI": "https://docs.velodrome.finance/tokens/SPELL.svg",
+      "nativeChainAddress": "0x090185f2135308bad17527004364ebcc2d37e5f6",
+      "nativeChainId": 1
+    },
+    {
+      "chainId": 10,
+      "address": "0xc5102fE9359FD9a28f877a67E36B0F050d81a3CC",
+      "decimals": 18,
+      "name": "HOP Protocol Token",
+      "symbol": "HOP",
+      "logoURI": "https://docs.velodrome.finance/tokens/HOP.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x3417e54a51924c225330f8770514ad5560b9098d",
+      "decimals": 18,
+      "name": "REDKoin",
+      "symbol": "RED",
+      "logoURI": "https://docs.velodrome.finance/tokens/RED.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x29FAF5905bfF9Cfcc7CF56a5ed91E0f091F8664B",
+      "decimals": 18,
+      "name": "Bankless Token",
+      "symbol": "BANK",
+      "logoURI": "https://docs.velodrome.finance/tokens/BANK.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0xCa98d642E158c3016E1c75dbcC3D5ECFe3E02A19",
+      "decimals": 6,
+      "name": "ETS Night over Arrakis",
+      "symbol": "ETS WETH/USDC",
+      "logoURI": "https://docs.velodrome.finance/tokens/ETS.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x46f21fDa29F1339e0aB543763FF683D399e393eC",
+      "decimals": 18,
+      "name": "Perpetually Bonded OpenX Velo",
+      "symbol": "opxveVELO",
+      "logoURI": "https://docs.velodrome.finance/tokens/opxveVELO.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x7F5c764cBc14f9669B88837ca1490cCa17c31607",
+      "decimals": 6,
+      "name": "USD Coin",
+      "symbol": "USDC",
+      "logoURI": "https://docs.velodrome.finance/tokens/USDC.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x8c6f28f2F1A3C87F0f938b96d27520d9751ec8d9",
+      "name": "Synthetix USD",
+      "symbol": "sUSD",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/SUSD.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x1F32b1c2345538c0c6f582fCB022739c4A194Ebb",
+      "name": "Wrapped liquid staked Ether 2.0",
+      "symbol": "wstETH",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/WSTETH.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xE405de8F52ba7559f9df3C368500B6E6ae6Cee49",
+      "name": "Synthetic Ether",
+      "symbol": "sETH",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/SETH.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1",
+      "name": "Dai Stablecoin",
+      "symbol": "DAI",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/DAI.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xc40f949f8a4e094d1b49a23ea9241d289b7b2819",
+      "name": "LUSD Stablecoin",
+      "symbol": "LUSD",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/LUSD.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0x5d47baba0d66083c52009271faf3f50dcc01023c",
+      "name": "UniDex",
+      "symbol": "UNIDX",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/UNIDX.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x139283255069Ea5deeF6170699AAEF7139526f1f",
+      "name": "OptiDoge",
+      "symbol": "OPTIDOGE",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/OPTIDOGE.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x920Cf626a271321C151D027030D5d08aF699456b",
+      "name": "Kwenta DAO",
+      "symbol": "KWENTA",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/KWENTA.svg"
+    },
+    {
+      "chainId": 10,
+      "address": "0xb0ae108669ceb86e9e98e8fe9e40d98b867855fd",
+      "name": "OneRing",
+      "symbol": "RING",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/RING.png"
+    },
+    {
+      "chainId": 10,
+      "address": "0x74ccbe53F77b08632ce0CB91D3A545bF6B8E0979",
+      "name": "Fantom Bomb",
+      "symbol": "fBOMB",
+      "decimals": 18,
+      "logoURI": "https://docs.velodrome.finance/tokens/fBOMB.svg"
+    }
+  ]
+}

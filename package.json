@@ -1,0 +1,27 @@
+{
+  "name": "velocimeter-docs",
+  "version": "1.0.0",
+  "description": "Velocimeter Product Documentation",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Velocimeter/docs.git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "next": "^13.1.6",
+    "nextra": "^2.2.15",
+    "nextra-theme-docs": "^2.2.15",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-google-charts": "4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.10",
+    "typescript": "^4.9.3"
+  }
+}
