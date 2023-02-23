@@ -12,10 +12,10 @@ import Image from 'next/image'
           justifyContent: "center",
         }}
       >
-<Image src="/Flow-circle-aqua.png" alt="Hello" width={250} height={250} style={{
-          margin-top: "30px"
+<Image src="/Flow-circle-aqua.png" alt="Hello" width={25} height={25} style={{
+  margin-top: "30px"
+}}
           
-        }}  />
 </div>
 
 
@@ -53,7 +53,6 @@ Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velocimeter'
 liquidity provision and long-term token holding. Liquidity providers receive `FLOW` emissions,
 and `veFLOW` holders receive protocol fees, bribes, rebases, and governance power.
 
-![image](/dome3.jpg)
 
 Below, we will walk through the components of the mechanism in order to
 explain how it helps the incentives flow to the most ideal liquidity pools.

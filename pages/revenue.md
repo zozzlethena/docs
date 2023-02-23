@@ -1,6 +1,10 @@
+import Bleed from 'nextra-theme-docs/bleed'
+
+<Bleed>
 <div align="center">
 ![Velocimeter Problem Statement](/dome2.jpg)
 </div>
+</Bleed>
 
 
 # Protocol Revenue

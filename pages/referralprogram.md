@@ -1,8 +1,11 @@
-# Referral Program
+import Bleed from 'nextra-theme-docs/bleed'
 
+# Referral Program
+<Bleed>
 <div align="center">
 ![AmpliFi](/AmpliFixFlow.jpg)
 </div>
+</Bleed>
 
 60M `FLOW` tokens were set aside for a referral program that will be run by Amplify. There will be various actions which anyone can take in each campaign with the goals to: 
 * Increase Awareness
