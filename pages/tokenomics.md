@@ -5,7 +5,7 @@ import { Chart } from "react-google-charts";
 # Tokenomics
 
 <Bleed>
-<div align="center">
+<div style={{display: "flex", justifyContent: "center", width: "250px", height: "250px", marginTop: "30px", marginLeft: "128px"}}>
   ![The FLOW Token](/Flow-circle-aqua.png)
 </div>
 </Bleed>
