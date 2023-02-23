@@ -16,7 +16,7 @@ export default {
       <img src='/velocimeter.png' alt='Velocimeter' height={240} width={240} />
       <span className='mr-2 font-extrabold md:inline'></span>
       <span className='text-gray-600 font-normal hidden md:inline'>
-        Liquidity Labs.
+        Liquidity Labs
       </span>
     </>
   ),
