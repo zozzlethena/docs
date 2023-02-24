@@ -4,17 +4,9 @@ import { Chart } from "react-google-charts";
 
 # Tokenomics
 
-
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-<Image src="/Flow-circle-aqua.png" alt="Hello" width={250} height={250} style={{
-          margin-top: "30px"
-          
-        }}  />
+<Bleed>
+<div align="center">
+  ![The FLOW Token](/Flow-circle-aqua.png)
 </div>
 </Bleed>
 
