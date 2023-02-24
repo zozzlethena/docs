@@ -72,12 +72,10 @@ Any gauge that is deemed unproductive to the broader ecosystem or violates the a
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
-| Ceazor      | Velocimeter      | ??? |
-| Dunks       | Velocimeter      | ??? |
-| Coolie      | Velocimeter      | ??? |
-| Faeflow     | Velocimeter      | ??? |
-| Torbik      | Velocimeter      | ??? |
-| wtkc        | Velocimeter      | ??? |
+| Ceazor      | Velocimeter      | 0x3c5Aac016EF2F178e8699D6208796A2D67557fe2 |
+| Dunks       | Velocimeter      | 0x53f3B51FD7F327E1Ec4E6eAa3A049149cB2acaD2 |
+| Torbik      | Velocimeter      | 0x0b776552c1Aef1Dc33005DD25AcDA22493b6615d |
+| Coming Soon | Degen            | 0xSuperDegenThatWantsToGoWithTheFlowWithUs |
 
 
 ## Improvement: Prolonged Emissions Decay
