@@ -61,11 +61,66 @@ At launch 630M `FLOW` were minted.
 * ~90M `FLOW` Tokens were pre-minted for the gauges and this current balance can be seen [here](https://evm.explorer.canto.io/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd)
 * ~70M `FLOW` Token were left loose for adding to initial liquidity, bribes, Community veFLOW boosts, adding to POL
 
+## Gauge Voting
+
+`veFLOW` holders decide which liquidity pools receive emissions in a given epoch by
+voting on their preferred liquidity pool _gauges_. `FLOW` emissions will be distributed
+proportionally to the total votes a liquidity pool receives.
+
+In return, voters receive 100% of the trading fees and bribes collected through the
+liquidity pool they vote for.
+
+More information on voting can be found the [Voting Section](/voting) section of this document.
+
+### Emission Schedule
+
+<Bleed>
+  <Chart
+    chartType="LineChart"
+    data={[
+      ["Week", "LP Emissions", "veRebase (@50% locking rate)", "Total Supply"],
+      ["1", 15, 0, 400],
+      ["50", 9.1, 2, 1000],
+      ["100", 5.5, 1.5, 1500],
+      ["150", 3.3, 1, 1700],
+      ["200", 2, 0.5, 1800]
+    ]}
+    options={{
+      title: "FLOW Emissions (M)",
+      curveType: 'function',
+      aggregationTarget: 'series',
+      selectionMode: 'multiple',
+      legend: { position: "top", textStyle: {color: 'white'}},
+      series: {
+        0: { targetAxisIndex: 0 },
+        1: { targetAxisIndex: 0 },
+        2: { targetAxisIndex: 1 },
+      },
+      vAxes: {
+        1: { title: "Total Supply", titleTextStyle: { color: 'white' }},
+        0: { title: "Epoch Distribution", titleTextStyle: { color: 'white' }}
+      },
+      hAxis: {
+        title: "Week", titleTextStyle: { color: 'white' },
+      },
+      backgroundColor: '#111111',
+      lineWidth: 3,
+      colors: ['#79F8DB', '#2180DF', '#EA1000', '#59BFD8', '#0281FF'],
+      legend: {textStyle: {color: 'white'}},
+      titleTextStyle: { color: 'white' },
+    }}
+    width={"100%"}
+    height={"600px"}
+  />
+</Bleed>
+
+
+
 
 
 # Coming soon to Arbitrum
 
-## Initial Distribution for Arbitrum
+<!-- ## Initial Distribution for Arbitrum
 
 At launch we distributed `veFLOW` to
 users and protocols we believe will contribute to our
@@ -193,100 +248,10 @@ The weekly rebase amount is calculated with the following formula:
     width={"100%"}
     height={"600px"}
   />
-</Bleed>
+</Bleed> -->
 
-## Gauge Voting
 
-`veFLOW` holders decide which liquidity pools receive emissions in a given epoch by
-voting on their preferred liquidity pool _gauges_. `FLOW` emissions will be distributed
-proportionally to the total votes a liquidity pool receives.
 
-In return, voters receive 100% of the trading fees and bribes collected through the
-liquidity pool they vote for.
-
-More information on voting can be found the [Voting Section](/voting) section of this document.
-
-## Rewards
-
-There are 4 types of rewards on Velocimeter.
-
-### Emissions
-
-`FLOW` is distributed to liquidity pool stakers. The amount of
-`FLOW` distributed towards every pool is proportional to the voting power
-received from the voters every epoch.
-
-These rewards are streaming and are available for claim as they accrue.
-
-### Fees
-
-Liquidity pool trading fees are distributed to voters in pool tokens (
-e.g., if the pool voted on is `vAMM-FLOW/USDC` the distributed tokens are `FLOW` and
-`$USDC`) in proportion to the activity of trading in the pool. These will likely not be evenly balanced.
-
-The tokens are streaming proportionally to the voting power cast by a voter and
-the accrued amount of trading fees.
-
-These rewards are available for claim as they accrue. They do not need to be claimed each epoch.
-
-### Bribes
-
-In addition to the fees, liquidity pools allow external rewards from anyone
-(known as _bribes_). Bribes can be added to _whitelisted_ pools and are distributed
-_only_ to voters on that pool, proportionally to their share of pool votes.
-
-These rewards are available for claim after the epoch flips
-(after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
-voter (`veFLOW`).
-
-### Rebases
-
-Represent `veFLOW` distributed to `veFLOW` holders in order to reduce the
-voting power dilution from the inflationary rewards given to LP stakers.
-
-## Rewards claim
-
-Rebase rewards claim is available one full epoch after tokens are locked.
-External bribe rewards are claimable after a new epoch has started (epochs increment right after 23:59 UTC each Wednesday).
-
-An example of bribes, voting, and rewards claim timeline:
-
-- A new epoch starts Thursday (00:00 UTC)
-- Bribes are deposited at any point in the epoch
-- Voters vote for their preferred pools
-- Once the next epoch arrives (the following Thursday), users are able to claim rewards from the UI or the corresponding `WrappedExternalBribe` contract
-
-<Bleed>
-  <Chart
-    chartType="Timeline"
-    data={[
-      [
-        { type: "string", id: "Voting Round" },
-        { type: "string", id: "Action" },
-        { type: "date", id: "Start" },
-        { type: "date", id: "End" },
-      ],
-      ["Round #1", "Bribes Deposited, Votes Cast", new Date(2022, 5, 2), new Date(2022, 5, 8, 23, 59)],
-      ["Round #1", "Rewards Claimable", new Date(2022, 5, 9), new Date(2022, 5, 30)],
-
-      ["Round #2", "Bribes Deposited, Votes Cast", new Date(2022, 5, 9), new Date(2022, 5, 15, 23, 59)],
-      ["Round #2", "Rewards Claimable", new Date(2022, 5, 16), new Date(2022, 5, 30)],
-
-      ["Round #3", "Bribes Deposited, Votes Cast", new Date(2022, 5, 16), new Date(2022, 5, 22, 23, 59)],
-      ["Round #3", "Rewards Claimable", new Date(2022, 5, 23), new Date(2022, 5, 30)],
-    ]}
-    options={{
-      title: "Bribing, Voting and Rewards Timeline",
-      legend: { position: 'top'},
-      colors: [
-        '#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF',
-        '#FBBF42', '#EDE7DB'
-      ],
-    }}
-    width={"100%"}
-
-/>
-</Bleed>
 
 ## Whitelisting
 
