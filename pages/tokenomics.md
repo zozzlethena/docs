@@ -66,9 +66,9 @@ At launch 630M `FLOW` were minted.
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "Protocol Owned NFT", 60 ],
-      [ "Velocimeter Team", 112],
-      [ "Partner Protocol/DAOs", 298],
+      [ "Protocol Owned NFT", 90 ],
+      [ "Velocimeter Team", 118],
+      [ "Partner Protocol/DAOs", 262],
       [ "Gauge Premint", 90],
       [ "Protocol FLOW Fund", 70]
     ]}
