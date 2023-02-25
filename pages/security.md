@@ -13,18 +13,18 @@ import Callout from 'nextra-theme-docs/callout'
 
 | Contract Name | Contract Address | Network |
 | --- | --- | --- |
-| FLOW               | [0x2Baec546a92cA3469f71b7A091f7dF61e5569889](https://evm.explorer.canto.io/token/0x2Baec546a92cA3469f71b7A091f7dF61e5569889)   | Canto |
-| GaugeFactory       | [0xA472b00DdCf03f099dB954c70133dD6F0c5Fcc26](https://evm.explorer.canto.io/address/0xa472b00ddcf03f099db954c70133dd6f0c5fcc26) | Canto |
-| BribeFactory       | [0xa9fa811Cc3BDdF9ba8dAC435f26B77525Eb3B546](https://evm.explorer.canto.io/address/0xa9fa811Cc3BDdF9ba8dAC435f26B77525Eb3B546) | Canto |
-| WrappedBribeFactory| [0x3a9238141a4655d0dC907e18BBf9c21b843F09c7](https://evm.explorer.canto.io/address/0x3a9238141a4655d0dC907e18BBf9c21b843F09c7) | Canto |
-| PairFactory        | [0xb12aF64E128A1D4489D13314eB4Df81cBCE126aC](https://evm.explorer.canto.io/address/0xb12aF64E128A1D4489D13314eB4Df81cBCE126aC) | Canto |
-| Router             | [0x9B2920e72dF6E1A7053bEa7235c65079F5104398](https://evm.explorer.canto.io/address/0x9B2920e72dF6E1A7053bEa7235c65079F5104398) | Canto |
-| VelocimeterLibrary | [0x7517df74F63a440D5Fc7c6Ec8BC40560F32079a8](https://evm.explorer.canto.io/address/0x7517df74F63a440D5Fc7c6Ec8BC40560F32079a8) | Canto |
-| VeArtProxy         | [0x0B8a83247aa14d4f94f4025db839D87A91817eE9](https://evm.explorer.canto.io/address/0x0B8a83247aa14d4f94f4025db839D87A91817eE9) | Canto |
-| VotingEscrow       | [0x990efF367C6c4aece43c1E98099061c897730F27](https://evm.explorer.canto.io/address/0x990efF367C6c4aece43c1E98099061c897730F27) | Canto |
-| RewardsDistributor | [0x19E1eef506eE61A58d1AAa11635361bBaE5D0676](https://evm.explorer.canto.io/address/0x19E1eef506eE61A58d1AAa11635361bBaE5D0676) | Canto |
-| Voter              | [0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33](https://evm.explorer.canto.io/address/0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33) | Canto |
-| Minter             | [0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd](https://evm.explorer.canto.io/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd) | Canto |
+| FLOW               | [0x2Baec546a92cA3469f71b7A091f7dF61e5569889](https://tuber.build/token/0x2Baec546a92cA3469f71b7A091f7dF61e5569889)   | Canto |
+| GaugeFactory       | [0xA472b00DdCf03f099dB954c70133dD6F0c5Fcc26](https://tuber.build/address/0xa472b00ddcf03f099db954c70133dd6f0c5fcc26) | Canto |
+| BribeFactory       | [0xa9fa811Cc3BDdF9ba8dAC435f26B77525Eb3B546](https://tuber.build/address/0xa9fa811Cc3BDdF9ba8dAC435f26B77525Eb3B546) | Canto |
+| WrappedBribeFactory| [0x3a9238141a4655d0dC907e18BBf9c21b843F09c7](https://tuber.build/address/0x3a9238141a4655d0dC907e18BBf9c21b843F09c7) | Canto |
+| PairFactory        | [0xb12aF64E128A1D4489D13314eB4Df81cBCE126aC](https://tuber.build/address/0xb12aF64E128A1D4489D13314eB4Df81cBCE126aC) | Canto |
+| Router             | [0x9B2920e72dF6E1A7053bEa7235c65079F5104398](https://tuber.build/address/0x9B2920e72dF6E1A7053bEa7235c65079F5104398) | Canto |
+| VelocimeterLibrary | [0x7517df74F63a440D5Fc7c6Ec8BC40560F32079a8](https://tuber.build/address/0x7517df74F63a440D5Fc7c6Ec8BC40560F32079a8) | Canto |
+| VeArtProxy         | [0x0B8a83247aa14d4f94f4025db839D87A91817eE9](https://tuber.build/address/0x0B8a83247aa14d4f94f4025db839D87A91817eE9) | Canto |
+| VotingEscrow       | [0x990efF367C6c4aece43c1E98099061c897730F27](https://tuber.build/address/0x990efF367C6c4aece43c1E98099061c897730F27) | Canto |
+| RewardsDistributor | [0x19E1eef506eE61A58d1AAa11635361bBaE5D0676](https://tuber.build/address/0x19E1eef506eE61A58d1AAa11635361bBaE5D0676) | Canto |
+| Voter              | [0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33](https://tuber.build/address/0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33) | Canto |
+| Minter             | [0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd](https://tuber.build/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd) | Canto |
 
 ### Coming soon 
 | Contract Name | Contract Address | Network |
