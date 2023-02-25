@@ -114,145 +114,6 @@ More information on voting can be found the [Voting Section](/voting) section of
   />
 </Bleed>
 
-
-
-
-
-# Coming soon to Arbitrum
-
-<!-- ## Initial Distribution for Arbitrum
-
-At launch we distributed `veFLOW` to
-users and protocols we believe will contribute to our
-mission to become the liquidity base layer of the Arbitrum ecosystem.
-
-### Distribution
-
-<Bleed>
-  <Chart
-    chartType="PieChart"
-    data={[
-      [ "Receivers", "Amount" ],
-      [ "Protocol Owned NFT", 60 ],
-      [ "Protocol Controlled Liquidity", 16],
-      [ "Presale", 4],
-      [ "Velocimeter Team", 72],
-      [ "Tribute", 8],
-      [ "Partner Protocol/DAOs", 140],
-      [ "Partner Boost", 60],
-      [ "Amplify Awareness Campaign", 40]
-    ]}
-    options={{
-      title: "FLOW Distribution (M)",
-      backgroundColor: '#111111',
-      colors: ['#79F8DB', '#027FFF', '#FDBF40', '#FF1301', '#F1EBE2', '#FBBF42', '#EDE7DB', '#EDE7DB' ],
-      legend: {textStyle: {color: 'white' }},
-      pieHole: 0.4,
-      titleTextStyle: { color: 'white' },
-    }}
-    width={"100%"}
-    height={"600px"}
-  />
-</Bleed>
-
-<Callout>
-No loose `FLOW` tokens were given to anyone. The team doesn't get any vesting `FLOW` tokens. The only loose tokens minted were for initial liquidity and for Amplify Campaigns. The latter will all be used to create new `veFLOW` before being dispersed.
-</Callout>
-
-### Protocol Owned NFT
-
-60M `FLOW` tokens were four year locked as an `veFLOW` and used to vote solely on core liquidity pools such as the `FLOW/USDC` LP. Any and all fees earned through these actions will be used to build up Protocol Owned Liquidity (POL) to ensure healthy trading of the `FLOW` token.
-
-### Protocol Controlled Liquidity
-
-16M `FLOW` tokens were set aside to add to initial liquidity for the `FLOW` token and is referred to as Protocol Controlled Liquidity (PCL). The amount of `FLOW` utilized for this was dependant on the amount of right side tokens _ie `USDC`_ that were raised in the presale. As POL is developed this liquidity can be dismantled at the team discretion.
-
-### Presale
-
-4M `FLOW` tokens were sold as `veFLOW` to initial investors. This raise was used solely for the PCL
-
-### Velocimeter Team
-
-72M `FLOW` tokens were four year locked as `veFLOW` and given to the team. The individuals in the team are able to vote at their own personal discretion. This is considered the method of cash flow for those team members.
-
-### Tribute
-
-8M `FLOW` tokens were set aside to pay tribute to both Andre Cronje and Anton Nell, as well as, to the team at Velodrome. These tokens were four year locked in as many `veFLOW` as per requested by the respective recipients.
-
-### Partners
-
-140M `FLOW` tokens were four year locked in `veFLOW` NFTs of various sizes, ranging from 0.25% to 1%, and given to projects and DAOs in the ecosystem that the team felt would direct value to the Velocimeter ecosystem. As projects are selected and given their shares, this section will be updated.
-
-### Partner Boost
-
-60M `FLOW` tokens were set aside and used to mint 60 x 0.25% `veFLOW`. These NFTs will be granted, 5 per month, to the protocols that have the most positive impact on Velocimeter. This allocation will be done via a Snapshot vote with the `veFLOW` holding as a requisite for voting.
-
-### Amplifi and Airdrop
-
-40M `FLOW` tokens were set aside to be earned, as `veFLOW`, by community members for different campaigns that are launched via Amplify Affiliate Campaigns. Follow their [twitter](https://twitter.com/AmpliFiDAO) to see announcements on how you can take part and earn `veFLOW`
-
-## Emissions
-
-The initial supply of `FLOW` is 400M.
-
-Weekly emissions start at 15M `FLOW` (3.75% of the initial supply)
-and decay at 1% per week (epoch).
-
-`veFLOW` holders receive a rebase proportional to epoch LP emissions
-and the ratio of `veFLOW` to `FLOW` supply, thus reducing vote power
-dilution for `veFLOW`!
-
-The weekly rebase amount is calculated with the following formula:
-
-> (FLOW.totalSupply ÷ FLOW.totalsupply)³ × 0.5 × Emissions
-
-`veFLOW` supply does not affect weekly LP emissions.
-
-### Emission Schedule
-
-<Bleed>
-  <Chart
-    chartType="LineChart"
-    data={[
-      ["Week", "LP Emissions", "veRebase (@50% locking rate)", "Total Supply"],
-      ["1", 15, 0, 400],
-      ["50", 9.1, 2, 1000],
-      ["100", 5.5, 1.5, 1500],
-      ["150", 3.3, 1, 1700],
-      ["200", 2, 0.5, 1800]
-    ]}
-    options={{
-      title: "FLOW Emissions (M)",
-      curveType: 'function',
-      aggregationTarget: 'series',
-      selectionMode: 'multiple',
-      legend: { position: "top", textStyle: {color: 'white'}},
-      series: {
-        0: { targetAxisIndex: 0 },
-        1: { targetAxisIndex: 0 },
-        2: { targetAxisIndex: 1 },
-      },
-      vAxes: {
-        1: { title: "Total Supply", titleTextStyle: { color: 'white' }},
-        0: { title: "Epoch Distribution", titleTextStyle: { color: 'white' }}
-      },
-      hAxis: {
-        title: "Week", titleTextStyle: { color: 'white' },
-      },
-      backgroundColor: '#111111',
-      lineWidth: 3,
-      colors: ['#79F8DB', '#2180DF', '#EA1000', '#59BFD8', '#0281FF'],
-      legend: {textStyle: {color: 'white'}},
-      titleTextStyle: { color: 'white' },
-    }}
-    width={"100%"}
-    height={"600px"}
-  />
-</Bleed> -->
-
-
-
-
 ## Whitelisting
 
 While Velocimeter supports permissionless liquidity pool. Gauge creation can
@@ -272,3 +133,9 @@ will have the right to disable hostile gauges.
 An example of a hostile gauge would be one that has two tokens that cannot be obtained public via any route either inside Velocimeter or in other protocols.
 
 The Council of Velocimetry will initially consist of members from the Velocimeter team but community members will be recruited to bolster this role.
+
+
+
+
+
+
