@@ -48,7 +48,24 @@ and `veFLOW` holders receive protocol fees, bribes, rebases, and governance powe
 Below, we will walk through the components of the mechanism in order to
 explain how it helps the incentives flow to the most ideal liquidity pools.
 
-## Initial Distribution
+## Initial Distribution for Canto
+
+At launch 630M `FLOW` were minted. 
+### Locked As NFTs
+470M `FLOW` were locked for 4 years in `veFLOW` of various sizes. 1M, 4M, 6M These veNFT are described below. 
+* 60M of 470M were allocated for Velocimeter (PONFT)
+* 112M of 470M were allocated for the team
+* 298M of 470M are allocated for project partners and public sales
+
+### Loose tokens
+* ~90M `FLOW` Tokens were pre-minted for the gauges and this current balance can be seen [here](https://evm.explorer.canto.io/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd)
+* ~70M `FLOW` Token were left loose for adding to initial liquidity, bribes, Community veFLOW boosts, adding to POL
+
+
+
+# Coming soon to Arbitrum
+
+## Initial Distribution for Arbitrum
 
 At launch we distributed `veFLOW` to
 users and protocols we believe will contribute to our
