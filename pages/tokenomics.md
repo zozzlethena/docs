@@ -61,6 +61,30 @@ At launch 630M `FLOW` were minted.
 * ~90M `FLOW` Tokens were pre-minted for the gauges and this current balance can be seen [here](https://evm.explorer.canto.io/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd)
 * ~70M `FLOW` Token were left loose for adding to initial liquidity, bribes, Community veFLOW boosts, adding to POL
 
+<Bleed>
+  <Chart
+    chartType="PieChart"
+    data={[
+      [ "Receivers", "Amount" ],
+      [ "Protocol Owned NFT", 60 ],
+      [ "Velocimeter Team", 112],
+      [ "Partner Protocol/DAOs", 298],
+      [ "Gauge Premint", 90],
+      [ "Protocol FLOW Fund", 70]
+    ]}
+    options={{
+      title: "FLOW Distribution (M)",
+      backgroundColor: '#111111',
+      colors: ['#58FF33', '#43CD24', '#37A220', '#297818', '#CCFF2C' ],
+      legend: {textStyle: {color: 'white' }},
+      pieHole: 0.4,
+      titleTextStyle: { color: 'white' },
+    }}
+    width={"100%"}
+    height={"600px"}
+  />
+</Bleed>
+
 ## Gauge Voting
 
 `veFLOW` holders decide which liquidity pools receive emissions in a given epoch by
