@@ -13,7 +13,7 @@ import Callout from 'nextra-theme-docs/callout'
 <Callout>👀 This documentation is a work in progress and subject to FLOWing changes.</Callout> 
 
 
-Velocimeter, at its core, is a solution for protocols on [Canto](https://canto.io/) and soon[Arbitrum](https://www.Arbitrum.io/) to properly incentivize liquidity for their own use cases.
+Velocimeter, at its core, is a solution for protocols on [Canto](https://canto.io/) to properly incentivize liquidity for their own use cases.
 Building on top of the groundwork laid out by Solidly, our team has addressed that first iteration's core issues to realize its full potential.
 
 <Callout emoji="⚠️">
@@ -31,7 +31,6 @@ Velocimeter is a project built based on the original designs of [Andre Cronje's 
 
 ## Resources
 
-* Website: https://www.Velocimeter.xyz
 * Website Canto: https://canto.velocimeter.xyz/
 * Twitter: https://twitter.com/VelocimeterDEX
 * Discord: https://discord.gg/TK8jnUpZME

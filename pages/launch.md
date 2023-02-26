@@ -25,11 +25,11 @@ Velocimeter launched on
 
 ## Getting Ready
 
-Velocimeter operates on the Canto and soon Arbitrum network.
+Velocimeter operates on the Canto.
 
-To set up your wallet, please go to https://chainlist.org and search for _Canto_ or
-_Arbitrum_. You can use the _Connect Wallet_ button to automatically configure
-your default wallet to use Canto or Arbitrum. Use the _arrow down_ to expand for more
+To set up your wallet, please go to https://chainlist.org and search for _Canto_.
+You can use the _Connect Wallet_ button to automatically configure
+your default wallet to use Canto. Use the _arrow down_ to expand for more
 configuration options.
 
 
@@ -37,12 +37,9 @@ configuration options.
 
 New Canto users will need to have `$CANTO` on Canto to pay gas transaction fees. 
 
-New Arbitrum users weill need to have`$ETH` on Arbitrum to pay for transaction/gas fees.
 
 Bridging to Canto can be done on [Canto Bridge](https://canto.io/bridge), [Synapse](https://synapseprotocol.com/) or [Gravity](https://www.gravitybridge.net/).
 
-Bridging to Arbitrum is possible here: [Arbitrum Bridge](https://app.Arbitrum.io/bridge). 
-You can also bridge via [Multichain](https://app.multichain.org/#/router) or [Bungee](https://www.bungee.exchange/)
 
 <Callout emoji="⚠️">
   Some bridging services can take up to 20-30 minutes to complete a transfer of
@@ -54,7 +51,6 @@ You can also bridge via [Multichain](https://app.multichain.org/#/router) or [Bu
 
 On Canto, the initial supply was 630M FLOW tokens, most of which were locked for four years to be granted to partners, early investors, and community members.
 
-On Arbitrum the initial supply will be 400M FLOW tokens, most of which are locked for four years and airdropped to partner protocols, early investors, farmable by early communtity members via [Amplifi](https://app.amplifi.gg/), and held for future partners.  
 
 Details of the initial distribution and token emissinos are available in the
 [Initial Distribution section of the Tokenomics](/tokenomics#initial-distribution).

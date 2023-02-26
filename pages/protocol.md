@@ -68,7 +68,7 @@ The basic guidelines for whitelisting a token is a commitment to supply, or have
 | reviveGauge        | This resets a killed gauge and allow to to start receiving FLOW |
 | setEmergencyCouncil| This changes the MSIG address                                  |
 
-Any gauge that is deemed unproductive to the broader ecosystem or violates the agreement with the partners. ie, isn't using a valid rightside token, may be killed. This Council will start off containing only the Velocimeter core team but individuals from the community will be added later, and the broader Arbitrum and DeFi ecosystems. The Council of Velocimetry multisig is available here, and signers include:
+Any gauge that is deemed unproductive to the broader ecosystem or violates the agreement with the partners. ie, isn't using a valid rightside token, may be killed. This Council will start off containing only the Velocimeter core team but individuals from the community will be added later, and the broader DeFi ecosystems. The Council of Velocimetry multisig is available here, and signers include:
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
