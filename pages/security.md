@@ -26,21 +26,6 @@ import Callout from 'nextra-theme-docs/callout'
 | Voter              | [0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33](https://tuber.build/address/0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33) | Canto |
 | Minter             | [0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd](https://tuber.build/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd) | Canto |
 
-### Coming soon 
-| Contract Name | Contract Address | Network |
-| --- | --- | --- |
-| FLOW               | [????](URL) | Arbitrum |
-| GaugeFactory       | [????](URL) | Arbitrum |
-| BribeFactory       | [????](URL) | Arbitrum |
-| WrappedBribeFactory| [????](URL) | Arbitrum |
-| PairFactory        | [????](URL) | Arbitrum |
-| Router             | [????](URL) | Arbitrum |
-| VelocimeterLibrary | [????](URL) | Arbitrum |
-| VeArtProxy         | [????](URL) | Arbitrum |
-| VotingEscrow       | [????](URL) | Arbitrum |
-| RewardsDistributor | [????](URL) | Arbitrum |
-| Voter              | [????](URL) | Arbitrum |
-| Minter             | [????](URL) | Arbitrum |
 
 
 ## Differences from Solidly and Velodrome
@@ -89,7 +74,6 @@ sourced in full](https://github.com/solidlyexchange/) by Andre Cronje and his te
 March 2022. Since its release in February on Fantom network, no security
 incidents related to Solidly smart contracts were reported.
 
-Velocimeter smart contracts can be found on Arbiscan at the links above.
 
 <Callout emoji="⚠️">
   Before moving forward, we'd like to remind to our users that
