@@ -67,8 +67,8 @@ At launch 630M `FLOW` were minted.
     data={[
       [ "Receivers", "Amount" ],
       [ "Protocol Owned NFT", 90 ],
-      [ "Velocimeter Team", 118],
-      [ "Partner Protocol/DAOs", 262],
+      [ "Velocimeter Team", 108],
+      [ "Partner Protocol/DAOs", 272],
       [ "Gauge Premint", 90],
       [ "Protocol FLOW Fund", 70]
     ]}
