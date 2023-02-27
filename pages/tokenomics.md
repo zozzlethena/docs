@@ -71,7 +71,7 @@ At launch 630M `FLOW` were minted.
       [ "Velocimeter Team NFTs", 108],
       [ "Partner Protocol/DAOs NFTs", 272],
       [ "Gauge Premint", 94],
-      [ "Protocol Controlled Initial Liquidity", 10],
+      [ "Team Controlled Initial Liquidity", 10],
       [ "Protocol FLOW Fund", 56]
     ]}
     options={{
@@ -95,10 +95,10 @@ Voting with these NFTs are at the discretion of the team members and is the main
 These NFTs will be distributed to partners as they join.
 #### Gauge-Rebase-Teamcut Premint
 These tokens are not circulating but will be added to the gauges as rewards on based on the Emissions Schedule below.
-#### Protocol Controlled Initial Liquidity
+#### Team Controlled Initial Liquidity
 These tokens will used for initial Liquidity and to deepen liquidity as revenue is collected. These tokens are controlled by the team
 #### Protocol FLOW Fund
-These tokens were minted to be used for business/protocol development, DAO needs, minting custom partner size NFTs as needed. A time-lock contract will be used ASAP for these tokens.
+These tokens minted to be used for business/protocol development, DAO needs, minting custom partner size NFTs as needed, building Protocol Owned Liquidity. A time-lock contract will be used ASAP for these tokens.
 
 
 
