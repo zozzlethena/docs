@@ -26,7 +26,7 @@ import Callout from 'nextra-theme-docs/callout'
 | Voter              | [0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33](https://tuber.build/address/0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33) | Canto |
 | Minter             | [0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd](https://tuber.build/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd) | Canto |
 
-
+Full list of Pairs and Gauges at the bottom.
 
 ## Differences from Solidly and Velodrome
 
@@ -119,3 +119,41 @@ the original contracts.
 Solidly's bug bounty program was launched in February 2022 on Immunefi.com.
 There were no claims for any of the $200,000 rewards ([on their Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
 
+
+## Gauges and Pairs
+Search them [here](https://tuber.build/)
+
+|	Symbol	|	LP Address	|	Gauge Address	|
+| --- | --- | --- |
+|	sAMM-NOTE/USDC	|	0x94c1dffefa4eac0801e3af0ee7108d8a08cf5f9e	|	0x7a475831e2f4911287ddf3bace5146388974aba5	|
+|	vAMM-CRE/WCANTO	|	0xa9b9ca189cb3f37f8f6a0fc960f895130e9b8e72	|	0x60e72e355b6a6eb7c58891e7bd190a61c77032da	|
+|	vAMM-NOTE/CRE	|	0x9013fc852fe4112cc80a9086baa7285a0b5194c1	|	0xe43b540b2d28446174611887fa7044d89ad82cd1	|
+|	sAMM-WCANTO/ATOM	|	0x4ab9525aa4d19d4de22d848d64c0550b285f5043	|		|
+|	vAMM-INJ/NOTE	|	0x39abdd8cae805c0385f1f6b2ff8ace6de15fc3a5	|	0x51c9d5d59ff575d18acfa6289aac26602b6f5e5f	|
+|	sAMM-NOTE/WCANTO	|	0xc78e5644561b5cf5635851225f895fa1b7a57941	|		|
+|	vAMM-CMDX/WCANTO	|	0x6de5cb9eaa9089352927d2ab2f168332ffdcc627	|	0x6ebbe3f168d9787c244bd928770a3976a53dc432	|
+|	vAMM-UP/WCANTO	|	0xb2484d1bf4a26202245a7670f871bfa377bc771e	|		|
+|	vAMM-cOHM/WCANTO	|	0xade82a510da243c263fb65077106c83608a5eaf1	|	0x6af54888ca657c78e16809aaf1d3425d5ddf19c2	|
+|	vAMM-NOTE/KAVA	|	0x18a508ea8829c75507e2d8957a9475faa4272c16	|	0x9d5329e6daa0cbcf848bfef713be67c91c73e160	|
+|	vAMM-NOTE/AKT	|	0x198127874cbf3a9fbf1ecd8cfe07d364d126f892	|	0x586b86e3c7b4ffe933e47ccc00ab326b4804d60f	|
+|	vAMM-WCANTO/ATOM	|	0xa87b17fc81becf329860097b20073aad86baca9d	|	0xba6118e533eb9012c8125c604d19485639e14096	|
+|	vAMM-OSMO/WCANTO	|	0x5bab63856bca4a3c682ac64cf6b37f209b791d82	|	0xc8db5c954a123ee6414c7bd9326f2a308f4e09af	|
+|	vAMM-NOTE/WCANTO	|	0xe5a5a9699d75536cec2fc0c682c16a56df811ed9	|	0x8c58052eb6263db1623390202adb3390f40e2258	|
+|	vAMM-WCANTO/WAIT	|	0x776fd660ed1138350f9d1f17e55a7f266ad5fedb	|		|
+|	vAMM-AKT/WCANTO	|	0xbaa70fca9089ce737f89d690106a5cacbcbd7165	|	0x991441e539776c605557863854021ae9d55a5487	|
+|	vAMM-CMDX/NOTE	|	0xfc79e6df47242a4f367912f3169fdb7b89be556a	|	0xa141785f8669593a58a962655c15266c04af48cd	|
+|	vAMM-cINU/WCANTO	|	0x886e3779fba30b87037b4731a3dea0b119bacb76	|	0x8fceaaf4770efe7ca8fe4b0efd6454ad25c882fd	|
+|	vAMM-NOTE/USDC	|	0x0afbc62d7911ea5a6902ffe5c4216b91028fdd51	|		|
+|	vAMM-WCANTO/GRAV	|	0x1ab57f064318a55d9961f90dbbe4ab4a47d5bdbe	|	0x7695b756e714ca31b8d5469993063ad44dbe0001	|
+|	vAMM-NOTE/GRAV	|	0x9afe631835cdbced9d6159c7ba9083000f3042b3	|	0xee364d444350683589481d9cef5c4048f591fbb0	|
+|	vAMM-NOTE/SOMM	|	0x534846012ecfa631b7f84c2804cebdf388d3aaf4	|	0xb0ae5338f3a5d668ad395e9515fb76d184e96afe	|
+|	vAMM-FLOW/NOTE	|	0xa694b9527bc94d99f8c382d942c1d992166c4434	|	0x31faa19b132ef9c5978fda13ac5c6bfd8c2fc279	|
+|	vAMM-FLOW/WCANTO	|	0x862050752be9f4ae310fc8a58c9208ee3fa22148	|	0xfd2f8bd82b0ecacbe42bd9097c36ea667b66a023	|
+|	vAMM-OSMO/NOTE	|	0x7726804f1a9fe067b3695ca6fad8f8a2522ded33	|	0xcd02bd3e1bc131c999fbbb9b681e29cc18838134	|
+|	sAMM-FLOW/WCANTO	|	0xf344f85dbd2dd37fe1f2899ca8c059d2bfab0164	|	0xcb1ed406eb436056f5d12b4981ac5f5cc76ca377	|
+|	vAMM-WCANTO/KAVA	|	0x206dd5d0cf5f4394381adab7fb6f36835e6ba760	|	0x1d2699c8259f97b3adc9e82e361b35532e55aa88	|
+|	vAMM-USDC/WCANTO	|	0xa4ed386124c023aca6aa89b184f90e1375ee677c	|	0x82ffffdb581eb28448ba1ab0a3c8ba553981e3ad	|
+|	vAMM-INJ/WCANTO	|	0x85d93692285c6d6304dc4c62975c351ce6d494a2	|	0xf4e0544aab42fcd7ed385c4a6719f3480f9aede9	|
+|	vAMM-CBONK/WCANTO	|	0xf17264bb1f0d91eee3c2857076f40f147c223197	|		|
+|	vAMM-WCANTO/SOMM	|	0xaf705d0b8f514f54523cf61594f7e6b521a82b25	|	0x1095cc24806ef89df8ba42d33e601cdfaeffacea	|
+|	vAMM-FLOW/USDC	|	0x572255db686352e110b79b846c76dcf255f9b4dc	|	0xaafb0a7ef4d7be3ba87d1d55c8a3e85db1ddfb40	|
