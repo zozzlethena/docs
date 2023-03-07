@@ -4,17 +4,9 @@ import { Chart } from "react-google-charts";
 
 # Tokenomics
 
-
-<div
-        style={{
-          display: "flex",
-          justifyContent: "center",
-        }}
-      >
-<Image src="/Flow-circle-aqua.png" alt="Hello" width={250} height={250} style={{
-          margin-top: "30px"
-          
-        }}  />
+<Bleed>
+<div align="center">
+  ![The FLOW Token](/Flow-circle-aqua.png)
 </div>
 </Bleed>
 
@@ -56,32 +48,36 @@ and `veFLOW` holders receive protocol fees, bribes, rebases, and governance powe
 Below, we will walk through the components of the mechanism in order to
 explain how it helps the incentives flow to the most ideal liquidity pools.
 
-## Initial Distribution
+## Initial Distribution for Canto
 
-At launch we distributed `veFLOW` to
-users and protocols we believe will contribute to our
-mission to become the liquidity base layer of the Arbitrum ecosystem.
+At launch 630M `FLOW` were minted. 
+### Locked As NFTs
+470M `FLOW` were locked for 4 years in `veFLOW` of various sizes. 1M, 4M, 6M These veNFT are described below. 
+* 90M of 470M were allocated for Velocimeter (PONFT)
+* 108M of 470M were allocated for the team
+* 272M of 470M are allocated for project partners and public sales
 
-### Distribution
+### Loose tokens
+* 94M `FLOW` Tokens were pre-minted for the gauges and this current balance can be seen [here](https://evm.explorer.canto.io/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd)
+* 10M `FLOW` Tokens were minted for initial liquidity and to deepen liquidity 
+* 56M `FLOW` Token were left loose for adding to initial liquidity, bribes, Community veFLOW boosts, adding to POL
 
 <Bleed>
   <Chart
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "Protocol Owned NFT", 60 ],
-      [ "Protocol Controlled Liquidity", 16],
-      [ "Presale", 4],
-      [ "Velocimeter Team", 72],
-      [ "Tribute", 8],
-      [ "Partner Protocol/DAOs", 140],
-      [ "Partner Boost", 60],
-      [ "Amplify Awareness Campaign", 40]
+      [ "Protocol Owned NFTs", 90 ],
+      [ "Velocimeter Team NFTs", 108],
+      [ "Partner Protocol/DAOs NFTs", 272],
+      [ "Gauge Premint", 94],
+      [ "Team Controlled Initial Liquidity", 10],
+      [ "Protocol FLOW Fund", 56]
     ]}
     options={{
       title: "FLOW Distribution (M)",
       backgroundColor: '#111111',
-      colors: ['#79F8DB', '#027FFF', '#FDBF40', '#FF1301', '#F1EBE2', '#FBBF42', '#EDE7DB', '#EDE7DB' ],
+      colors: ['#58FF33', '#43CD24', '#37A220', '#297818', '#CCFF2C', '#367A2B' ],
       legend: {textStyle: {color: 'white' }},
       pieHole: 0.4,
       titleTextStyle: { color: 'white' },
@@ -91,58 +87,31 @@ mission to become the liquidity base layer of the Arbitrum ecosystem.
   />
 </Bleed>
 
-<Callout>
-No loose `FLOW` tokens were given to anyone. The team doesn't get any vesting `FLOW` tokens. The only loose tokens minted were for initial liquidity and for Amplify Campaigns. The latter will all be used to create new `veFLOW` before being dispersed.
-</Callout>
+#### Protocol Owned NFTs
+These NFTs will be used to vote mainly on core pairs
+#### Velocimeter Team NFTs
+Voting with these NFTs are at the discretion of the team members and is the main source of revenue for them.
+#### Partner Protocol/DAO NFTs
+These NFTs will be distributed to partners as they join.
+#### Gauge-Rebase-Teamcut Premint
+These tokens are not circulating but will be added to the gauges as rewards on based on the Emissions Schedule below.
+#### Team Controlled Initial Liquidity
+These tokens will used for initial Liquidity and to deepen liquidity as revenue is collected. These tokens are controlled by the team
+#### Protocol FLOW Fund
+These tokens minted to be used for business/protocol development, DAO needs, minting custom partner size NFTs as needed, building Protocol Owned Liquidity. A time-lock contract will be used ASAP for these tokens.
 
-### Protocol Owned NFT
 
-60M `FLOW` tokens were four year locked as an `veFLOW` and used to vote solely on core liquidity pools such as the `FLOW/USDC` LP. Any and all fees earned through these actions will be used to build up Protocol Owned Liquidity (POL) to ensure healthy trading of the `FLOW` token.
 
-### Protocol Controlled Liquidity
+## Gauge Voting
 
-16M `FLOW` tokens were set aside to add to initial liquidity for the `FLOW` token and is referred to as Protocol Controlled Liquidity (PCL). The amount of `FLOW` utilized for this was dependant on the amount of right side tokens _ie `USDC`_ that were raised in the presale. As POL is developed this liquidity can be dismantled at the team discretion.
+`veFLOW` holders decide which liquidity pools receive emissions in a given epoch by
+voting on their preferred liquidity pool _gauges_. `FLOW` emissions will be distributed
+proportionally to the total votes a liquidity pool receives.
 
-### Presale
+In return, voters receive 100% of the trading fees and bribes collected through the
+liquidity pool they vote for.
 
-4M `FLOW` tokens were sold as `veFLOW` to initial investors. This raise was used solely for the PCL
-
-### Velocimeter Team
-
-72M `FLOW` tokens were four year locked as `veFLOW` and given to the team. The individuals in the team are able to vote at their own personal discretion. This is considered the method of cash flow for those team members.
-
-### Tribute
-
-8M `FLOW` tokens were set aside to pay tribute to both Andre Cronje and Anton Nell, as well as, to the team at Velodrome. These tokens were four year locked in as many `veFLOW` as per requested by the respective recipients.
-
-### Partners
-
-140M `FLOW` tokens were four year locked in `veFLOW` NFTs of various sizes, ranging from 0.25% to 1%, and given to projects and DAOs in the ecosystem that the team felt would direct value to the Velocimeter ecosystem. As projects are selected and given their shares, this section will be updated.
-
-### Partner Boost
-
-60M `FLOW` tokens were set aside and used to mint 60 x 0.25% `veFLOW`. These NFTs will be granted, 5 per month, to the protocols that have the most positive impact on Velocimeter. This allocation will be done via a Snapshot vote with the `veFLOW` holding as a requisite for voting.
-
-### Amplifi and Airdrop
-
-40M `FLOW` tokens were set aside to be earned, as `veFLOW`, by community members for different campaigns that are launched via Amplify Affiliate Campaigns. Follow their [twitter](https://twitter.com/AmpliFiDAO) to see announcements on how you can take part and earn `veFLOW`
-
-## Emissions
-
-The initial supply of `FLOW` is 400M.
-
-Weekly emissions start at 15M `FLOW` (3.75% of the initial supply)
-and decay at 1% per week (epoch).
-
-`veFLOW` holders receive a rebase proportional to epoch LP emissions
-and the ratio of `veFLOW` to `FLOW` supply, thus reducing vote power
-dilution for `veFLOW`!
-
-The weekly rebase amount is calculated with the following formula:
-
-> (FLOW.totalSupply ÷ FLOW.totalsupply)³ × 0.5 × Emissions
-
-`veFLOW` supply does not affect weekly LP emissions.
+More information on voting can be found the [Voting Section](/voting) section of this document.
 
 ### Emission Schedule
 
@@ -186,99 +155,6 @@ The weekly rebase amount is calculated with the following formula:
   />
 </Bleed>
 
-## Gauge Voting
-
-`veFLOW` holders decide which liquidity pools receive emissions in a given epoch by
-voting on their preferred liquidity pool _gauges_. `FLOW` emissions will be distributed
-proportionally to the total votes a liquidity pool receives.
-
-In return, voters receive 100% of the trading fees and bribes collected through the
-liquidity pool they vote for.
-
-More information on voting can be found the [Voting Section](/voting) section of this document.
-
-## Rewards
-
-There are 4 types of rewards on Velocimeter.
-
-### Emissions
-
-`FLOW` is distributed to liquidity pool stakers. The amount of
-`FLOW` distributed towards every pool is proportional to the voting power
-received from the voters every epoch.
-
-These rewards are streaming and are available for claim as they accrue.
-
-### Fees
-
-Liquidity pool trading fees are distributed to voters in pool tokens (
-e.g., if the pool voted on is `vAMM-FLOW/USDC` the distributed tokens are `FLOW` and
-`$USDC`) in proportion to the activity of trading in the pool. These will likely not be evenly balanced.
-
-The tokens are streaming proportionally to the voting power cast by a voter and
-the accrued amount of trading fees.
-
-These rewards are available for claim as they accrue. They do not need to be claimed each epoch.
-
-### Bribes
-
-In addition to the fees, liquidity pools allow external rewards from anyone
-(known as _bribes_). Bribes can be added to _whitelisted_ pools and are distributed
-_only_ to voters on that pool, proportionally to their share of pool votes.
-
-These rewards are available for claim after the epoch flips
-(after Wednesday 23:59 UTC), and are proportional to the voting power cast by a
-voter (`veFLOW`).
-
-### Rebases
-
-Represent `veFLOW` distributed to `veFLOW` holders in order to reduce the
-voting power dilution from the inflationary rewards given to LP stakers.
-
-## Rewards claim
-
-Rebase rewards claim is available one full epoch after tokens are locked.
-External bribe rewards are claimable after a new epoch has started (epochs increment right after 23:59 UTC each Wednesday).
-
-An example of bribes, voting, and rewards claim timeline:
-
-- A new epoch starts Thursday (00:00 UTC)
-- Bribes are deposited at any point in the epoch
-- Voters vote for their preferred pools
-- Once the next epoch arrives (the following Thursday), users are able to claim rewards from the UI or the corresponding `WrappedExternalBribe` contract
-
-<Bleed>
-  <Chart
-    chartType="Timeline"
-    data={[
-      [
-        { type: "string", id: "Voting Round" },
-        { type: "string", id: "Action" },
-        { type: "date", id: "Start" },
-        { type: "date", id: "End" },
-      ],
-      ["Round #1", "Bribes Deposited, Votes Cast", new Date(2022, 5, 2), new Date(2022, 5, 8, 23, 59)],
-      ["Round #1", "Rewards Claimable", new Date(2022, 5, 9), new Date(2022, 5, 30)],
-
-      ["Round #2", "Bribes Deposited, Votes Cast", new Date(2022, 5, 9), new Date(2022, 5, 15, 23, 59)],
-      ["Round #2", "Rewards Claimable", new Date(2022, 5, 16), new Date(2022, 5, 30)],
-
-      ["Round #3", "Bribes Deposited, Votes Cast", new Date(2022, 5, 16), new Date(2022, 5, 22, 23, 59)],
-      ["Round #3", "Rewards Claimable", new Date(2022, 5, 23), new Date(2022, 5, 30)],
-    ]}
-    options={{
-      title: "Bribing, Voting and Rewards Timeline",
-      legend: { position: 'top'},
-      colors: [
-        '#79F8DB', '#2180DF', '#EA1000', '#871000', '#59BFD8', '#0281FF',
-        '#FBBF42', '#EDE7DB'
-      ],
-    }}
-    width={"100%"}
-
-/>
-</Bleed>
-
 ## Whitelisting
 
 While Velocimeter supports permissionless liquidity pool. Gauge creation can
@@ -298,3 +174,9 @@ will have the right to disable hostile gauges.
 An example of a hostile gauge would be one that has two tokens that cannot be obtained public via any route either inside Velocimeter or in other protocols.
 
 The Council of Velocimetry will initially consist of members from the Velocimeter team but community members will be recruited to bolster this role.
+
+
+
+
+
+

@@ -68,16 +68,14 @@ The basic guidelines for whitelisting a token is a commitment to supply, or have
 | reviveGauge        | This resets a killed gauge and allow to to start receiving FLOW |
 | setEmergencyCouncil| This changes the MSIG address                                  |
 
-Any gauge that is deemed unproductive to the broader ecosystem or violates the agreement with the partners. ie, isn't using a valid rightside token, may be killed. This Council will start off containing only the Velocimeter core team but individuals from the community will be added later, and the broader Arbitrum and DeFi ecosystems. The Council of Velocimetry multisig is available here, and signers include:
+Any gauge that is deemed unproductive to the broader ecosystem or violates the agreement with the partners. ie, isn't using a valid rightside token, may be killed. This Council will start off containing only the Velocimeter core team but individuals from the community will be added later, and the broader DeFi ecosystems. The Council of Velocimetry multisig is available here, and signers include:
 
 | Signer      | Affiliation      | Address                                    |
 | ----------- | ---------------- | ------------------------------------------ |
-| Ceazor      | Velocimeter      | ??? |
-| Dunks       | Velocimeter      | ??? |
-| Coolie      | Velocimeter      | ??? |
-| Faeflow     | Velocimeter      | ??? |
-| Torbik      | Velocimeter      | ??? |
-| wtkc        | Velocimeter      | ??? |
+| Ceazor      | Velocimeter      | 0x3c5Aac016EF2F178e8699D6208796A2D67557fe2 |
+| Dunks       | Velocimeter      | 0x53f3B51FD7F327E1Ec4E6eAa3A049149cB2acaD2 |
+| Torbik      | Velocimeter      | 0x0b776552c1Aef1Dc33005DD25AcDA22493b6615d |
+| Coming Soon | Degen            | 0xSuperDegenThatWantsToGoWithTheFlowWithUs |
 
 
 ## Improvement: Prolonged Emissions Decay
