@@ -1,4 +1,4 @@
-# Velocimeter 🚲💨📃
+# Velocimeter 🌊📃
 
 Velocimeter product documentation.
 
