@@ -2,7 +2,22 @@ import Bleed from 'nextra-theme-docs/bleed';
 
 import { Chart } from "react-google-charts";
 
-# Launch Details
+# Migration Guide
+
+v1 UI: Used for claiming rewards and withdrawing liquidity https://canto.velocimeter.xy
+
+Use v1 UI to fully unstake and withdraw from all pools. Your LP tokens should go back to single assets (v1 LP tokens and v2 LP tokens are not compatible.)
+
+v2 UI: Used for adding liquidity - https://velocimeter.xyz
+
+Adding liquidity in V2 is the same process.
+
+$FLOW migration UI: https://www.velocimeter.xyz/migration
+
+Deposit FLOWv1 get FLOW.
+
+
+Migration veFLOW Airdrop
 
 <Bleed>
 <div align="center">
@@ -20,7 +35,7 @@ Velocimeter launched on
   As with any launch, we want to warn users that this product is in beta. Users should use at their own risk. We also recommend that you interact with the site in **desktop environments**.
   
   If at any point you require assistance, please join our
-  [Discord](https://discord.gg/qpue2s6VfJ), where there are many degens that will be more than happy to help you so you can pamp their bags.
+  [Discord](https://discord.gg/qpue2s6VfJ), where there are many degens that will be more than happy to help you so you can pamp their bags
 
 
 ## Getting Ready
@@ -34,7 +49,10 @@ configuration options.
 
 
 ## Bridging
+
 New Canto users will need to have `$CANTO` on Canto to pay gas transaction fees. 
+
+
 Bridging to Canto can be done on [Canto Bridge](https://canto.io/bridge), [Synapse](https://synapseprotocol.com/) or [Gravity](https://www.gravitybridge.net/).
 
 

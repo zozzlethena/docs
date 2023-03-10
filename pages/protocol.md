@@ -1,5 +1,4 @@
-import Bleed from 'nextra-theme-docs/bleed'
-import Callout from 'nextra-theme-docs/callout'
+import Bleed from 'nextra-theme-docs/bleed';
 
 # Protocol Overview
 
@@ -44,7 +43,7 @@ Velocimeter was based on Velodrome which had made improvements to the Solidly co
 
 Solidly had several key issues that prevented its success in the Fantom ecosystem
 
-<Callout>Here is a simply, early, video explainer of the [Solidly system](https://youtu.be/x3vhNw2g-CU) - It's highly recommended that you watch this video. Both Velocimeter and Velodrome are similar enough to warrant a watch. </Callout>
+Here is a simply, early, video explainer of the [Solidly system](https://youtu.be/x3vhNw2g-CU) - It's highly recommended that you watch this video. Both Velocimeter and Velodrome are similar enough to warrant a watch. 
 
 ## Changes to the Logic of Velodrome
 The most significant change is how fees are handled. In Velocimeter, the fees are sent direct to External Bribes, bypassing the Internal Bribes system. This creates the benefit of having a more predictable voting experience for voters where voters can see the entire some of tokens that their votes will currently get a pro-rata share of. 
@@ -64,7 +63,7 @@ The most significant change is how fees are handled. In Velocimeter, the fees ar
 
 The basic guidelines for whitelisting a token is a commitment to supply, or have, a TVL in the pool of at least $10,000 USD. This ensures trading in that pool at least a small measure of stability before a gauge is granted. There could be individual cases where this requirement might be modified.
 
-<Callout>If your team wants a gauge, we suggest you first ask for token whitelisting prior to making the gauge. This is because you will be able to complete the entire process. However, if you have already created a liquidity pool, we can still help you to get a gauge.</Callout> 
+If your team wants a gauge, we suggest you first ask for token whitelisting prior to making the gauge. This is because you will be able to complete the entire process. However, if you have already created a liquidity pool, we can still help you to get a gauge. 
 
 - Second, we've also added an Emergency ["Council"](), which has the ability to perform the following functions 
 | Function           | Purpose                                                        |
@@ -99,4 +98,3 @@ In Velcimeter, Liquidity Pool that DO NOT have  gauge forfeit their trading fees
 <Callout>
 Here is a link to [Velodrome Finance 🚴‍♀️💨🌈](https://app.velodrome.finance/) 
 </Callout>
-
