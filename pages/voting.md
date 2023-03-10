@@ -1,6 +1,4 @@
 import Bleed from 'nextra-theme-docs/bleed'
-import Callout from 'nextra-theme-docs/callout'
-
 
 # Voting
 
@@ -35,9 +33,9 @@ Voting has several benefits that should be considered.
 * Voting on a pool grants you a pro-rata share of all the bribes that are added to the pool by any 3rd party. Bribes can be added
 to a pool at any time during an epoch. A snapshot of votes is taken at the end of each epoch at ~23:59 UTC on Wednesday. Bribe rewards are available between 24-48 hours after the new epoch starts. 
 
-<Callout> 
+
  It is REQUIRED that you CAST VOTE 🗳️ every week in order to register for the bribes. This transaction will cost gas⛽️. If you do not cast your vote every week, you will still direct FLOW to the gauge but you will NOT get a prorata share of the bribes.
-</Callout>
+
 
 ## Reset to Transfer
 
