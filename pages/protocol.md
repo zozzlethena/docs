@@ -95,6 +95,6 @@ In Velcimeter, Liquidity Pool that DO NOT have  gauge forfeit their trading fees
 - Fourth, the initial distribution has been carefully selected to include partner protocols that were felt would bring their own types of unique value to the ecosystem.
 
 
-Here is a link to [Velodrome Finance 🚴‍♀️💨🌈](https://app.velodrome.finance/)
-
-
+<Callout>
+Here is a link to [Velodrome Finance 🚴‍♀️💨🌈](https://app.velodrome.finance/) 
+</Callout>

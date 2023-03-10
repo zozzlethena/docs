@@ -34,10 +34,7 @@ configuration options.
 
 
 ## Bridging
-
 New Canto users will need to have `$CANTO` on Canto to pay gas transaction fees. 
-
-
 Bridging to Canto can be done on [Canto Bridge](https://canto.io/bridge), [Synapse](https://synapseprotocol.com/) or [Gravity](https://www.gravitybridge.net/).
 
 
