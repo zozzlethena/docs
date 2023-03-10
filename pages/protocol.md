@@ -78,6 +78,8 @@ Any gauge that is deemed unproductive to the broader ecosystem or violates the a
 | Ceazor      | Velocimeter      | 0x3c5Aac016EF2F178e8699D6208796A2D67557fe2 |
 | Dunks       | Velocimeter      | 0x53f3B51FD7F327E1Ec4E6eAa3A049149cB2acaD2 |
 | Torbik      | Velocimeter      | 0x0b776552c1Aef1Dc33005DD25AcDA22493b6615d |
+| Motto       | Velocimeter      | 0x78e801136F77805239A7F533521A7a5570F572C8 |
+| Coolie      | Velocimeter      | 0x03B88DacB7c21B54cEfEcC297D981E5b721A9dF1 |
 | Coming Soon | Degen            | 0xSuperDegenThatWantsToGoWithTheFlowWithUs |
 
 In Velcimeter, Liquidity Pool that DO NOT have  gauge forfeit their trading fees to the tank. on this [here.](/guages)
