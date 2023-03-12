@@ -1,5 +1,7 @@
 ## Migration
 
+Looking for tokenomics details related to migration to v2? https://docs.velocimeter.xyz/tokenomics#version-2-relaunch-tokennomic-distribution
+
 
  A full redeployment and migration is required due to a bug related to the handling of trading fees.
 
