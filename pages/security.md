@@ -24,7 +24,7 @@ import Bleed from 'nextra-theme-docs/bleed';
 | VotingEscrow       | [0x8E003242406FBa53619769F31606ef2Ed8A65C00](https://tuber.build/address/0x8E003242406FBa53619769F31606ef2Ed8A65C00) | Canto |
 | RewardsDistributor | [0x73278a66b75aC0714c4B049dFF26e5CddF365c85](https://tuber.build/address/0x73278a66b75aC0714c4B049dFF26e5CddF365c85) | Canto |
 | Voter              | [0x8e3525Dbc8356c08d2d55F3ACb6416b5979D3389](https://tuber.build/address/0x8e3525Dbc8356c08d2d55F3ACb6416b5979D3389) | Canto |
-| Minter             | [0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd](https://tuber.build/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd) | Canto |
+| Minter             | [0x41dc163DA8E280743585fde657cFC8937b0c7F9B](https://tuber.build/address/0x41dc163DA8E280743585fde657cFC8937b0c7F9B) | Canto |
 | Flow Convertor     | [0x63dF314EA0912412ff1cDC5A43585477d08CE5e9](https://tuber.build/address/0x63dF314EA0912412ff1cDC5A43585477d08CE5e9) | Canto |
 | Flow Vester        | [0x334ee44fB4d7dC560c51969fE5B9cb5AEfA24519](https://tuber.build/address/0x334ee44fB4d7dC560c51969fE5B9cb5AEfA24519) | Canto |
 
@@ -99,8 +99,8 @@ handful of false-positive, low-severity issues reported.
 !
 
 
-Velocimeter has NOT gone through any form of audit or code review but rather adopts the following from the Velodrome security procedures. The following point of code was changed. 
- - **Removal of Internal Fees** Because the fees are now directed as external bribes, the need for many contracts became redundant, ie pairFees.sol, internalBribe.sol
+Velocimeter has NOT gone through any form of audit but rather adopts some from the Velodrome security procedures. The following point of code was changed. 
+ - **Removal of Internal Fees** The fees are now directed as external bribes so the need for many contracts became redundant, ie pairFees.sol, internalBribe.sol
 
 
 ### VELODROME Security Procedures
