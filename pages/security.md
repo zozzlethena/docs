@@ -25,8 +25,8 @@ import Bleed from 'nextra-theme-docs/bleed';
 | RewardsDistributor | [0x73278a66b75aC0714c4B049dFF26e5CddF365c85](https://tuber.build/address/0x73278a66b75aC0714c4B049dFF26e5CddF365c85) | Canto |
 | Voter              | [0x8e3525Dbc8356c08d2d55F3ACb6416b5979D3389](https://tuber.build/address/0x8e3525Dbc8356c08d2d55F3ACb6416b5979D3389) | Canto |
 | Minter             | [0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd](https://tuber.build/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd) | Canto |
-
-Full list of Pairs and Gauges at the bottom.
+| Flow Convertor     | [0x63dF314EA0912412ff1cDC5A43585477d08CE5e9](https://tuber.build/address/0x63dF314EA0912412ff1cDC5A43585477d08CE5e9) | Canto |
+| Flow Vester        | [0x334ee44fB4d7dC560c51969fE5B9cb5AEfA24519](https://tuber.build/address/0x334ee44fB4d7dC560c51969fE5B9cb5AEfA24519) | Canto |
 
 ## Differences from Solidly and Velodrome
 
