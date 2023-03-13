@@ -58,11 +58,10 @@ The initial supply was reduced to 300M FLOWv2 (v2 will still be called FLOW)
 * 129M FLOW were locked in veFLOW of various sizes, and with varying lock times (min 1 year), for future partners, and raising capital.
 
 ### 80M FLOW
-* 53M FLOW were fed into the redeemer for the community to redeem FLOWv1 for FLOWv2
-* 19M FLOW were set aside for version 2 epoch 0 emission and incentive for migration of liquidity
-14M for Gauges and 5M for boosting migrator's veFLOW 
-* 4.3M were set aside for future use, ie minting custom NFTs, adding to POL.
+* 54M FLOW were fed into the redeemer for the community to redeem FLOWv1 for FLOWv2
 * 4.5M were deposited into a linear 1 year vesting contract for the core dev team.
+* 23.5M were deposited into treasury for proctocl own token to be used as determined in the future. ie, migration bonuses, deepening liquidity, custom size veFLOW minting, grants.
+
 ### Distribution Chart
 
 <Bleed>
@@ -74,9 +73,9 @@ The initial supply was reduced to 300M FLOWv2 (v2 will still be called FLOW)
       [ "Protocol Owned NFTs", 23 ],
       [ "Velocimeter Team NFTs", 54],
       [ "Partner Protocol/DAOs NFTs", 127],
-      [ "FLOWv2 Redeemer", 50],
-      [ "Migration Bonus", 19],
-      [ "Protocol FLOW Fund", 9.3],
+      [ "FLOWv2 Redeemer", 54],
+      [ "Migration Bonus", 5],
+      [ "Protocol FLOW Fund", 20.5],
       [ "1yr Dev Vesting", 4.5]
     ]}
     options={{
