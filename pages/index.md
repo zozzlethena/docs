@@ -1,8 +1,7 @@
 import Bleed from 'nextra-theme-docs/bleed';
 
-::: caution
+
 👀 This documentation is a work in progress and subject to FLOWing changes.
-:::
 
 # About
 
@@ -19,9 +18,9 @@ Velocimeter dex will allow users to do the following:
 * farm $FLOW
 * receive voter bribes
 
-::: important
+
   Before using Velocimeter, you are required to read and agree to our [legal disclaimer](/legal).
-:::
+
 
 ## Where does this project come from?
 Velocimeter is a project built based on the original designs of [Andre Cronje's Solidly](https://andrecronje.medium.com/ve-3-3-44466eaa088b) which was later revised and made wildly successful by [Velodrome Finance](https://app.velodrome.finance/). 

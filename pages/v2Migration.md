@@ -29,7 +29,7 @@ Migration veFLOW Airdrop
 
 
 
-Velocimeter launched on 
+Velocimeter launched on 02/15/2023
 
 
   As with any launch, we want to warn users that this product is in beta. Users should use at their own risk. We also recommend that you interact with the site in **desktop environments**.
