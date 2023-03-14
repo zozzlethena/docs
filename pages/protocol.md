@@ -90,7 +90,7 @@ In Velcimeter, Liquidity Pool that DO NOT have  gauge forfeit their trading fees
 
 - First, we modified the emissions growth function to
 
-    > (FLOW.totalSupply ÷ FLOW.totalsupply)³ × 0.5 × Emissions
+    > (veFLOW.totalSupply ÷ FLOW.totalsupply)³ × 0.5 × Emissions
 
 - Second, there is no negative voting.
 - Third, there is no emissions "boost" for voters.
