@@ -13,14 +13,13 @@ import { Chart } from "react-google-charts";
 &nbsp;
 
 
-
-Velocimeter launched on 
-
+::: tip
+Velocimeter launched on 02/15/2023
+:::
 
   As with any launch, we want to warn users that this product is in beta. Users should use at their own risk. We also recommend that you interact with the site in **desktop environments**.
   
-  If at any point you require assistance, please join our
-  [Discord](https://discord.gg/qpue2s6VfJ), where there are many degens that will be more than happy to help you so you can pamp their bags.
+  If at any point you require assistance, please join our [Discord](https://discord.gg/qpue2s6VfJ), where there are many degens that will be more than happy to help you so you can pamp their bags.
 
 
 ## Getting Ready
