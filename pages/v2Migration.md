@@ -4,17 +4,17 @@ import { Chart } from "react-google-charts";
 
 # Migration Guide
 
-v1 UI: Used for claiming rewards and withdrawing liquidity https://canto.velocimeter.xy
+1. v1 UI: Used for claiming rewards and withdrawing liquidity https://canto.velocimeter.xyz
 
-Use v1 UI to fully unstake and withdraw from all pools. Your LP tokens should go back to single assets (v1 LP tokens and v2 LP tokens are not compatible.)
+1. Use v1 UI to fully unstake and withdraw from all pools. Your LP tokens should go back to single assets (v1 LP tokens and v2 LP tokens are not compatible.)
 
-v2 UI: Used for adding liquidity - https://velocimeter.xyz
+1. v2 UI: Used for adding liquidity - https://velocimeter.xyz
 
 Adding liquidity in V2 is the same process.
 
 $FLOW migration UI: https://www.velocimeter.xyz/migration
 
-Deposit FLOWv1 get FLOW.
+Deposit FLOW v1 get FLOW.
 
 
 Migration veFLOW Airdrop
