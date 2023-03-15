@@ -1,4 +1,9 @@
 ## Migration Steps
+
+### Migration Timeline
+
+Migration will be announced in Discord and on Twitter. 
+
 ### veFLOW 
 *  Nothing. veFLOW was airdropped.
 
@@ -10,6 +15,24 @@
 ### Add Liquidity
 - After converting your FLOWv1 to FLOWv2, those that want to addLiquidity to FLOW pairs on v2 are encouraged to do so.
 5M FLOW tokens will be used to create new veFLOW and given prorata to people that create FLOW:wCANTO, FLOW:NOTE pairs
+
+
+
+### Migration Guide
+
+v1 UI: Used for claiming rewards and withdrawing liquidity https://canto.velocimeter.xy
+
+Use v1 UI to fully unstake and withdraw from all pools. Your LP tokens should go back to single assets (v1 LP tokens and v2 LP tokens are not compatible.)
+
+v2 UI: Used for adding liquidity - https://velocimeter.xyz
+
+Adding liquidity in V2 is the same process.
+
+$FLOW migration UI: https://www.velocimeter.xyz/migration
+
+Deposit FLOWv1 get FLOW.
+
+
 
 #### Out of the Shoals
 Im a big fan of movies like Master and Commander, and Pirates of the Caribbean.
