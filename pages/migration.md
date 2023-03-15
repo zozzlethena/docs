@@ -1,11 +1,27 @@
-## Migration Steps
+## Migration
+
+
+ A full redeployment and migration is required due to a bug related to the handling of trading fees.
+
+ Velocimeter v1 is still operational up till and during the migration period. Several pools are not active and trading fees have been reduced to a minimum.
+
+ Affected pool:
+
+ USDC-WCANTO unclaimable rewards are factored into the veFLOW airdrop outlined below. 
+ DEXvaults.com users affected by this pool are also factored into the veFLOW airdrop outlined below.
 
 ### Migration Timeline
+
+
 
 Migration will be announced in Discord and on Twitter. 
 
 ### veFLOW 
 *  Nothing. veFLOW was airdropped.
+
+veFLOW that was locked with lower vesting times is airdropped with comparable vesting time with a 1.2x multiplier (more tokens than you had before).
+
+
 
 ### FLOWv1 -> FLOWv2 
 *  Collect up your FLOWv1 from claiming from gauges.
