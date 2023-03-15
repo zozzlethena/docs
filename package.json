@@ -14,5 +14,8 @@
   "repository": "https://github.com/velocimeter/docs/",
   "author": "FLOW Addicts",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "eslint": "^8.35.0"
+  }
 }
