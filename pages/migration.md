@@ -20,7 +20,7 @@ Migration will be announced in Discord and on Twitter.
 
 ### Migration Guide
 
-v1 UI: Used for claiming rewards and withdrawing liquidity https://canto.velocimeter.xy
+v1 UI: Used for claiming rewards and withdrawing liquidity https://canto.velocimeter.xyz
 
 Use v1 UI to fully unstake and withdraw from all pools. Your LP tokens should go back to single assets (v1 LP tokens and v2 LP tokens are not compatible.)
 
