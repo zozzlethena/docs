@@ -97,4 +97,5 @@ In Velcimeter, Liquidity Pool that DO NOT have  gauge forfeit their trading fees
 
 
 <Callout>Here is a link to [Velodrome Finance 🚴‍♀️💨🌈](https://app.velodrome.finance/)
+</Callout>
 
