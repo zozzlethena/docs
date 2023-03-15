@@ -1,5 +1,5 @@
-import Bleed from 'nextra-theme-docs/bleed'
-import Callout from 'nextra-theme-docs/callout'
+import Bleed from 'nextra-theme-docs/bleed';
+
 import { Chart } from "react-google-charts";
 
 # Migration Guide
@@ -56,11 +56,11 @@ New Canto users will need to have `$CANTO` on Canto to pay gas transaction fees.
 Bridging to Canto can be done on [Canto Bridge](https://canto.io/bridge), [Synapse](https://synapseprotocol.com/) or [Gravity](https://www.gravitybridge.net/).
 
 
-<Callout emoji="⚠️">
+
   Some bridging services can take up to 20-30 minutes to complete a transfer of
   the assets. Velocimeter doesn't guarantee the results of any of the bridges. Issue with bridges 
   are best taken up with the respective communities of those bridges.
-</Callout>
+
 
 ### Initial Distribution
 
