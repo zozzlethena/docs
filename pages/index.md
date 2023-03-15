@@ -12,9 +12,11 @@ import Callout from 'nextra-theme-docs/callout'
 &nbsp;
 <Callout>👀 This documentation is a work in progress and subject to FLOWing changes.</Callout> 
 
-
-Velocimeter, at its core, is a solution for protocols on [Canto](https://canto.io/) to properly incentivize liquidity for their own use cases.
-Building on top of the groundwork laid out by Solidly, our team has addressed that first iteration's core issues to realize its full potential.
+Velocimeter,is a Decentalized Exchange on [Canto](https://canto.io/) that can incentivize liquidity for project tokens. Users can:
+* swap tokens
+* provide liquidity
+* farm $FLOW
+* receive voter bribes
 
 <Callout emoji="⚠️">
   Before using Velocimeter, you are required to read and agree to our
