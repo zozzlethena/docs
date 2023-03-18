@@ -28,12 +28,7 @@ import Bleed from 'nextra-theme-docs/bleed';
 | Flow Convertor     | [0x63dF314EA0912412ff1cDC5A43585477d08CE5e9](https://tuber.build/address/0x63dF314EA0912412ff1cDC5A43585477d08CE5e9) | Canto |
 | Flow Vester        | [0x334ee44fB4d7dC560c51969fE5B9cb5AEfA24519](https://tuber.build/address/0x334ee44fB4d7dC560c51969fE5B9cb5AEfA24519) | Canto |
 
-## Differences from Solidly and Velodrome
-
-Here is a list of key differences in the Velocimeter's contracts.
-
-### Major changes
-
+## Difference from Velocimeter and Velodrome
   - ***Use trading fees as external bribes.***
     In contrast to Velodrome, Velocimeter takes the trading fees of liquidity pools with gauges and sends them
     as external bribes for that respective pool. `USDC` and `FLOW` trading fees directly bribe upcoming
@@ -41,7 +36,12 @@ Here is a list of key differences in the Velocimeter's contracts.
     voting experience as voters clearly can see what they will get, rather than wait to see what trading fees
     they happen to accumulate in the week following their vote.
   - ***Trading fees without gauges.***
-    With pairs that don't have a gauge, the trading fees are sent to the treasury.   
+    With pairs that don't have a gauge, or have a gauge what was "killed", the trading fees are sent to the [tank](https://tuber.build/address/0x0A868fd1523a1ef58Db1F2D135219F0e30CBf7FB/tokens#address-tabs).
+
+## Differences from Solidly and Velodrome (inherited by Velocimeter)
+
+### Major changes
+   
   - ***One vote per epoch.*** In Velocimeter, voters are only allowed to make "active"
     voting decisions (i.e. vote and reset) once per epoch. Voters must wait
     until the next epoch to change their votes. Voters can, however, _cast_
@@ -74,8 +74,6 @@ sourced in full](https://github.com/solidlyexchange/) by Andre Cronje and his te
 March 2022. Since its release in February on Fantom network, no security
 incidents related to Solidly smart contracts were reported.
 
-
-
   Before moving forward, we'd like to remind to our users that
   security audits do not eliminate risks completely and that
   every user should read and agree to our
@@ -95,11 +93,10 @@ repository](https://github.com/solidlyexchange/solidly/blob/master/audits/e456a8
 
 Velodrome went through a security audit and a peer review as part of the Code4rena bug bouncy contest.
 Finally, a full MythX deep scan on Velodrome contracts found just a
-handful of false-positive, low-severity issues reported.
-!
+handful of false-positive, low-severity issues reported.!
 
 
-Velocimeter has NOT gone through any form of audit but rather adopts some from the Velodrome security procedures. The following point of code was changed. 
+🚨 Velocimeter has NOT gone through any form of audit but rather adopts some from the Velodrome security procedures. The following point of code was changed. 
  - **Removal of Internal Fees** The fees are now directed as external bribes so the need for many contracts became redundant, ie pairFees.sol, internalBribe.sol
 
 
