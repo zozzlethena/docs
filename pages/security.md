@@ -117,7 +117,7 @@ Solidly's bug bounty program was launched in February 2022 on Immunefi.com.
 There were no claims for any of the $200,000 rewards ([on their Github](https://github.com/solidlyexchange/solidly/blob/master/SECURITY.md)).
 
 
-## V1 Contract Addresses (Not Valid Anymore)
+## V1 Contract Addresses (Not Valid Anymore)!
 
 | Contract Name | Contract Address | Network |
 | --- | --- | --- |
