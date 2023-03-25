@@ -13,7 +13,7 @@ import Bleed from 'nextra-theme-docs/bleed'
 
 ## Requirements
 
-Only `FLOW` that is locked as `veFLOW` can be used to vote. To understand more on the mechanics of `veFLOW` refer to the section[Protocol Overview](/protocol)
+Only `FLOW` that is locked as `veFLOW` can be used to vote. To understand more on the mechanics of `veFLOW` refer to the section [Protocol Overview](/protocol)
 
 New epochs start on Thursday as 00:00 UTC. Vote anytime before this. Waiting can allow you to see any bribes that come in, but not waiting ensures you get your vote in on time.
 
