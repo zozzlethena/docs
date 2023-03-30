@@ -41,7 +41,7 @@ On Velocimeter the trading fees are kept in the originally traded tokens
 
 The trading fees for stable liquidity pool types and for volatile pools are both independent. The current fees can be seen by going [here](https://tuber.build/address/0xF80909DF0A01ff18e4D37BF682E40519B21Def46/read-contract#address-tabs), locating the 7.getFee function and inputting `true` for stable and `false` for volatile. The outputted number then needs to be divided by 100 to get the swap fee percentage. ie. an output of 25 = 0.25%
 
-Both these setting can be adjusted up to 0.4%.
+Both these setting can be adjusted up to 0.5%.
 
 ## Stable Pools
 
