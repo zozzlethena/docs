@@ -128,7 +128,7 @@ There were no claims for any of the $200,000 rewards ([on their Github](https://
 | PairFactory        | [0xb12aF64E128A1D4489D13314eB4Df81cBCE126aC](https://tuber.build/address/0xb12aF64E128A1D4489D13314eB4Df81cBCE126aC) | Canto |
 | Router             | [0x9B2920e72dF6E1A7053bEa7235c65079F5104398](https://tuber.build/address/0x9B2920e72dF6E1A7053bEa7235c65079F5104398) | Canto |
 | VelocimeterLibrary | [0x7517df74F63a440D5Fc7c6Ec8BC40560F32079a8](https://tuber.build/address/0x7517df74F63a440D5Fc7c6Ec8BC40560F32079a8) | Canto |
-| VeArtProxy         | [0x0B8a83247aa14d4f94f4025db839D87A91817eE9](https://tuber.build/address/0x0B8a83247aa14d4f94f4025db839D87A91817eE9) | Canto |
+| VeArtProxy         | [0x3fa6A5FCB6054133d82C8d46FbD42216a16431d0](https://tuber.build/address/0x3fa6A5FCB6054133d82C8d46FbD42216a16431d0) | Canto |
 | VotingEscrow       | [0x990efF367C6c4aece43c1E98099061c897730F27](https://tuber.build/address/0x990efF367C6c4aece43c1E98099061c897730F27) | Canto |
 | RewardsDistributor | [0x19E1eef506eE61A58d1AAa11635361bBaE5D0676](https://tuber.build/address/0x19E1eef506eE61A58d1AAa11635361bBaE5D0676) | Canto |
 | Voter              | [0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33](https://tuber.build/address/0xC5B58aE761a77fF16d548dE9b42933c8FBfe4c33) | Canto |
