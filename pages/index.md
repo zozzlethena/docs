@@ -1,27 +1,25 @@
 import Bleed from 'nextra-theme-docs/bleed';
 
 
+👀 This documentation is a work in progress and subject to FLOWing changes.
+
 # About
 
 <Bleed>
-<div align="center">
-  ![Velocimeter](/dome3.jpg)
-  </div>
+ <div align="center"> ![Velocimeter](/dome3.jpg) </div>
 </Bleed>
 
-&nbsp;
-👀 This documentation is a work in progress and subject to FLOWing changes.
 
+Velocimeter, is a Decentalized Exchange on [Canto](https://canto.io/) that can incentivize liquidity for project tokens. 
 
-Velocimeter,is a Decentalized Exchange on [Canto](https://canto.io/) that can incentivize liquidity for project tokens. Users can:
+Velocimeter dex will allow users to do the following:
 * swap tokens
 * provide liquidity
 * farm $FLOW
 * receive voter bribes
 
 
-  Before using Velocimeter, you are required to read and agree to our
-  [legal disclaimer](/legal).
+  Before using Velocimeter, you are required to read and agree to our [legal disclaimer](/legal).
 
 
 ## Where does this project come from?
@@ -34,6 +32,7 @@ Velocimeter is a project built based on the original designs of [Andre Cronje's 
 
 ## Resources
 
-* Website Canto: https://canto.velocimeter.xyz/
+* Website: https://www.velocimeter.xyz/home
 * Twitter: https://twitter.com/VelocimeterDEX
 * Discord: https://discord.gg/TK8jnUpZME
+* Chainlist: https://chainlist.org 

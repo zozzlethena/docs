@@ -33,7 +33,7 @@ Common solutions of liquidity provision can be with the following:
 
 - Tokens with voting powers have been know to get alternative token bribes to sway their votes. 
 
-Here is a simple [DEx Youtube Video](https://youtu.be/xvwcaQmJPxg).
+Here is a simple [Dex Youtube Video](https://youtu.be/xvwcaQmJPxg).
 
 ## Introducing Velocimeter 🌊
 
@@ -82,7 +82,7 @@ Any gauge that is deemed unproductive to the broader ecosystem or violates the a
 | Coolie      | Velocimeter      | 0x03B88DacB7c21B54cEfEcC297D981E5b721A9dF1 |
 | Coming Soon | Degen            | 0xSuperDegenThatWantsToGoWithTheFlowWithUs |
 
-In Velcimeter, Liquidity Pool that DO NOT have  gauge forfeit their trading fees to the tank. on this [here.](/guages)
+In Velcimeter, Liquidity Pool that DO NOT have a gauge forfeit their trading fees to the tank. You can read more on this [here.](/guages)
 
 ## Further Velodrome adopted features
 
