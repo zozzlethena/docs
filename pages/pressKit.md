@@ -17,7 +17,7 @@ These are the official Velocimeter Logos and brand materials. Please feel free t
 
 ### Combination Mark
 
-<p align = "center"><img src = "https://user-images.githubusercontent.com/4340952/217877622-17e92d8c-96b2-498b-8580-6c9d49db1456.png"></p><p align = "center">
+<p align = "center"><img src = "https://user-images.githubusercontent.com/4340952/217877622-17e92d8c-96b2-498b-8580-6c9d49db1456.png"/></p><p align = "center">
 Turquoise
 </p>
 
