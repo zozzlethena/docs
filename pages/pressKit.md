@@ -11,7 +11,7 @@ These are the official Velocimeter Logos and brand materials. Please feel free t
 ## Velocimeter Marketing Pack
 
 
-[velocimeter-marketing-pack.zip](https://github.com/strikeanerve/velocimeter-assets/files/10699389/velocimeter-marketing-pack.zip)
+[velocimeter-marketing-pack.zip](https://github.com/strikeanerve/velocimeter-assets/releases/download/v1.0.0/velocimeter-marketing-pack.zip)
 
 ## The Velocimeter Logo
 
