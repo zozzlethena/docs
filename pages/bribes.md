@@ -2,20 +2,8 @@ import Bleed from 'nextra-theme-docs/bleed'
 
 # Bribes
 
-<Bleed>
-<div align="center">
-  ![Velocimeter Launch](/dome5.jpg)
-  </div>
-</Bleed>
-
-&nbsp;
-
-
-## Who Bribes
-
 In most cases, a partner project will be the entity that is bribing. However, this doesn't have to be the case. Any user that wishes can create a bribe to incentivize the voting for any pair that has a gauge. 
 Velocimeter will even use a portion of their `FLOW` earned every week to bribe select pools.
-
 
 ## Claiming
 Once an epoch flips, any bribe that are owed to a voter, are immediately claimable. To claim simply goto the [Rewards page](https://www.velocimeter.xyz/rewards), select the NFT that voted, and the bribes will immediately show up as claimable.
