@@ -55,6 +55,46 @@ tvb = total value of bribes in usd term
 
 tv = total number of votes 
 
+## VOTE Delegator
+The vote delegator is a way for `veFLOW` holders to delegate their votes to Velocimeter to manage for them. This series of contracts will vote on behalf of the user, collect the bribes from voting, use them to buy `FLOW` and then
+add them into those `veFLOW` NFTs. There are are few key things that should be known.
+
+This process:
+
+* requires that users give full approval of their NFT to a `VoteFarmer` contract.
+* will NOT transfer the users `veFLOW` from their wallet.
+* users can still manually vote in any epoch as long as Velocimeter has yet to vote on their behalf.
+* users can still manually claim bribes in any epoch as long as Velocimeter has yet to claim on their behalf.
+* requires that the `veFLOW` has as least 500 `FLOW` lock for a time greater that `7 Days`.
+
+This is important to understand. Granting other contracts approvals can be dangerous as it grants the following powers
+
+* transfer the NFT anywhere (Velocimeter does NOT have this function in delegator contract)
+* vote/claim bribes
+* withdraw expired locks
+* relock/extend locking
+* merge 1 NFT into another
+
+### AUTOLOCK Enabled
+When this feature is toggled on, it will allow Velocimeter to extend the lock time of a `veFLOW` by 1 week each week. This is used to maintain the same voting power, and to make sure that `veFLOW` that is set and forgotten, continues to be able to vote until the user returns to undelegate.
+
+### UnDelegate
+Users can, at any time, undelegate their `veFLOW` to Velocimeter. This will remove the power of voting, claiming bribes, and extending lock time. If Velocimeter has already voted this epoch with this NFT, users will find that they have to wait until the next epoch to do any of the following actions:
+
+* vote on any pool
+* transfer / sell their position
+* withdraw from expired NFTs
+* merge
+* reset
+
+
+## Upgradable
+IMPORTANT! The Vote Delegator is behind an upgradable proxy with a 48 hour time lock. This means that in the event that a better strategy is discovered, the team can modify the contracts. The intended upgrade will always be deploy first, then the `initiateImplUpgradeCooldown` function will be called to start the time lock countdown. 
+
+THis does NOT effect the core velocimeter contracts which are all immutable!
+
+
+
 
 
 
