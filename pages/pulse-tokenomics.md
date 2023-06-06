@@ -71,7 +71,9 @@ The initial 315M FLOW
 ### 50M FLOW
 50 million FLOW is in the mint tank to be used for protocol owned voting power.
 
-### Distribution Chart
+### veFLOW & Initial FLOW Distribution Chart
+
+Note that there is only max 2% of total FLOW liquid on day one. Everything else is earmarked (in mint tank which can only mint NFTs FLOW cannot be withdrawn) or already minted to veFLOW.
 
 <Bleed>
   <Chart
