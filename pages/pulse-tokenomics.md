@@ -12,6 +12,13 @@ import { Chart } from "react-google-charts";
 
 &nbsp;
 
+# 13m oFLOW will be distributed during epoch 1
+
+oFLOW is an option to buy FLOW at a 50% discount on market price.
+Funds raised will be used for a range of operations to support the health of the protocol such as adding protocol owned liquidity. Incentivising veFLOW & FLOW-PLS LP lockers.
+
+# Initial liquidity Bootstrapping Sale
+
 5m FLOW will be sold via https://launch.velocimeter.xyz/ in the build up to epoch 1. PLS raised in the sale will be used to provide FLOW-PLS liquidity on day one.
 
 
@@ -30,7 +37,7 @@ added to the `veFLOW` NFT at any time.
 The lock period (also known as vote-escrowed period, hence the _ve_ prefix) can be up
 to 4 years, following the linear relationship shown below:
 
-- 100 `FLOW` locked for 4 years will become 100 `veFLOW`
+- 100 `FLOW` locked for 26 weeks years will become 100 `veFLOW`
 - 100 `FLOW` locked for 1 year will become 25 `veFLOW`
 
 The longer the vesting time, the higher the voting power (voting weight) and
@@ -48,22 +55,20 @@ liquidity provision and long-term token holding. Liquidity providers receive `FL
 and `veFLOW` holders receive protocol fees, bribes, rebases, and governance power.
 
 
-## Version 2 Relaunch Tokennomic Distribution
-(For initial tokenomics see below)
+## Version 3 Pulsechain Tokennomic Distribution
 
-The initial supply was reduced to 300M FLOWv2 (v2 will still be called FLOW)
-* 218M were all locked in veFLOW
-* 82M were used for FLOWv1 redemption, migration bonus, dev vesting, Protocol Fund.
 
-### 220M veFLOW
-* A snapshot was taken of all veFLOW holders and community created veFLOW were increased by 1.2x
-* Protocol Owned Voting Power (POVP) was reduced to 23M in various sizes all 4 year locked.
-* 129M FLOW were locked in veFLOW of various sizes, and with varying lock times (min 1 year), for future partners, and raising capital.
+The initial 315M FLOW
+* ~150M veFLOW are claimable via airdrop claim contract prior to epoch 1 flip.
+* 5m FLOW allocated to sale. And 5m allocatated to adding initial liquidity.
+50 million for protocol owned voting power.
+100m for future partners
 
-### 80M FLOW
-* 54M FLOW were fed into the redeemer for the community to redeem FLOWv1 for FLOWv2
-* 4.5M were deposited into a linear 1 year vesting contract for the core dev team.
-* 23.5M were deposited into treasury for proctocl own token to be used as determined in the future. ie, migration bonuses, deepening liquidity, custom size veFLOW minting, grants.
+### 100M FLOW is in the mint tank contract and can only be used for minting future partner veFLOW
+
+
+### 50M FLOW
+50 million FLOW is in the mint tank to be used for protocol owned voting power.
 
 ### Distribution Chart
 
@@ -94,25 +99,7 @@ The initial supply was reduced to 300M FLOWv2 (v2 will still be called FLOW)
   />
 </Bleed>
 
-## Migration Steps
-### veFLOW 
-*  Nothing. veFLOW was airdropped.
 
-### FLOWv1 -> FLOWv2 
-*  Collect up your FLOWv1 from claiming from gauges.
-*  Collect up your FLOWv1 from dismantling any FLOW liquidity you have provided.
-*  Go to the REDEEM tab on the site and follow the simple 1 way swap. This should be done within 1 week. Any FLOWv1 that is not redeemed before the next epoch flip will not be able to be redeemable. This is because it’s not possible to turn off the V1 contracts and it’s still possible for these contracts to continue to be farmed. 
-
-### Add Liquidity
-- After converting your FLOWv1 to FLOWv2, those that want to addLiquidity to FLOW pairs on v2 are encouraged to do so.
-5M FLOW tokens will be used to create new veFLOW and given prorata to people that create FLOW:wCANTO, FLOW:NOTE pairs
-
-#### Out of the Shoals
-Im a big fan of movies like Master and Commander, and Pirates of the Caribbean.
-I can help but feel like those captains that wake up to danger.
-Usually it’s the case of an attack, but in this cause I consider it more like drifting into shoals. 
-This process was to say the least stressful, but we have come through it.
-I foresee smooth sailing from here on, and soon we will all find ourselves safely anchored outside our favorite port city.
 
 ## Gauge Voting
 
@@ -186,49 +173,6 @@ will have the right to disable hostile gauges.
 An example of a hostile gauge would be one that has two tokens that cannot be obtained public via any route either inside Velocimeter or in other protocols.
 
 The Council of Velocimetry will initially consist of members from the Velocimeter team but community members will be recruited to bolster this role.
-
-## Initial Distribution for Canto FLOWv1 (NO LONGER VALID)
-
-At launch 630M `FLOW` were minted. 
-### Locked As NFTs
-470M `FLOW` were locked for 4 years in `veFLOW` of various sizes. 1M, 4M, 6M These veNFT are described below. 
-* 90M of 470M were allocated for Velocimeter (PONFT)
-* 108M of 470M were allocated for the team
-* 272M of 470M are allocated for project partners and public sales
-
-### Loose tokens
-* 94M `FLOW` Tokens were pre-minted for the gauges and this current balance can be seen [here](https://evm.explorer.canto.io/address/0x0cEd59FF9BDe47b2F5F0EDD2FdFfA6a0116d91Cd)
-* 10M `FLOW` Tokens were minted for initial liquidity and to deepen liquidity 
-* 56M `FLOW` Token were left loose for adding to initial liquidity, bribes, Community veFLOW boosts, adding to POL
-
-<Bleed>
-  <Chart
-    chartType="PieChart"
-    data={[
-      [ "Receivers", "Amount" ],
-      [ "Protocol Owned NFTs", 90 ],
-      [ "Velocimeter Team NFTs", 108],
-      [ "Partner Protocol/DAOs NFTs", 272],
-      [ "Gauge Premint", 94],
-      [ "Team Controlled Initial Liquidity", 10],
-      [ "Protocol FLOW Fund", 56]
-    ]}
-    options={{
-      title: "FLOW Distribution (M)",
-      backgroundColor: '#111111',
-      colors: ['#58FF33', '#43CD24', '#37A220', '#297818', '#CCFF2C', '#367A2B' ],
-      legend: {textStyle: {color: 'white' }},
-      pieHole: 0.4,
-      titleTextStyle: { color: 'white' },
-    }}
-    width={"100%"}
-    height={"600px"}
-  />
-</Bleed>
-
-
-
-
 
 
 
