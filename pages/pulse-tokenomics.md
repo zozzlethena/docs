@@ -81,11 +81,11 @@ The initial 315M FLOW
       [ "Snapshot veFLOW", 150],
       [ "Protocol Owned NFTs", 50 ],
       
-      [ "Partner Protocol/DAOs NFTs", 100],
-      [ "FLOWv2 Redeemer", 54],
-      [ "Migration Bonus", 5],
-      [ "Protocol FLOW Fund Used for Sale and initial liquidity", 10],
-      [ "1yr Dev Vesting", 4.5]
+      [ "Partner Protocol NFTs", 100],
+      [ "Protocol owned voting power", 50],
+      [ "Liquidity Bootstrapping Sale", 5],
+      [ "Initial liquidity", 5],
+      [ "Airdrop", 150]
     ]}
     options={{
       title: "FLOW Distribution (M)",
