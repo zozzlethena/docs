@@ -78,7 +78,7 @@ The initial 315M FLOW
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "Snapshot veFLOW", 150],
+      
       [ "Protocol Owned NFTs", 50 ],
       
       [ "Partner Protocol NFTs", 100],
