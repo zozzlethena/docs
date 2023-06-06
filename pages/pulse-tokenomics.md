@@ -22,13 +22,14 @@ Funds raised will be used for a range of operations to support the health of the
 5m FLOW will be sold via https://launch.velocimeter.xyz/ in the build up to epoch 1. PLS raised in the sale will be used to provide FLOW-PLS liquidity on day one.
 
 
-Velocimeter uses two tokens to manage its utility and governance:
+Velocimeter uses three tokens to manage its utility and governance:
 
-- `FLOW` &mdash; ERC-20 utility token of the protocol
+- `oFLOW` &mdash; Reward token for LPs. Can be redeemed at any time @ 50% discount on market price of FLOW
+- `FLOW` &mdash; ERC-20 liquid token
 - `veFLOW` &mdash; ERC-721 governance token in the form of an NFT
   (non-fungible token)
 
-`FLOW` is used for rewarding liquidity providers through emissions.
+`oFLOW` is used for rewarding liquidity providers through emissions it's option mechanism provides sustainble funding for the protocol and support for the FLOW market.
 
 `veFLOW` is used for governance. Any `FLOW` holder can vote-escrow their tokens and
 receive a `veFLOW` (also known as veNFT) in exchange. Additional tokens can be
@@ -37,8 +38,8 @@ added to the `veFLOW` NFT at any time.
 The lock period (also known as vote-escrowed period, hence the _ve_ prefix) can be up
 to 4 years, following the linear relationship shown below:
 
-- 100 `FLOW` locked for 26 weeks years will become 100 `veFLOW`
-- 100 `FLOW` locked for 1 year will become 25 `veFLOW`
+- 100 `FLOW` locked for 26 weeks will become 100 `veFLOW`
+- 100 `FLOW` locked for 7 weeks will become 25 `veFLOW`
 
 The longer the vesting time, the higher the voting power (voting weight) and
 rewards the `veFLOW` holder receives.
@@ -77,19 +78,19 @@ The initial 315M FLOW
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      [ "Snapshot veFLOW", 12],
-      [ "Protocol Owned NFTs", 23 ],
-      [ "Velocimeter Team NFTs", 54],
-      [ "Partner Protocol/DAOs NFTs", 127],
+      [ "Snapshot veFLOW", 150],
+      [ "Protocol Owned NFTs", 50 ],
+      
+      [ "Partner Protocol/DAOs NFTs", 100],
       [ "FLOWv2 Redeemer", 54],
       [ "Migration Bonus", 5],
-      [ "Protocol FLOW Fund", 20.5],
+      [ "Protocol FLOW Fund Used for Sale and initial liquidity", 10],
       [ "1yr Dev Vesting", 4.5]
     ]}
     options={{
       title: "FLOW Distribution (M)",
       backgroundColor: '#111111',
-      colors: ['#046971', '#10575D', '#1D565B', '#003C40', '#4EAC9D', '#3BBFAA', '#21CCB1', '#00E5C3' ],
+      colors: ['#046971', '#10575D', '#1D565B', '#003C40', '#4EAC9D', '#3BBFAA', '#21CCB1' ],
       legend: {textStyle: {color: 'white' }},
       pieHole: 0.4,
       titleTextStyle: { color: 'white' },
