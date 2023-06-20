@@ -33,7 +33,7 @@ Categories are marked as non votable if they are in the mint tank due to the fac
     data={[
       [ "Receivers", "Amount" ],
       
-      [ "Protocol Owned NFTs", 50 ],
+     
       
       [ "Non Voteable Partner Protocol NFTs", 42],
       [ "Non voteable Partner Protocol Rebate Reserve", 21.5],
