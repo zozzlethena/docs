@@ -16,13 +16,17 @@ import { Chart } from "react-google-charts";
 
 To get a full picture of initial system state and token disribution there are three categories which we will zero in on.
 
-1. Initial veFVM including voteable & non voteable (see mint tank below for more details). 63.5% of total initial veFVM is non voteable during epoch one and it is expected to be release at an average rate of ~1% per epoch.
+1. Initial veFVM including voteable & non voteable (see mint tank for future partners & partner rebates details below). 
 2. Initial liquidity ~6% of total initial FVM is used provided by founding protocols as liquidity on day one. 
 2. Week one emissions 
 
+The sum of these 3 make up total supply at any given time. We have aimed to balance these three categories at launch based on our experience launching Canto & Pulsechain + our analyisis of other protocol launches and advice from our network.  
 
 
-### veFVM Initial Distribution Chart
+
+### veFVM Initial Distribution Chart & a distiction between voteable & non voteable initial veFVM
+
+63.5% of total initial veFVM is non voteable during epoch one and it is expected to be release at an average rate of ~1% per epoch.
 
 Categories are marked as non votable if they are in the mint tank due to the fact that voting with these during initial period is impossible. They are released over time via business development & governance processes at an expected average rate of ~1% per epoch.
 
