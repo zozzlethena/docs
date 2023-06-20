@@ -6,11 +6,43 @@ import { Chart } from "react-google-charts";
 
 <Bleed>
 <div align="center">
-  ![The FLOW Token](/FVM.png)
+  ![The FVM Token](/FVM.png)
 </div>
 </Bleed>
 
 &nbsp;
+
+### FVM & Initial Distribution Chart
+
+Note that there is only max 2% of total FVM liquid on day one. Everything else is earmarked (in mint tank which can only mint NFTs FVM cannot be withdrawn) or already minted to veFVM.
+
+<Bleed>
+  <Chart
+    chartType="PieChart"
+    data={[
+      [ "Receivers", "Amount" ],
+      
+      [ "Protocol Owned NFTs", 50 ],
+      
+      [ "Partner Protocol NFTs", 42],
+      [ "Partner Protocol Rebate Reserve", 21.5],
+      [ "Protocol owned voting power", 10],
+      
+      [ "Initial liquidity", 5],
+      [ "Airdrop", 6]
+    ]}
+    options={{
+      title: "FVM Distribution (M)",
+      backgroundColor: '#111111',
+      colors: ['#046971', '#10575D', '#1D565B', '#003C40', '#4EAC9D', '#3BBFAA', '#21CCB1' ],
+      legend: {textStyle: {color: 'white' }},
+      pieHole: 0.4,
+      titleTextStyle: { color: 'white' },
+    }}
+    width={"100%"}
+    height={"600px"}
+  />
+</Bleed>
 
 # Table
 
@@ -30,10 +62,9 @@ import { Chart } from "react-google-charts";
 
 
 
-# 13m oFLOW will be distributed during epoch 1
+# Epoch One Emissions & General Emmission
 
-oFLOW is an option to buy FLOW at a 50% discount on market price.
-Funds raised will be used for a range of operations to support the health of the protocol such as adding protocol owned liquidity. Incentivising veFLOW & FLOW-PLS LP lockers.
+x FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increases/reduced by a maximum of 50% on a per epoch basis via governance.
 
 # Initial liquidity 
 
@@ -49,29 +80,29 @@ Funds raised will be used for a range of operations to support the health of the
 
 ## Protocol Regulation
 
-Velocimeter v3 has three tokens available to regulate the system. At launch FLOW & veFLOW will be in use. While oFLOW may be turned on via governance to further regulate the system.
+Velocimeter v3 has three tokens available to regulate the system. At launch FVM & veFVM will be in use. While oFVM may be turned on via governance to further regulate the system.
 
 
 
-- `oFLOW` &mdash; Reward token for LPs. Can be redeemed at any time @ 50% discount on market price of FLOW
-- `FLOW` &mdash; ERC-20 liquid token (serves as reward token while oFLOW lays dormant in the system during launch.)
-- `veFLOW` &mdash; ERC-721 governance token in the form of an NFT
+- `oFVM` &mdash; Reward token for LPs. Can be redeemed at any time @ 50% discount on market price of FVM
+- `FVM` &mdash; ERC-20 liquid token (serves as reward token while oFVM lays dormant in the system during launch.)
+- `veFVM` &mdash; ERC-721 governance token in the form of an NFT. Votes to direct emissions, earns fees, bribes & oFVM redemption funds + Velocimeter Pro redemption fees.
   (non-fungible token)
 
-`oFLOW` is used for rewarding liquidity providers through emissions it's option mechanism provides sustainble funding for the protocol and support for the FLOW market.
+`oFVM` is used for rewarding liquidity providers through emissions it's option mechanism provides sustainble funding for the protocol and support for the FVM market.
 
-`veFLOW` is used for governance. Any `FLOW` holder can vote-escrow their tokens and
-receive a `veFLOW` (also known as veNFT) in exchange. Additional tokens can be
-added to the `veFLOW` NFT at any time.
+`veFVM` is used for governance. Any `FVM` holder can vote-escrow their tokens and
+receive a `veFVM` (also known as veNFT) in exchange. Additional tokens can be
+added to the `veFVM` NFT at any time.
 
 The lock period (also known as vote-escrowed period, hence the _ve_ prefix) can be up
 to 1 years, following the linear relationship shown below:
 
-- 100 `FLOW` locked for 1 year will become 100 `veFLOW`
-- 100 `FLOW` locked for 3 months will become 25 `veFLOW`
+- 100 `FVM` locked for 1 year will become 100 `veFVM`
+- 100 `FVM` locked for 3 months will become 25 `veFVM`
 
 The longer the vesting time, the higher the voting power (voting weight) and
-rewards the `veFLOW` holder receives.
+rewards the `veFVM` holder receives.
 
 ## ve(3,3) Mechanics
 
@@ -81,62 +112,32 @@ Velocimeter mechanics reflect a combination of two DeFi concepts:
 - Staking/Rebasing/Bonding or (3,3) game theory &mdash; designed by Olympus DAO
 
 Combined, the _ve(3,3)_ mechanism rewards behaviors correlated with Velocimeter's success, such as
-liquidity provision and long-term token holding. Liquidity providers receive `FLOW` emissions,
-and `veFLOW` holders receive protocol fees, bribes, rebases, and governance power.
+liquidity provision and long-term token holding. Liquidity providers receive `FVM` emissions,
+and `veFVM` holders receive protocol fees, bribes, rebases, and governance power.
 
 
 
 ### The mint tank
 
-42% veFLOW is in the mint tank contract and can only be used for minting future partner veFLOW 
-21.5% veFLOW is in the mint tank contract and can only be used for minting partner bribe rebates
+42% veFVM is in the mint tank contract and can only be used for minting future partner veFVM 
+21.5% veFVM is in the mint tank contract and can only be used for minting partner bribe rebates
 
 
 ## Bribe Rebates
 
-Whitelisted protocols get 15% rebate in veFLOW each epoch based on total $ bribe amount (price of FVM at epoch flip is relevant). Top 4 bribers get additional 5% rebate of $ bribe amount in veFVM towards their native pool bribes the following epoch
+Whitelisted protocols get 15% rebate in veFVM each epoch based on total $ bribe amount (price of FVM at epoch flip is relevant). Top 4 bribers get additional 5% rebate of $ bribe amount in veFVM towards their native pool bribes the following epoch
 
-### 50M FLOW
-50 million FLOW is in the mint tank to be used for protocol owned voting power.
+### 50M FVM
+50 million FVM is in the mint tank to be used for protocol owned voting power.
 
-### veFLOW & Initial FLOW Distribution Chart
 
-Note that there is only max 2% of total FLOW liquid on day one. Everything else is earmarked (in mint tank which can only mint NFTs FLOW cannot be withdrawn) or already minted to veFLOW.
-
-<Bleed>
-  <Chart
-    chartType="PieChart"
-    data={[
-      [ "Receivers", "Amount" ],
-      
-      [ "Protocol Owned NFTs", 50 ],
-      
-      [ "Partner Protocol NFTs", 42],
-      [ "Partner Protocol Rebate Reserve", 21.5],
-      [ "Protocol owned voting power", 10],
-      
-      [ "Initial liquidity", 5],
-      [ "Airdrop", 6]
-    ]}
-    options={{
-      title: "FLOW Distribution (M)",
-      backgroundColor: '#111111',
-      colors: ['#046971', '#10575D', '#1D565B', '#003C40', '#4EAC9D', '#3BBFAA', '#21CCB1' ],
-      legend: {textStyle: {color: 'white' }},
-      pieHole: 0.4,
-      titleTextStyle: { color: 'white' },
-    }}
-    width={"100%"}
-    height={"600px"}
-  />
-</Bleed>
 
 
 
 ## Gauge Voting
 
-`veFLOW` holders decide which liquidity pools receive emissions in a given epoch by
-voting on their preferred liquidity pool _gauges_. `FLOW` emissions will be distributed
+`veFVM` holders decide which liquidity pools receive emissions in a given epoch by
+voting on their preferred liquidity pool _gauges_. `FVM` emissions will be distributed
 proportionally to the total votes a liquidity pool receives.
 
 In return, voters receive 100% of the trading fees and bribes collected through the
