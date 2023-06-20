@@ -6,7 +6,7 @@ import { Chart } from "react-google-charts";
 
 <Bleed>
 <div align="center">
-  ![The FLOW Token](/Flow-circle-aqua.png)
+  ![The FLOW Token](/FVM.png)
 </div>
 </Bleed>
 
