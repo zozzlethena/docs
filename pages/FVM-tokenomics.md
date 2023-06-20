@@ -35,15 +35,26 @@ import { Chart } from "react-google-charts";
 oFLOW is an option to buy FLOW at a 50% discount on market price.
 Funds raised will be used for a range of operations to support the health of the protocol such as adding protocol owned liquidity. Incentivising veFLOW & FLOW-PLS LP lockers.
 
-# Initial liquidity Bootstrapping Sale
+# Initial liquidity 
 
-5m FLOW will be sold via https://launch.velocimeter.xyz/ in the build up to epoch 1. PLS raised in the sale will be used to provide FLOW-PLS liquidity on day one.
+| Protocol      | USD amount | FVM amount |
+| ------------- | ---------- | ---------- |
+| Tarrot        | $5,000     | 69,643     |
+| Morpheus      | $5,000     | 69,643     |
+| Deus          | $5,000     | 69,643     |
+| Scream        | $5,000     | 69,643     |
+| Velocimeter   | $10,000    | 139,286    |
+| Liquid Driver | $5,000     | 69,643     |
 
 
-Velocimeter uses three tokens to manage its utility and governance:
+## Protocol Regulation
+
+Velocimeter v3 has three tokens available to regulate the system. At launch FLOW & veFLOW will be in use. While oFLOW may be turned on via governance to further regulate the system.
+
+
 
 - `oFLOW` &mdash; Reward token for LPs. Can be redeemed at any time @ 50% discount on market price of FLOW
-- `FLOW` &mdash; ERC-20 liquid token
+- `FLOW` &mdash; ERC-20 liquid token (serves as reward token while oFLOW lays dormant in the system during launch.)
 - `veFLOW` &mdash; ERC-721 governance token in the form of an NFT
   (non-fungible token)
 
@@ -54,10 +65,10 @@ receive a `veFLOW` (also known as veNFT) in exchange. Additional tokens can be
 added to the `veFLOW` NFT at any time.
 
 The lock period (also known as vote-escrowed period, hence the _ve_ prefix) can be up
-to 4 years, following the linear relationship shown below:
+to 1 years, following the linear relationship shown below:
 
-- 100 `FLOW` locked for 26 weeks will become 100 `veFLOW`
-- 100 `FLOW` locked for 7 weeks will become 25 `veFLOW`
+- 100 `FLOW` locked for 1 year will become 100 `veFLOW`
+- 100 `FLOW` locked for 3 months will become 25 `veFLOW`
 
 The longer the vesting time, the higher the voting power (voting weight) and
 rewards the `veFLOW` holder receives.
@@ -74,17 +85,16 @@ liquidity provision and long-term token holding. Liquidity providers receive `FL
 and `veFLOW` holders receive protocol fees, bribes, rebases, and governance power.
 
 
-## Version 3 Pulsechain Tokennomic Distribution
+
+### The mint tank
+
+42% veFLOW is in the mint tank contract and can only be used for minting future partner veFLOW 
+21.5% veFLOW is in the mint tank contract and can only be used for minting partner bribe rebates
 
 
-The initial 315M FLOW
-* ~150M veFLOW are claimable via airdrop claim contract prior to epoch 1 flip.
-* 5m FLOW allocated to sale. And 5m allocatated to adding initial liquidity.
-50 million for protocol owned voting power.
-100m for future partners
+## Bribe Rebates
 
-### 100M FLOW is in the mint tank contract and can only be used for minting future partner veFLOW
-
+Whitelisted protocols get 15% rebate in veFLOW each epoch based on total $ bribe amount (price of FVM at epoch flip is relevant). Top 4 bribers get additional 5% rebate of $ bribe amount in veFVM towards their native pool bribes the following epoch
 
 ### 50M FLOW
 50 million FLOW is in the mint tank to be used for protocol owned voting power.
@@ -101,11 +111,12 @@ Note that there is only max 2% of total FLOW liquid on day one. Everything else 
       
       [ "Protocol Owned NFTs", 50 ],
       
-      [ "Partner Protocol NFTs", 100],
-      [ "Protocol owned voting power", 50],
-      [ "Liquidity Bootstrapping Sale", 5],
+      [ "Partner Protocol NFTs", 42],
+      [ "Partner Protocol Rebate Reserve", 21.5],
+      [ "Protocol owned voting power", 10],
+      
       [ "Initial liquidity", 5],
-      [ "Airdrop", 150]
+      [ "Airdrop", 6]
     ]}
     options={{
       title: "FLOW Distribution (M)",
@@ -147,7 +158,7 @@ More information on voting can be found the [Voting Section](/voting) section of
       ["200", 2, 0.5, 1350]
     ]}
     options={{
-      title: "FLOW Emissions (M)",
+      title: "FVM Emissions (M)",
       curveType: 'function',
       aggregationTarget: 'series',
       selectionMode: 'multiple',
