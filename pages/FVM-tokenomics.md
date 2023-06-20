@@ -12,7 +12,7 @@ import { Chart } from "react-google-charts";
 
 &nbsp;
 
-### Tokenomics overview
+## Tokenomics overview
 
 To get a full picture of initial system state and token disribution there are three categories which we will zero in on.
 
@@ -24,7 +24,7 @@ The sum of these 3 make up total supply at any given time. We have aimed to bala
 
 
 
-### veFVM Initial Distribution Chart & a distiction between voteable & non voteable initial veFVM
+## veFVM Initial Distribution Chart & a distiction between voteable & non voteable initial veFVM
 
 63.5% of total initial veFVM is non voteable during epoch one and it is expected to be release at an average rate of ~1% per epoch.
 
@@ -59,7 +59,7 @@ Categories are marked as non votable if they are in the mint tank due to the fac
   />
 </Bleed>
 
-# Table
+### Table
 
 |          | Base % share | 1% bonus for moving entire (or significant) liquidity | Airdrop for community | veFVM  | Group                                               | Total | Total veFVM |
 | -------- | ------------ | ----------------------------------------------------- | --------------------- | ------ | --------------------------------------------------- | ----- | ----------- |
@@ -77,11 +77,11 @@ Categories are marked as non votable if they are in the mint tank due to the fac
 
 
 
-# Epoch One Emissions & General Emmissions details.
+## Epoch One Emissions & General Emmissions details.
 
 x FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increases/reduced by a maximum of 50% on a per epoch basis via governance.
 
-# Initial liquidity 
+## Initial liquidity 
 
 | Protocol      | USD amount | FVM amount |
 | ------------- | ---------- | ---------- |
@@ -92,19 +92,19 @@ x FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increa
 | Velocimeter   | $10,000    | 139,286    |
 | Liquid Driver | $5,000     | 69,643     |
 
-### The mint tank
+## The mint tank
 
 This contract holds FVM which may only be used for minting veFVM. Liquid FLOW may never leave the contract as an assurance to liquidity providers and third party partners such as Beefy Finance who requires a limit on liquid tokens controlled by teams.
 
-#### Initial Partner veFVM
+## Initial Partner veFVM
 
 42% veFVM is in the mint tank contract and can only be used for minting future partner veFVM
 
-#### Partner Bribe rebates
+## Partner Bribe rebates
 
 21.5% veFVM is in the mint tank contract and can only be used for minting partner bribe rebates
 
-#### Note on bribe rebates
+## Note on bribe rebates
 
 Whitelisted protocols get 15% rebate in veFVM each epoch based on total $ bribe amount (price of FVM at epoch flip is relevant). Top 4 bribers get additional 5% rebate of $ bribe amount in veFVM towards their native pool bribes the following epoch
 
@@ -158,7 +158,7 @@ liquidity pool they vote for.
 
 More information on voting can be found the [Voting Section](/voting) section of this document.
 
-### Emission Schedule
+## Emission Schedule
 
 <Bleed>
   <Chart
