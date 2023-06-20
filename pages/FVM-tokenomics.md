@@ -59,7 +59,7 @@ Categories are marked as non votable if they are in the mint tank due to the fac
   />
 </Bleed>
 
-### Table
+## Table
 
 |          | Base % share | 1% bonus for moving entire (or significant) liquidity | Airdrop for community | veFVM  | Group                                               | Total | Total veFVM |
 | -------- | ------------ | ----------------------------------------------------- | --------------------- | ------ | --------------------------------------------------- | ----- | ----------- |

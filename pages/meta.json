@@ -4,6 +4,9 @@
   "protocol": "Protocol Overview",
   "launch": "Launch Details",
   "tokenomics": "Canto Tokenomics",
+  "FVM-tokenomics": "FVM Tokenomics",
+  "pulse-tokenomic": "Pulsechain Tokenomics",
+  
   "liquidity": "Liquidity Pools",
   "revenue": "Protocol Revenue",
   "gauges": "Flow Gauges",
