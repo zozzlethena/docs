@@ -2,6 +2,8 @@ import Bleed from 'nextra-theme-docs/bleed';
 
 import { Chart } from "react-google-charts";
 
+ "FVMtokenomics": "FVM Tokenomics",
+
 # Tokenomics
 
 <Bleed>
