@@ -11,12 +11,9 @@ import { Chart } from "react-google-charts";
     chartType="PieChart"
     data={[
       [ "Receivers", "Amount" ],
-      
-     
-      
-      [ "Scream"", 60000],
+      [ "Scream", 60000],
       [ "Morpheus", 60000],
-      [ "DEUS DAO", 60000],
+      [ "DEUS", 60000],
       [ "Velocimeter", 60000],
       [ "Velocimeter", 240000],
       [ "Liquid Driver", 60000],
