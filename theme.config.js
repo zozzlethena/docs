@@ -25,17 +25,17 @@ export default {
       <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       <meta
         name='description'
-        content='Velocimeter: The liquidity base-layer of the Canto ecosystem.'
+        content='Velocimeter: The liquidity base-layer aligning incentives between liquidity providers & protocols'
       />
       <meta name='twitter:card' content='summary_large_image' />
       <meta name='twitter:site' content='@VelocimeterFi' />
       <meta
         name='twitter:title'
-        content='Velocimeter: The liquidity base-layer of the Canto ecosystem.'
+        content='Velocimeter: The liquidity base-layer'
       />
       <meta
         name='twitter:description'
-        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) on Canto L2 blockchain.'
+        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) aligning incentives with liquidity providers & protocols'
       />
       <meta
         name='twitter:image'
@@ -43,11 +43,11 @@ export default {
       />
       <meta
         property='og:title'
-        content='Velocimeter: The liquidity base-layer of the Canto ecosystem.'
+        content='Velocimeter: The liquidity base-layer.'
       />
       <meta
         property='og:description'
-        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) on Canto L2 blockchain.'
+        content='Velocimeter is an automated market maker (AMM or simply, decentralized exchange) aligning incentives with liquidity providers & protocols'
       />
       <meta
         property='og:image'
