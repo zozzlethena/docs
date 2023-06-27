@@ -19,7 +19,7 @@ import { Chart } from "react-google-charts";
 To get a full picture of initial system state and token disribution there are three categories which we will zero in on.
 
 1. Initial veFVM including voteable & non voteable (see mint tank for future partners & partner rebates details below). 
-2. Initial liquidity ~6% of total initial FVM is used provided by founding protocols as liquidity on day one. 
+2. Initial liquidity ~4% of total initial FVM is used provided by early partners & held in a 4/6 multisig as liquidity on day one. 
 2. Week one emissions 
 
 The sum of these 3 make up total supply at any given time. We have aimed to balance these three categories at launch based on our experience launching Canto & Pulsechain + our analyisis of other protocol launches and advice from our network.  
@@ -28,7 +28,7 @@ The sum of these 3 make up total supply at any given time. We have aimed to bala
 
 ## veFVM Initial Distribution Chart & a distiction between voteable & non voteable initial veFVM
 
-63.5% of total initial veFVM is non voteable during epoch one and it is expected to be release at an average rate of ~1% per epoch.
+45.5% of total initial veFVM is non voteable during epoch one and it is expected to be release at an average rate of ~1% per epoch.
 
 Categories are marked as non votable if they are in the mint tank due to the fact that voting with these during initial period is impossible. They are released over time via business development & governance processes at an expected average rate of ~1% per epoch.
 
@@ -41,12 +41,12 @@ Categories are marked as non votable if they are in the mint tank due to the fac
       
      
       
-      [ "Non Voteable Partner Protocol NFTs", 42],
-      [ "Non voteable Partner Protocol Rebate Reserve", 21.5],
-      [ "Protocol owned voting power", 10],
+      [ "Non Voteable Partner Protocol NFTs", 45],
+      [ "Non voteable Partner Protocol Rebate Reserve", 39],
+      [ "Protocol owned voting power", 18],
       
-      [ "Initial liquidity", 5],
-      [ "Airdrop", 6]
+      [ "Initial liquidity", 4],
+      [ "Airdrop", 9]
     ]}
     options={{
       title: "FVM Distribution (M)",
@@ -63,19 +63,20 @@ Categories are marked as non votable if they are in the mint tank due to the fac
 
 ## Table
 
-|          | Base % share | 1% bonus for moving entire (or significant) liquidity | Airdrop for community | veFVM  | Group                                               | Total | Total veFVM |
-| -------- | ------------ | ----------------------------------------------------- | --------------------- | ------ | --------------------------------------------------- | ----- | ----------- |
-|          | 42           |                                                       |                       |        | Future protocols / Advisors / Contributers / Growth | 42    | 2520000     |
-|          | 10           |                                                       |                       |        | POL Voting on FVM + core pools                      | 10    |             |
-|          | 21.5         |                                                       |                       |        | Mint tank whitelisted protocol bribe rebates        | 21.5  | 1290000     |
-|          | 4            |                                                       | 4                     | 240000 | Velocimeter                                         | 8     | 480000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Tarrot                                              | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Morpheus                                            | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Deus                                                | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Scream                                              | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Liquid Driver                                       | 3.5   | 210000      |
-|          |              |                                                       | 1                     | 60000  | Equaliser                                           | 1     | 60000       |
-| Totals % | 85           | 5                                                     | 10                    | 600000 |                                                     | 100   | 5400000     |
+|Totals  |Base % share|1% bonus for moving entire (or significant) liquidity|Airdrop for community|veFVM |Group                                              |Total %|Total veFVM|
+|--------|------------|-----------------------------------------------------|---------------------|------|---------------------------------------------------|-------|-----------|
+|        |4           |                                                     |                     |      |Initial Liquidity                                  |4      |240000     |
+|        |30          |                                                     |                     |      |Future protocols / Advisors / Contributers / Growth|30     |1800000    |
+|        |18          |                                                     |                     |      |POL Voting on FVM + core pools                     |18     |1080000    |
+|        |21.5        |                                                     |                     |      |Mint tank whitelisted protocol  bribe rebates      |21.5   |1290000    |
+|        |4           |                                                     |4                    |240000|Velocimeter                                        |8      |480000     |
+|        |1.5         |1                                                    |1                    |60000 |Tarrot                                             |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Morpheus                                           |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Deus                                               |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Scream                                             |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Liquid Driver                                      |3.5    |210000     |
+|        |            |                                                     |1                    |60000 |Equaliser                                          |1      |60000      |
+|Totals %|85          |5                                                    |10                   |600000|                                                   |100    |6000000    |
 
 
 
