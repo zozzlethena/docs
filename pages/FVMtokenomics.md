@@ -41,9 +41,10 @@ Categories are marked as non votable if they are in the mint tank due to the fac
       
      
       
-      [ "Non Voteable Partner Protocol NFTs", 1290000],
-      [ "Non voteable Partner Protocol Rebate Reserve", 1800000],
+      [ "Non Voteable Future protocols / Advisors / Contributers / Growth", 1800000],
+      [ "Non voteable Partner Protocol Rebate Reserve", 1290000],
       [ "Protocol owned voting power", 1080000],
+      [ "Velocimeter Team", 240000],
       [ "Initial liquidity", 240000],
       [ "Airdrop", 600000]
     ]}
