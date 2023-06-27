@@ -1,6 +1,8 @@
+import Bleed from 'nextra-theme-docs/bleed';
+
 import { Chart } from "react-google-charts";
 
-
+ "FVMtokenomics": "FVM Tokenomics",
 
 # Tokenomics
 
@@ -17,7 +19,7 @@ import { Chart } from "react-google-charts";
 To get a full picture of initial system state and token disribution there are three categories which we will zero in on.
 
 1. Initial veFVM including voteable & non voteable (see mint tank for future partners & partner rebates details below). 
-2. Initial liquidity ~6% of total initial FVM is used provided by founding protocols as liquidity on day one. 
+2. Initial liquidity ~4% of total initial FVM is used provided by early partners & held in a 4/6 multisig as liquidity on day one. 
 2. Week one emissions 
 
 The sum of these 3 make up total supply at any given time. We have aimed to balance these three categories at launch based on our experience launching Canto & Pulsechain + our analyisis of other protocol launches and advice from our network.  
@@ -26,7 +28,7 @@ The sum of these 3 make up total supply at any given time. We have aimed to bala
 
 ## veFVM Initial Distribution Chart & a distiction between voteable & non voteable initial veFVM
 
-63.5% of total initial veFVM is non voteable during epoch one and it is expected to be release at an average rate of ~1% per epoch.
+45.5% of total initial veFVM is non voteable during epoch one and it is expected to be release at an average rate of ~1% per epoch.
 
 Categories are marked as non votable if they are in the mint tank due to the fact that voting with these during initial period is impossible. They are released over time via business development & governance processes at an expected average rate of ~1% per epoch.
 
@@ -39,15 +41,15 @@ Categories are marked as non votable if they are in the mint tank due to the fac
       
      
       
-      [ "Non Voteable Partner Protocol NFTs", 42],
-      [ "Non voteable Partner Protocol Rebate Reserve", 21.5],
-      [ "Protocol owned voting power", 10],
-      
-      [ "Initial liquidity", 5],
-      [ "Airdrop", 6]
+      [ "Non Voteable Future protocols / Advisors / Contributers / Growth", 1800000],
+      [ "Non voteable Partner Protocol Rebate Reserve", 1290000],
+      [ "Protocol owned voting power", 1080000],
+      [ "Velocimeter Team", 240000],
+      [ "Initial liquidity", 240000],
+      [ "Airdrop", 600000]
     ]}
     options={{
-      title: "FVM Distribution (M)",
+      title: "FVM Distribution (veFVM + Initial liquidity)",
       backgroundColor: '#111111',
       colors: ['#046971', '#10575D', '#1D565B', '#003C40', '#4EAC9D', '#3BBFAA', '#21CCB1' ],
       legend: {textStyle: {color: 'white' }},
@@ -59,31 +61,37 @@ Categories are marked as non votable if they are in the mint tank due to the fac
   />
 </Bleed>
 
-See airdrop breakdown here: https://docs.velocimeter.xyz/FVMAirdrop
+
+
+Share of Initial Supply:
+30% Future protocols / Advisors / Contributors / Growth
+18% Treasury / POL voting on FVM + core pools
+21.5% Mint Tank for whitelisted protocols (Bribe rebates)
 
 ## Table
 
-|          | Base % share | 1% bonus for moving entire (or significant) liquidity | Airdrop for community | veFVM  | Group                                               | Total | Total veFVM |
-| -------- | ------------ | ----------------------------------------------------- | --------------------- | ------ | --------------------------------------------------- | ----- | ----------- |
-|          | 42           |                                                       |                       |        | Future protocols / Advisors / Contributers / Growth | 42    | 2520000     |
-|          | 10           |                                                       |                       |        | POL Voting on FVM + core pools                      | 10    |             |
-|          | 21.5         |                                                       |                       |        | Mint tank whitelisted protocol bribe rebates        | 21.5  | 1290000     |
-|          | 4            |                                                       | 4                     | 240000 | Velocimeter                                         | 8     | 480000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Tarrot                                              | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Morpheus                                            | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Deus                                                | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Scream                                              | 3.5   | 210000      |
-|          | 1.5          | 1                                                     | 1                     | 60000  | Liquid Driver                                       | 3.5   | 210000      |
-|          |              |                                                       | 1                     | 60000  | Equaliser                                           | 1     | 60000       |
-| Totals % | 85           | 5                                                     | 10                    | 600000 |                                                     | 100   | 5400000     |
+|Totals  |Base % share|1% bonus for moving entire (or significant) liquidity|Airdrop for community|veFVM |Group                                              |Total %|Total veFVM|
+|--------|------------|-----------------------------------------------------|---------------------|------|---------------------------------------------------|-------|-----------|
+|        |4           |                                                     |                     |      |Initial Liquidity                                  |4      |240000     |
+|        |30          |                                                     |                     |      |Future protocols / Advisors / Contributers / Growth|30     |1800000    |
+|        |18          |                                                     |                     |      |POL Voting on FVM + core pools                     |18     |1080000    |
+|        |21.5        |                                                     |                     |      |Mint tank whitelisted protocol  bribe rebates      |21.5   |1290000    |
+|        |4           |                                                     |4                    |240000|Velocimeter                                        |8      |480000     |
+|        |1.5         |1                                                    |1                    |60000 |Tarrot                                             |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Morpheus                                           |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Deus                                               |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Scream                                             |3.5    |210000     |
+|        |1.5         |1                                                    |1                    |60000 |Liquid Driver                                      |3.5    |210000     |
+|        |            |                                                     |1                    |60000 |Equaliser                                          |1      |60000      |
+|Totals %|85          |5                                                    |10                   |600000|                                                   |100    |6000000    |
 
 
 
 ## Epoch One Emissions & General Emmissions details.
 
-x FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increases/reduced by a maximum of 50% on a per epoch basis via governance.
+300,000 FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increases/reduced by a maximum of 50% on a per epoch basis via governance.
 
-## Initial liquidity 
+## Initial FLOW liquidity 
 
 | Protocol      | USD amount | FVM amount |
 | ------------- | ---------- | ---------- |
@@ -100,7 +108,7 @@ This contract holds FVM which may only be used for minting veFVM. Liquid FLOW ma
 
 ## Initial Partner veFVM
 
-42% veFVM is in the mint tank contract and can only be used for minting future partner veFVM
+30% veFVM is in the mint tank contract and can only be used for minting future partner veFVM
 
 ## Partner Bribe rebates
 
