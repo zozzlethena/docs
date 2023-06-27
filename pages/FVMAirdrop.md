@@ -117,7 +117,7 @@ Share of Initial Supply:
 
 ## Epoch One Emissions & General Emmissions details.
 
-x FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increases/reduced by a maximum of 50% on a per epoch basis via governance.
+300,000 FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increases/reduced by a maximum of 50% on a per epoch basis via governance.
 
 ## Initial FLOW liquidity 
 
