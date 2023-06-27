@@ -41,12 +41,11 @@ Categories are marked as non votable if they are in the mint tank due to the fac
       
      
       
-      [ "Non Voteable Partner Protocol NFTs", 45],
-      [ "Non voteable Partner Protocol Rebate Reserve", 39],
-      [ "Protocol owned voting power", 18],
-      
-      [ "Initial liquidity", 4],
-      [ "Airdrop", 9]
+      [ "Non Voteable Partner Protocol NFTs", 1290000],
+      [ "Non voteable Partner Protocol Rebate Reserve", 1800000],
+      [ "Protocol owned voting power", 1080000],
+      [ "Initial liquidity", 240000],
+      [ "Airdrop", 600000]
     ]}
     options={{
       title: "FVM Distribution (M)",
