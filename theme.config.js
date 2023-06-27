@@ -1,16 +1,19 @@
+/**
+ * @type {import('nextra-theme-docs').DocsThemeConfig}
+ */
 export default {
-  projectLink: "https://github.com/Velocimeter/",
   docsRepositoryBase: "https://github.com/Velocimeter/docs/blob/main",
-  titleSuffix: "Velocimeter",
-  nextLinks: true,
-  prevLinks: true,
-  search: true,
-  unstable_stork: false,
+  useNextSeoProps: () => ({
+    titleTemplate: '%s - Velocimeter',
+  }),
+  search: {
+    placeholder: "Search...",
+  },
+  // primaryHue: '172',
   darkMode: true,
-  font: false,
-  footer: true,
-  footerText: `MIT ${new Date().getFullYear()} © Velocimeter.`,
-  footerEditLink: `Edit this page on GitHub`,
+  footer: {
+    text: `MIT ${new Date().getFullYear()} © Velocimeter.`
+  },
   logo: (
     <>
       <img src='/velocimeter.png' alt='Velocimeter' height={240} width={240} />
@@ -28,7 +31,7 @@ export default {
         content='Velocimeter: The liquidity base-layer aligning incentives between liquidity providers & protocols'
       />
       <meta name='twitter:card' content='summary_large_image' />
-      <meta name='twitter:site' content='@VelocimeterFi' />
+      <meta name='twitter:site' content='@VelocimeterDEX' />
       <meta
         name='twitter:title'
         content='Velocimeter: The liquidity base-layer'
