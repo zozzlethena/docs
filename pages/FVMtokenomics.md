@@ -61,6 +61,11 @@ Categories are marked as non votable if they are in the mint tank due to the fac
   />
 </Bleed>
 
+Share of Initial Supply:
+30% Future protocols / Advisors / Contributors / Growth
+18% Treasury / POL voting on FVM + core pools
+21.5% Mint Tank for whitelisted protocols (Bribe rebates)
+
 ## Table
 
 |Totals  |Base % share|1% bonus for moving entire (or significant) liquidity|Airdrop for community|veFVM |Group                                              |Total %|Total veFVM|
