@@ -84,7 +84,7 @@ Categories are marked as non votable if they are in the mint tank due to the fac
 
 x FVM will be distributed to gauges in epoch one. Emmissions in v3 may be increases/reduced by a maximum of 50% on a per epoch basis via governance.
 
-## Initial liquidity 
+## Initial FLOW liquidity 
 
 | Protocol      | USD amount | FVM amount |
 | ------------- | ---------- | ---------- |
@@ -101,7 +101,7 @@ This contract holds FVM which may only be used for minting veFVM. Liquid FLOW ma
 
 ## Initial Partner veFVM
 
-42% veFVM is in the mint tank contract and can only be used for minting future partner veFVM
+30% veFVM is in the mint tank contract and can only be used for minting future partner veFVM
 
 ## Partner Bribe rebates
 
