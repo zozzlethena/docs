@@ -49,7 +49,37 @@ Categories are marked as non votable if they are in the mint tank due to the fac
       [ "Airdrop", 600000]
     ]}
     options={{
-      title: "FVM Distribution (M)",
+      title: "FVM Distribution (veFVM + Initial liquidity)",
+      backgroundColor: '#111111',
+      colors: ['#046971', '#10575D', '#1D565B', '#003C40', '#4EAC9D', '#3BBFAA', '#21CCB1' ],
+      legend: {textStyle: {color: 'white' }},
+      pieHole: 0.4,
+      titleTextStyle: { color: 'white' },
+    }}
+    width={"100%"}
+    height={"600px"}
+  />
+</Bleed>
+
+<Bleed>
+  <Chart
+    chartType="PieChart"
+    data={[
+      [ "Receivers", "Amount" ],
+      
+     
+      
+      [ "Scream"", 60000],
+      [ "Morpheus", 60000],
+      [ "DEUS DAO", 60000],
+      [ "Velocimeter", 60000],
+      [ "Velocimeter", 240000],
+      [ "Liquid Driver", 60000],
+      ["Tarrot", 60000],
+      ["Equaliser", 60000]
+    ]}
+    options={{
+      title: "Airdrop Breakdown",
       backgroundColor: '#111111',
       colors: ['#046971', '#10575D', '#1D565B', '#003C40', '#4EAC9D', '#3BBFAA', '#21CCB1' ],
       legend: {textStyle: {color: 'white' }},
