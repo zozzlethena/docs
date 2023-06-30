@@ -16,8 +16,8 @@ import { Chart } from "react-google-charts";
       [ "DEUS", 60000],
       [ "Velocimeter", 240000],
       [ "Liquid Driver", 60000],
-      ["Tarrot", 60000],
-      ["Equaliser", 60000]
+      ["Tarrot", 60000]
+     
     ]}
     options={{
       title: "Airdrop Breakdown",
