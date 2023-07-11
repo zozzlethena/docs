@@ -17,7 +17,7 @@ Let's illustrate this mechanism with another example. Say the price of FVM is $1
 
  - a perpetual right to buy FVM at 75% of the market price;
  - a perpetual right to buy max locked veFVM at 10% or even 0% of the market price (currently 5% but 0 for example's sake);
- - a perpetual right to LP into FVM/WFTM pool with a 40-80% discount. In this case holder is locked from withdrawing liquidity for x amount of time (7-60 days). When x amount of time passes the holder is allowed to initiate withdrawal. Initialisation of withdrawal will move the holder's LP tokens into the Cooldown for 3 days. While in the cooldown period the holder doesn't receive any rewards.
+ - a perpetual right to LP into FVM/WFTM pool with a 40-80% discount. In this case holder is locked from withdrawing liquidity for x amount of time (7-60 days). When x amount of time passes the holder is allowed to initiate withdrawal.
 
 The protocol issues 1 oFVM to a farmer Alice, who immediately exercises the option to buy 1 FVM for $75 and sells it on a DEX for $100. The tally of gains & losses are as follows:
 
