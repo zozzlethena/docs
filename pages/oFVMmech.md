@@ -43,10 +43,10 @@ Reallocation of value: Using oFVM instead of FVM as the reward token effectively
 
 Trading off incentivization efficiency for protocol tokens LP depth: In our example, for each FVM token issued by the protocol, the farmer Alice can choose option 3 and provide liquidity for a fixed amount of time which is crucial for protocol long term sustainability.
 
-This effectively creates a continuous token sale: instead of giving away tokens for free in regular liquidity mining, we turn incentivization into a continuous token sale with options to 
- - Redeem into liquid FVM with discounts, partially returning extracted value
- - To redeem into locked FVM with near-to-zero cost, decreasing circulation of FVM and reducing short-term selling pressure, 
- - To redeem into LP with a higher discount and ability to collect liquid reward gained from those who chose option 1.
+This effectively creates a continuous token sale: instead of giving away tokens for free in regular liquidity mining, we turn incentivization into a continuous token sale with options to: 
+ - Redeem into liquid FVM with the lowest discount, partially returning extracted value to the protocol;
+ - To redeem into locked FVM with the greatest discount, decreasing circulation of FVM and reducing short-term selling pressure; 
+ - To redeem into LP with a moderate discount and the ability to collect wFTM gained from those who chose option 1
 
 ## Conclusion
 The introduction of oFVM is a positive development for the FVM ecosystem. oFVM has the potential to reduce sell pressure on the native FVM token, increase liquidity in the FVM-FTM pool, and offer more sustainable APRs for retail & protocols.
