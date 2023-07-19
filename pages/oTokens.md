@@ -1,4 +1,4 @@
-# Exploring Options with oFVM
+# Exploring Options with FVM
 oFVM is a new options token that helps to reduce sell pressure on the native FVM token. It is earned by liquidity providers (LPs) who provide liquidity to the FVM-FTM pool. oFVM can be redeemed for FVM at a discount, or it can be locked up for a period of time as veFVM. veFVM is a governance token that allows holders to vote on the distribution of emissions, as well as receive weekly bribes and fees.
 
 There are three main options for LPs who earn oFVM:
@@ -6,14 +6,22 @@ There are three main options for LPs who earn oFVM:
  - veFVM Option: This option allows LPs to redeem their oFVM rewards for veFVM. veFVM is a governance token that allows holders to vote on the distribution of emissions.
  - FVM Option: This option allows LPs to sell their oFVM rewards for FVM at a discount. This option allows LPs to take advantage of the discount on FVM and sell their oFVM rewards for a profit.
 
+
 ## Benefits of oFVM
 The introduction of oFVM has a number of benefits, including:
 Reduced sell pressure: oFVM can be redeemed for FVM at a discount, which reduces the sell pressure on the native FVM token.
 Increased liquidity: The FVM-FTM pool will be more liquid as a result of oFVM, as LPs will be incentivized to lock their oFVM rewards in the pool.
 More sustainable APRs: The FVM-FTM pool will be able to offer more sustainable APRs as a result of oFVM, as the pool will be more liquid and there will be less sell pressure on the native FVM token.
 
-## Practical Examples
-Let's illustrate this mechanism with another example. Say the price of FVM is $100, and there is a call option token oFVM. oFVM gives its holder:
+## oTokens for Protocols
+In addition to oFVM, FVM can aid protocols in distributing their own oTokens with similar mechanics to oFVM. This works in virtually the same way as described here, but without a vote-escrow redemption option, and varying reward tokens for the underlying LP (ie sCANTO is used to redeem oBLOTR, and is then fed back to the BLOTR/sCANTO LP). For the purposes of this document the system will be described in oFVM, but all information here can (generally) be applied to other oTokens.
+
+Current partner/protocol oTokens include:
+ - oBAY (Moon Bay)
+ - oBLOTR (Blotr Protocol)
+
+### Practical Examples
+Let's illustrate this mechanism with some examples. Say the price of FVM is $100, and there is a call option token oFVM. oFVM gives its holder:
 
  - a perpetual right to buy FVM at 75% of the market price;
  - a perpetual right to buy max locked veFVM at 10% or even 0% of the market price (currently 5% but 0 for example's sake);
@@ -46,12 +54,13 @@ Trading off incentivization efficiency for protocol tokens LP depth: In our exam
 This effectively creates a continuous token sale: instead of giving away tokens for free in regular liquidity mining, we turn incentivization into a continuous token sale with options to: 
  - Redeem into liquid FVM with the lowest discount, partially returning extracted value to the protocol;
  - To redeem into locked FVM with the greatest discount, decreasing circulation of FVM and reducing short-term selling pressure; 
- - To redeem into LP with a moderate discount and the ability to collect wFTM gained from those who chose option 1
+ - To redeem into LP with a moderate discount and the ability to collect wFTM gained from those who chose option 
 
 ## Conclusion
 The introduction of oFVM is a positive development for the FVM ecosystem. oFVM has the potential to reduce sell pressure on the native FVM token, increase liquidity in the FVM-FTM pool, and offer more sustainable APRs for retail & protocols.
 
 ## Key terms
+ - oTokens: General term for any token using FVM's Options system.
  - oFVM: A new token that is earned by LPs who provide liquidity to the FVM-FTM pool. oFVM can be redeemed for FVM at a discount, or it can be locked up for a period of time in order to earn veFVM.
  - FVM: The native token of the FVM ecosystem.
  - veFVM: A governance token that allows holders to vote on the distribution of emissions and receive weekly bribes and fees.
